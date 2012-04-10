@@ -1,6 +1,7 @@
 <?php
+$uri = $_GET['query'];
 try {
-	exec('curl http://clgt.vn > cache/abc.txt');
+	exec('curl ' . $uri.  ' > cache/abc.txt');
 } catch (Exception $e)
 {
 	var_dump($e);
