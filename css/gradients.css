@@ -1,0 +1,197 @@
+/* Mo' fonts */
+@import url(http://fonts.googleapis.com/css?family=Bitter|Asap);
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 1em/1.8 Asap, Calibri, sans-serif;
+	text-align: center;
+}
+
+em {
+	font-family: Bitter, Georgia, serif;
+}
+	em div {
+		font-style: normal;
+	}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+	h3 {
+		font-size: 60px;
+	}
+
+div.panels, div.panels div.panel {
+	position: relative;
+	height: 100%;
+}
+	div.panels:after {
+		content: '';
+		
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		
+		background: url('pattern.png');
+		
+		opacity: .5;
+		pointer-events: none;
+	}
+	div.panels div.panel {
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	}
+		div.panels div.panel * {
+			position: relative;
+			z-index: 3;
+		}
+	div.panels div.intro.panel {
+		background-color: #de4c76;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#d83b65), to(#e55d87));
+		background-image: -webkit-linear-gradient(top, #d83b65, #e55d87);
+		background-image: -moz-linear-gradient(top, #d83b65, #e55d87);
+		background-image: -o-linear-gradient(top, #d83b65, #e55d87);
+		background-image: -ms-linear-gradient(top, #d83b65, #e55d87);
+		background-image: linear-gradient(top, #d83b65, #e55d87);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#d83b65', EndColorStr='#e55d87');
+	}
+		div.panels div.intro.panel span {
+			display: block;
+			
+			position: absolute;
+			top: 50%;
+			
+			margin-top: -50px;
+			height: 100px;
+			width: 100%;
+		}
+			div.panels div.intro.panel h1 {
+				font-size: 2.5em;
+			}
+			div.panels div.intro.panel em {
+				font-size: .8em;
+			}
+			div.panels div.intro.panel em, div.panels div.intro.panel em div {
+				opacity: .6;
+				filter: alpha(opacity=60);
+			}
+	div.panels div.peach.panel {
+		background-color: #a290b5;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#e55d87), to(#5fc3e4));
+		background-image: -webkit-linear-gradient(top, #e55d87, #5fc3e4);
+		background-image: -moz-linear-gradient(top, #e55d87, #5fc3e4);
+		background-image: -o-linear-gradient(top, #e55d87, #5fc3e4);
+		background-image: -ms-linear-gradient(top, #e55d87, #5fc3e4);
+		background-image: linear-gradient(top, #e55d87, #5fc3e4);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e55d87', EndColorStr='#5fc3e4');
+	}
+	div.panels div.lime.panel {
+		background-color: #57ceaf;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#5ec4e5), to(#50d97a));
+		background-image: -webkit-linear-gradient(top, #5ec4e5, #50d97a);
+		background-image: -moz-linear-gradient(top, #5ec4e5, #50d97a);
+		background-image: -o-linear-gradient(top, #5ec4e5, #50d97a);
+		background-image: -ms-linear-gradient(top, #5ec4e5, #50d97a);
+		background-image: linear-gradient(top, #5ec4e5, #50d97a);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#5ec4e5', EndColorStr='#50d97a');
+	}
+	div.panels div.citrus.panel {
+		background-color: #9edb6b;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#50d97a), to(#edde5d));
+		background-image: -webkit-linear-gradient(top, #50d97a, #edde5d);
+		background-image: -moz-linear-gradient(top, #50d97a, #edde5d);
+		background-image: -o-linear-gradient(top, #50d97a, #edde5d);
+		background-image: -ms-linear-gradient(top, #50d97a, #edde5d);
+		background-image: linear-gradient(top, #50d97a, #edde5d);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#50d97a', EndColorStr='#edde5d');
+	}
+	div.panels div.sunset.panel {
+		background-color: #eebb3b;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#edde5d), to(#f09819));
+		background-image: -webkit-linear-gradient(top, #edde5d, #f09819);
+		background-image: -moz-linear-gradient(top, #edde5d, #f09819);
+		background-image: -o-linear-gradient(top, #edde5d, #f09819);
+		background-image: -ms-linear-gradient(top, #edde5d, #f09819);
+		background-image: linear-gradient(top, #edde5d, #f09819);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#edde5d', EndColorStr='#f09819');
+	}
+	div.panels div.mastercard.panel {
+		background-color: #f77424;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f09819), to(#ff512f));
+		background-image: -webkit-linear-gradient(top, #f09819, #ff512f);
+		background-image: -moz-linear-gradient(top, #f09819, #ff512f);
+		background-image: -o-linear-gradient(top, #f09819, #ff512f);
+		background-image: -ms-linear-gradient(top, #f09819, #ff512f);
+		background-image: linear-gradient(top, #f09819, #ff512f);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f09819', EndColorStr='#ff512f');
+	}
+	div.panels div.deja-vu.panel {
+		background-color: #ee3a52;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#ff512f), to(#dd2476));
+		background-image: -webkit-linear-gradient(top, #ff512f, #dd2476);
+		background-image: -moz-linear-gradient(top, #ff512f, #dd2476);
+		background-image: -o-linear-gradient(top, #ff512f, #dd2476);
+		background-image: -ms-linear-gradient(top, #ff512f, #dd2476);
+		background-image: linear-gradient(top, #ff512f, #dd2476);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ff512f', EndColorStr='#dd2476');
+	}
+	div.panels div.last.panel {
+		background-color: #7c123f;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#dd2476), to(#1b0109));
+		background-image: -webkit-linear-gradient(top, #dd2476, #1b0109);
+		background-image: -moz-linear-gradient(top, #dd2476, #1b0109);
+		background-image: -o-linear-gradient(top, #dd2476, #1b0109);
+		background-image: -ms-linear-gradient(top, #dd2476, #1b0109);
+		background-image: linear-gradient(top, #dd2476, #1b0109);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dd2476', EndColorStr='#1b0109');
+	}
+	div.panels div.slj.panel {
+		background: #1b0109 url('../images/bitchplease.png') no-repeat 50% 100%;
+	}
+		div.panels div.slj.panel div {
+			position: absolute;
+			top: 40%;
+			left: 5%;
+
+			width: 90%;
+			height: 55%;
+		}
+		div.panels div.slj.panel p {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			
+			width: 300px;
+			
+			font: .9em/1.7 Bitter, Georgia, serif;
+			color: #888;
+			text-align: left;
+		}
+			div.panels div.slj.panel p + p {
+				left: auto;
+				right: 0;
+			}
+			div.panels div.slj.panel a {
+				color: #aaa;
+			}
+				div.panels div.slj.panel a:hover {
+					text-decoration: none;
+				}
+			div.panels div.slj.panel iframe {
+				display: block;
+				clear: both;
+				
+				margin-top: 15px;
+			}
