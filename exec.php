@@ -1,2 +1,7 @@
 <?php
-exec('curl http://clgt.vn > abc.txt');
+try {
+	exec('curl http://clgt.vn > cache/abc.txt');
+} catch (Exception $e)
+{
+	var_dump($e);
+}
