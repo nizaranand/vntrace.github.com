@@ -16,8 +16,13 @@ $(document).ready(function(){
 	var circular_2 = new ImageFlow();
 	circular_2.init({ ImageFlowID: 'slider',
                       circular: true,
+                      reflections: false,
+                      reflectionP: 0.4,
                       aspectRatio: 2.0,
                       aspectRatio: 1.618,
+                      slideshow: true,
+                      xStep: 250,
+                      imageFocusM: 1.5,
                       glideToStartID: false,
                       slider: false });
 });
