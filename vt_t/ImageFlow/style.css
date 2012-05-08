@@ -28,4 +28,8 @@
 		text-align:center;
 		margin:0.4em 0 1.3em 0;
 	}
+
+	#slider img{
+		float: left;
+	}
 }
