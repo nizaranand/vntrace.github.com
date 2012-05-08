@@ -24,5 +24,6 @@ $(document).ready(function(){
                       imageFocusM: 1.5,
                       opacity: true,
                       glideToStartID: false,
+                      slideshowAutoplay: true,
                       slider: false });
 });
