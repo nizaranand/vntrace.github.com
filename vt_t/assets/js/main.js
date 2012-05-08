@@ -19,7 +19,6 @@ $(document).ready(function(){
                       reflections: false,
                       reflectionP: 0.4,
                       aspectRatio: 2.0,
-                      aspectRatio: 1.618,
                       slideshow: true,
                       xStep: 250,
                       imageFocusM: 1.5,
