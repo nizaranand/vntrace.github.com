@@ -12,4 +12,10 @@ $(document).ready(function(){
 	})
 
 	// $('.scrollable').uscrollbar();
+
+	var circular_2 = new ImageFlow();
+	circular_2.init({ ImageFlowID: 'slider',
+                      circular: true,
+                      glideToStartID: false,
+                      slider: false });
 });
