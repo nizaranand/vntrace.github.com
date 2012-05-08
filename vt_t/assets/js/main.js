@@ -16,7 +16,8 @@ $(document).ready(function(){
 	var circular_2 = new ImageFlow();
 	circular_2.init({ ImageFlowID: 'slider',
                       circular: true,
-                      aspectRatio: 3.0,
+                      aspectRatio: 2.0,
+                      aspectRatio: 1.618,
                       glideToStartID: false,
                       slider: false });
 });
