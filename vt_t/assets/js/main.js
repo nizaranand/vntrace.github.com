@@ -23,6 +23,7 @@ $(document).ready(function(){
                       slideshow: true,
                       xStep: 250,
                       imageFocusM: 1.5,
+                      opacity: true,
                       glideToStartID: false,
                       slider: false });
 });
