@@ -718,6 +718,6 @@ ul,li{
     margin-right: 5px;
 }
 
-.pagination {
+.pagination a{
 	line-height: 18px !important;
 }
