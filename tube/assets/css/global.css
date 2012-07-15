@@ -721,3 +721,32 @@ ul,li{
 .pagination a{
 	line-height: 18px !important;
 }
+
+/*---------- element ----------*/
+.breadcrumb{
+	padding:0px;
+}
+.breadcrumb li{
+	padding:8px 0px;
+}
+.breadcrumb  li a{
+	color:#22465e;
+	text-shadow:none;
+	margin:0px;
+	padding:10px 20px 9px 10px;
+	background:url('../img/icons/icon-muiten.png') right top no-repeat;
+}
+.breadcrumb li a:hover,.breadcrumb li.active a{
+	background:url('../img/icons/icon-muiten-hv1.png') right top no-repeat;
+	text-decoration:none;
+	color:#333;
+}
+.breadcrumb{
+	border:none;
+	background-image: -moz-linear-gradient(top, #d3d3d3, #888);
+	background-image: -ms-linear-gradient(top, #d3d3d3, #888);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d3d3d3), to(#888));
+	background-image: -webkit-linear-gradient(top, #d3d3d3, #888);
+	background-image: -o-linear-gradient(top, #d3d3d3, #888);
+	background-image: linear-gradient(top, #d3d3d3, #888);
+}
