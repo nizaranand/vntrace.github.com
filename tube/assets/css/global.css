@@ -717,3 +717,7 @@ ul,li{
 .box i {
     margin-right: 5px;
 }
+
+.pagination {
+	line-height: 18px !important;
+}
