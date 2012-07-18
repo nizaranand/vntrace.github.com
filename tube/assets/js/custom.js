@@ -7,7 +7,7 @@
 			$(this).toggleClass('focus');
 		});
 
-		$('.profile .thumbnail').hover(function(){
+		$('.thumbnail').hover(function(){
 
 			$(this).find('.overlay span').show();
 			$(this).find('img').css({'opacity': 0.1});

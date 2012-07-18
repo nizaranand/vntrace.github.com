@@ -52,7 +52,7 @@ ul,li{
 .bg-title h3{
 	padding-left:10px;
 }
-.bg-title,.profile .box {
+.bg-title,.thumbnails .box {
 	background-image: -ms-linear-gradient(top, #23242a, #17171b);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23242a), to(#17171b));
 	background-image: -webkit-linear-gradient(top, #23242a, #17171b);
@@ -308,12 +308,18 @@ border-bottom-color: #999;
 .btn-group.open .btn.dropdown-toggle {
 	background-color: #888;
 }
-/*---------- start profile -----------*/
-.profile .thumbnail {
+/*---------- start thumbnail -----------*/
+.thumbnail {
+	padding: 4px;
+	border: 1px solid #45484c;
+	background:#24262c;
 	position:relative;
-	overflow:hidden;
 }
-.profile .thumbnail .overlay {
+.caption h5{
+	color:#e17931;
+	margin-bottom:5px;
+}
+.thumbnails-style1 .overlay {
 	width:200px;
 	height:160px;
 	z-index:100;
@@ -321,7 +327,7 @@ border-bottom-color: #999;
 	top:10px;
 	left:10px;
 }
-.profile .thumbnail .overlay span {
+.thumbnails .overlay span {
 	background: url("../img/icons/zom.png") no-repeat;
 	position:absolute;
 	width:50px;
@@ -330,29 +336,50 @@ border-bottom-color: #999;
 	left:70px;
 	display:none;
 }
-.profile .thumbnail,.profile .view{
+.thumbnails-style1 .thumbnail,.thumbnails-style2 .thumbnail{
+	border:none;
 	border-bottom:1px solid #17171b;
-	background-color: #24262c;
 }
-.profile .thumbnail h5{
-	margin:0px 0px 15px 5px;
+.thumbnails-style1 h5{
+	margin:0px 0px 15px 7px;
 	width:200px;
 	overflow:hidden;
 	height:20px;
 }
-.profile .thumbnail img{
+.thumbnails-style1 img{
 	width:200px;
 	height:160px;
 	margin-top:5px;
 }
-.profile .box {
-	padding:5px 10px;
+.thumbnails-style1 .box,.thumbnails-style2 .box{
+	padding:10px 10px 3px;
 }
-.profile .number-view {
+.thumbnails-style1 .number-view {
 	border-left:1px solid #45484c;
 	color:#ccc;
 	font-size:11px;
 	padding-left:10px;
+}
+.thumbnails-style2 .thumbnail{
+	height:170px;
+}
+.thumbnails-style2 .thumbnail > img {
+	margin:5px;
+	float:left;
+}
+.thumbnails-style2 .thumbnail h5 {
+	margin:0px 0px 5px 0px;
+	width:150px;
+	overflow:hidden;
+	height:36px;
+}
+.thumbnails-style2 .thumbnail-content-left{
+	float:left;
+	margin-left:5px;
+	width:150px;
+	color:#ccc;
+	overflow:hidden;
+	height:170px;
 }
 .sort {
 	margin-top:15px;
@@ -362,24 +389,6 @@ border-bottom-color: #999;
 }
 .sort i{
 	margin-right:5px;
-}
-.profile-list .thumbnails .thumbnail > img {
-	margin:5px;
-	float:left;
-}
-.profile-list .thumbnails .thumbnail h5 {
-	margin:0px 0px 5px 0px;
-	width:150px;
-	overflow:hidden;
-	height:36px;
-}
-.profile-list .thumbnails .thumbnail-content-left{
-	float:left;
-	margin-left:5px;
-	width:150px;
-	color:#ccc;
-	overflow:hidden;
-	height:170px;
 }
 /*---------- start sidebar_content -----------*/
 .user_info{
@@ -662,7 +671,7 @@ border-bottom-color: #999;
 .box-message .text-message {
 	padding-left:10px;
 }
-.see-more{
+.view-more{
 	width:100%;
 	color:#8dd1ff;
 	border:1px solid #17171c;
@@ -675,7 +684,7 @@ border-bottom-color: #999;
 	background-image: -moz-linear-gradient(top, #24262c, #17171c);
 	background-image: linear-gradient(top, #24262c, #17171c);
 }
-.see-more:hover{
+.view-more:hover{
 	color:#08C;
 	border:1px solid #222;
     background-color: #131316;
@@ -867,15 +876,18 @@ code {
 	text-shadow:none;
 }
 .breadcrumb li a,.breadcrumb li.active span{
-	color:#22465e;
 	text-shadow:none;
 	margin:0px;
 	padding:10px 20px 9px 10px;
 	background:url('../img/icons/icon-muiten.png') right top no-repeat;
+	color:#0f5b8e;
 }
 .breadcrumb li a:hover,.breadcrumb li.active span{
 	background:url('../img/icons/icon-muiten-hv1.png') right top no-repeat;
 	text-decoration:none;
+	color:#0b7bc6;
+}
+.breadcrumb li.active span {
 	color:#333;
 }
 .breadcrumb{
