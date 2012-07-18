@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-	<title>index</title>
+	<title>setting</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="assets/css/global.css" />
@@ -38,12 +38,12 @@
             			</a>
             			<ul class="dropdown-menu">
 							<li>
-								<a href="account.html">
+								<a href="profile.html">
 									<i class="icon-user"></i>
 									Account Setting  </a>
 							</li>
 							<li>
-								<a href="account.html">
+								<a href="setting.html">
 									<i class="icon-lock"></i> Change Password</a>
 							</li>
 							<li class="divider"></li>
@@ -72,108 +72,56 @@
 					</div>
 				</div>
 			</div><!-- end sidebar_content -->
-			<div class="tabbable account span9">
-				<ul class="breadcrumb nav-tab">
-					<li class="active">
-						<a href="#tab1" data-toggle="tab">Profile</a>
+			<div class="span9">
+				<ul class="breadcrumb">
+					<li>
+						<a href="profile.html">Proflie</a>
 					</li>
-					<li><a href="#tab2" data-toggle="tab">Settings</a></li>
+					<li class="active">
+						<span>Settings</span>
+					</li>
 				</ul>
+				<div>
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input01">Account Username</label>
+								<div class="controls">
+									<input type="text" class="input-xlarge" id="input01">
+						      	</div>
+							</div>
 
-				<div class="tab-content">
-					<div class="tab-pane active" id="tab1">
-						<form class="form-horizontal">
-							<fieldset>
-								<div class="control-group">
-									<label class="control-label" for="input01">First Name</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="input01">
-							      	</div>
-								</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">Email Server</label>
+								<div class="controls">
+									<input type="text" class="input-xlarge" id="input01">
+						      	</div>
+							</div>
 
-								<div class="control-group">
-									<label class="control-label" for="input01">Last Name</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="input01">
-							      	</div>
-								</div>
+							<div class="control-group">
+								<label class="control-label" for="input01">Password</label>
+								<div class="controls">
+									<input type="text" class="input-xlarge" id="input01">
+						      	</div>
+							</div>
 
-								<div class="control-group">
-						            <label class="control-label" for="fileInput">Change avatar</label>
-						            <div class="controls">
-						              <input class="file" id="fileInput" type="file">
-						            </div>
-						          </div>
-
-								<div class="control-group">
-									<label class="control-label" for="input01">Email Address</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="email">
-							      	</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input01">Password</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="password">
-							      	</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="input01">Confirm</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="password">
-							      	</div>
-								</div>
-
-          						<div class="form-actions border-rd4">
-          							<button type="submit" class="btn btn-primary">Save changes</button>
-          							<button class="btn">Cancel</button>
-          						</div>
-      						</fieldset>
-						</form>
-					</div>
-					<!-- end content profile -->
-					<div class="tab-pane" id="tab2">
-						<form class="form-horizontal">
-							<fieldset>
-								<div class="control-group">
-									<label class="control-label" for="input01">Account Username</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="input01">
-							      	</div>
-								</div>
-
-								<div class="control-group">
-									<label class="control-label" for="input01">Email Server</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="input01">
-							      	</div>
-								</div>
-
-								<div class="control-group">
-									<label class="control-label" for="input01">Password</label>
-									<div class="controls">
-										<input type="text" class="input-xlarge" id="input01">
-							      	</div>
-								</div>
-
-								<div class="control-group">
-									<label class="control-label" for="input01">Advanced Settings</label>
-									<div class="controls">
-										<label class="checkbox">
-											<input type="checkbox" id="optionsCheckbox" value="option1">
-											Option one is this and that—be sure to include why it's great
-										</label>
-							      	</div>
-								</div>
-          						<div class="form-actions border-rd4">
-          							<button type="submit" class="btn btn-primary">Save changes</button>
-          							<button class="btn">Cancel</button>
-          						</div>
-      						</fieldset>
-						</form>
-					</div>
-					<!-- end content settings -->
+							<div class="control-group">
+								<label class="control-label" for="input01">Advanced Settings</label>
+								<div class="controls">
+									<label class="checkbox">
+										<input type="checkbox" id="optionsCheckbox" value="option1">
+										Option one is this and that—be sure to include why it's great
+									</label>
+						      	</div>
+							</div>
+      						<div class="form-actions border-rd4">
+      							<button type="submit" class="btn btn-primary">Save changes</button>
+      							<button class="btn">Cancel</button>
+      						</div>
+  						</fieldset>
+					</form>
 				</div>
+				<!-- end content settings -->
 			</div>
 		</div>
 	</div><!-- end container -->
