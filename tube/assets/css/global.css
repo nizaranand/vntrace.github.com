@@ -151,9 +151,15 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
 	border-left: 1px solid #18191c;
 	box-shadow: none;
 }
+.tabs-left > .nav-tabs > li:last-child > a, .tabs-right > .nav-tabs > li:last-child > a {
+margin-bottom: 0px;
+}
 .nav-pills {
 	border-bottom: none;
 	box-shadow: none;
+}
+.nav-stacked{
+	box-shadow:none;
 }
 .nav-tabs.nav-stacked > li > a {
 border: 1px solid #18191c;
@@ -351,10 +357,10 @@ border-bottom-color: #999;
 	height:160px;
 	margin-top:5px;
 }
-.thumbnails-style1 .box,.thumbnails-style2 .box{
+.thumbnails .box{
 	padding:10px 10px 3px;
 }
-.thumbnails-style1 .number-view {
+.thumbnails .number-view {
 	border-left:1px solid #45484c;
 	color:#ccc;
 	font-size:11px;
