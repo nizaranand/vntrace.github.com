@@ -10,10 +10,10 @@
 		$('.overlay').hover(function(){
 
 			$(this).children().show();
-			$(this).next().css({'opacity': 0.1});
+			$(this).parent().find('img').css({'opacity': 0.1});
 		},function(){
 			$(this).children().hide();
-			$(this).next().css({'opacity': 1});
+			$(this).parent().find('img').css({'opacity': 1});
 		});
 
 	});

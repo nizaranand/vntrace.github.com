@@ -4,7 +4,7 @@ body {
 }
 
 /************ Custom **************/
-a{
+a,.brand .cl-blue{
 	color:#8dd1ff;
 }
 a:hover {
@@ -17,6 +17,11 @@ p{
 }
 ul,li{
 	list-style-type:none;
+}
+.brand span{
+	color:#fff;
+	font-size:20px;
+	letter-spacing:3px;
 }
 .box-wrapper,.title {
 	border-bottom:1px solid #24262c;
@@ -49,6 +54,10 @@ ul,li{
 .title h3{
 	padding: 5px 0px 5px 0px;
 }
+.desc {
+	font-size:11px;
+}
+
 .bg-title h3{
 	padding-left:10px;
 }
@@ -452,9 +461,6 @@ border-bottom-color: #999;
 	background-color:#1d1f23;
 	padding:20px 0px;
 }
-.footer .logo-vt{
-	font-size:30px;
-}
 .footer .coppy_right{
 	margin-top:10px;
 	display:block;
@@ -606,6 +612,10 @@ border-bottom-color: #999;
 	float:left;
 	width:100%;
 }
+.widget .ct-img a {
+	text-align:center;
+	display:block;
+}
 .widget-content {
 	padding:10px;
 }
@@ -620,14 +630,17 @@ border-bottom-color: #999;
 }
 .widget-content p,.widget-content-pd p{
 	margin-bottom:20px;
-	text-align:justify;
+	text-align:justify;;
 }
 .widget-content p img,.widget-content-pd p img {
 	width:510px;
 	min-height:200px;
-	display:block;
 	padding:4px;
 	border:1px solid #555;
+}
+.widget-content-img p img {
+	width:670px;
+	min-height:200px;
 }
 /*
 #widget-grid .span1,#widget-grid .span2,#widget-grid .span3,#widget-grid .span4,#widget-grid .span5,#widget-grid .span6,#widget-grid .span7,#widget-grid .span8,#widget-grid .span9,#widget-grid .span10,#widget-grid .span11,#widget-grid .span12
