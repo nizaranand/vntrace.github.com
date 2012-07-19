@@ -7,13 +7,12 @@
 			$(this).toggleClass('focus');
 		});
 
-		$('.overlay').hover(function(){
-
-			$(this).children().show();
-			$(this).parent().find('img').css({'opacity': 0.1});
+		$('.bg-thumbnail-img').hover(function(){
+			$(this).find('.overlay').show();
+			$(this).find('.overlay').next().css({'opacity': 0.1});
 		},function(){
-			$(this).children().hide();
-			$(this).parent().find('img').css({'opacity': 1});
+			$(this).find('.overlay').hide();
+			$(this).find('.overlay').next().css({'opacity': 1});
 		});
 
 	});

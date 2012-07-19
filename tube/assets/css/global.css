@@ -72,7 +72,7 @@ ul,li{
 }
 .well {
 	background-color: #24262c;
-	border:none medium;
+	border:none;
 }
 .hero-unit {
 	background-color: #1f2227;
@@ -279,7 +279,7 @@ border-bottom-color: #999;
 	position:relative;
 }
 .wrapper-search {
-	padding:20px 100px 0px 100px;
+	padding:20px 100px 5px 100px;
 }
 .main .box-text{
 	background:#2b2d32 url("../img/icons/icon-search.png") 5px top no-repeat;
@@ -330,43 +330,42 @@ border-bottom-color: #999;
 	padding: 4px;
 	border: 1px solid #45484c;
 	background:#24262c;
-	position:relative;
 }
 .caption h5{
 	color:#e17931;
 	margin-bottom:5px;
 }
-.thumbnails .overlay {
+.thumbnails .bg-thumbnail-img {
 	width:200px;
 	height:160px;
-	z-index:100;
-	position:absolute;
-	top:10px;
-	left:10px;
+	text-align:center;
+	margin:5px 0px 10px 6px;
+	float:left;
+	position:relative;
 }
-.thumbnails .overlay span {
-	background: url("../img/icons/zom.png") no-repeat;
-	position:absolute;
-	width:50px;
-	height:50px;
-	top:50px;
-	left:70px;
+.thumbnails .overlay {
 	display:none;
 }
-.thumbnails-style1 .thumbnail,.thumbnails-style2 .thumbnail{
+.thumbnails .overlay img {
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:60px;
+	left:80px;
+}
+.thumbnails-horizontal .thumbnail,.thumbnails-vertical .thumbnail{
 	border:none;
 	border-bottom:1px solid #17171b;
 }
-.thumbnails-style1 h5{
-	margin:0px 0px 15px 7px;
+.thumbnails-horizontal h5{
+	margin-left:7px;
 	width:200px;
 	overflow:hidden;
 	height:20px;
 }
-.thumbnails-style1 img{
+.thumbnails-horizontal img{
 	width:200px;
 	height:160px;
-	margin-top:5px;
 }
 .thumbnails .box{
 	padding:10px 10px 3px;
@@ -377,22 +376,29 @@ border-bottom-color: #999;
 	font-size:11px;
 	padding-left:10px;
 }
-.thumbnails-style2 .thumbnail{
+.box  {
+	display:block;
+	height:25px;
+}
+.box i {
+    margin-right: 5px;
+}
+.thumbnails-vertical .thumbnail{
 	height:170px;
 }
-.thumbnails-style2 .thumbnail > img {
+.thumbnails-vertical .thumbnail > img {
 	margin:5px;
 	float:left;
 }
-.thumbnails-style2 .thumbnail h5 {
+.thumbnails-vertical .thumbnail h5 {
 	margin:0px 0px 5px 0px;
 	width:150px;
 	overflow:hidden;
 	height:36px;
 }
-.thumbnails-style2 .thumbnail-content-left{
+.thumbnails-vertical .thumbnail-content-left{
 	float:left;
-	margin-left:5px;
+	margin-left:10px;
 	width:150px;
 	color:#ccc;
 	overflow:hidden;
@@ -595,7 +601,7 @@ border-bottom-color: #999;
 	-o-border-radius:4px;
 	background:#24262c;
 	margin-bottom:20px;
-	float:left;
+	
 	width:100%;
 }
 .widget .ct-img a {
@@ -717,11 +723,6 @@ code {
 	background-color: #2e3136;
 	border: 1px solid #33363b;
 }
-.form-actions  {
-	background:#191a1d;
-	border:none;
-	padding:20px 0px;
-}
 /************* element **************/
 .text-element {
 	margin:0px;
@@ -736,6 +737,12 @@ code {
 .text-element li{
 	float:left;
 	margin-right:5px;
+}
+.form-actions  {
+	background:#191a1d;
+	border:none;
+	padding:20px 0px;
+	display:block;
 }
 .sandbox {
 	float:left;
@@ -885,9 +892,6 @@ code {
     border-top:4px solid #999;
 }
 
-.box i {
-    margin-right: 5px;
-}
 
 
 /*---------- element ----------*/
@@ -923,5 +927,22 @@ code {
 	background-image: -o-linear-gradient(top, #d3d3d3, #888);
 	background-image: linear-gradient(top, #d3d3d3, #888);
 }
+/*************************** fix error IE7 ************************************/
+.pagination {
+	* margin: 20px 0px;
+}
+.title  {
+	* float:none;
+	* display:block;
+}
+.plan-container {
+	* margin:0px 0.4%;
+}
+
+
+
+
+
+
 
 
