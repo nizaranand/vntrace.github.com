@@ -24,7 +24,7 @@ ul,li{
 	letter-spacing:3px;
 }
 .box-wrapper,.title {
-	border-bottom:1px solid #24262c;
+	border-bottom:1px solid #1e2024;
 	box-shadow:0px 1px 0px #45484c;
 	margin-bottom:20px;
 }
@@ -62,6 +62,7 @@ ul,li{
 	padding-left:10px;
 }
 .bg-title,.thumbnails .box {
+	background:#17171b;
 	background-image: -ms-linear-gradient(top, #23242a, #17171b);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23242a), to(#17171b));
 	background-image: -webkit-linear-gradient(top, #23242a, #17171b);
@@ -71,6 +72,7 @@ ul,li{
 }
 .well {
 	background-color: #24262c;
+	border:none medium;
 }
 .hero-unit {
 	background-color: #1f2227;
@@ -109,13 +111,13 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 .style-button .nav li{
 	float:left;
-	margin:0px 27px;
+	margin:0px 26px;
 }
 .style-button .nav li p{
 	float:none;
 }
 .nav-tabs {
-	border-bottom: 1px solid #24262c;
+	border-bottom: 1px solid #1e2024;
 	box-shadow: 0px 1px 0px #45484c;
 }
 .nav-tabs > li > a{
@@ -585,22 +587,6 @@ border-bottom-color: #999;
 .pager>li>a:hover {
 	background:#18191c;
 }
-/************* element **************/
-.text-element label span{
-	color:#DA4F49;
-	margin-left:7px;
-}
-.text-element {
-	margin:0px;
-	display:block;
-}
-.text-element .btn {
-	height:17px;
-}
-.text-element li{
-	float:left;
-	margin-right:5px;
-}
 /***************** widget *******************/
 .widget {
 	border-radius:4px;
@@ -658,7 +644,7 @@ border-bottom-color: #999;
 	float:left;
 	margin-bottom:20px;
 	padding-bottom:20px;
-	border-bottom:1px solid #24262c;
+	border-bottom:1px solid #1e2024;
 	box-shadow:0px 1px 0px #45484c;
 }
 .avatar-comment{
@@ -735,6 +721,25 @@ code {
 	background:#191a1d;
 	border:none;
 	padding:20px 0px;
+}
+/************* element **************/
+.text-element {
+	margin:0px;
+}
+.text-element label span{
+	color:#DA4F49;
+	margin-left:7px;
+}
+.text-element .btn {
+	height:17px;
+}
+.text-element li{
+	float:left;
+	margin-right:5px;
+}
+.sandbox {
+	float:left;
+	width:100%;
 }
 .sandbox .form-actions{
 	padding-left:50px;
