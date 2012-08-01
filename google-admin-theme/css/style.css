@@ -135,6 +135,10 @@ form{
 	right: -1px;
 }
 
+.m-fluid{
+	margin: 10px 0;
+}
+
 .m-widget{
 	border: 1px solid #E5E5E5;
 	border-radius: 4px;
