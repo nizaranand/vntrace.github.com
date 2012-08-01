@@ -181,7 +181,17 @@ form{
 
 .m-stats-val{
 	display: block;
-	font-size: 13pt;
+	font-size: 15pt;
+}
+/* M color set */
+.m-color-1{
+	color: #E5E5E5;
+}
+.m-color-2{
+	color: #555;
+}
+.m-color-3{
+	color: #08C;
 }
 
 .geo_chart{
