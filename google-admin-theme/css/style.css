@@ -4,6 +4,7 @@ form{
 
 .m-inner {
 	background: none;
+	background-image: none;
 	background-color: #F1F1F1 !important;
 	padding: 10px 0;
 	box-shadow: none;
@@ -47,6 +48,7 @@ form{
 
 .sidebar .nav {
 	margin-bottom: 0;
+	position: relative;
 }
 
 .sidebar .nav-tabs > li > a:hover,
@@ -173,15 +175,21 @@ form{
 }
 
 .m-stats-item{
-	padding: 10px;
+	padding: 15px;
 	background-color: #08C;
 	color: white;
 	text-decoration: none !important;
 }
 
+a.m-stats-item:hover{
+	text-decoration: none;
+	color: white;
+}
+
 .m-stats-val{
 	display: block;
-	font-size: 15pt;
+	font-size: 16pt;
+	font-weight: bold;
 }
 /* M color set */
 .m-color-1{
@@ -194,9 +202,73 @@ form{
 	color: #08C;
 }
 
+.m-color-4{
+	color: #5FD3B3;
+}
+
 .geo_chart{
 	padding: 15px;
 	height: 450px;
+}
+
+.m-sidebar-collapsed{
+	display: none;
+	position: fixed;
+	z-index: 9999;
+/*	left: 15px;
+	top: 38px;*/
+}
+
+.m-sidebar-collapsed ul > li > a{
+	background-color: white !important;
+	text-align: center;
+	color: #555;
+}
+
+.m-sidebar-collapsed ul > li > a:hover{
+	color: #08c;
+}
+
+.m-sidebar-collapsed ul > li > a:hover img{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+.m-sidebar-collapsed ul li img{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+}
+
+.m-sidebar-collapsed ul{
+	background-color: white;
+	border: 1px solid #E5E5E5;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.m-sidebar-collapsed .arrow-border{
+	border-color: transparent #969696 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height:0;
+	width:0;
+	position:absolute;
+	top: 30px;
+	left: -19px;
+}
+
+.m-sidebar-collapsed .arrow-inner{
+	border-color: transparent #FFF transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height:0;
+	width:0;
+	position:absolute;
+	top: -10px;
+	left: -10px;
 }
 
 @media (max-width: 768px) {

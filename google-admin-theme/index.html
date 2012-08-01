@@ -5,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<!--
 	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+	-->
 	<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 </head>
@@ -93,8 +95,9 @@
 					</div>
 				</a>
 			</li>
+
 			<li class="">
-				<a href="#responsive">
+				<a href="#" id="btn-more">
 					<div>
 						<div class="ico">
 							<img src="./img/ico/ico-more.png">
@@ -104,9 +107,50 @@
 						</div>
 					</div>
 				</a>
+
 			</li>
 	    </ul>
 	</aside>
+	<div class="m-sidebar-collapsed">
+		<ul class="nav nav-pills">
+			<li class="">
+				<a href="#gridSystem">
+					<div>
+						<div class="ico">
+							<img src="./img/ico/ico-cloud.png">
+						</div>
+						<div class="title">
+							Cloud
+						</div>
+					</div>
+					<div class="arrow">
+						<div class="bubble-arrow-border"></div>
+						<div class="bubble-arrow"></div>
+					</div>
+				</a>
+			</li>
+			<li class="">
+				<a href="#gridSystem">
+					<div>
+						<div class="ico">
+							<img src="./img/ico/ico-stats.png">
+						</div>
+						<div class="title">
+							Stats
+						</div>
+					</div>
+					<div class="arrow">
+						<div class="bubble-arrow-border"></div>
+						<div class="bubble-arrow"></div>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<div class="arrow-border">
+			<div class="arrow-inner"></div>
+		</div>
+	</div>
 	<div class="main-container">
 		<div class="container-fluid">
 			<section>
@@ -179,35 +223,25 @@
 
 						<div class="m-widget-body">
 							<div class="row-fluid">
-								<a href="#" class="span2 m-stats-item">
+								<a href="#" class="span3 m-stats-item">
 									<span class="m-stats-val">200+</span>
 									Orders
 								</a>
 
-								<a href="#" class="span2 m-stats-item">
+								<a href="#" class="span3 m-stats-item">
 									<span class="m-stats-val">50</span>
 									Pending orders
 								</a>
 
-								<a href="#" class="span2 m-stats-item">
+								<a href="#" class="span3 m-stats-item">
 									<span class="m-stats-val">100+</span>
 									Customers
 								</a href="#">
 
-								<a href="#" class="span2 m-stats-item">
+								<a href="#" class="span3 m-stats-item">
 									<span class="m-stats-val">1000</span>
 									Products
-								</a href="#">
-
-								<a href="#" class="span2 m-stats-item">
-									<span class="m-stats-val">500+</span>
-									Visits
-								</a href="#">
-
-								<a href="#" class="span2 m-stats-item">
-									<span class="m-stats-val">10</span>
-									Order report
-								</a href="#">						
+								</a href="#">			
 							</div>
 						</div>
 					</div>
@@ -248,95 +282,137 @@
 	</div>
 
 	<script type="text/javascript">
+		// Define maximum available item on side bar
+		var _windowInnerHeight = 0,
+			_currSideBarItems = 0;
+
+		function updateSideBar() {
+			_itemsCount = (_windowInnerHeight - 60) / 76;
+			_itemsCount = parseInt(_itemsCount, 10);
+
+			console.log(_itemsCount);
+		}
+
 		$(document).ready(function(){
-			$('.btn-chart').bind('click', function(){
-				$('#line-chart').empty();
-				drawLineChart($(this).attr('data'));
+			// $('.btn-chart').bind('click', function(){
+			// 	$('#line-chart').empty();
+			// 	drawLineChart($(this).attr('data'));
+			// });
+
+			$('#btn-more').bind('click', function(e){
+				e.preventDefault();
+
+				var _this = $(this);
+
+				if(_this.data('isShow') != undefined && _this.data('isShow')) {
+					_this.data({isShow: false});
+					$('.m-sidebar-collapsed').fadeToggle(); return false;
+				}
+
+				_this.data({isShow: true});
+
+				var _offset = $(this).offset();
+
+				$('.m-sidebar-collapsed').css({
+					'top': _offset.top + 'px',
+					'left': _offset.left + 90 + 'px'
+				}).fadeToggle();
+			});
+
+			// get window inner height
+			_windowInnerHeight = $(window).innerHeight();
+			_currSideBarItems = $('.sidebar .nav li').length;
+
+			$(window).bind('resize', function(){
+				// update window innerHeight
+				_windowInnerHeight = $(window).innerHeight();
+				updateSideBar();
+
 			});
 		});
 	</script>
 
 	<script type="text/javascript">
-		google.load('visualization', '1', {'packages': ['geochart', 'corechart']});
-	    google.setOnLoadCallback(drawChart);
+		// google.load('visualization', '1', {'packages': ['geochart', 'corechart']});
+	 //    google.setOnLoadCallback(drawChart);
 
-	    function drawChart() {
-	    	drawRegionsMap();
-	    	drawLineChart();
-	    }
+	 //    function drawChart() {
+	 //    	drawRegionsMap();
+	 //    	drawLineChart();
+	 //    }
 
-	    function drawRegionsMap() {
-	        var data = google.visualization.arrayToDataTable([
-	          ['Country', 'Popularity'],
-	          ['Germany', 200],
-	          ['United States', 300],
-	          ['Brazil', 400],
-	          ['Canada', 500],
-	          ['France', 600],
-	          ['RU', 700]
-	        ]);
+	 //    function drawRegionsMap() {
+	 //        var data = google.visualization.arrayToDataTable([
+	 //          ['Country', 'Popularity'],
+	 //          ['Germany', 200],
+	 //          ['United States', 300],
+	 //          ['Brazil', 400],
+	 //          ['Canada', 500],
+	 //          ['France', 600],
+	 //          ['RU', 700]
+	 //        ]);
 
-	        var options = {};
+	 //        var options = {};
 
-	        var chart = new google.visualization.GeoChart(document.getElementById('geo-chart'));
-	        chart.draw(data, options);
-	    };
+	 //        var chart = new google.visualization.GeoChart(document.getElementById('geo-chart'));
+	 //        chart.draw(data, options);
+	 //    };
 	    
-		function drawLineChart(chartType) {
+		// function drawLineChart(chartType) {
 
-			if(chartType == undefined) {
-				chartType = 'data1';
-			}
+		// 	if(chartType == undefined) {
+		// 		chartType = 'data1';
+		// 	}
 
-			var data = {
-				data1: [
-					['Year', 'Sales', 'Expenses'],
-					['2004',  1000,      400],
-					['2005',  1170,      460],
-					['2006',  660,       1120],
-					['2007',  1030,      540]
-				],
-				data2: [
-					['Year', 'Sales', 'Expenses'],
-					['2004',  1000,      400],
-					['2005',  2500,      300],
-					['2006',  800,       750],
-					['2007',  500,      200]
-				],
-				data3: [
-					['Year', 'Sales', 'Expenses'],
-					['2004',  1500,      459],
-					['2005',  560,      200],
-					['2006',  780,       560],
-					['2007',  1500,      2000]
-				]
-			};
+		// 	var data = {
+		// 		data1: [
+		// 			['Year', 'Sales', 'Expenses'],
+		// 			['2004',  1000,      400],
+		// 			['2005',  1170,      460],
+		// 			['2006',  660,       1120],
+		// 			['2007',  1030,      540]
+		// 		],
+		// 		data2: [
+		// 			['Year', 'Sales', 'Expenses'],
+		// 			['2004',  1000,      400],
+		// 			['2005',  2500,      300],
+		// 			['2006',  800,       750],
+		// 			['2007',  500,      200]
+		// 		],
+		// 		data3: [
+		// 			['Year', 'Sales', 'Expenses'],
+		// 			['2004',  1500,      459],
+		// 			['2005',  560,      200],
+		// 			['2006',  780,       560],
+		// 			['2007',  1500,      2000]
+		// 		]
+		// 	};
 
-			var options = {
-			  title: 'Company Performance'
-			};
+		// 	var options = {
+		// 	  title: 'Company Performance'
+		// 	};
 
-			var chart = new google.visualization.LineChart(document.getElementById('line-chart'));
+		// 	var chart = new google.visualization.LineChart(document.getElementById('line-chart'));
 
-			var chartData = [];
+		// 	var chartData = [];
 
-			switch(chartType)
-			{
-				case 'data1':
-					chartData = data.data1;
-					break;
-				case 'data2':
-					chartData = data.data2;
-					break;
-				case 'data3':
-					chartData = data.data3;
-					break;
-			}
-			if(google) {
-				chartData = google.visualization.arrayToDataTable(chartData);
-				chart.draw(chartData, options);
-			}
-		}
+		// 	switch(chartType)
+		// 	{
+		// 		case 'data1':
+		// 			chartData = data.data1;
+		// 			break;
+		// 		case 'data2':
+		// 			chartData = data.data2;
+		// 			break;
+		// 		case 'data3':
+		// 			chartData = data.data3;
+		// 			break;
+		// 	}
+		// 	if(google) {
+		// 		chartData = google.visualization.arrayToDataTable(chartData);
+		// 		chart.draw(chartData, options);
+		// 	}
+		// }
 	</script>
 </body>
 </html>
