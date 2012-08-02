@@ -311,7 +311,6 @@
 
 			// get window inner height
 			_windowInnerHeight = $(window).innerHeight();
-			_collapseSideBar = $('.m-sidebar-collapsed');
 
 			$(window).bind('resize', function(){
 				var _itemsCount = ($(window).innerHeight() - 60) / 76;
@@ -336,14 +335,13 @@
 					});
 				}
 
-
 				if(_currSideBarLength == _itemsCount) {
 					return false;
 				}
 
 				// update window innerHeight
 				if($(window).innerHeight() > _windowInnerHeight) {
-					pushSideBarItem(_currSideBarLength - _itemsCount);
+					pushSideBarItem(_itemsCount - _currSideBarLength);
 				} else {
 					popSideBarItem(_currSideBarLength - _itemsCount);
 				}
@@ -355,18 +353,20 @@
 
 				_currSideBar = $('.sidebar .nav li');
 
-				var _arrPopItems = [];
 				for(var i = _currSideBar.length - 2, iCount = 0; iCount < items; i--,iCount++){
-					_arrPopItems.push(_currSideBar[i]);
-					
-					_collapseSideBar.prepend(_currSideBar[i]);
-
+					$('.m-sidebar-collapsed').prepend(_currSideBar[i]);
 					$(_currSideBar[i]).remove();
 				}
 			}
 
 			function pushSideBarItem(items) {
+				_collapseSideBar = $('.m-sidebar-collapsed');
 
+				// Pop side bar item from sidebar collapse
+				for(var i = 0, iCount = 0; iCount < items; i++, iCount++) {
+					$('.btn-more').parents('li').prepend(_collapseSideBar[i]);
+					$(_collapseSideBar[i]).remove();
+				}
 			}
 		});
 	</script>
