@@ -113,38 +113,7 @@
 	</aside>
 	<div class="m-sidebar-collapsed">
 		<ul class="nav nav-pills">
-			<li class="">
-				<a href="#gridSystem">
-					<div>
-						<div class="ico">
-							<img src="./img/ico/ico-cloud.png">
-						</div>
-						<div class="title">
-							Cloud
-						</div>
-					</div>
-					<div class="arrow">
-						<div class="bubble-arrow-border"></div>
-						<div class="bubble-arrow"></div>
-					</div>
-				</a>
-			</li>
-			<li class="">
-				<a href="#gridSystem">
-					<div>
-						<div class="ico">
-							<img src="./img/ico/ico-stats.png">
-						</div>
-						<div class="title">
-							Stats
-						</div>
-					</div>
-					<div class="arrow">
-						<div class="bubble-arrow-border"></div>
-						<div class="bubble-arrow"></div>
-					</div>
-				</a>
-			</li>
+			
 		</ul>
 
 		<div class="arrow-border">
@@ -292,6 +261,10 @@
 
 				var _this = $(this);
 
+				if($('.m-sidebar-collapsed .nav li').length == 0) {
+					return false;
+				}
+
 				if(_this.data('isShow') != undefined && _this.data('isShow')) {
 					_this.data({isShow: false});
 					$('.m-sidebar-collapsed').fadeToggle(); return false;
@@ -301,10 +274,8 @@
 
 				var _offset = $(this).offset();
 
-				console.log(_offset);
-
 				$('.m-sidebar-collapsed').css({
-					'top': _offset.top - 76 + 'px',
+					'top': _offset.top + 'px',
 					'left': _offset.left + 90 + 'px'
 				}).fadeToggle();
 			});
@@ -312,41 +283,36 @@
 			// get window inner height
 			_windowInnerHeight = $(window).innerHeight();
 
-			$(window).bind('resize', function(){
+			$(window).bind('resize', function(e){
+
+				$('.m-sidebar-collapsed').hide();
+				$('#btn-more').data({isShow: false});
+
 				var _itemsCount = ($(window).innerHeight() - 60) / 76;
 					_itemsCount = parseInt(_itemsCount, 10);
 
-				_currSideBarLength = $('.sidebar .nav li').length;
+				// Get current sidebar length
+				var _currSideBarLength = $('.sidebar .nav li').length;
 
 				if(_itemsCount < 2 ) {
 					_itemsCount = 2;
-				} 
-
-				console.log(_itemsCount);
-
-				if(_itemsCount == 2) {
-					$('#btn-more').parents('li').css({
-						'position': 'initial'
-					});					
-				} else {
-					$('#btn-more').parents('li').css({
-						'position': 'absolute',
-						'bottom' : 0,
-					});
 				}
 
 				if(_currSideBarLength == _itemsCount) {
 					return false;
 				}
 
-				// update window innerHeight
-				if($(window).innerHeight() > _windowInnerHeight) {
-					pushSideBarItem(_itemsCount - _currSideBarLength);
-				} else {
+				if(_currSideBarLength > _itemsCount) {
+					// Pop out
 					popSideBarItem(_currSideBarLength - _itemsCount);
+				} else {
+					// Push in
+					pushSideBarItem(_itemsCount - _currSideBarLength);
 				}
 
-				_windowInnerHeight = $(window).innerHeight();
+				if(_currSideBarLength == _itemsCount) {
+					return false;
+				}
 			});
 
 			function popSideBarItem(items) {
@@ -354,18 +320,15 @@
 				_currSideBar = $('.sidebar .nav li');
 
 				for(var i = _currSideBar.length - 2, iCount = 0; iCount < items; i--,iCount++){
-					$('.m-sidebar-collapsed').prepend(_currSideBar[i]);
-					$(_currSideBar[i]).remove();
+					$('.m-sidebar-collapsed .nav').prepend(_currSideBar[i]);
 				}
 			}
 
 			function pushSideBarItem(items) {
-				_collapseSideBar = $('.m-sidebar-collapsed');
+				_collapseSideBar = $('.m-sidebar-collapsed .nav li');
 
-				// Pop side bar item from sidebar collapse
 				for(var i = 0, iCount = 0; iCount < items; i++, iCount++) {
-					$('.btn-more').parents('li').prepend(_collapseSideBar[i]);
-					$(_collapseSideBar[i]).remove();
+					$('#btn-more').parents('li').before(_collapseSideBar[i]);
 				}
 			}
 		});
