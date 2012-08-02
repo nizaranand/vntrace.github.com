@@ -1,3 +1,7 @@
+body{
+	background-color: #F1F1F1;	
+}
+
 form{
 	margin: 0;
 }
@@ -103,6 +107,7 @@ form{
 }
 
 .main-container{
+	background-color: white;
 	margin-left: 100px;
 	border-top: 1px solid #E5E5E5;
 	border-left: 1px solid #E5E5E5;
@@ -179,6 +184,7 @@ form{
 
 .m-stats-item{
 	padding: 15px;
+	margin-top: 5px;
 	background-color: #08C;
 	color: white;
 	text-decoration: none !important;
@@ -302,6 +308,7 @@ a.m-stats-item:hover{
 
 	.sidebar{
 		top: 50px;
+		position: initial;
 	}
 
 	.navbar-fixed-top{
