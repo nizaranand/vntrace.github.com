@@ -267,17 +267,17 @@
 
 				if(_this.data('isShow') != undefined && _this.data('isShow')) {
 					_this.data({isShow: false});
-					$('.m-sidebar-collapsed').fadeToggle(); return false;
+					$('.m-sidebar-collapsed').fadeOut(); return false;
 				}
 
 				_this.data({isShow: true});
 
-				var _offset = $(this).offset();
+				var _offset = $(this).find('img').offset();
 
 				$('.m-sidebar-collapsed').css({
-					'top': _offset.top + 'px',
-					'left': _offset.left + 90 + 'px'
-				}).fadeToggle();
+					'top': _offset.top - 15 + 'px',
+					'left': _offset.left + 60 + 'px'
+				}).fadeIn();
 			});
 
 			// get window inner height
@@ -285,7 +285,7 @@
 
 			$(window).bind('resize', function(e){
 
-				$('.m-sidebar-collapsed').hide();
+				$('.m-sidebar-collapsed').fadeOut();
 				$('#btn-more').data({isShow: false});
 
 				var _itemsCount = ($(window).innerHeight() - 60) / 76;

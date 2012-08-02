@@ -3,7 +3,6 @@ form{
 }
 
 .m-inner {
-	background: none;
 	background-image: none;
 	background-color: #F1F1F1 !important;
 	padding: 10px 0;
@@ -278,10 +277,21 @@ a.m-stats-item:hover{
 @media (max-width: 768px) {
 	.sidebar {
 		width: 100%;
+		position: initial;
+		margin-left: -20px;
+		padding-right: 40px;
 	}
 
 	.m-top{
 		display: none;
+	}
+
+	.sidebar .nav-tabs > li.active .arrow{
+		display: none !important;
+	}
+
+	.main-container{
+		margin-left: 0;
 	}
 }
 
@@ -289,6 +299,10 @@ a.m-stats-item:hover{
 	.m-top{
 		display: none;
 	}	
+
+	.sidebar{
+		top: 50px;
+	}
 
 	.navbar-fixed-top{
 		margin-bottom: 0;
