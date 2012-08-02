@@ -51,6 +51,10 @@ form{
 	position: relative;
 }
 
+.sidebar .nav li{
+	width: 100%;
+}
+
 .sidebar .nav-tabs > li > a:hover,
 .sidebar .nav-tabs > li.active > a{
 	background: none;
