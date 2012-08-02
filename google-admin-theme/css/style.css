@@ -280,6 +280,13 @@ a.m-stats-item:hover{
 	left: -10px;
 }
 
+.m-badge-notification{
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	z-index: 1000;
+}
+
 @media (max-width: 768px) {
 	.sidebar {
 		width: 100%;
