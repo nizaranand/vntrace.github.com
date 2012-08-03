@@ -34,6 +34,11 @@ $(document).ready(function(){
 
 		$('.m-sidebar-collapsed').fadeOut();
 		$('#btn-more').data({isShow: false});
+		
+		if($(window).innerWidth() <= 768) {
+			pushSideBarItem($('.m-sidebar-collapsed .nav li').length);
+			return false;
+		}
 
 		var _itemsCount = ($(window).innerHeight() - 60) / 76;
 			_itemsCount = parseInt(_itemsCount, 10);
@@ -48,6 +53,7 @@ $(document).ready(function(){
 		if(_currSideBarLength == _itemsCount) {
 			return false;
 		}
+
 
 		if(_currSideBarLength > _itemsCount) {
 			// Pop out
