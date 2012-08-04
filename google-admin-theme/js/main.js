@@ -9,6 +9,12 @@ $(document).ready(function(){
 		show: false
 	});
 
+	$('#btn-more').hide();
+
+	$('.btn').button();
+
+	$('.bar').tooltip('show')
+
 	$('#btn-more').bind('click', function(e){
 		e.preventDefault();
 
@@ -28,7 +34,7 @@ $(document).ready(function(){
 		var _offset = $(this).find('img').offset();
 
 		$('.m-sidebar-collapsed').css({
-			'top': _offset.top - 15 + 'px',
+			'top': _offset.top - 15 - window.scrollY + 'px',
 			'left': _offset.left + 60 + 'px'
 		}).fadeIn();
 	});
@@ -69,10 +75,12 @@ $(document).ready(function(){
 			pushSideBarItem(_itemsCount - _currSideBarLength);
 		}
 
+		$('#btn-more').toggle($('.m-sidebar-collapsed .nav li').length > 0);
+
 		if(_currSideBarLength == _itemsCount) {
 			return false;
 		}
-	});
+	}).trigger('resize');
 
 	function popSideBarItem(items) {
 

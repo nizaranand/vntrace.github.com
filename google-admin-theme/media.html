@@ -45,8 +45,8 @@
 	<div class="m-top"></div>
 	<aside class="sidebar">
 		<ul class="nav nav-tabs nav-stacked">
-			<li class="">
-				<a href="#global">
+			<li>
+				<a href="index.html">
 					<div>
 						<div class="ico">
 							<img src="./img/ico/ico-home.png">
@@ -63,8 +63,8 @@
 				</a>
 			</li>
 
-			<li class="active">
-				<a href="#global">
+			<li class="">
+				<a href="notification.html">
 					<span class="badge badge-important m-badge-notification">6</span>
 					<div>
 						<div class="ico">
@@ -82,8 +82,8 @@
 				</a>
 			</li>
 
-			<li class="">
-				<a href="#gridSystem">
+			<li class="active">
+				<a href="form.html">
 					<div>
 						<div class="ico">
 							<img src="./img/ico/ico-setting.gif">
@@ -100,7 +100,7 @@
 			</li>
 
 			<li class="">
-				<a href="#gridSystem">
+				<a href="order.html">
 					<div>
 						<div class="ico">
 							<img src="./img/ico/ico-order.gif">
@@ -134,7 +134,7 @@
 			</li>
 
 			<li class="">
-				<a href="#gridSystem">
+				<a href="help.html">
 					<div>
 						<div class="ico">
 							<img src="./img/ico/ico-help.gif">
@@ -185,7 +185,7 @@
 					<div class="span8">
 						<div class="btn-group" data-toggle="buttons-radio">
 		                    <button class="btn">All</button>
-		                    <button class="btn">File</button>
+		                    <button class="btn">Video</button>
 		                    <button class="btn active">Image</button>
 		                </div>
 					</div>
@@ -198,7 +198,7 @@
 						  	</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a data-toggle="modal" href="#myModal"><i class="icon-file"></i>File</a>
+									<a data-toggle="modal" href="#myModal"><i class="icon-file"></i>Video</a>
 								</li>
 								<li>
 									<a data-toggle="modal" href="#myModal">
@@ -288,9 +288,54 @@
 				    	<h3>Upload Modal</h3>
 					</div>
 					<div class="modal-body">
-				    	<form class="form-vertical">
-				    		
+				    	<form class="form-horizontal">
+				    		<div class="m-upload-add well">
+				    			<a href="#">
+				    				<img src="./img/ico/ico-add.gif">
+				    				Choose your file
+				    			</a>
+				    		</div>
 				    	</form>
+
+				    	<div class="m-upload-list">
+				    		<table class="table table-striped table-condensed">
+				    			<tbody>
+				    				<tr>
+				    					<td>the-smashing-book-3-redesign-the-web.epub</td>
+				    					<td>
+				    						<a href="#" class="btn"><i class="icon-trash"></i></a>
+				    					</td>
+				    				</tr>
+
+				    				<tr>
+				    					<td>the-smashing-book-3-redesign-the-web.epub</td>
+				    					<td>
+				    						<a href="#" class="btn"><i class="icon-trash"></i></a>
+				    					</td>
+				    				</tr>
+
+				    				<tr>
+				    					<td>the-smashing-book-3-redesign-the-web.epub</td>
+				    					<td>
+				    						<a href="#" class="btn"><i class="icon-trash"></i></a>
+				    					</td>
+				    				</tr>
+
+				    				<tr>
+				    					<td>
+				    						<div class="m-progress progress progress-striped active">
+											  <div class="bar"
+											       style="width: 40%;"
+											       title="uploading ..."></div>
+											</div>
+				    					</td>
+				    					<td>
+				    						<a href="#" class="btn"><i class="icon-trash"></i></a>
+				    					</td>
+				    				</tr>
+				    			</tbody>
+				    		</table>
+				    	</div>
 				 	</div>
 				 	<div class="modal-footer">
 						<a href="#" class="btn" data-dismiss="modal">Close</a>
