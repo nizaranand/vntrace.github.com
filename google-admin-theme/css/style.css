@@ -294,7 +294,7 @@ a.m-stats-item:hover{
 @media (max-width: 768px) {
 	.sidebar {
 		width: 100%;
-		position: initial;
+		position: initial !important;
 		margin-left: -20px;
 		padding-right: 40px;
 	}
@@ -319,7 +319,7 @@ a.m-stats-item:hover{
 
 	.sidebar{
 		top: 50px;
-		position: initial;
+		position: fixed;
 	}
 
 	.navbar-fixed-top{

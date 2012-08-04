@@ -3,6 +3,12 @@ var _windowInnerHeight = 0,
 	_currSideBarItems = 0;
 
 $(document).ready(function(){
+
+	// Init upload modal
+	$('#myModal').modal({
+		show: false
+	});
+
 	$('#btn-more').bind('click', function(e){
 		e.preventDefault();
 
