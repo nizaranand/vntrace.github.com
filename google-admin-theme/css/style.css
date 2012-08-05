@@ -324,6 +324,25 @@ a.m-stats-item:hover{
 	margin-bottom: 0px;
 }
 
+.m-media-container li{
+	position: relative;
+}
+
+.m-media-container li:hover .m-media-action{
+	display: block;	
+}
+
+.m-media-action{
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #E5E5E5;
+	padding: 5px 0px;
+}
+
 @media (max-width: 768px) {
 	.sidebar {
 		width: 100%;
