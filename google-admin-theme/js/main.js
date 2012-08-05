@@ -9,12 +9,16 @@ $(document).ready(function(){
 		show: false
 	});
 
+	// Auto hide more button if sidebar is not full
 	$('#btn-more').hide();
 
+	// Apply bootstrap button plugin
 	$('.btn').button();
 
+	// Apply bootstrap tooltip plugin
 	$('.bar').tooltip('show')
 
+	// Handle view more button for left sidebar
 	$('#btn-more').bind('click', function(e){
 		e.preventDefault();
 

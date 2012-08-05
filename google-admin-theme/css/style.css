@@ -347,6 +347,8 @@ a.m-stats-item:hover{
 		position: initial !important;
 		margin-left: -20px;
 		padding-right: 40px;
+		height: 100%;
+		overflow: auto;
 	}
 
 	.m-top{
