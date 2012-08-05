@@ -10,7 +10,7 @@ select{
 	width: auto;
 }
 
-.m-inner {
+.m-inner{
 	background-image: none;
 	background-color: #F1F1F1 !important;
 	padding: 10px 0;
@@ -19,16 +19,16 @@ select{
 	-moz-box-shadow: none;
 }
 
-.m-inner .nav > li > a {
+.m-inner .nav > li > a{
 	color: #555;
 }
 
-.m-inner .nav .active > a, .m-inner .nav .active > a:hover {
+.m-inner .nav .active > a, .m-inner .nav .active > a:hover{
 	color: white;
 	background-color: #08c;
 }
 
-.m-inner .nav > li > a:hover {
+.m-inner .nav > li > a:hover{
 	color: #08c;
 	text-decoration: none;
 	/*background-color: #08c;*/
@@ -38,7 +38,7 @@ select{
 	height: 60px;
 }
 
-.m-search {
+.m-search{
 	padding: 5px;
 }
 
@@ -53,7 +53,7 @@ select{
 	border-right: 1px solid #E5E5E5;
 }
 
-.sidebar .nav {
+.sidebar .nav{
 	margin-bottom: 0;
 	position: relative;
 }
@@ -68,7 +68,7 @@ select{
 	color: #08C !important;
 }
 
-.sidebar .nav-tabs > li.active .arrow {
+.sidebar .nav-tabs > li.active .arrow{
 	display: block !important;
 }
 
@@ -98,7 +98,7 @@ select{
 	filter:alpha(opacity=5);
 }
 
-.sidebar .nav-tabs.nav-stacked > li:first-child > a {
+.sidebar .nav-tabs.nav-stacked > li:first-child > a{
 	border-radius: 0 !important;
 	-webkit-border-radius: none !important;
 	-moz-border-radius: none !important;	
@@ -126,14 +126,14 @@ select{
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	*border: 1px solid #999;
 	-webkit-border-radius: 6px;
-	 -moz-border-radius: 6px;
-	      border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-	 -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-	      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 	-webkit-background-clip: padding-box;
-	 -moz-background-clip: padding-box;
-	      background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
 }
 
 .m-brand {
@@ -247,8 +247,6 @@ a.m-stats-item:hover{
 	display: none;
 	position: fixed;
 	z-index: 9999;
-/*	left: 15px;
-	top: 38px;*/
 }
 
 .m-sidebar-collapsed ul > li > a{
