@@ -39,7 +39,8 @@ select{
 }
 
 .m-search{
-	padding: 5px;
+	padding: 5px 5px 5px 0px;
+	margin-left: 0px;
 }
 
 .sidebar{
@@ -355,6 +356,10 @@ a.m-stats-item:hover{
 		display: none;
 	}
 
+	.m-search{
+		margin-left: 100px;
+	}
+
 	.sidebar .nav-tabs > li.active .arrow{
 		display: none !important;
 	}
@@ -375,7 +380,13 @@ a.m-stats-item:hover{
 
 	.sidebar{
 		top: 50px;
-		position: fixed;
+		position: initial;
+	}
+
+	.navbar .brand {
+		padding-right: 10px;
+		padding-left: 10px;
+		margin: 0 0 0 -25px;
 	}
 
 	.navbar-fixed-top{
@@ -384,5 +395,13 @@ a.m-stats-item:hover{
 
 	.m-login-container{
 		padding: 20px;
+	}
+	.nav-collapse .nav > li > a:hover,
+	.nav-collapse .dropdown-menu a:hover {
+		background-color: #08c;
+	}
+
+	.nav-collapse .dropdown-menu a > i{
+		margin-right: 5px;
 	}
 }

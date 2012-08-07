@@ -1,0 +1,35 @@
+body{
+	background-color: #EEE;
+}
+
+.m-navbar-inner{
+	background: none;
+	box-shadow: none;
+	margin-top: 15px;
+}
+
+.m-navigation{
+	background-color: #08c;
+	padding: 5px;
+	border-bottom: 3px solid #FFF;
+}
+
+.m-navigation .nav > li > a{
+	padding: 0 10px !important;
+	margin: 0 !important;
+}
+
+.m-icon{
+	/*background: url(../img/glyphicons.png) no-repeat scroll left top transparent;*/
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+}
+
+.m-icon-fire{
+	background: url(../img/icon/icon-up.gif) no-repeat left top transparent;
+}
+
+.m-icon-refresh{
+	background: url(../img/icon/icon-refresh.gif) no-repeat left top transparent;
+}
