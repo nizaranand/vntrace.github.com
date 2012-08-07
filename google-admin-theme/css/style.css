@@ -342,8 +342,8 @@ a.m-stats-item:hover{
 	padding: 5px 0px;
 }
 
-@media (max-width: 768px) {
-	.sidebar {
+@media (max-width: 768px){
+	.sidebar{
 		width: 100%;
 		position: initial !important;
 		margin-left: -20px;
@@ -397,6 +397,7 @@ a.m-stats-item:hover{
 	.m-login-container{
 		padding: 20px;
 	}
+
 	.nav-collapse .nav > li > a:hover,
 	.nav-collapse .dropdown-menu a:hover {
 		background-color: #08c;
