@@ -366,6 +366,7 @@ a.m-stats-item:hover{
 
 	.main-container{
 		margin-left: 0;
+		padding: 10px;
 	}
 
 	.m-login-container{
@@ -380,7 +381,7 @@ a.m-stats-item:hover{
 
 	.sidebar{
 		top: 50px;
-		position: initial;
+		/*position: initial;*/
 	}
 
 	.navbar .brand {
@@ -403,5 +404,10 @@ a.m-stats-item:hover{
 
 	.nav-collapse .dropdown-menu a > i{
 		margin-right: 5px;
+	}
+
+	.nav-collapse.in{
+		background-color: #F1F1F1;
+		z-index: 9000;
 	}
 }
