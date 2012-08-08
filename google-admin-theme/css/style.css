@@ -342,6 +342,31 @@ a.m-stats-item:hover{
 	padding: 5px 0px;
 }
 
+/*Icon set*/
+.the-icons {
+	margin-left: 0;
+	list-style: none;
+}
+
+.m-icon {
+	background: url(../img/glyphicons.png) no-repeat left top transparent;
+	height: 45px;
+	width: 45px;
+	display: block;
+}
+
+.m-icon.up {
+	background-position: -40px -950px;
+}
+
+.m-icon.refresh {
+	background-position: -85px -375px;
+}
+
+.m-icon.shuffle {
+	background-position: -135px -375px;	
+}
+
 @media (max-width: 768px){
 	.sidebar{
 		width: 100%;

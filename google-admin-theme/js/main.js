@@ -1,6 +1,5 @@
 // Define maximum available item on side bar
-var _windowInnerHeight = 0,
-	_currSideBarItems = 0;
+var _windowInnerHeight = 0;
 
 $(document).ready(function(){
 
@@ -46,10 +45,18 @@ $(document).ready(function(){
 	// get window inner height
 	_windowInnerHeight = $(window).innerHeight();
 
+	// Try to update main container height with available browser height
+	if($('.main-container').outerHeight() < _windowInnerHeight - 65) {
+		$('.main-container').css({
+			height: _windowInnerHeight - 65
+		});
+	}
+
 	$(window).bind('resize', function(e){
 
 		$('.m-sidebar-collapsed').fadeOut();
 		$('#btn-more').data({isShow: false});
+
 		
 		if($(window).innerWidth() <= 768) {
 			pushSideBarItem($('.m-sidebar-collapsed .nav li').length);
