@@ -1,5 +1,6 @@
 // Define maximum available item on side bar
 var _windowInnerHeight = 0;
+var _mainContainerHeight = 0;
 
 $(document).ready(function(){
 
@@ -44,15 +45,25 @@ $(document).ready(function(){
 
 	// get window inner height
 	_windowInnerHeight = $(window).innerHeight();
+	// get init main container height
+	_mainContainerHeight = $('.main-container').innerHeight();
 
-	// Try to update main container height with available browser height
-	if($('.main-container').outerHeight() < _windowInnerHeight - 65) {
-		$('.main-container').css({
-			height: _windowInnerHeight - 65
-		});
+	function updateMainContainerHeight() {
+		// Try to update main container height with available browser height
+		if($('.sidebar').innerHeight() > _mainContainerHeight) {
+			$('.main-container').css({
+				height: $('.sidebar').innerHeight()
+			});
+		} else {
+			$('.main-container').css({
+				height: 'auto'
+			});
+		}
 	}
 
 	$(window).bind('resize', function(e){
+
+		updateMainContainerHeight();
 
 		$('.m-sidebar-collapsed').fadeOut();
 		$('#btn-more').data({isShow: false});
