@@ -355,8 +355,12 @@ a.m-stats-item:hover{
 	display: block;
 }
 
-.m-icon.up {
+.m-icon.upload {
 	background-position: -40px -950px;
+}
+
+.m-icon.download {
+	background-position: 8px -950px;
 }
 
 .m-icon.refresh {
@@ -365,6 +369,10 @@ a.m-stats-item:hover{
 
 .m-icon.shuffle {
 	background-position: -135px -375px;	
+}
+
+.m-icon.shopping-cart {
+	background-position: -90px -950px;
 }
 
 @media (max-width: 768px){
