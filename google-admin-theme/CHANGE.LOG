@@ -6,3 +6,6 @@
 	Update some stylesheet make template better
 ** Version 1.2
 	Fixed main container height with available browser height (Update main.js)
+** Version 1.3
+	Specific height for a container which has data loading dynamic (lazy loading)
+	Now we use js to treat main container height fixed it with available browser height

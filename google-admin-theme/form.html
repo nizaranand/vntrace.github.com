@@ -451,7 +451,13 @@
 					<h1>Icons <small>Graciously provided by <a href="http://glyphicons.com" target="_blank">Glyphicons</a></small></h1>
 				</div>
 				<div class="row">
-					<div class="span12">
+					<div class="span4">
+				      <h3>Built as a sprite</h3>
+				      <p>Instead of making every icon an extra request, we've compiled them into a sprite—a bunch of images in one file that uses CSS to position the images with <code>background-position</code>. This is the same method we use on Twitter.com and it has worked well for us.</p>
+				      <p>All icons classes are prefixed with <code>.icon-</code> for proper namespacing and scoping, much like our other components. This will help avoid conflicts with other tools.</p>
+				      <p><a href="http://glyphicons.com" target="_blank">Glyphicons</a> has granted us use of the Halflings set in our open-source toolkit so long as we provide a link and credit here in the docs. Please consider doing the same in your projects.</p>
+				    </div>
+					<div class="span8">
 				      <h3>How to use</h3>
 				      <p>Bootstrap uses an <code>&lt;i&gt;</code> tag for all icons, but they have no case class—only a shared prefix. To use, place the following code just about anywhere:</p>
 				<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
@@ -624,19 +630,6 @@
 				    </div>
 				  </div>
 			</section>
-
-			<section id="large-icon">
-				<div class="row">
-					<div class="span3">
-						<ul class="the-icons">
-							<li><i class="m-icon upload"></i></li>
-							<li><i class="m-icon download"></i></li>
-							<li><i class="m-icon shopping-cart"></i></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
 		</div>
 	</div>
 </body>
