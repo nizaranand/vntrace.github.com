@@ -1,51 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>CLGT - Kimochi</title>
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<meta charset="utf-8">
+	<title>kimochi</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<!--[if IE]>
+	<link href="assets/css/style-ie.css" type="text/css" rel="stylesheet">
+	<![endif]-->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner m-navbar-inner">
-			<div class="m-line-header"></div>
-			<div class="container">
-				<div class="row">
-					<div class="span2">&nbsp;</div>
-					<div class="span8 m-top-bar">
-						<ul class="m-navigation">
-							<li>
-								<a href="#">
-									<i class="m-icon up"></i>
-									Up
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<i class="m-icon refresh"></i>
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<i class="m-icon shuffle"></i>
-								</a>
-							</li>
-
-							<li class="divider"></li>
-
-						</ul>
-						<form class="m-search span5">
-							<input type="text" placeholder="Search your stuff">
+<div class="header">
+	<div class="header-line"></div>
+	<div class="container">
+		<div class="row">
+			<div class="header-box offset2 span8">
+				<div class="header-left pull-left"><img src="assets/img/bg-header-left.png"></div>
+				<div class="header-content pull-left">
+					<a href="#" class="active"><i class="ic-upload"></i></a>
+					<a href="#"><i class="ic-retweet"></i></a>
+					<a href="#"><i class="ic-random"></i></a>
+					<span class="dash"></span>
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <div class="nav-collapse collapse">
+						<form class="form-inline span5">
+							<input type="text">
 						</form>
-					</div>
-					<div class="span2"></div>	
-				</div><!-- /row -->
+			        </div>
+				</div>
+				<div class="header-right pull-left"><img src="assets/img/bg-header-right.png"></div>
 			</div>
 		</div>
 	</div>
+</div><!-- /header -->
+<div class="social">
+	<a href="#" class="facebook"><i class="ic-facebook"></i></a>
+	<a href="#" class="twitter"><i class="ic-twitter"></i></a>
+	<a href="#" class="google-add"><i class="ic-google-add"></i></a>
+	<a href="#" class="flickr"><i class="ic-flickr"></i></a>
+	<a href="#" class="like active"><i class="ic-like"></i></a>
+	<a href="#" class="number-like">
+		<i class="i-arrow-up"></i>
+		12,543
+	</a>
+	<a href="#" class="dislike"><i class="ic-dislike"></i></a>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="main-content row">
+			<div class="box-img offset3 span6">
+				<a href="#"><img src="assets/img/project/pj-big-1.jpg"></a>
+			</div><!-- /box-img -->
+
+			<!-- <div class="box-show offset1 span10">
+				<div class="box-show-header">
+					<h3>Name images</h3>
+					<a href="#"><i class="i-resize-full"></i></a>
+				</div>
+				<div class="box-show-content">
+					<a class="prev active" href="#"><i class="ic-prev"></i></a>
+					<img src="assets/img/project/123.jpg">
+					<a class="next" href="#"><i class="ic-next"></i></a>
+				</div>
+			</div> --><!-- /box-show -->
+
+			<div class="box-img offset3 span6">
+				<a href="#"><img src="assets/img/project/pj-big-3.jpg"></a>
+			</div><!-- /box-img -->
+			<div class="box-img offset3 span6">
+				<a href="#"><img src="assets/img/project/pj-big-4.jpg"></a>
+			</div><!-- /box-img -->
+			<div class="box-img offset3 span6">
+				<a href="#"><img src="assets/img/project/pj-big-1.jpg"></a>
+			</div><!-- /box-img -->
+		</div>
+	</div>
+</div>
 </body>
 </html>

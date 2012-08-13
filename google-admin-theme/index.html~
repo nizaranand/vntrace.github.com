@@ -11,8 +11,11 @@
 	
 	<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-
+<<<<<<< HEAD
+	
+=======
 	<script type="text/javascript" src="./js/main.js"></script>
+>>>>>>> 1941c4bb51cea04159b608668fc76f4e281c0ab2
 	<script type="text/javascript" src="./js/chart.js"></script>
 
 	<!--[if lt IE 9]>

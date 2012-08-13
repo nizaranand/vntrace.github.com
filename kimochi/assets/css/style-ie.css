@@ -1,0 +1,6 @@
+.header-content {
+  height:48px;
+  display:block;
+  width:100%;
+  background: url('../img/bg-header-repeat.jpg') repeat-x;
+}
