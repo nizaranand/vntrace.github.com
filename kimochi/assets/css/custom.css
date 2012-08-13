@@ -22,7 +22,7 @@ li {
 /***********************************/
 .header {
   z-index:100;
-  position:fixed;
+  position:absolute;
   width:100% ;
 }
 .header-line {
@@ -43,11 +43,14 @@ li {
   height:48px;
   display:block;
   width:100%;
+  background:url('../img/bg-header-repeat.jpg') repeat-x;
+  /*
+  background:#e1e1e1;
   background-image: -ms-linear-gradient(top, #ebebeb, #dfdfdf);
   background-image: -webkit-linear-gradient(top, #ebebeb, #dfdfdf);
   background-image: -o-linear-gradient(top, #ebebeb, #dfdfdf);
   background-image: linear-gradient(top, #ebebeb, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #ebebeb, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #ebebeb, #dfdfdf);*/
 }
 .header-content a {
   float:left;
@@ -67,7 +70,7 @@ li {
   padding-top:10px;
 }
 .header-content form input{
-  width:100%;
+  width:88%;
   background:#fff url('../img/icons/i-search.png') 5px 3px no-repeat;
   padding-left:30px;
   border-radius:12px;
@@ -107,6 +110,12 @@ li {
   line-height:2.2em;
   margin-top:6px;
 }
+.i-arrow-up{
+  background:url('../img/icons/i-arrow-up.png') left top no-repeat;
+  height:6px;
+  width:6px;
+  display:block;
+}
 .social .number-like .i-arrow-up{
   background:url('../img/icons/i-arrow-up.png') left top no-repeat;
   height:6px;
@@ -125,88 +134,104 @@ li {
 /************** main *************/
 /***********************************/
 .main-content {
-  margin-top: 60px;
+  margin-top:75px;
   text-align:center;
 }
 .main-content .box-img{
   margin-bottom:20px;
   text-align:center;
-  overflow:hidden;
-  height:200px;
+  /*overflow:hidden;
+  height:300px;*/
   border-radius:4px;
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
   -o-border-radius:4px;
   background:#fff;
-  border-top:10px solid #fff;
   border-bottom:10px solid #fff;
-  /*opacity:0.5;*/
-  filter: alpha(opacity = 50);
 }
-/***********************************/
-/************** box-show *************/
-/***********************************/
 .main-content .box-show {
+  height:auto;
   text-align:center;
-  border:none;
-  border-bottom:5px solid #fff;
   margin-bottom:20px;
   border-radius:4px;
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
   -o-border-radius:4px;
 }
-.box-show-header {
-  height:25px;
+.box-img-header {
   position:relative;
   text-align:left;
-  padding:10px 0px 0px 10px;
+  padding:5px 0px 5px 10px;
   color:#555;
   border-radius:4px 4px 0px 0px;
   -moz-border-radius:4px 4px 0px 0px;
   -webkit-border-radius:4px 4px 0px 0px;
   -o-border-radius:4px 4px 0px 0px;
+  background:#dfdfdf;
   background-image: -ms-linear-gradient(top, #f5f5f5, #dfdfdf);
   background-image: -webkit-linear-gradient(top, #f5f5f5, #dfdfdf);
   background-image: -o-linear-gradient(top, #f5f5f5, #dfdfdf);
   background-image: linear-gradient(top, #f5f5f5, #dfdfdf);
   background-image: -moz-linear-gradient(top, #f5f5f5, #dfdfdf);
 }
-
-.box-show-header h3{
-    line-height: 20px;
-}
-
-.box-show-header .i-resize-full,.box-show-header i.active {
+.box-img-header .i-resize-full,.box-img-header i.active {
   background:url('../img/icons/i-resize-full.png') left top no-repeat;
   height:25px;
   width:25px;
   float:left;
   position:absolute;
-  right:7px;
-  top:7px;
+  right:5px;
+  top:5px;
 }
-.box-show-header i.active {
+.box-img-header i.active {
   background-position:left bottom;
 }
-.box-show-content {
+.box-img-content {
   background:#fff;
-  padding:10px;
+  padding:10px 10px 0px 10px;
   position:relative;
 }
-.box-show-content .next,.box-show-content .prev {
+/*.box-img-content .next,.box-img-content .prev {
   display:block;
   position:absolute;
   top:45%;
 }
-.box-show-content .next {
+.box-img-content .next {
   right:25px;
 }
-.box-show-content .prev{
+.box-img-content .prev{
   left:25px;
 }
-.box-show-content .next.active i,.box-show-content .prev.active i{
+.box-img-content .next.active i,.box-img-content .prev.active i{
   background-image:url('../img/icons/icon-hover.png');
+}*/
+/***********************************/
+/************** upload *************/
+/***********************************/
+.form-upload ,.choose-file{
+  position:relative;
+  text-align:left;
+}
+.form-upload .close {
+  position:absolute;
+  right:5px;
+  top:0px;
+}
+.form-upload input {
+  width:98%;
+}
+.form-upload .file {
+  opacity:0;
+  filter:alpha = 0;
+  z-index:100;
+  position:relative;
+  width:90px;
+}
+.form-upload .btn {
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:10;
 }
 /***********************************/
 /************** icons *************/
@@ -261,38 +286,8 @@ li {
 .ic-next,.ic-next:hover {
  background-position: 0px -400px;   
 }
-
-.header-content .btn-navbar {
-  display: none;
-  float: right;
-  padding: 7px 10px;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-top: 10px;
-  border-color: #08C;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
-  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-}
-
-
-.header-content .btn-navbar .icon-bar{
-  display: block;
-  width: 18px;
-  height: 2px;
-  background-color: #08C;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-}
-
 /******** fix ****** width fluid********/
-@media (min-width: 979px) and (max-width: 1360px) {
+/*@media (min-width: 979px) and (max-width: 1360px) {
   .header-content form{
     width:55%;
   }
@@ -301,20 +296,6 @@ li {
   .header-content form{
     width:40%;
   }
-
-  .header-content .btn-navbar {
-    display: block;
-  }
-
-  .header { 
-    position: initial;
-  }
-
-  .main-content {
-    margin-top: 15px;
-  }
-
-
 }
 @media (min-width: 480px) and (max-width: 767px) { 
   .header-content form input{
@@ -326,34 +307,6 @@ li {
   }
   .header-content a {
     margin:5px 0px 5px 15px;
-  }
-
-  .header-content .btn-navbar {
-    display: block;
-  }
-
-  .header-left,
-  .header-right {
-    display: none;
-  }
-
-  .header { 
-    position: initial !important;
-  }
-
-  .main-content {
-    margin-top: 15px;
-  }
-
-  .social {
-    position: initial;
-    margin: 0 auto;
-    width: auto;
-  }
-
-  .social a{
-    /*float: left;*/
-    display: inline-block !important;
   }
 }
 @media (min-width: 100px) and (max-width:480px){
@@ -367,24 +320,7 @@ li {
   .header-content a {
     margin:5px 0px 5px 15px;
   }
-
-  .header-content .btn-navbar {
-    display: block;
-  }
-
-  .header-left,
-  .header-right {
-    display: none;
-  }
-
-  .header { 
-    position: initial;
-  }
-
-  .main-content {
-    margin-top: 15px;
-  }
-}
+}*/
 /******** end fix width fluid ********/
 
 
