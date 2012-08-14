@@ -188,7 +188,7 @@ li {
   display:block;
 }
 .box-img-footer .box-link {
-  text-align:right;
+  text-align:left;
   border:none;
   background:none;
   padding:0px;
@@ -199,12 +199,6 @@ li {
 .box-img-footer .box-link .number-like {
   float:right;
   padding:10px;
-  border-radius:4px;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;
-  -o-border-radius:4px;
-  box-shadow:inset 1px 1px 4px #808080;
-  border:1px solid #ededed;
 }
 /*.box-img-content .next,.box-img-content .prev {
   display:block;
@@ -260,6 +254,10 @@ li {
 /***********************************/
 /************** icons *************/
 /***********************************/
+[class^="icon"],
+[class*=" icon"] {
+  background-image: url("../images/glyphicons-halflings.png");
+}
 [class^="ic-"],
 [class*=" ic-"] {
   display: inline-block;
