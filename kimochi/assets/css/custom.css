@@ -219,6 +219,7 @@ li {
 /***********************************/
 .form-upload {
   border:1px solid #d1d1d1;
+  margin-left:-40px;
 }
 .form-upload ,.choose-file{
   position:relative;
