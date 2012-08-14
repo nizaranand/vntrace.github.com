@@ -215,7 +215,13 @@ li {
 .form-upload .close {
   position:absolute;
   right:5px;
-  top:0px;
+  top:5px;
+}
+.i-close {
+  background:url('../img/icons/i-close.png') left top no-repeat;
+  height:15px;
+  width:15px;
+  display:block;
 }
 .form-upload input {
   width:98%;
