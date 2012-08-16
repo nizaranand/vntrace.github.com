@@ -1000,6 +1000,12 @@ code {
 	width:275px;
 	height:200px;
 	}
+	.thumbnails-horizontal .thumbnail .bg-thumbnail-img {
+		height:160px;
+	}
+	.thumbnails-horizontal img{
+		height:150px;
+	}
 	.thumbnails-vertical li {
 		width:97%;
 	}
@@ -1009,6 +1015,9 @@ code {
 	}
 	.thumbnails-vertical .thumbnail {
 		height:220px;
+	}
+	.nav-collapse.in {
+		height:70px;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px) { 
