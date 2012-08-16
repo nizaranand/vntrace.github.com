@@ -1001,10 +1001,13 @@ code {
 	height:200px;
 	}
 	.thumbnails-horizontal .thumbnail .bg-thumbnail-img {
-		height:160px;
+		height:140px;
 	}
 	.thumbnails-horizontal img{
-		height:150px;
+		height:140px;
+	}
+	.thumbnails-horizontal .overlay img {
+	top:40px;
 	}
 	.thumbnails-vertical li {
 		width:97%;
@@ -1033,7 +1036,7 @@ code {
   }
   .thumbnails-horizontal li{
 		width:296px;
-		margin-left:5%;
+		margin-left:4%;
 	}
 	.thumbnails .bg-thumbnail-img {
 	  	width:277px;
@@ -1077,6 +1080,21 @@ code {
 	}
 	.sandbox textarea{
 	width: 90%;}
+
+	.thumbnails-horizontal .thumbnail .bg-thumbnail-img {
+		height:140px;
+		width:100%;
+	}
+	.thumbnails-horizontal img{
+		height:140px;
+	}
+	.thumbnails-horizontal .overlay img {
+	left:45%;
+	}
+	.thumbnails-horizontal .overlay img {
+	top:40px;
+	}
+
 }
 /******** end fix width fluid ********/
 
