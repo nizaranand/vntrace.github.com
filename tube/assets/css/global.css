@@ -1019,9 +1019,6 @@ code {
 	.thumbnails-vertical .thumbnail {
 		height:220px;
 	}
-	.nav-collapse.in {
-		height:70px;
-	}
 }
 @media (min-width: 480px) and (max-width: 767px) { 
   .plan-container {
@@ -1080,20 +1077,6 @@ code {
 	}
 	.sandbox textarea{
 	width: 90%;}
-
-	.thumbnails-horizontal .thumbnail .bg-thumbnail-img {
-		height:140px;
-		width:100%;
-	}
-	.thumbnails-horizontal img{
-		height:140px;
-	}
-	.thumbnails-horizontal .overlay img {
-	left:45%;
-	}
-	.thumbnails-horizontal .overlay img {
-	top:40px;
-	}
 
 }
 /******** end fix width fluid ********/
