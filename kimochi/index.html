@@ -34,14 +34,30 @@
 <div class="main">
 	<div class="container">
 		<div class="main-content offset2 span8">
-			<form class="well form-upload" style="display:none">
-				<button class="close"><img src="assets/images/icons/i-close.png"></button>
-				<input type="text">
-				<div class="choose-file">
-					<input type="file" class="file">
-					<button class="btn btn-info">Chose file</button>
-				</div>
-			</form>
+			<div class="well form-upload" id="new-image" style="display: block; ">
+                    
+                <form name="upload" method="POST" enctype="multipart/form-data" action="/image/upload">
+                        
+                    <!-- <input type="hidden" name="APC_UPLOAD_PROGRESS" id="progress_key" value="502ce0068846d" /> -->
+
+                    <div class="input-file-wrapper">
+
+                        <input class="input-fileupload" name="filename" type="file">      
+
+                        <div class="fake-input-file">   
+                            <button type="button" id="btn-upload" style="margin-top:10px;" class="btn btn-primary btn-large">
+                                <h3>Upload image</h3>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div style="margin-top:30px" class="progress progress-success progress-striped active hide">
+                      <div class="bar" style="width: 0%;"></div>
+                    </div>             
+                </form>
+
+            </div>
 			<ul class="thumbnails">
 				<li class="thumbnail">
 					<div class="box-img-content">
