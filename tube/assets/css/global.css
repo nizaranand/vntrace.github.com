@@ -997,17 +997,8 @@ code {
 	left:120px;
 	}
 	.thumbnail img {
-	width:275px;
-	height:200px;
-	}
-	.thumbnails-horizontal .thumbnail .bg-thumbnail-img {
+		width:275px;
 		height:140px;
-	}
-	.thumbnails-horizontal img{
-		height:140px;
-	}
-	.thumbnails-horizontal .overlay img {
-	top:40px;
 	}
 	.thumbnails-vertical li {
 		width:97%;
@@ -1018,6 +1009,19 @@ code {
 	}
 	.thumbnails-vertical .thumbnail {
 		height:220px;
+	}
+	/* thumbnails-horizontal */
+	.thumbnail .bg-thumbnail-img {
+		height:140px;
+	}
+	.thumbnail .overlay img {
+	top:40px;
+	}
+	.thumbnails-horizontal .thumbnail .bg-thumbnail-img {
+		height:140px;
+	}
+	.thumbnails-vertical img{
+		height:200px;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px) { 
