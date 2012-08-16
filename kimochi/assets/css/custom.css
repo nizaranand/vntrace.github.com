@@ -22,7 +22,7 @@ li {
 /***********************************/
 .header {
   z-index:100;
-  position:absolute;
+  position:fixed;
   width:100% ;
 }
 .header-line {
@@ -323,5 +323,6 @@ li {
 }*/
 /******** end fix width fluid ********/
 
-
-
+.box-img-header h3 {
+  font-family: 'Electrolize', sans-serif;
+}
