@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+	<title>CLGT - Google Admin Theme</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	
+	<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="./js/main.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="navbar navbar-fixed-top m-header">
+		<div class="navbar-inner m-inner">
+			<div class="container-fluid">
+				<a class="brand m-brand" href="./index.html">Gin</a>
+				
+	            <form class="form-search m-search span5">
+					<input type="text" placeholder="Type to search" class="span5 search-query">
+				</form>
+
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+		        
+				<div class="nav-collapse collapse">
+
+					<div class="btn-group pull-right">
+				        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			          		<i class="icon-user"></i> Thanh Dang
+			          		<span class="caret"></span>
+				        </a>
+				        <ul class="dropdown-menu">
+			          		<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+			          		<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+	 		 				<li class="divider"></li>
+			          		<li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+				        </ul>
+			      	</div>
+	          	</div>
+			</div>
+		</div>
+	</div>
+	<div class="m-top"></div>
+	<aside class="sidebar">
+		<ul class="nav nav-tabs nav-stacked">
+			<li>
+				<a href="index.html">
+					<div>
+						<div class="ico">
+							<img src="./img/ico/ico-home.png">
+						</div>
+						<div class="title">
+							Home
+						</div>
+					</div>
+
+					<div class="arrow">
+						<div class="bubble-arrow-border"></div>
+						<div class="bubble-arrow"></div>
+					</div>
+				</a>
+			</li>
+
+			<li class="active">
+				<a href="client.html">
+					<div>
+						<div class="ico">
+							<img src="./img/ico/ico-user.gif">
+						</div>
+						<div class="title">
+							Client
+						</div>
+					</div>
+					<div class="arrow">
+						<div class="bubble-arrow-border"></div>
+						<div class="bubble-arrow"></div>
+					</div>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="#">
+					<span class="badge badge-important m-badge-notification">6</span>
+					<div>
+						<div class="ico">
+							<img src="./img/ico/ico-notification.gif">
+						</div>
+						<div class="title">
+							Notification
+						</div>
+					</div>
+
+					<div class="arrow">
+						<div class="bubble-arrow-border"></div>
+						<div class="bubble-arrow"></div>
+					</div>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="#" id="btn-more">
+					<div>
+						<div class="ico">
+							<img src="./img/ico/ico-more.png">
+						</div>
+						<div class="title">
+							More
+						</div>
+					</div>
+				</a>
+
+			</li>
+	    </ul>
+	</aside>
+	<div class="m-sidebar-collapsed">
+		<ul class="nav nav-pills">
+			
+		</ul>
+
+		<div class="arrow-border">
+			<div class="arrow-inner"></div>
+		</div>
+	</div>
+	<div class="main-container">
+		<div class="container-fluid">
+			<div class="page-header">
+				<h1>Client Page</h1>
+			</div>
+			<section id="client-list">
+				<div class="row-fluid">
+					<div class="span12">
+						<table class="table table-striped table-condensed">
+							<thead>
+								<tr>
+									<th colspan="5">
+										<form class="form-inline">
+											<label>Sort by: </label>
+											<select>
+												<option>Name</option>
+												<option>Code</option>
+											</select>
+											<label>Order by:</label>
+											<select>
+												<option>Desc</option>
+												<option>Asc</option>
+											</select>
+										</form>
+									</th>
+									<th colspan="2" class="tr">
+										<span>Display <b>10</b> of <b>70</b></span>
+									</th>
+								</tr>
+								<tr>
+									<th>#</th>
+									<th>Code</th>
+									<th>Name</th>
+									<th>DOB</th>
+									<th>Sex</th>
+									<th>Address</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>001</td>
+									<td>DML001</td>
+									<td><a href="client-detail.html">Daragh Mac Loughlin</a></td>
+									<td>09 Sep 1978</td>
+									<td>M</td>
+									<td>
+										123, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>002</td>
+									<td>LYNA001</td>
+									<td><a href="client-detail.html">Levy Check</a></td>
+									<td>01 Feb 1985</td>
+									<td>M</td>
+									<td>
+										123, Zvf, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>003</td>
+									<td>MALN001</td>
+									<td><a href="client-detail.html">Ann Lynch</a></td>
+									<td>02 Oct 1988</td>
+									<td>F</td>
+									<td>
+										Eyre Square, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>004</td>
+									<td>MURN001</td>
+									<td><a href="client-detail.html">Mary Maloney</a></td>
+									<td>09 Sep 1966</td>
+									<td>F</td>
+									<td>
+										123, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>005</td>
+									<td>TEST001</td>
+									<td><a href="client-detail.html">Mark Murphy</a></td>
+									<td>09 Sep 1954</td>
+									<td>M</td>
+									<td>
+										123, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>006</td>
+									<td>TESR001</td>
+									<td><a href="client-detail.html">Test Test</a></td>
+									<td>09 Sep 1978</td>
+									<td>M</td>
+									<td>
+										Not Available
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>007</td>
+									<td>WALLA01</td>
+									<td><a href="client-detail.html">Ann John</a></td>
+									<td>09 Sep 1955</td>
+									<td>M</td>
+									<td>
+										Not Available
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>008</td>
+									<td>AATH001</td>
+									<td><a href="client-detail.html">Relay Test</a></td>
+									<td>09 Sep 1978</td>
+									<td>M</td>
+									<td>
+										123, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>009</td>
+									<td>MANL003</td>
+									<td><a href="client-detail.html">Mary Ward</a></td>
+									<td>09 Sep 1978</td>
+									<td>M</td>
+									<td>
+										123, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+								<tr>
+									<td>010</td>
+									<td>DML005</td>
+									<td><a href="client-detail.html">Levey Man</a></td>
+									<td>09 Sep 1978</td>
+									<td>M</td>
+									<td>
+										123, Galway
+									</td>
+									<td><a href="client-detail.html">Detail</a></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="6">
+										<div class="pagination">
+											<ul>
+												<li><a href="#">&laquo;</a></li>
+												<li><a href="#">1</a></li>
+												<li class="active"><a href="#">2</a></li>
+												<li class="disabled"><a href="#">...</a></li>
+												<li><a href="#">6</a></li>
+												<li><a href="#">7</a></li>
+												<li><a href="#">&raquo;</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

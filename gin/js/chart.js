@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 function drawChart() {
-	drawRegionsMap();
+	//drawRegionsMap();
 	drawLineChart();
 }
 
