@@ -1,5 +1,5 @@
 /************  ************** ************** bt-red ************** ************** **************/
-.btn {
+/*.btn {
 color: #8dd1ff;
 text-shadow: none;
 background-color: #17171b;
@@ -33,7 +33,7 @@ transition: background-position 0.1s linear;
 }
 .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
 background-color: #17171b;
-}
+}*/
 /* class: .btn-red-s1,  color theme: Times Changing */
 .btn-red-s1 { text-shadow: 0px -1px 0px #e17931; color: #ffffff; background-color: #FF974F; background-image: -moz-linear-gradient(top, #ffb56d, #e17931); background-image: -ms-linear-gradient(top, #ffb56d, #e17931); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffb56d), to(#e17931)); background-image: -webkit-linear-gradient(top, #ffb56d, #e17931); background-image: -o-linear-gradient(top, #ffb56d, #e17931); background-image: linear-gradient(top, #ffb56d, #e17931); border-color: #FF974F #e17931 #e17931 #FF974F; border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25); }
 .btn-red-s1:hover, .btn-red-s1:active, .btn-red-s1.active, .btn-red-s1.disabled, .btn-red-s1[disabled] { background-color: #e17931; }
