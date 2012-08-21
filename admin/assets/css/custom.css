@@ -64,7 +64,7 @@ h4 {
   -moz-border-radius:4px;
   -o-border-radius:4px;
   position:relative;
-  padding:10px 20px 10px 40px;
+  padding:10px 20px 10px 50px;
   margin-bottom:20px;
 }
 .title{
@@ -158,7 +158,7 @@ background-color: #131217;
   margin:0px;
 }
 .subhead .nav-pills > li.active > a{
-  min-height:65px;
+  min-height: 75px;
 }
 .subhead .nav-pills > li > a {
    border-radius:0px;
@@ -168,7 +168,7 @@ background-color: #131217;
 }
 .subhead .nav-pills > li > a,.quick-shortcuts .nav-pills > li > a{
   text-align:center;
-  min-height:67px;
+  min-height:77px;
   min-width:80px;
   margin:0px;
   color:#60AEB0;
@@ -239,105 +239,94 @@ border-bottom-color:
 #777;
 }
 /******************* icons *****************/
-/******************* icon-menu-top *****************/
-.i-home,.i-setting,.i-pricing-plans,.i-setting,.i-faq,.i-photo,.i-messages,.i-apps
-,.i-user,.i-notes,.i-report,.i-comment,.i-bookmark
- {
-  background:url("../img/icons/icon-menu-top.png") left bottom no-repeat;
-  width:30px;
-  height:30px;
-  display:inline-block;
-}
-.i-messages {
-  background-position: -30px;
-}
-.i-setting {
-  background-position: -60px;
-}
-.i-faq {
-  background-position: -90px;
-}
-.i-notes {
-  background-position: -120px;
-}
-.i-user {
-  background-position: -150px; 
-}
-.i-report {
-  background-position: -180px;
-}
-.i-pricing-plans {
-  background-position: -210px;
-}
-.i-photo {
-  background-position: -240px;
-}
-.i-comment {
-  background-position: -270px;
-}
-.i-apps {
-  background-position: -300px;
-}
-.i-bookmark {
-  background-position: -330px;
-}
-/******************* icon-big-icon*****************/
-.i-home.big-icon,.i-setting.big-icon,.i-pricing-plans.big-icon,.i-setting.big-icon,
-.i-faq.big-icon,.i-photo.big-icon,.i-messages.big-icon,.i-apps.big-icon,.i-user.big-icon,.i-notes.big-icon,
-.i-report.big-icon,.i-comment.big-icon,.i-bookmark.big-icon
+.i-home,.i-setting,.i-pricing-plans,.i-setting,
+.i-faq,.i-photo,.i-messages,.i-apps,.i-user,.i-notes,
+.i-report,.i-comment,.i-bookmark,.i-fqa,.i-home
  {
   background:url("../img/icons/icon-blue-big.png") left top;
   width:52px;
-  height:43px;
+  height:40px;
   display:inline-block;
 }
-.i-apps.big-icon{
+.nav-pills > li > a:hover > .i-messages{
+    background-position: left bottom;
+  }
+.i-apps{
  background-position: -65px top;
 }
-  .nav-pills > li > a:hover > .i-apps.big-icon{
+  .nav-pills > li > a:hover > .i-apps,
+  .nav-pills > li.active > a > .i-apps{
     background-position: -65px bottom;
   }
-.i-photo.big-icon {
+.i-photo {
   background-position: -130px top;
 }
-  .nav-pills > li > a:hover > .i-photo.big-icon{
+  .nav-pills > li > a:hover > .i-photo,
+  .nav-pills > li.active > a >.i-photo{
     background-position: -130px bottom;
   }
-.i-notes.big-icon {
+.i-notes {
   background-position: -195px top;
 }
-  .nav-pills > li > a:hover > .i-notes.big-icon {
+  .nav-pills > li > a:hover > .i-notes,
+  .nav-pills > li.active > a > .i-notes {
     background-position: -195px bottom;
   }
-.i-notes.big-icon {
-  background-position: -195px top;
-}
-  .nav-pills > li > a:hover > .i-notes.big-icon {
-    background-position: -195px bottom;
-  }
-.i-user.big-icon {
+.i-user {
   background-position: -260px top; 
 }
-  .nav-pills > li > a:hover >.i-user.big-icon {
+  .nav-pills > li > a:hover >.i-user,
+  .nav-pills > li.active > a >.i-user {
     background-position: -260px bottom;
   }
-.i-report.big-icon {
+.i-report {
   background-position: -325px top;
 }
-  .nav-pills > li > a:hover >.i-report.big-icon {
+  .nav-pills > li > a:hover >.i-report,
+  .nav-pills > li.active > a >.i-report {
     background-position: -325px bottom;
   }
-.i-setting.big-icon {
+.i-setting {
   background-position: -390px top;
 }
-  .nav-pills > li > a:hover >.i-setting.big-icon {
+  .nav-pills > li > a:hover >.i-setting,
+  .nav-pills > li.active > a >.i-setting {
     background-position: -390px bottom;
   }
-.i-comment.big-icon {
+.i-comment {
   background-position: -455px top;
 }
-  .nav-pills > li > a:hover >.i-comment.big-icon {
+  .nav-pills > li > a:hover >.i-comment,
+  .nav-pills > li.active > a >.i-comment {
     background-position: -455px bottom;
+  }
+.i-pricing-plans {
+  background-position: -520px top;
+}
+  .nav-pills > li > a:hover >.i-pricing-plans,
+  .nav-pills > li.active > a >.i-pricing-plans {
+    background-position: -520px bottom;
+  }
+.i-faq {
+  background-position: -585px top;
+}
+  .nav-pills > li > a:hover >.i-faq,
+  .nav-pills > li.active > a >.i-faq {
+    background-position: -585px bottom;
+  }
+.i-home {
+  background-position: -650px top;
+}
+  .nav-pills > li > a:hover >.i-home,
+  .nav-pills > li.active > a >.i-home {
+    background-position: -650px bottom;
+  }
+.i-bookmark {
+  background-position: -715px top;
+}
+  .nav-pills > li > a:hover >.i-bookmark,
+  .nav-pills > li.active > a >.i-bookmark {
+    background-position: -715px bottom;
   }
 /*
 .i-faq.big-icon {
@@ -1104,8 +1093,8 @@ margin: 0px 10px 0px 0px;
   padding-left:1.5%;
 }
 .faq-link,.faq-search,.faq-list li{
-  box-shadow:0px 1px 0px #45484C;
-  border-bottom:1px solid #1a1b20;
+  /*box-shadow:0px 1px 0px #45484C;*/
+  /*border-bottom:1px solid #1a1b20;*/
   padding-top:10px;
 }
 .faq-icon {
@@ -1179,7 +1168,7 @@ div.uploader input {
   box-shadow:0px -1px 0px #1a1b20;
   border-bottom:1px solid #151719;
 }
-.logo-bt .brand{
+.logo .brand{
   font-size:20px;
 }
 .footer .nav-list .nav-header {

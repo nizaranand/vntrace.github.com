@@ -1,33 +1,24 @@
 (function($){
 	$(document).ready(function(){
-		// $('.nav-list').find('li').click(function(){
-		// 	$('.nav-list').find('li').removeClass('active')
-		// 	$(this).addClass('active');
-		// });
-		// $('.nav-list').toggle(function(){
-		// 	$(this).next().show();
-		// 	$(this).find('.icon-circle-arrow-right')
-		// 	.removeClass('icon-circle-arrow-right').addClass('icon-circle-arrow-down')
-		// },function(){
-		// 	$(this).next().hide();
-		// 	$(this).find('.icon-circle-arrow-down')
-		// 	.removeClass('icon-circle-arrow-down').addClass('icon-circle-arrow-right')
-		// });
+
+        // remove this when your website in production. 
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();
             e.stopPropagation();
 		});
 
+
         $('.list-menu').find('a').click(function(e){
-            // e.preventDefault();
             var li = $(this).parent();
             if(li.hasClass('active')) {
                 li.removeClass('active');
+                $(this).children('i').removeClass('icon-white');
             } else {
                 li.siblings().removeClass('active');
+                li.siblings().find('i').removeClass('icon-white');
                 li.addClass('active');
+                $(this).children('i').addClass('icon-white');
             }   
-
         });
 	});
 })(jQuery);
