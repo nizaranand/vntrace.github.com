@@ -239,106 +239,147 @@ border-bottom-color:
 #777;
 }
 /******************* icons *****************/
-.i-home,.i-setting,.i-pricing-plans,.i-setting,
-.i-faq,.i-photo,.i-messages,.i-apps,.i-user,.i-notes,
-.i-report,.i-comment,.i-bookmark,.i-fqa,.i-home
+.set-of-icons-1 .i-home,.set-of-icons-1 .i-setting,.set-of-icons-1 .i-pricing-plans,.set-of-icons-1 .i-setting,
+.set-of-icons-1 .i-faq,.set-of-icons-1 .i-photo,.set-of-icons-1 .i-messages,.set-of-icons-1 .i-apps,.set-of-icons-1 .i-user,.set-of-icons-1 .i-notes,
+.set-of-icons-1 .i-report,.set-of-icons-1 .i-comment,.set-of-icons-1 .i-bookmark,.set-of-icons-1 .i-fqa
  {
   background:url("../img/icons/icon-blue-big.png") left top;
   width:52px;
   height:40px;
   display:inline-block;
 }
-.nav-pills > li > a:hover > .i-messages{
+.set-of-icons-1 > li > a:hover > .i-messages{
     background-position: left bottom;
   }
-.i-apps{
+.set-of-icons-1 .i-apps{
  background-position: -65px top;
 }
-  .nav-pills > li > a:hover > .i-apps,
-  .nav-pills > li.active > a > .i-apps{
+  .set-of-icons-1 > li > a:hover > .i-apps,
+  .set-of-icons-1 > li.active > a > .i-apps{
     background-position: -65px bottom;
   }
-.i-photo {
+.set-of-icons-1 .i-photo {
   background-position: -130px top;
 }
-  .nav-pills > li > a:hover > .i-photo,
-  .nav-pills > li.active > a >.i-photo{
+  .set-of-icons-1 > li > a:hover > .i-photo,
+  .set-of-icons-1 > li.active > a >.i-photo{
     background-position: -130px bottom;
   }
-.i-notes {
+.set-of-icons-1 .i-notes {
   background-position: -195px top;
 }
-  .nav-pills > li > a:hover > .i-notes,
-  .nav-pills > li.active > a > .i-notes {
+  .set-of-icons-1 > li > a:hover > .i-notes,
+  .set-of-icons-1 > li.active > a > .i-notes {
     background-position: -195px bottom;
   }
-.i-user {
+.set-of-icons-1 .i-user {
   background-position: -260px top; 
 }
-  .nav-pills > li > a:hover >.i-user,
-  .nav-pills > li.active > a >.i-user {
+  .set-of-icons-1 > li > a:hover >.i-user,
+  .set-of-icons-1 > li.active > a >.i-user {
     background-position: -260px bottom;
   }
-.i-report {
+.set-of-icons-1 .i-report {
   background-position: -325px top;
 }
-  .nav-pills > li > a:hover >.i-report,
-  .nav-pills > li.active > a >.i-report {
+  .set-of-icons-1 > li > a:hover >.i-report,
+  .set-of-icons-1 > li.active > a >.i-report {
     background-position: -325px bottom;
   }
-.i-setting {
+.set-of-icons-1 .i-setting {
   background-position: -390px top;
 }
-  .nav-pills > li > a:hover >.i-setting,
-  .nav-pills > li.active > a >.i-setting {
+  .set-of-icons-1 > li > a:hover >.i-setting,
+  .set-of-icons-1 > li.active > a >.i-setting {
     background-position: -390px bottom;
   }
-.i-comment {
+.set-of-icons-1 .i-comment {
   background-position: -455px top;
 }
-  .nav-pills > li > a:hover >.i-comment,
-  .nav-pills > li.active > a >.i-comment {
+  .set-of-icons-1 > li > a:hover >.i-comment,
+  .set-of-icons-1 > li.active > a >.i-comment {
     background-position: -455px bottom;
   }
-.i-pricing-plans {
+.set-of-icons-1 .i-pricing-plans {
   background-position: -520px top;
 }
-  .nav-pills > li > a:hover >.i-pricing-plans,
-  .nav-pills > li.active > a >.i-pricing-plans {
+  .set-of-icons-1 > li > a:hover >.i-pricing-plans,
+  .set-of-icons-1 > li.active > a >.i-pricing-plans {
     background-position: -520px bottom;
   }
-.i-faq {
+.set-of-icons-1 .i-faq {
   background-position: -585px top;
 }
-  .nav-pills > li > a:hover >.i-faq,
-  .nav-pills > li.active > a >.i-faq {
+  .set-of-icons-1 > li > a:hover >.i-faq,
+  .set-of-icons-1 > li.active > a >.i-faq {
     background-position: -585px bottom;
   }
-.i-home {
+.set-of-icons-1 .i-home {
   background-position: -650px top;
 }
-  .nav-pills > li > a:hover >.i-home,
-  .nav-pills > li.active > a >.i-home {
+  .set-of-icons-1 > li > a:hover >.i-home,
+  .set-of-icons-1 > li.active > a >.i-home {
     background-position: -650px bottom;
   }
-.i-bookmark {
+.set-of-icons-1 .i-bookmark {
   background-position: -715px top;
 }
-  .nav-pills > li > a:hover >.i-bookmark,
-  .nav-pills > li.active > a >.i-bookmark {
+  .set-of-icons-1 > li > a:hover >.i-bookmark,
+  .set-of-icons-1 > li.active > a >.i-bookmark {
     background-position: -715px bottom;
   }
+
+/*set-2*/
+.set-of-icons-2 .i-home,.set-of-icons-2 .i-faq,
+.set-of-icons-2 .i-setting,.set-of-icons-2 .i-pricing-plans,.set-of-icons-2 .i-photo {
+  background:url("../img/icons/icon-menu-top.png") left bottom;
+  width:50px;
+  height:40px;
+  display:inline-block;
+}
+  .set-of-icons-2 > li > a:hover >.i-home,
+  .set-of-icons-2 > li.active > a >.i-home {
+    background-position: left top;
+  }
+.set-of-icons-2 .i-setting {
+  background-position: -55px bottom;
+}
+  .set-of-icons-2 > li > a:hover >.i-setting,
+  .set-of-icons-2 > li.active > a >.i-setting {
+    background-position: -55px top;
+  }
+.set-of-icons-2 .i-pricing-plans {
+  background-position: -110px bottom;
+}
+  .set-of-icons-2 > li > a:hover >.i-pricing-plans,
+  .set-of-icons-2 > li.active > a >.i-pricing-plans {
+    background-position: -110px top;
+  }
+.set-of-icons-2 .i-photo {
+  background-position: -165px bottom;
+}
+  .set-of-icons-2 > li > a:hover >.i-photo,
+  .set-of-icons-2 > li.active > a >.i-photo {
+    background-position: -165px top;
+  }
+.set-of-icons-2 .i-faq {
+  background-position: -220px bottom;
+}
+  .set-of-icons-2 > li > a:hover >.i-faq,
+  .set-of-icons-2 > li.active > a >.i-faq {
+    background-position: -220px top;
+  }
 /*
-.i-faq.big-icon {
+.i-faq {
   background-position: -90px;
 }
-.i-pricing-plans.big-icon {
+.i-pricing-plans {
   background-position: -210px;
 }
-.i-comment.big-icon {
+.i-comment {
   background-position: -270px;
 }
-.i-bookmark.big-icon {
+.i-bookmark {
   background-position: -330px;
 }*/
 /******************* end-icon *****************/
