@@ -1,0 +1,25 @@
+(function($){
+	$(document).ready(function(){
+		$('.home').click(function(){
+			$(this).addClass('active').parent().find('.contact').removeClass('active')
+			$(this).parents('body').find('.main-content').slideDown()
+			$(this).parents('body').find('.main-contact').slideUp()
+		});
+		$('.contact').click(function(){
+			$(this).addClass('active').parent().find('.home').removeClass('active')
+			$(this).parents('body').find('.main-contact').slideDown()
+			$(this).parents('body').find('.main-content').slideUp()
+		});
+		$('.btn-add-email-blue').click(function(){
+			$(this).parents('.form-content').animate({'width':'0%'}).hide(200);
+			$(this).parents('.form-content').next().show().animate({'width':'100%'})
+		});
+		$('.box-info .btn').click(function(){
+			$(this).parents('.box-info').hide(200).animate({'width':'0%'})
+			$(this).parents('.form-wraps').find('.form-content').animate({'width':'100%'}).show();
+		});
+		$('a[href$="#"]').click(function(e){
+			e.preventDefault();
+		});
+	});
+})(jQuery);
