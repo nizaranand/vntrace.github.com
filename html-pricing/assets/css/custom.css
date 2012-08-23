@@ -39,8 +39,6 @@ li {
 }
 .plan-container {
   text-align:center;
-  /*width:24.5%;
-  margin:0px 0.25%;*/
   float:left;
   border-radius:4px;
   -webkit-border-radius:4px;
@@ -50,13 +48,14 @@ li {
 .plan-header {
   position:relative;
 }
+/*end gray*/
 .plan-title {
   font-size:18px;
   padding:20px 0px;
   color:#fff;
   padding:10px 0px;
-  border-bottom:1px solid #424242;/*change-color*/
-  background-color: #585858;/*change-color*/
+  border-bottom:1px solid #6d6d6d;/*change-color*/
+  background-color: #868686;/*change-color*/
   border-radius:4px 4px 0px 0px;
   -moz-border-radius:4px 4px 0px 0px;
   -webkit-border-radius:4px 4px 0px 0px;
@@ -68,9 +67,9 @@ li {
   font-family:"Arial Rounded MT Bold",Arial;
   height:120px;
   line-height:1.2em;
-  background:#636363;
-  border-bottom:1px solid #424242;/*change-color*/
-  border-top:1px solid #7e7e7e;/*change-color*/
+  background:#959595;
+  border-bottom:1px solid #6d6d6d;/*change-color*/
+  border-top:1px solid #aaa;/*change-color*/
 }
 .plan-price span {
   position: relative;
@@ -120,58 +119,64 @@ li {
   background-image:none;
   background-color: #636363;
 }
-.choose-plan {
+.choose-list-plan {
   margin-top:50px;
   padding:50px 0px 51px 0px;
   font-size:20px;
   background:#959595;
   border-bottom:1px solid #6d6d6d;
 }
-.choose-plan span {
+.choose-list-plan span {
   color:#212327;
 }
 /***********************************/
 /************** change-colum-plan *************/
 /***********************************/
-/*.plan-colum-5 .plan-container{
+.red .plan-container{
   width:19.8%;
   margin:0px 0.1%;
   * width:19.7%;
 }
-.plan-colum-4 .plan-content{
-  height:380px;
+.blue .plan-container.span2,
+.red .plan-container.span2,
+.green .plan-container.span2{
+  width:16.8%;
+  margin:0px 0.1%;
 }
-.plan-colum-3 .plan-container{
+.green .plan-best-choose.span2 .plan-header button{
+  display:none;
+}
+.blue .plan-container.span3,
+.red .plan-container.span3,
+.green .plan-container.span3{
+  width:24.8%;
+  margin:0px 0.1%;
+}
+.green .plan-container.span4,
+.blue .plan-container.span4,
+.red .plan-container.span4{
   width:31%;
   margin:0px;
 }
-.plan-colum-3 .green-mg {
+.green .plan-best-choose.span4,
+.blue .plan-best-choose.span4,
+.red .plan-best-choose.span4 {
   margin:0px 0.5%;
   width:37%;
-}*/
+}
 /***********************************/
 /************** change-color-plan-title *************/
 /***********************************/
-.plan-container.red .plan-title{
+.red .plan-best-choose .plan-title{
   background:#c12f00;
   border-bottom-color:#ac2a00;
 }
-.plan-container.red .plan-price{
+.red .plan-best-choose .plan-price{
   background:#d73300;
   border-top-color:#ed3800;
   border-bottom-color:#ac2a00;
 }
 /*end red*/
-.plan-container.gray .plan-title{
-  background:#868686;
-  border-bottom-color:#6d6d6d;
-}
-.plan-container.gray .plan-price{
-  background:#959595;
-  border-top-color:#aaa;
-  border-bottom-color:#6d6d6d;
-}
-/*end gray*/
 .blue .plan-title{
   background:#33373d;
   border-bottom-color:#212337;
@@ -182,12 +187,12 @@ li {
   border-bottom-color:#212327;
 }
 /*end blue*/
-.plan-container.dark-blue .plan-title{
+.blue .plan-best-choose .plan-title{
   background:#212327;
   border-bottom-color:#111113;
   color:#60ccd9;
 }
-.plan-container.dark-blue .plan-price{
+.blue .plan-best-choose .plan-price{
   color:#60ccd9;
   background:#282b30;
   border-top-color:#33373e;
@@ -202,12 +207,11 @@ li {
   top:10px;
   right:10px;
 }
-.green .best-choose-green,
-.green .best-choose-green .plan-content/*,.green .best-choose-green .plan-footer*/ {
+.green .plan-best-choose .plan-header {
   margin-top:0px;
 }
-.green .best-choose-green .plan-header {
-  margin-bottom:20px;
+.green .plan-best-choose .plan-content {
+  padding:40px 0px;
 }
 .green .plan-title{
   text-align:left;
@@ -284,7 +288,7 @@ li {
 /***********************************/
 /************** change-color-btn *************/
 /***********************************/
-.btn-plan-gray {
+.btn-plan {
   background-color: #959595;
   background-image: -moz-linear-gradient(top, #959595, #878787);
   background-image: -ms-linear-gradient(top, #959595, #878787);
@@ -293,10 +297,11 @@ li {
   background-image: -o-linear-gradient(top, #959595, #878787);
   background-image: linear-gradient(top, #959595, #878787);
 }
-.btn-plan-gray:hover {
+.btn-plan:hover {
+  background-image:none;
   background-color:#878787;
 }
-.btn-plan-red {
+.red .plan-best-choose .btn-plan {
   background-color: #585858;
   background-image: -moz-linear-gradient(top, #d73300, #ed4d13);
   background-image: -ms-linear-gradient(top, #d73300, #ed4d13);
@@ -305,10 +310,11 @@ li {
   background-image: -o-linear-gradient(top, #d73300, #ed4d13);
   background-image: linear-gradient(top, #d73300, #ed4d13);
 }
-.btn-plan-red:hover {
+.red .plan-best-choose  .btn-plan:hover {
+  background-image:none;
   background-color:#d73300;
 }
-.btn-plan-blue {
+.blue .plan-best-choose .btn-plan {
   background-color: #70dbe8;
   background-image: -moz-linear-gradient(top, #7fe8f5, #60ccd9);
   background-image: -ms-linear-gradient(top, #7fe8f5, #60ccd9);
@@ -317,10 +323,10 @@ li {
   background-image: -o-linear-gradient(top, #7fe8f5, #60ccd9);
   background-image: linear-gradient(top, #7fe8f5, #60ccd9);
 }
-.btn-plan-blue:hover {
+.blue .plan-best-choose .btn-plan:hover {
   background-color:#60ccd9;
 }
-.btn-plan-green {
+.green .btn-plan{
   background-color: #bdd70d;
   background-image: -moz-linear-gradient(top, #bdd70d, #aac300);
   background-image: -ms-linear-gradient(top, #bdd70d, #aac300);
@@ -329,7 +335,8 @@ li {
   background-image: -o-linear-gradient(top, #bdd70d, #aac300);
   background-image: linear-gradient(top, #bdd70d, #aac300);
 }
-.btn-plan-green:hover {
+.green .btn-plan:hover {
+  background-image:none;
   background-color:#aac300;
 }
 /******** fix ****** width fluid********/

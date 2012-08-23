@@ -51,7 +51,7 @@ li {
 }
 .header-left {
   position:absolute;
-  left:-4px;
+  left:-24px;
   top:0px;
 }
 .header-right {
@@ -60,7 +60,7 @@ li {
   top:0px;
 }
 .header-content {
-  margin-left:20px;
+  padding-left:20px;
   height:51px;
   display:block;
   width:100%;
@@ -145,7 +145,7 @@ li {
 /************** main *************/
 /***********************************/
 .thumbnails {
-  margin-left:0px;
+  margin-left:-20px;
 }
 .thumbnails .thumbnail{
   margin-left:0px;
@@ -203,7 +203,7 @@ li {
   bottom: 5px;
   background-color: white;
   height: 40px;
-  width:620px;
+  width:644px;
 }
 .box-img-footer .box-link {
   text-align:left;
@@ -238,7 +238,7 @@ li {
 /***********************************/
 .form-upload {
   border:1px solid #d1d1d1;
-  /*margin-left:-40px;*/
+  margin-left:-20px;
   /*height:70px;*/
 }
 .form-upload form{
