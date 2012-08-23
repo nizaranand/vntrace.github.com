@@ -39,8 +39,8 @@ li {
 }
 .plan-container {
   text-align:center;
-  width:24.5%;
-  margin:0px 0.25%;
+  /*width:24.5%;
+  margin:0px 0.25%;*/
   float:left;
   border-radius:4px;
   -webkit-border-radius:4px;
@@ -133,7 +133,7 @@ li {
 /***********************************/
 /************** change-colum-plan *************/
 /***********************************/
-.plan-colum-5 .plan-container{
+/*.plan-colum-5 .plan-container{
   width:19.8%;
   margin:0px 0.1%;
   * width:19.7%;
@@ -148,7 +148,7 @@ li {
 .plan-colum-3 .green-mg {
   margin:0px 0.5%;
   width:37%;
-}
+}*/
 /***********************************/
 /************** change-color-plan-title *************/
 /***********************************/
@@ -194,12 +194,24 @@ li {
   border-bottom-color:#111113;
 }
 /*end dark-blue*/
+.green .plan-header{
+  margin-top:20px;
+}
 .green .plan-header .btn{
   position:absolute;
   top:10px;
   right:10px;
 }
+.green .best-choose-green,
+.green .best-choose-green .plan-content/*,.green .best-choose-green .plan-footer*/ {
+  margin-top:0px;
+}
+.green .best-choose-green .plan-header {
+  margin-bottom:20px;
+}
 .green .plan-title{
+  text-align:left;
+  padding-left:15px;
   font-weight:300;
   font-size:26px;
   background:#2f2f2f;
@@ -324,7 +336,7 @@ li {
 /*@media (min-width: 979px) and (max-width: 1360px) {
 
 }*/
-@media (min-width: 768px) and (max-width: 979px) {
+/*@media (min-width: 768px) and (max-width: 979px) {
   .plan-colum-3 .plan-container{
     width:60%;
     margin:0px 20%;
@@ -391,7 +403,7 @@ li {
   .plan-colum-3 .plan-container ,.plan-colum-4 .plan-container,.plan-colum-5 .plan-container{
     margin-bottom:40px;
   }
-}
+}*/
 /******** end fix width fluid ********/
 
 
