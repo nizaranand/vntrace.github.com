@@ -130,37 +130,29 @@ li {
   color:#212327;
 }
 /***********************************/
-/************** change-colum-plan *************/
+/************** .pricing-plans *************/
 /***********************************/
-.red .plan-container{
+.pricing-plans .plan-container{
   width:19.8%;
   margin:0px 0.1%;
   * width:19.7%;
 }
-.blue .plan-container.span2,
-.red .plan-container.span2,
-.green .plan-container.span2{
+.pricing-plans .plan-container.span2{
   width:16.8%;
   margin:0px 0.1%;
 }
-.green .plan-best-choose.span2 .plan-header button{
+.pricing-table .plan-best-choose.span2 .plan-header button{
   display:none;
 }
-.blue .plan-container.span3,
-.red .plan-container.span3,
-.green .plan-container.span3{
+.pricing-plans .plan-container.span3{
   width:24.8%;
   margin:0px 0.1%;
 }
-.green .plan-container.span4,
-.blue .plan-container.span4,
-.red .plan-container.span4{
+.pricing-plans .plan-container.span4{
   width:31%;
   margin:0px;
 }
-.green .plan-best-choose.span4,
-.blue .plan-best-choose.span4,
-.red .plan-best-choose.span4 {
+.pricing-plans .plan-best-choose.span4 {
   margin:0px 0.5%;
   width:37%;
 }
@@ -199,36 +191,40 @@ li {
   border-bottom-color:#111113;
 }
 /*end dark-blue*/
-.green .plan-header{
+.pricing-table .plan-header{
   margin-top:20px;
 }
-.green .plan-header .btn{
+.pricing-table .plan-header .btn{
   position:absolute;
   top:10px;
   right:10px;
 }
-.green .plan-best-choose .plan-header {
+.pricing-table .plan-best-choose .plan-header {
   margin-top:0px;
 }
-.green .plan-best-choose .plan-content {
+.pricing-table .plan-best-choose .plan-content {
   padding:40px 0px;
 }
-.green .plan-title{
+.pricing-table .plan-title{
   text-align:left;
   padding-left:15px;
   font-weight:300;
   font-size:26px;
-  background:#2f2f2f;
-  border-bottom-color:#0e0e0e;
   border-radius:12px 12px 0px 0px;
   -moz-border-radius:12px 12px 0px 0px;
   -webkit-border-radius:12px 12px 0px 0px;
   -o-border-radius:12px 12px 0px 0px;
 }
-.green .plan-price{
-  color:#aac300;
+.pricing-table .plan-price{
   height:140px;
   font-size:110px;
+}
+.green .plan-title {
+  background:#2f2f2f;
+  border-bottom-color:#0e0e0e;
+}
+.green .plan-price{
+  color:#aac300;
   border-top-color:#444;
   border-bottom-color:#0e0e0e;
   background-color: #303030;
@@ -239,10 +235,10 @@ li {
   background-image: -o-linear-gradient(top, #303030, #262626);
   background-image: linear-gradient(top, #303030, #262626);
 }
-.green .plan-price span {
+.pricing-table .plan-price span {
   top:-60px;
 }
-.green .save-year {
+.pricing-table .save-year {
   color:#f8ebb9;
   font-size:20px;
   border-top:1px solid #333;
@@ -253,7 +249,7 @@ li {
   -o-border-radius:0px 0px 12px 12px;
   padding:15px 0px;
 }
-.green .plan-content{
+.pricing-table .plan-content{
   margin-top:20px;
   padding:20px 0px;
   background-color:#eee;
@@ -262,22 +258,22 @@ li {
   -webkit-border-radius:12px 12px 0px 0px;
   -o-border-radius:12px 12px 0px 0px;
 }
-.green .plan-content ul li {
+.pricing-table .plan-content ul li {
   border-bottom:1px solid #e0e0e0;
   border-top:1px solid #fff;
   background-color:#eee;
   margin:0px 20px;
 }
-.green .plan-content ul li:hover {
+.pricing-table .plan-content ul li:hover {
   background:#e9e9e9;
 }
-.green .plan-content ul li:last-child {
+.pricing-table .plan-content ul li:last-child {
   box-shadow:0px 1px 0px #fff;
 }
-.green .plan-content ul li:first-child {
+.pricing-table .plan-content ul li:first-child {
   box-shadow:0px -1px 0px #e0e0e0;
 }
-.green .plan-footer {
+.pricing-table .plan-footer {
   background:#eee;
   border-radius:0px 0px 12px 12px;
   -moz-border-radius:0px 0px 12px 12px;
