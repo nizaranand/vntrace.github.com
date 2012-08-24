@@ -1,26 +1,26 @@
 (function($){
 	$(document).ready(function(){
-		$('.upload').click(function(){
-			$('.form-upload').css({'display':'block'})
-		});
-		$('.close').click(function(){
-			$('.form-upload').css({'display':'none'})
-		});
-		// zoom img
-		$('.main').click(function(){
-			$('.box-img').removeClass('span12 box-show').addClass('offset2 span8')
-			$('.box-img').show()
-			$('.i-resize-full').removeClass('active')
-		});
-		$('.i-resize-full').toggle(function(){
+		$('.change-color').children().click(function(){
+			$(this).siblings().removeClass('active')
 			$(this).addClass('active')
-			$('.box-img').hide()
-			$(this).parents('.box-img').show().removeClass('offset2 span8').addClass('span12 box-show')
-		},function(){
-			$(this).removeClass('active')
-			$('.box-img').show()
-			$(this).parents('.box-img').removeClass('span12 box-show').addClass('offset2 span8')
 		});
+		$('.change-color .btn-success').click(function(){
+			$(this).parents('.pricing-plans').removeClass('red blue orange')
+			$(this).parents('.pricing-plans').addClass('green')
+		});
+		$('.change-color .btn-danger').click(function(){
+			$(this).parents('.pricing-plans').removeClass('green blue orange')
+			$(this).parents('.pricing-plans').addClass('red')
+		});
+		$('.change-color .btn-info').click(function(){
+			$(this).parents('.pricing-plans').removeClass('green red orange')
+			$(this).parents('.pricing-plans').addClass('blue')
+		});
+		$('.change-color .btn-warning').click(function(){
+			$(this).parents('.pricing-plans').removeClass('green red blue')
+			$(this).parents('.pricing-plans').addClass('orange')
+		});
+
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();

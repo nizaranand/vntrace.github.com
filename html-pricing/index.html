@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta cjharset="utf-8">
 	<title>pricing</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
@@ -10,17 +11,44 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 </head>
 <body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#">Pricing Bootstrap</a>
+				<ul class="nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose plans<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+                          <li><a href="#">Pricing-table</a></li>
+                          <li><a href="#">Pricing</a></li>
+                          <li><a href="#">Pricing-list</a></li>
+                          <li><a href="#">pricing-5-colum</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 <div class="container">
+
 	<div class="row-fluid">
 		<div class="header span12">
 			<h1>Choose Your Plan</h1>
+			<a href="grid-help.html" class="btn btn-primary btn-large">Grid Help</a>
 		</div>
 	</div>
 
 	<div class="row-fluid">
-		<div class="pricing-plans pricing-table span12">
+		<div class="pricing-plans pricing-table green span12">
 			<div class="title">
-				<h3>Green Pricing class="green"</h3>
+				<h3>Use class=<code>pricing-plans</code> class=<code>pricing-table</code> class=<code>span3</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<div class="change-color">
+					<button class="btn btn-info">blue</button>
+					<button class="btn btn-success active">green</button>
+					<button class="btn btn-warning">orange</button>
+					<button class="btn btn-danger">red</button>
+				</div>
 			</div><!-- /title -->
 			<div class="row-fluid">
 				<div class="plan-container span4">
@@ -28,8 +56,7 @@
 						<h3 class="plan-title">Standard</h3>
 						<div class="plan-price"><span>$</span>7</div>
 						<div class="save-year">Save 16$/year</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>100MB</b> Disk Space</li>
@@ -41,12 +68,12 @@
 							<li>--</li>
 							<li>--</li>
 						</ul>
-					</div>
-					<!-- plan-content -->
+					</div><!-- plan-content -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
 				</div><!-- plan-container -->
+
 
 				<div class="plan-container plan-best-choose span4">
 					<div class="plan-header">
@@ -54,8 +81,7 @@
 						<h3 class="plan-title">Advanced</h3>
 						<div class="plan-price"><span>$</span>15</div>
 						<div class="save-year">Save 24$/year</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>300MB</b> Disk Space</li>
@@ -67,20 +93,19 @@
 							<li>PHP5 Support</li>
 							<li>--</li>
 						</ul>
-					</div>
-					<!-- plan-content -->
+					</div><!-- plan-content -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
 				</div><!-- plan-container -->
+
 
 				<div class="plan-container span4">
 					<div class="plan-header">
 						<h3 class="plan-title">Business</h3>
 						<div class="plan-price"><span>$</span>37</div>
 						<div class="save-year">Save 36$/year</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>1GB</b> Disk Space</li>
@@ -98,10 +123,9 @@
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
 				</div><!-- plan-container -->
-
 			</div><!-- /row-fluid -->
 		</div><!-- end pricing-plans plans-blue -->
-	</div>
+	</div><!-- /row-fluid -->
 
 
 	<div class="row-fluid">
@@ -110,17 +134,22 @@
 
 	<!-- row-fluid -->
 	<div class="row-fluid">
-		<div class="pricing-plans span12">
+		<div class="pricing-plans blue span12">
 			<div class="title">
-				<h3>Blue Pricing class="blue"</h3>
+				<h3>Use class=<code>pricing-plans</code> class=<code>span4</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<div class="change-color">
+					<button class="btn btn-info active">blue</button>
+					<button class="btn btn-success">green</button>
+					<button class="btn btn-warning">orange</button>
+					<button class="btn btn-danger">red</button>
+				</div>
 			</div><!-- /title -->
 			<div class="row-fluid">
 				<div class="plan-container span3">
 					<div class="plan-header">
 						<h3 class="plan-title">Micro</h3>
 						<div class="plan-price"><span>$</span>7</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>100MB</b> Disk Space</li>
@@ -133,8 +162,7 @@
 							<li>--</li>
 							<li>--</li>
 						</ul>
-					</div>
-					<!-- plan-content -->
+					</div><!-- plan-content -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
@@ -144,8 +172,7 @@
 					<div class="plan-header">
 						<h3 class="plan-title">Corporate</h3>
 						<div class="plan-price"><span>$</span>15</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>300MB</b> Disk Space</li>
@@ -158,8 +185,7 @@
 							<li>--</li>
 							<li>--</li>
 						</ul>
-					</div>
-					<!-- plan-content -->
+					</div><!-- plan-content -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
@@ -171,8 +197,7 @@
 						<div class="plan-price">
 							<span>$</span>37
 						</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>1GB</b> Disk Space</li>
@@ -185,12 +210,12 @@
 							<li>Plesk Control Panel</li>
 							<li>--</li>
 						</ul>
-					</div>
-					<!-- plan-content -->
+					</div><!-- plan-content -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
 				</div><!-- plan-container -->
+
 
 				<div class="plan-container span3">
 					<div class="plan-header">
@@ -198,8 +223,7 @@
 						<div class="plan-price">
 							<span>$</span>97
 						</div>
-					</div>
-					<!-- end plan-header -->
+					</div><!-- end plan-header -->
 					<div class="plan-content">
 						<ul>
 							<li><b>5GB</b> Disk Space</li>
@@ -212,8 +236,7 @@
 							<li>Plesk Control Panel</li>
 							<li>Spam Assassin</li>
 						</ul>
-					</div>
-					<!-- plan-content -->
+					</div><!-- plan-content -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Sign Up</a>
 					</div><!-- end plan-footer -->
@@ -221,18 +244,127 @@
 			</div><!-- /row-fluid -->
 
 		</div><!-- end pricing-plans plans-blue -->
-	</div>
+	</div><!-- /row-fluid -->
+
 
 	<div class="row-fluid">
 		<div class="dash"></div>
 	</div>
 
-	<!-- row-fluid -->
 
 	<div class="row-fluid">
-		<div class="pricing-plans red span12">
+		<div class="pricing-plans orange span12">
 			<div class="title">
-				<h3>Add class="choose-list-plan"</h3>
+				<h3>Use class=<code>choose-list-plan</code> class=<code>span4</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<div class="change-color">
+					<button class="btn btn-info">blue</button>
+					<button class="btn btn-success">green</button>
+					<button class="btn btn-warning active">orange</button>
+					<button class="btn btn-danger">red</button>
+				</div>
+			</div><!-- /title -->
+			<div class="plan-container span3">
+				<div class="plan-header">
+					<div class="choose-list-plan">
+						Choose <span>your</span> plan
+					</div>
+				</div>
+				<!-- end plan-header -->
+				<div class="plan-content">
+					<ul>
+						<li>Amount of space</li>
+						<li>Bandwidth per month</li>
+						<li>No of e-,mail accounts</li>
+						<li>No of MySql databases</li>
+						<li>24h support</li>
+						<li>Support tickets per mo</li>
+					</ul>
+				</div><!-- plan-content -->
+			</div><!-- plan-container -->
+
+
+			<div class="plan-container span3">
+				<div class="plan-header">
+					<h3 class="plan-title">Micro</h3>
+					<div class="plan-price"><span>$</span>7</div>
+				</div><!-- end plan-header -->
+				<div class="plan-content">
+					<ul>
+						<li>10 GB</li>
+						<li>100 GB</li>
+						<li>1</li>
+						<li>1</li>
+						<li>Yes</li>
+						<li>1</li>
+					</ul>
+				</div><!-- plan-content -->
+				<div class="plan-footer">
+					<a class="btn-plan" href="#">Sign Up</a>
+				</div><!-- end plan-footer -->
+			</div><!-- plan-container -->
+
+
+			<div class="plan-container plan-best-choose span3">
+				<div class="plan-header">
+					<h3 class="plan-title">Business</h3>
+					<div class="plan-price">
+						<span>$</span>37
+					</div>
+				</div><!-- end plan-header -->
+				<div class="plan-content">
+					<ul>
+						<li>100 GB</li>
+						<li>500 GB</li>
+						<li>50</li>
+						<li>50</li>
+						<li>Yes</li>
+						<li>5</li>
+					</ul>
+				</div><!-- plan-content -->
+				<div class="plan-footer">
+					<a class="btn-plan" href="#">Sign Up</a>
+				</div><!-- end plan-footer -->
+			</div><!-- plan-container -->
+
+
+			<div class="plan-container span3">
+				<div class="plan-header">
+					<h3 class="plan-title">Platinum</h3>
+					<div class="plan-price">
+						<span>$</span>97
+					</div>
+				</div><!-- end plan-header -->
+				<div class="plan-content">
+					<ul>
+						<li>Unlimited</li>
+						<li>1000 GB</li>
+						<li>Unlimited</li>
+						<li>Unlimited</li>
+						<li>Yes</li>
+						<li>10</li>
+					</ul>
+				</div><!-- plan-content -->
+				<div class="plan-footer">
+					<a class="btn-plan" href="#">Sign Up</a>
+				</div><!-- end plan-footer -->
+			</div><!-- plan-container -->
+		</div><!-- end pricing-plans plans-red-->
+	</div><!-- /row-fluid -->
+
+	<div class="row-fluid">
+		<div class="dash"></div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="pricing-plans pricing-5-colum red span12">
+			<div class="title">
+				<h3>Use class=<code>pricing-plans</code> and add class=<code>pricing-5-colum</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<div class="change-color">
+					<button class="btn btn-info">blue</button>
+					<button class="btn btn-success">green</button>
+					<button class="btn btn-warning">orange</button>
+					<button class="btn btn-danger active">red</button>
+				</div>
 			</div><!-- /title -->
 			<div class="plan-container">
 				<div class="plan-header">
@@ -250,15 +382,15 @@
 						<li>24h support</li>
 						<li>Support tickets per mo</li>
 					</ul>
-				</div>
-				<!-- plan-content -->
+				</div><!-- plan-content -->
 			</div><!-- plan-container -->
+
+
 			<div class="plan-container">
 				<div class="plan-header">
 					<h3 class="plan-title">Micro</h3>
 					<div class="plan-price"><span>$</span>7</div>
-				</div>
-				<!-- end plan-header -->
+				</div><!-- end plan-header -->
 				<div class="plan-content">
 					<ul>
 						<li>10 GB</li>
@@ -274,6 +406,7 @@
 					<a class="btn-plan" href="#">Sign Up</a>
 				</div><!-- end plan-footer -->
 			</div><!-- plan-container -->
+
 
 			<div class="plan-container">
 				<div class="plan-header">
@@ -297,14 +430,14 @@
 				</div><!-- end plan-footer -->
 			</div><!-- plan-container -->
 
+
 			<div class="plan-container plan-best-choose">
 				<div class="plan-header">
 					<h3 class="plan-title">Business</h3>
 					<div class="plan-price">
 						<span>$</span>37
 					</div>
-				</div>
-				<!-- end plan-header -->
+				</div><!-- end plan-header -->
 				<div class="plan-content">
 					<ul>
 						<li>100 GB</li>
@@ -314,12 +447,12 @@
 						<li>Yes</li>
 						<li>5</li>
 					</ul>
-				</div>
-				<!-- plan-content -->
+				</div><!-- plan-content -->
 				<div class="plan-footer">
 					<a class="btn-plan" href="#">Sign Up</a>
 				</div><!-- end plan-footer -->
 			</div><!-- plan-container -->
+
 
 			<div class="plan-container">
 				<div class="plan-header">
@@ -327,8 +460,7 @@
 					<div class="plan-price">
 						<span>$</span>97
 					</div>
-				</div>
-				<!-- end plan-header -->
+				</div><!-- end plan-header -->
 				<div class="plan-content">
 					<ul>
 						<li>Unlimited</li>
@@ -338,16 +470,13 @@
 						<li>Yes</li>
 						<li>10</li>
 					</ul>
-				</div>
-				<!-- plan-content -->
+				</div><!-- plan-content -->
 				<div class="plan-footer">
 					<a class="btn-plan" href="#">Sign Up</a>
 				</div><!-- end plan-footer -->
 			</div><!-- plan-container -->
-
-		</div>
-		<!-- end pricing-plans plans-red-->
-	</div>
+		</div><!-- end pricing-plans plans-red-->
+	</div><!-- /row-fluid -->
 	
 </div>
 </body>

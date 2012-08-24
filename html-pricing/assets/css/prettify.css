@@ -1,0 +1,33 @@
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.pd-l-2 {
+  margin-left:20px;
+  padding-left:10px;
+}
+.pd-l-4 {
+  margin-left:40px;
+  padding-left:10px;
+}
+.pd-l-6 {
+  margin-left:60px;
+  padding-left:10px;
+}
+.pd-l-8 {
+  margin-left:80px;
+  padding-left:10px;
+
+}
+.pd-l-10 {
+  margin-left:100px;
+  padding-left:10px;
+} 
+.pd-l-2,.pd-l-4,.pd-l-6,.pd-l-8,.pd-l-10 {
+  border-left:1px dashed #ddd;
+}
