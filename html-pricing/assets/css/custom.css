@@ -393,6 +393,30 @@ box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   background-color:#aac300;
 }
 /******** fix ****** width fluid********/
+  .pricing-5-colum .plan-container{
+  width:19.8%;
+  margin:0px 0.1%;
+  * width:19.7%;
+  }
+  .pricing-plans .plan-container.span2{
+    width:16.4%;
+    margin:0px 0.1%;
+  }
+  .pricing-table .plan-best-choose.span2 .plan-header button{
+    display:none;
+  }
+  .pricing-plans .plan-container.span3{
+    width:24.8%;
+    margin:0px 0.1%;
+  }
+  .pricing-plans .plan-container.span4{
+    width:31%;
+    margin:0px;
+  }
+  .pricing-plans .plan-best-choose.span4 {
+    margin:0px 0.5%;
+    width:37%;
+  }
 @media (min-width: 979px) and (max-width: 1360px) {
   .pricing-5-colum .plan-container{
   width:19.8%;
