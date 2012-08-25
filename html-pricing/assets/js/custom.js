@@ -20,6 +20,9 @@
 			$(this).parents('.pricing-plans').removeClass('green red blue')
 			$(this).parents('.pricing-plans').addClass('orange')
 		});
+		$(window).scroll(function () { 
+	      $('.gotop').show()
+	    });
 
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
@@ -27,3 +30,4 @@
 		});
 	});
 })(jQuery);
+

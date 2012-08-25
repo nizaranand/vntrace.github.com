@@ -12,28 +12,35 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 </head>
 <body>
-
+<a href="#header" class="gotop btn btn-info btn-large"><i class="icon-chevron-up icon-white"></i></a>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="#">Pricing Bootstrap</a>
+				<a class="brand" href="index.html">Pricing Bootstrap</a>
 				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li class="active"><a href="grid-help.html">Grid Help</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid system <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
+                          <li><a href="#pricing-plans-3-colum">Pricing-plans 3 colum</a></li>
+                          <li><a href="#pricing-plans-4-colum">Pricing-plans 4 colum</a></li>
+                          <li><a href="#pricing-plans-5-colum">Pricing-plans 5 colum</a></li>
+                          <li><a href="#pricing-table">Pricing-table</a></li>
+                          <li><a href="#pricing-plans-5-colum">Pricing-table 5 colum</a></li>
+                          <li><a href="#choose-list-plans">Choose-list-plan</a></li>
+                          <li><a href="#choose-list-plan-5-colum">Choose-list-plan 5 colum</a></li>
                         </ul>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
 <div class="container">
 
 	<div class="row-fluid">
-		<div class="header span12">
+		<div id="header" class="span12">
 			<h1>Grid Pricing</h1>
 			<a href="index.html" class="btn btn-primary btn-large">Back</a>
 		</div><!-- /header -->
@@ -44,7 +51,7 @@
 			<h2>Grid system</h2>
 		</div>
 	</div>
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-plans-4-colum">
 		<div class="pricing-plans span12">
 			<div class="title">
 				<h3>Pricing-plans 4 colum</h3>
@@ -117,7 +124,7 @@
 				</div><!-- /plan-container -->
 			</div>
 		</div><!-- /pricing-plans -->
-	</div>
+	</section>
 	<div class="row-fluid">
 		<div class="span12">
 			<ul class="well">
@@ -199,7 +206,7 @@
 
 
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-plans-3-colum">
 		<div class="pricing-plans span12">
 			<div class="title">
 				<h3>Pricing-plans 3 colum</h3>
@@ -256,7 +263,7 @@
 				</div><!-- /plan-container -->
 			</div>
 		</div><!-- /pricing-plans -->
-	</div>
+	</section>
 	<div class="row-fluid">
 		<div class="span12">
 			<ul class="well">
@@ -312,7 +319,7 @@
 
 
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-plans-5-colum">
 		<div class="pricing-plans pricing-5-colum span12">
 			<div class="title">
 				<h3>Pricing-plans 5 colum</h3>
@@ -401,7 +408,7 @@
 				</div><!-- /plan-container -->
 			</div>
 		</div><!-- /pricing-plans -->
-	</div>
+	</section>
 	<div class="row-fluid">
 		<div class="span12">
 			<ul class="well">
@@ -466,10 +473,10 @@
 
 
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-table">
 		<div class="pricing-plans pricing-table span12">
 			<div class="title">
-				<h3>Pricing-plans and Pricing-table</h3>
+				<h3>Pricing-table</h3>
 				<p>Use class=<code>pricing-plans pricing-table</code> class=<code>plan-best-choose</code> and class=<code>save-year</code></p>
 			</div><!-- /title -->
 
@@ -527,7 +534,7 @@
 				</div><!-- /plan-container -->
 			</div>
 		</div><!-- /pricing-plans -->
-	</div>
+	</section>
 	<div class="row-fluid">
 		<div class="span12">
 			<ul class="well">
@@ -632,7 +639,7 @@
 	</div><!-- /row-fluid -->
 
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-table-5-colum">
 		<div class="pricing-plans pricing-5-colum pricing-table span12">
 			<div class="title">
 				<h3>Pricing-5-colum Pricing-table</h3>
@@ -726,7 +733,7 @@
 				</div><!-- /plan-container -->
 			</div>
 		</div><!-- /pricing-plans -->
-	</div>
+	</section>
 	<div class="row-fluid">
 		<div class="span12">
 			<ul class="well">
@@ -834,7 +841,133 @@
 	</div><!-- /row-fluid -->
 
 
+
+
+	<section class="row-fluid" id="choose-list-plan">
+		<div class="pricing-plans pricing-5-colum span12">
+			<div class="title">
+				<h3>Pricing-5-colum</h3>
+				<p>Use class=<code>pricing-5-colum</code> and class=<code>choose-list-plan</code></p>
+			</div><!-- /title -->
+
+			<div class="row-fluid">
+				<div class="plan-container span3">
+					<div class="plan-header">
+						<div class="choose-list-plan">
+							Choose <span>your</span> plan
+						</div>
+					</div>
+					<!-- end plan-header -->
+					<div class="plan-content">
+						<ul>
+							<li>--</li>
+							<li>--</li>
+						</ul>
+					</div><!-- plan-content -->
+				</div><!-- plan-container -->
+
+				<div class="plan-container span3">
+					<div class="plan-header">
+						<h3 class="plan-title">plan-title</h3>
+						<div class="plan-price"><span>$</span>3</div>
+					</div><!-- end plan-header -->
+					<div class="plan-content">
+						<ul>
+							<li>--</li>
+							<li>--</li>
+						</ul>
+					</div><!-- plan-content -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Sign Up</a>
+					</div><!-- end plan-footer -->
+				</div><!-- plan-container -->
+
+				<div class="plan-container plan-best-choose span3">
+					<div class="plan-header">
+						<h3 class="plan-title">plan-best-choose</h3>
+						<div class="plan-price"><span>$</span>3</div>
+					</div><!-- end plan-header -->
+					<div class="plan-content">
+						<ul>
+							<li>--</li>
+							<li>--</li>
+						</ul>
+					</div><!-- plan-content -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Sign Up</a>
+					</div><!-- /end plan-footer -->
+				</div><!-- /plan-container -->
+
+				<div class="plan-container span3">
+					<div class="plan-header">
+						<h3 class="plan-title">plan-title</h3>
+						<div class="plan-price"><span>$</span>3</div>
+					</div><!-- end plan-header -->
+					<div class="plan-content">
+						<ul>
+							<li>--</li>
+							<li>--</li>
+						</ul>
+					</div><!-- plan-content -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Sign Up</a>
+					</div><!-- /end plan-footer -->
+				</div><!-- /plan-container -->
+			</div>
+		</div><!-- /pricing-plans -->
+	</section>
 	<div class="row-fluid">
+		<div class="span12">
+			<ul class="well">
+				<li>
+				<span class="tag">&lt;div</span> <span class="atn">class</span>
+				<span>=</span>
+				<span class="atv">"pricing-5-colum span12"</span>
+				<span>&gt;</span>
+				</li>
+					<li class="pd-l-2">
+					<span class="tag">&lt;div</span> <span class="atn">class</span>
+					<span>=</span>
+					<span class="atv">"row-fluid"</span>
+					<span>&gt;</span>
+					</li>
+					<li class="pd-l-4">...</li>
+						<li class="pd-l-4">
+						<span class="tag">&lt;div</span> <span class="atn">class</span>
+						<span>=</span>
+						<span class="atv">"plan-container span3"</span>
+						<span>&gt;</span>
+						</li>
+
+							<li class="pd-l-6">
+							<span class="tag">&lt;div</span> <span class="atn">class</span>
+							<span>=</span>
+							<span class="atv">"plan-header"</span>
+							<span>&gt;</span>
+							</li>
+								<li class="pd-l-8">
+								<span class="tag">&lt;div</span> <span class="atn">class</span>
+								<span>=</span>
+								<span class="atv">"choose-list-plan"</span>
+								<span>&gt;</span>
+								<span class="tag">&lt;/div&gt;</span>
+								</li>
+							<li class="pd-l-6"><span class="tag">&lt;/div&gt;</span></li>
+
+						<li class="pd-l-4"><span class="tag">&lt;/div&gt;</span></li>
+
+						<li class="pd-l-4">...</li>
+
+					<li class="pd-l-2"><span class="tag">&lt;/div&gt;</span></li>
+				<li><span class="tag">&lt;/div&gt;</span></li>
+			</ul><!-- /well nost -->
+		</div>
+	</div><!-- /row-fluid -->
+
+
+
+
+	<section class="row-fluid" id="choose-list-plan-5-colum">
 		<div class="pricing-plans pricing-5-colum span12">
 			<div class="title">
 				<h3>Pricing-5-colum</h3>
@@ -922,7 +1055,7 @@
 				</div><!-- /plan-container -->
 			</div>
 		</div><!-- /pricing-plans -->
-	</div>
+	</section>
 	<div class="row-fluid">
 		<div class="span12">
 			<ul class="well">

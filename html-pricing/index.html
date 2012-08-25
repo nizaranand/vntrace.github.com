@@ -12,21 +12,23 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 </head>
 <body>
-
+<a href="#header" class="gotop btn btn-info btn-large"><i class="icon-chevron-up icon-white"></i></a>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="brand" href="#">Pricing Bootstrap</a>
 				<ul class="nav">
+					<li class="active"><a href="#">Home</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose plans<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-                          <li><a href="#">Pricing-table</a></li>
-                          <li><a href="#">Pricing</a></li>
-                          <li><a href="#">Pricing-list</a></li>
-                          <li><a href="#">pricing-5-colum</a></li>
+                          <li><a href="#pricing-table">Pricing-table</a></li>
+                          <li><a href="#pricing">Pricing</a></li>
+                          <li><a href="#choose-list-plan">Choose-list-plan</a></li>
+                          <li><a href="#pricing-5-colum">Pricing-5-colum</a></li>
                         </ul>
 					</li>
+					<li><a href="grid-help.html">Grid Help</a></li>
 				</ul>
 			</div>
 		</div>
@@ -34,16 +36,17 @@
 <div class="container">
 
 	<div class="row-fluid">
-		<div class="header span12">
+		<div class="header span12" id="header">
 			<h1>Choose Your Plan</h1>
 			<a href="grid-help.html" class="btn btn-primary btn-large">Grid Help</a>
 		</div>
 	</div>
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-table">
 		<div class="pricing-plans pricing-table green span12">
 			<div class="title">
-				<h3>Use class=<code>pricing-plans</code> class=<code>pricing-table</code> class=<code>span3</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<h3>Pricing-table</h3>
+				<p>Use class=<code>pricing-plans</code> class=<code>pricing-table</code> class=<code>span3</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></p>
 				<div class="change-color">
 					<button class="btn btn-info">blue</button>
 					<button class="btn btn-success active">green</button>
@@ -126,7 +129,7 @@
 				</div><!-- plan-container -->
 			</div><!-- /row-fluid -->
 		</div><!-- end pricing-plans plans-blue -->
-	</div><!-- /row-fluid -->
+	</section><!-- /row-fluid -->
 
 
 	<div class="row-fluid">
@@ -134,10 +137,11 @@
 	</div>
 
 	<!-- row-fluid -->
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing">
 		<div class="pricing-plans blue span12">
 			<div class="title">
-				<h3>Use class=<code>pricing-plans</code> class=<code>span4</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<h3>Pricing-plans</h3>
+				<p>Use class=<code>pricing-plans</code> class=<code>span4</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></p>
 				<div class="change-color">
 					<button class="btn btn-info active">blue</button>
 					<button class="btn btn-success">green</button>
@@ -245,7 +249,7 @@
 			</div><!-- /row-fluid -->
 
 		</div><!-- end pricing-plans plans-blue -->
-	</div><!-- /row-fluid -->
+	</section><!-- /row-fluid -->
 
 
 	<div class="row-fluid">
@@ -253,10 +257,11 @@
 	</div>
 
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="choose-list-plan">
 		<div class="pricing-plans orange span12">
 			<div class="title">
-				<h3>Use class=<code>choose-list-plan</code> class=<code>span4</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<h3>Choose-list-plan</h3>
+				<p>Use class=<code>choose-list-plan</code> class=<code>span4</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></p>
 				<div class="change-color">
 					<button class="btn btn-info">blue</button>
 					<button class="btn btn-success">green</button>
@@ -350,16 +355,17 @@
 				</div><!-- end plan-footer -->
 			</div><!-- plan-container -->
 		</div><!-- end pricing-plans plans-red-->
-	</div><!-- /row-fluid -->
+	</section><!-- /row-fluid -->
 
 	<div class="row-fluid">
 		<div class="dash"></div>
 	</div>
 
-	<div class="row-fluid">
+	<section class="row-fluid" id="pricing-5-colum">
 		<div class="pricing-plans pricing-5-colum red span12">
 			<div class="title">
-				<h3>Use class=<code>pricing-plans</code> and add class=<code>pricing-5-colum</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></h3>
+				<h3>Pricing-5-colum</h3>
+				<p>Use class=<code>pricing-plans</code> and add class=<code>pricing-5-colum</code> and class=<code>red</code> or class=<code>blue</code> or class=<code>green</code></p>
 				<div class="change-color">
 					<button class="btn btn-info">blue</button>
 					<button class="btn btn-success">green</button>
@@ -477,7 +483,7 @@
 				</div><!-- end plan-footer -->
 			</div><!-- plan-container -->
 		</div><!-- end pricing-plans plans-red-->
-	</div><!-- /row-fluid -->
+	</section><!-- /row-fluid -->
 	
 </div>
 </body>
