@@ -141,6 +141,40 @@ li {
 .box-link a.active i{
   background-image: url("../images/icons/icon-hover.png");
 }
+.vote-box-right {
+  position:absolute;
+  top:0px;
+  right:-90px;
+  background:#fff;
+  width:80px;
+  text-align:center;
+  padding-top:10px;
+}
+.vote-box-right,.vote-box-right .number-like {
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  -o-border-radius:4px;
+}
+.vote-box-right a {
+  width:100%;
+  float:left;
+  margin-bottom:8px;
+}
+.vote-box-right .number-like{
+  position:relative;
+  background:#eee;
+  box-shadow:inset 0px 1px 2px #ddd;
+  float:left;
+  padding:10px 5px;
+  width:60px;
+  margin:0px 5px 14px 5px;
+}
+.vote-box-right .number-like .i-arrow-up {
+  position:absolute;
+  top:1px;
+  left:7px;
+}
 /***********************************/
 /************** main *************/
 /***********************************/
