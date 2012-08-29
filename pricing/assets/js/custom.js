@@ -28,15 +28,15 @@
 			$(this).addClass('active')
 		});
 		
-		$('.change-style #plan-old-man').click(function(){
+		$('button[id=plan-old-man]').click(function(){
 			$(this).parents('.plan-container').removeClass('plan-easy plan-cool')
 			$(this).parents('.plan-container').addClass('plan-old-man')
 		});
-		$('.change-style #plan-easy').click(function(){
+		$('button[id=plan-easy]').click(function(){
 			$(this).parents('.plan-container').removeClass('plan-cool plan-old-man')
 			$(this).parents('.plan-container').addClass('plan-easy')
 		});
-		$('.change-style #plan-cool').click(function(){
+		$('button[id=plan-cool]').click(function(){
 			$(this).parents('.plan-container').removeClass('plan-old-man plan-easy')
 			$(this).parents('.plan-container').addClass('plan-cool')
 		});
