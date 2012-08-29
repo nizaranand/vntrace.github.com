@@ -384,7 +384,7 @@ padding-top: 30px;
   background-color:#878787;
 }
 .red .plan-best-choose .btn-plan {
-  background-color: #585858;
+  background-color: #ed4d13;
   background-image: -moz-linear-gradient(top, #d73300, #ed4d13);
   background-image: -ms-linear-gradient(top, #d73300, #ed4d13);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d73300), to(#ed4d13));
@@ -397,7 +397,7 @@ padding-top: 30px;
   background-color:#d73300;
 }
 .orange .plan-best-choose .btn-plan {
-  background-color: #585858;
+  background-color: #f29100;
   background-image: -moz-linear-gradient(top, #ff9900, #f29100);
   background-image: -ms-linear-gradient(top, #ff9900, #f29100);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9900), to(#f29100));
