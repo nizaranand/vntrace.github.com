@@ -24,7 +24,7 @@
 		});
 		//change style plan
 		$('.change-style button[id^=plan-]').click(function(){
-			$(this).siblings().removeClass('active')
+			$(this).siblings('button[id^=plan-]').removeClass('active')
 			$(this).addClass('active')
 		});
 		
