@@ -1,8 +1,8 @@
 (function($){
 	$(document).ready(function(){
         
-		$('.change-color').children().click(function(){
-			$(this).siblings().removeClass('active')
+		$('.change-color button[class*=btn-]').click(function(){
+			$(this).siblings('button[class*=btn-]').removeClass('active')
 			$(this).addClass('active')
 		});
 		//change color plan
@@ -22,25 +22,7 @@
 			$(this).parents('.plan-container').removeClass('green red blue')
 			$(this).parents('.plan-container').addClass('orange')
 		});
-		//change style plan
-		$('.change-style button[id^=plan-]').click(function(){
-			$(this).siblings('button[id^=plan-]').removeClass('active')
-			$(this).addClass('active')
-		});
-		
-		$('button[id=plan-old-man]').click(function(){
-			$(this).parents('.plan-container').removeClass('plan-easy plan-cool')
-			$(this).parents('.plan-container').addClass('plan-old-man')
-		});
-		$('button[id=plan-easy]').click(function(){
-			$(this).parents('.plan-container').removeClass('plan-cool plan-old-man')
-			$(this).parents('.plan-container').addClass('plan-easy')
-		});
-		$('button[id=plan-cool]').click(function(){
-			$(this).parents('.plan-container').removeClass('plan-old-man plan-easy')
-			$(this).parents('.plan-container').addClass('plan-cool')
-		});
-		$('.change-style .plan-fluid').toggle(function(){
+		$('.change-color .plan-fluid').toggle(function(){
 			$(this).addClass('active')
 			$(this).parents('.plan-container').addClass('plan-fluid')
 		},function(){

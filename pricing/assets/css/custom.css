@@ -434,12 +434,6 @@ padding-top: 30px;
   background-image:none;
   background-color:#aac300;
 }
-.change-color {
-  float:right;
-}
-.change-style {
-  float:left;
-}
 [class^="icon"],
 [class*=" icon"] {
   background-image: url("../images/glyphicons-halflings.png");
