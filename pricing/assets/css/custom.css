@@ -165,22 +165,22 @@ padding-top: 30px;
 /***********************************/
 /************** .plan-container *************/
 /***********************************/
-/*pricing-table*/
-.pricing-table .plan-header{
+/*plan-easy*/
+.plan-easy .plan-header{
   margin-top:20px;
 }
-.pricing-table .plan-header .btn{
+.plan-easy .plan-header .btn{
   position:absolute;
   top:10px;
   right:10px;
 }
-.pricing-table .plan-best-choose .plan-header {
+.plan-easy .plan-best-choose .plan-header {
   margin-top:0px;
 }
-.pricing-table .plan-best-choose .plan-content {
+.plan-easy .plan-best-choose .plan-content {
   padding:40px 0px;
 }
-.pricing-table .plan-title{
+.plan-easy .plan-title{
   text-align:left;
   padding-left:15px;
   font-weight:300;
@@ -190,14 +190,14 @@ padding-top: 30px;
   -webkit-border-radius:12px 12px 0px 0px;
   -o-border-radius:12px 12px 0px 0px;
 }
-.pricing-table .plan-price{
+.plan-easy .plan-price{
   height:140px;
   font-size:110px;
 }
-.pricing-table .plan-price span {
+.plan-easy .plan-price span {
   top:-60px;
 }
-.pricing-table .save-year {
+.plan-easy .save {
   border-top:1px solid #aaa;
   border-radius:0px 0px 12px 12px;
   -moz-border-radius:0px 0px 12px 12px;
@@ -208,7 +208,7 @@ padding-top: 30px;
   font-size:20px;
   background-color: #868686;
 }
-.pricing-table .plan-content{
+.plan-easy .plan-content{
   margin-top:20px;
   padding:20px 0px;
   background-color:#eee;
@@ -217,29 +217,29 @@ padding-top: 30px;
   -webkit-border-radius:12px 12px 0px 0px;
   -o-border-radius:12px 12px 0px 0px;
 }
-.pricing-table .plan-content ul li {
+.plan-easy .plan-content ul li {
   border-bottom:1px solid #e0e0e0;
   border-top:1px solid #fff;
   background-color:#eee;
   margin:0px 20px;
 }
-.pricing-table .plan-content ul li:hover {
+.plan-easy .plan-content ul li:hover {
   background:#e9e9e9;
 }
-.pricing-table .plan-content ul li:last-child {
+.plan-easy .plan-content ul li:last-child {
   box-shadow:0px 1px 0px #fff;
 }
-.pricing-table .plan-content ul li:first-child {
+.plan-easy .plan-content ul li:first-child {
   box-shadow:0px -1px 0px #e0e0e0;
 }
-.pricing-table .plan-footer {
+.plan-easy .plan-footer {
   background:#eee;
   border-radius:0px 0px 12px 12px;
   -moz-border-radius:0px 0px 12px 12px;
   -webkit-border-radius:0px 0px 12px 12px;
   -o-border-radius:0px 0px 12px 12px;
 }
-/*change color pricing-table green */
+/*change color plan-easy green */
 .green .plan-title {
   color:#f8ebb9;
   background:#2f2f2f;
@@ -260,7 +260,7 @@ padding-top: 30px;
 .green .choose-list-plan span {
   color:#fff;
 }
-.green .save-year {
+.green .save {
   color:#f8ebb9;
   font-size:20px;
   background-color: #242424;
@@ -271,25 +271,25 @@ padding-top: 30px;
 }
 /*end green*/
 
-/*change color pricing-table red */
-.red .plan-best-choose .save-year {
+/*change color plan-easy red */
+.red .plan-best-choose .save {
   color:#f8ebb9;
   font-size:20px;
   background-color: #C12F00;
   border-top-color:#ED3800;
 }
-/*change color pricing-table blue */
-.orange .plan-best-choose .save-year {
+/*change color plan-easy blue */
+.orange .plan-best-choose .save {
   color:#fff;
   font-size:20px;
   background-color:#ed8e00;
   border-top-color:#ffc46c;
 }
-.blue .save-year {
+.blue .save {
   background: #33373D;
   border-top-color: #545961;
 }
-.blue .plan-best-choose .save-year {
+.blue .plan-best-choose .save {
   color:#60CCD9;
   background: #212327;
   border-top-color: #33373E;
@@ -426,7 +426,7 @@ padding-top: 30px;
     width:16.4%;
     margin:0px 0.1%;
   }
-  .pricing-table .plan-best-choose.span2 .plan-header button{
+  .plan-easy .plan-best-choose.span2 .plan-header button{
     display:none;
   }
   .plan-container .plan.span3{
@@ -451,7 +451,7 @@ padding-top: 30px;
     width:16.4%;
     margin:0px 0.1%;
   }
-  .pricing-table .plan-best-choose.span2 .plan-header button{
+  .plan-easy .plan-best-choose.span2 .plan-header button{
     display:none;
   }
   .plan-container .plan.span3{
