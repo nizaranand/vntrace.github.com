@@ -23,7 +23,7 @@
 			$(this).parents('.plan-container').addClass('orange')
 		});
 		//change style plan
-		$('.change-style').children().click(function(){
+		$('.change-style button[id^=plan-]').click(function(){
 			$(this).siblings().removeClass('active')
 			$(this).addClass('active')
 		});
@@ -40,10 +40,12 @@
 			$(this).parents('.plan-container').removeClass('plan-old-man plan-easy')
 			$(this).parents('.plan-container').addClass('plan-cool')
 		});
-		$('.change-style #plan-fluid').toggle(function(){
+		$('.change-style .plan-fluid').toggle(function(){
+			$(this).addClass('active')
 			$(this).parents('.plan-container').addClass('plan-fluid')
 		},function(){
 			$(this).parents('.plan-container').removeClass('plan-fluid')
+			$(this).removeClass('active')
 		});
 
 		$(window).scroll(function () { 
