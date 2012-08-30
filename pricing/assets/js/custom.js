@@ -22,6 +22,7 @@
 			$(this).parents('.plan-container').removeClass('green red blue')
 			$(this).parents('.plan-container').addClass('orange')
 		});
+
 		$('.change-color .plan-fluid').toggle(function(){
 			$(this).addClass('active')
 			$(this).parents('.plan-container').addClass('plan-fluid')
@@ -30,9 +31,19 @@
 			$(this).removeClass('active')
 		});
 
-		$(window).scroll(function () { 
-	      $('.gotop').show()
-	    });
+        $('.gotop').click(function(){
+            $("body, html").animate({
+                scrollTop: "0px"
+            });
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0) {
+                $('.gotop').fadeIn();
+            } else {
+                $('.gotop').fadeOut();
+            }
+        });
 
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
