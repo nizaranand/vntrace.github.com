@@ -3,8 +3,8 @@
 <head>
 	<meta CHARSET="UTF-8">
 	<title>index</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/color-button.css">
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
@@ -14,78 +14,77 @@
 </head>
 <body>
 
-	<div class="navbar">
-		<div class="navbar-inner">
-			<a class="brand" href="#">
-				<span>Clgt</span>Admin
-			</a>
-			<ul class="nav pull-right">
-				<li class="divider-vertical"></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">
-						John doe
-					<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
+	<div class="navbar navbar-fixed-top navbar-f">
+		<div class="navbar-inner navbar-inverse">
+			<div class="container-fluid">
+				<a class="brand" href="#">
+					<span>Clgt</span>Admin
+				</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="dashboard.html">Dashboard</a></li>
+						<li><a href="faq.html">Faq</a></li>
 						<li>
-							<a href="#">
-								<i class="icon-user icon-gray-shadow"></i>
-								Account Setting  
-                            </a>
+							<a href="photo.html">Photo</a>
 						</li>
-						<li>
-							<a href="#">
-								<i class="icon-lock icon-gray-shadow"></i> Change Password
-                            </a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="index.html"><i class="icon-off icon-gray-shadow"></i> Logout</a>
+						<li><a href="pricing-plans.html">Pricing plans</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								<!-- <i class="i-setting"></i> -->
+								Setting
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+									<i class="icon-user icon-gray-shadow"></i> 
+									 Account
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-lock icon-gray-shadow"></i>
+										Change Password
+									</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
-				</li>
-			</ul>
-			<form class="navbar-search pull-right">
-				<input class="search-query span2" type="text" placeholder="Search">
-			</form>
+					<ul class="nav pull-right">
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								John doe
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+										<i class="icon-user icon-gray-shadow"></i>
+										Account Setting  
+		                            </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-lock icon-gray-shadow"></i> Change Password
+		                            </a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="index.html"><i class="icon-off icon-gray-shadow"></i> Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<form class="navbar-search pull-right">
+					<input class="search-query span2" type="text" placeholder="Search">
+				</form>
+			</div>
 		</div>
 	</div>
 
-
-	<div class="subhead">
-		<div class="subnav">
-			<ul class="nav nav-pills set-of-icons-2">
-				<li class="active"><a href="dashboard.html"><i class="i-home"></i><span>DASHBOARD</span></a></li>
-				<li><a href="faq.html"><i class="i-faq"></i><span>FAQ</span></a></li>
-				<li>
-					<a href="photo.html"><i class="i-photo"></i><span>PHOTO</span></a>
-				</li>
-				<li><a href="pricing-plans.html"><i class="i-pricing-plans"></i><span>PRICING PLANS</span></a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">
-						<i class="i-setting"></i>
-						<span>SETTING</span>
-						<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#">
-							<i class="icon-user icon-gray-shadow"></i> 
-							 Account
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="icon-lock icon-gray-shadow"></i>
-								Change Password
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-
+<div class="main">
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="sidebar span2">
@@ -131,12 +130,29 @@
                             <a href="#">
                                 <i class="icon-flag"></i>Setting
                                 <i class="pull-right icon-circle-arrow-right icon-gray"></i>
-
                             </a>
                             <ul class="nav nav-list">
                                 <li><a href="#"><i class="icon-th-large"></i>General</a></li>
                                 <li><a href="#"><i class="icon-th-large"></i>Permission</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="table.html">
+                                <i class="icon-flag"></i>Table
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nav-table.html">
+                                <i class="icon-flag"></i>Nav,pill,table
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="form.html">
+                                <i class="icon-flag"></i>Form
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
                         </li>
 					</ul>
 				</div>
@@ -158,7 +174,6 @@
 							<span class="stat-value">47</span>
 							<p>New opened tickets</p>
 						</div><!-- box-stat -->
-						
 					</div>
 				</div>
 				<!-- end stat-wrapper -->
@@ -171,18 +186,18 @@
 								<h4>QUICK SHORTCUTS</h4>
 							</div>
 							<div class="box-content">
-								<ul class="nav nav-pills set-of-icons-1">
-									<li><a href="#"><i class="i-apps big-icon"></i><span>Apps</span></a></li>
+								<ul class="nav nav-pills">
+									<li><a href="#"><i class="i-apps"></i><span>Apps</span></a></li>
 									<li>
-										<a href="#"><i class="i-photo big-icon"></i><span>Messages</span></a>
+										<a href="#"><i class="i-photo"></i><span>Messages</span></a>
 										<span class="badge badge-important">6</span>
 									</li>
-									<li><a href="#"><i class="i-notes big-icon"></i><span>Notes</span></a></li>
-									<li><a href="#"><i class="i-user big-icon"></i><span>User</span></a></li>
-									<li><a href="#"><i class="i-photo big-icon"></i><span>Photo</span></a></li>
-									<li><a href="#"><i class="i-report big-icon"></i><span>Report</span></a></li>
-									<li><a href="#"><i class="i-comment big-icon"></i><span>Comment</span></a></li>
-									<li><a href="#"><i class="i-setting big-icon"></i><span>Setting</span></a></li>
+									<li><a href="#"><i class="i-notes"></i><span>Notes</span></a></li>
+									<li><a href="#"><i class="i-user"></i><span>User</span></a></li>
+									<li><a href="#"><i class="i-photo"></i><span>Photo</span></a></li>
+									<li><a href="#"><i class="i-report"></i><span>Report</span></a></li>
+									<li><a href="#"><i class="i-comment"></i><span>Comment</span></a></li>
+									<li><a href="#"><i class="i-setting"></i><span>Setting</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -210,7 +225,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="news-item-detail">										
+										<div class="news-item-detail">
 											<a href="javascript:;" class="news-item-title">Duis aute irure dolor in reprehenderit</a>
 											<p class="news-item-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 										</div>
@@ -240,6 +255,9 @@
 					<!-- Tabbable nav -->
 					<div class="span6">
 						<div class="box">
+							<div class="box-header">
+								<h4>Recent orders</h4>
+							</div>
 							<div class="box-content">
 								<div class="tabbable">
 									<ul class="nav nav-tabs">
@@ -319,10 +337,6 @@
 													<tr>
 														<td class="description"><a href="http://themeforest.net">http://themeforest.net</a></td>
 														<td class="value"><span>834</span></td>
-													</tr>
-													<tr>
-														<td class="description"><a href="http://codecanyon.net">codecanyon.net</a></td>
-														<td class="value"><span>625</span></td>
 													</tr>
 												
 												</tbody>
@@ -474,7 +488,7 @@
                                                 <div class="control-group">                                         
                                                     <label class="control-label" for="username">Username</label>
                                                     <div class="controls">
-                                                        <input type="text" class="input-medium disabled" id="username"  disabled="" value="Johe doe">
+                                                        <input type="text" class="input-medium disabled" id="username"  disabled="" value="John doe">
                                                         <p class="help-block">Your username cannot be changed</p>
                                                     </div> <!-- /controls -->               
                                                 </div> <!-- /control-group -->
@@ -554,7 +568,7 @@
 
 				<!-- calendar -->
 				<div class="row-fluid">
-					<div class="span12">
+					<div class="span4">
 						<div class="box">
 							<div class="box-header">
 								<h4>Calendar</h4>
@@ -638,13 +652,77 @@
 							</div>
 						</div>
 					</div>
+					<div class="span4">
+						<div class="box">
+							<div class="box-header">
+								<h4>Notifications</h4>
+							</div>
+							<div>
+								<table class="table table-striped">
+	                                <tbody>
+	                                    <tr>
+	                                        <td><i class="icon-user"></i></td>
+	                                        <td><a href="#"><strong>John doe</strong> added <strong>23 users</strong> </a><em>4 hours ago</em></td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><i class="icon-envelope"></i></td>
+	                                        <td><a href="#"><strong>John doe</strong> sent you  <strong>message</strong> </a><em>Yesterday</em></td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><i class="icon-tag"></i></td>
+	                                        <td><a href=""><strong>John doe</strong> invite you to  <strong>dinner</strong> </a><em>2 days ago</em></td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><i class="icon-user"></i></td>
+	                                        <td><a href="#"><strong>John doe</strong> added <strong>23 users</strong> </a><em>4 days ago</em></td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><i class="icon-envelope"></i></td>
+	                                        <td><a href="#"><strong>John doe</strong> sent you  <strong>message</strong> </a><em>5 days ago</em></td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td></td>
+	                                        <td><a href="#" class="pull-right">Show all</a></td>
+	                                    </tr>
+	                                </tbody>
+	                            </table>
+							</div>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="box">
+							<div class="box-header">
+								<h4>Pagination</h4>
+							</div>
+							<div class="box-content">
+								<div class="pagination">
+									<ul>
+										<li><a href="#">Prev</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">Next</a></li>
+									</ul>
+								</div>
+								<div class="pagination .pagination-righ">
+									<ul>
+										<li><a href="#">Prev</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<!-- end calendar -->
 
 			</div><!-- end body-content -->
 		</div>
 	</div><!-- container-fluid -->
-
+</div>
 
 	<div class="footer">
 		<div class="container-fluid">

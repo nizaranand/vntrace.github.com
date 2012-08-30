@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta CHARSET="UTF-8">
-	<title>photo</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.min.css">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/color-button.css">
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
@@ -14,72 +14,75 @@
 </head>
 <body>
 
-	<div class="navbar">
-		<div class="navbar-inner">
-			<a class="brand" href="#">
-				<span>Clgt</span>Admin
-			</a>
-			<ul class="nav pull-right">
-				<li class="divider-vertical"></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">
-						John doe
-					<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#">
-								<i class="icon-user icon-gray-shadow"></i>
-								Account Setting  </a>
+	<div class="navbar navbar-fixed-top navbar-f">
+		<div class="navbar-inner navbar-inverse">
+			<div class="container-fluid">
+				<a class="brand" href="#">
+					<span>Clgt</span>Admin
+				</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a href="dashboard.html">Dashboard</a></li>
+						<li><a href="faq.html">Faq</a></li>
+						<li class="active">
+							<a href="photo.html">Photo</a>
 						</li>
-						<li>
-							<a href="#">
-								<i class="icon-lock icon-gray-shadow"></i> Change Password</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="index.html"><i class="icon-off icon-gray-shadow"></i> Logout</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<form class="navbar-search pull-right">
-				<input class="search-query span2" type="text" placeholder="Search">
-			</form>
-		</div>
-	</div>
-
-
-	<div class="subhead">
-		<div class="subnav">
-			<ul class="nav nav-pills set-of-icons-2">
-				<li><a href="dashboard.html"><i class="i-home"></i><span>DASHBOARD</span></a></li>
-				<li><a href="faq.html"><i class="i-faq"></i><span>FAQ</span></a></li>
-				<li class="active">
-					<a href="photo.html"><i class="i-photo"></i><span>PHOTO</span></a>
-				</li>
-				<li><a href="pricing-plans.html"><i class="i-pricing-plans"></i><span>PRICING PLANS</span></a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown">
-						<i class="i-setting"></i>
-						<span>SETTING</span>
-						<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#">
-							<i class="icon-user icon-gray-shadow"></i>Account</a></li>
-						<li>
-							<a href="#">
-								
-								<i class="icon-lock icon-gray-shadow"></i>Change Password
+						<li><a href="pricing-plans.html">Pricing plans</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								Setting
+								<b class="caret"></b>
 							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+									<i class="icon-user icon-gray-shadow"></i> 
+									 Account
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-lock icon-gray-shadow"></i>
+										Change Password
+									</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
-				</li>
-			</ul>
+					<ul class="nav pull-right">
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								John doe
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+										<i class="icon-user icon-gray-shadow"></i>
+										Account Setting  
+		                            </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-lock icon-gray-shadow"></i> Change Password
+		                            </a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="index.html"><i class="icon-off icon-gray-shadow"></i> Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<form class="navbar-search pull-right">
+					<input class="search-query span2" type="text" placeholder="Search">
+				</form>
+			</div>
 		</div>
 	</div>
+<div class="main">
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="sidebar span2">
@@ -132,6 +135,18 @@
                                 <li><a href="#"><i class="icon-th-large"></i>Permission</a></li>
                             </ul>
                         </li>
+                         <li>
+                            <a href="table.html">
+                                <i class="icon-flag"></i>Table
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nav-table.html">
+                                <i class="icon-flag"></i>Nav,pill,table
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div><!-- end sidebar -->
@@ -141,7 +156,7 @@
 					<div class="span12">
 						<ul class="breadcrumb">
 							<li>
-								<a href="#">Home</a> <span class="divider">/</span>
+								<a href="#">Dashboard</a> <span class="divider">/</span>
 							</li>
 							<li>
 								Photo
@@ -204,7 +219,7 @@
 			<!-- end body-content -->
 		</div>
 	</div>
-
+</div>
 	<div class="footer">
 		<div class="container-fluid">
 			<div class="row-fluid">

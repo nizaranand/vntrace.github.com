@@ -3,7 +3,7 @@ body{
   color:#8e8e8e;
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;;
 }
-a,.navbar .brand{
+a,.navbar-f .brand{
   color:#60AEB0;
 }
 a:hover{
@@ -16,6 +16,9 @@ ul,ol {
 li {
   list-style-type:none;
 }
+h1,h2,h3,h4,h5 {
+  margin:0px;
+}
 .clear-10 {
   padding:10px 0px;
   clear:both;
@@ -23,12 +26,16 @@ li {
 .clear-mg-bt-20{
   margin-bottom:0px;
 }
-.navbar .brand {
+.navbar-f .brand {
   font-weight:bold;
+  text-shadow:none;
 }
-.brand span {
+.navbar-f .brand span {
 color: white;
 font-size: 20px;
+}
+.navbar-f .navbar-inverse .navbar-search .search-query {
+  border:none;
 }
 /************** global *************/
 #myModal {
@@ -54,6 +61,7 @@ font-size: 20px;
 h4 {
   line-height:2.5em;
   color:#cdcdcd;
+  font-size:14px;
 }
 .bg-title {
   background:#25262b;
@@ -118,76 +126,36 @@ cursor: not-allowed;
 background-color: #131217;
 }
 /************** end global *************/
-.navbar {
-  margin-bottom:0px;
-}
-.navbar .navbar-inner{
-  border-radius:0px;
-  -webkit-border-radius:0px;
-  -moz-border-radius:0px;
-  -o-border-radius:0px;
+/************** .navbar-f *************/
+.navbar-f .navbar-inner{
   background:none;
   background-color:#25262b;
-  border-top:1px solid #3b3c41;
-  border-bottom:1px solid #1a1b20;
-}
-.subhead {
-  border-top:1px solid #3b3c41;
-  border-bottom:1px solid #1a1b20;
-  background:#2d3035;
-  margin-bottom:20px;
-  padding-left:20px;
-  padding-right:20px;
-}
-.subhead .nav {
-  margin:0px;
-}
-.subhead .nav li{
-  margin:0px;
-}
-.subhead .nav-pills > li:first-child{
-  box-shadow:-1px 0px 0px #191a1f;
-}
-.subhead .nav-pills > li:last-child{
-  box-shadow:1px 0px 0px #3a3d42;
-}
-.subhead .nav-pills > li {
   border:none;
-  border-right:1px solid #191a1f;
-  border-left:1px solid #3a3d42;
+  border-top:1px solid #3b3c41;
+  border-bottom:1px solid #1a1b20;
+}
+.navbar-f .nav {
   margin:0px;
 }
-.subhead .nav-pills > li.active > a{
-  min-height: 75px;
+.navbar-f .nav > li > a:hover,
+.navbar-f .nav > li.active > a,
+.nav > .dropdown.active > a:hover
+{
+  background:#1E2024;
+  color:#3dacb8;
+  text-shadow:none;
+  border-radius:0px;
 }
-.subhead .nav-pills > li > a {
-   border-radius:0px;
-  -webkit-border-radius:0px;
-  -moz-border-radius:0px;
-  -o-border-radius:0px;
-}
-.subhead .nav-pills > li > a,.quick-shortcuts .nav-pills > li > a{
-  text-align:center;
-  min-height:77px;
-  min-width:80px;
-  margin:0px;
-  color:#60AEB0;
-  text-shadow:0px 1px 0px #000;
-  font-weight:bold;
-  font-size:14px;
-  padding-top:15px;
-}
-.subhead .nav-tabs .open .dropdown-toggle,
-.subhead .nav-pills .open .dropdown-toggle,
-.subhead .nav > li.dropdown.open.active > a:hover {
-color:#60AEB0;
-text-shadow:none;
+/**********main***********/
+.main {
+  padding-top:70px;
 }
 /**********sidebar***********/
 .span2.sidebar {
   position:relative;
 }
 /**********body-right***********/
+/**********.quick-shortcuts***********/
 .quick-shortcuts .nav-pills {
   margin:0px;
 }
@@ -201,187 +169,107 @@ text-shadow:none;
   box-shadow:inset 1px 1px 3px #131215;
   margin:0.5em;
   font-weight:400;
-}
-.subhead .nav-pills > li > a:hover,
-.subhead .nav-pills > li.active > a,
-.nav > .dropdown.active > a:hover
-{
-  background:#1E2024;
-  color:#3dacb8;
-  text-shadow:none;
+  text-align:center;
+  min-height:77px;
+  font-size:14px;
+  padding-top:15px;
 }
 .quick-shortcuts .nav-pills > li > a:hover,
 .quick-shortcuts .nav-pills > li.active > a {
   background:#2d3035;
   text-shadow:none;
 }
-.subhead .nav-pills > li > a> span,
 .quick-shortcuts .nav-pills > li > a> span{
   padding-top:5px;
   display:block;
   width:100%;
 }
-.nav-tabs .dropdown-toggle .caret,
-.nav-pills .dropdown-toggle .caret,
-.nav-tabs .active .dropdown-toggle .caret,
-.nav-pills .active .dropdown-toggle .caret
- {
-border-top-color: 
-#999;
-border-bottom-color: 
-#999;
-}
-.nav-tabs .dropdown-toggle:hover .caret,
-.nav-pills .dropdown-toggle:hover .caret {
-border-top-color: 
-#777;
-border-bottom-color: 
-#777;
-}
 /******************* icons *****************/
-.set-of-icons-1 .i-home,.set-of-icons-1 .i-setting,.set-of-icons-1 .i-pricing-plans,.set-of-icons-1 .i-setting,
-.set-of-icons-1 .i-faq,.set-of-icons-1 .i-photo,.set-of-icons-1 .i-messages,.set-of-icons-1 .i-apps,.set-of-icons-1 .i-user,.set-of-icons-1 .i-notes,
-.set-of-icons-1 .i-report,.set-of-icons-1 .i-comment,.set-of-icons-1 .i-bookmark,.set-of-icons-1 .i-fqa
+.i-home,.i-setting,.i-pricing-plans,.i-setting,
+.i-faq,.i-photo,.i-messages,.i-apps,.i-user,.i-notes,
+.i-report,.i-comment,.i-bookmark,.i-fqa
  {
   background:url("../img/icons/icon-blue-big.png") left top;
   width:52px;
   height:40px;
   display:inline-block;
 }
-.set-of-icons-1 > li > a:hover > .i-messages{
+.nav > li > a:hover > .i-messages{
     background-position: left bottom;
   }
-.set-of-icons-1 .i-apps{
+.nav .i-apps{
  background-position: -65px top;
 }
-  .set-of-icons-1 > li > a:hover > .i-apps,
-  .set-of-icons-1 > li.active > a > .i-apps{
+  .nav > li > a:hover > .i-apps,
+  .nav > li.active > a > .i-apps{
     background-position: -65px bottom;
   }
-.set-of-icons-1 .i-photo {
+.nav .i-photo {
   background-position: -130px top;
 }
-  .set-of-icons-1 > li > a:hover > .i-photo,
-  .set-of-icons-1 > li.active > a >.i-photo{
+  .nav > li > a:hover > .i-photo,
+  .nav > li.active > a >.i-photo{
     background-position: -130px bottom;
   }
-.set-of-icons-1 .i-notes {
+.nav .i-notes {
   background-position: -195px top;
 }
-  .set-of-icons-1 > li > a:hover > .i-notes,
-  .set-of-icons-1 > li.active > a > .i-notes {
+  .nav > li > a:hover > .i-notes,
+  .nav > li.active > a > .i-notes {
     background-position: -195px bottom;
   }
-.set-of-icons-1 .i-user {
+.nav .i-user {
   background-position: -260px top; 
 }
-  .set-of-icons-1 > li > a:hover >.i-user,
-  .set-of-icons-1 > li.active > a >.i-user {
+  .nav > li > a:hover >.i-user,
+  .nav > li.active > a >.i-user {
     background-position: -260px bottom;
   }
-.set-of-icons-1 .i-report {
+.nav .i-report {
   background-position: -325px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-report,
-  .set-of-icons-1 > li.active > a >.i-report {
+  .nav > li > a:hover >.i-report,
+  .nav > li.active > a >.i-report {
     background-position: -325px bottom;
   }
-.set-of-icons-1 .i-setting {
+.nav .i-setting {
   background-position: -390px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-setting,
-  .set-of-icons-1 > li.active > a >.i-setting {
+  .nav > li > a:hover >.i-setting,
+  .nav > li.active > a >.i-setting {
     background-position: -390px bottom;
   }
-.set-of-icons-1 .i-comment {
+.nav .i-comment {
   background-position: -455px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-comment,
-  .set-of-icons-1 > li.active > a >.i-comment {
+  .nav > li > a:hover >.i-comment,
+  .nav > li.active > a >.i-comment {
     background-position: -455px bottom;
   }
-.set-of-icons-1 .i-pricing-plans {
+.nav .i-pricing-plans {
   background-position: -520px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-pricing-plans,
-  .set-of-icons-1 > li.active > a >.i-pricing-plans {
+  .nav > li > a:hover >.i-pricing-plans,
+  .nav > li.active > a >.i-pricing-plans {
     background-position: -520px bottom;
   }
-.set-of-icons-1 .i-faq {
+.nav .i-faq {
   background-position: -585px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-faq,
-  .set-of-icons-1 > li.active > a >.i-faq {
+  .nav > li > a:hover >.i-faq,
+  .nav > li.active > a >.i-faq {
     background-position: -585px bottom;
   }
-.set-of-icons-1 .i-home {
+.nav .i-home {
   background-position: -650px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-home,
-  .set-of-icons-1 > li.active > a >.i-home {
+  .nav > li > a:hover >.i-home,
+  .nav > li.active > a >.i-home {
     background-position: -650px bottom;
   }
-.set-of-icons-1 .i-bookmark {
+.i-bookmark {
   background-position: -715px top;
 }
-  .set-of-icons-1 > li > a:hover >.i-bookmark,
-  .set-of-icons-1 > li.active > a >.i-bookmark {
-    background-position: -715px bottom;
-  }
-
-/*set-2*/
-.set-of-icons-2 .i-home,.set-of-icons-2 .i-faq,
-.set-of-icons-2 .i-setting,.set-of-icons-2 .i-pricing-plans,.set-of-icons-2 .i-photo {
-  background:url("../img/icons/icon-menu-top.png") left bottom;
-  width:50px;
-  height:40px;
-  display:inline-block;
-}
-  .set-of-icons-2 > li > a:hover >.i-home,
-  .set-of-icons-2 > li.active > a >.i-home {
-    background-position: left top;
-  }
-.set-of-icons-2 .i-setting {
-  background-position: -55px bottom;
-}
-  .set-of-icons-2 > li > a:hover >.i-setting,
-  .set-of-icons-2 > li.active > a >.i-setting {
-    background-position: -55px top;
-  }
-.set-of-icons-2 .i-pricing-plans {
-  background-position: -110px bottom;
-}
-  .set-of-icons-2 > li > a:hover >.i-pricing-plans,
-  .set-of-icons-2 > li.active > a >.i-pricing-plans {
-    background-position: -110px top;
-  }
-.set-of-icons-2 .i-photo {
-  background-position: -165px bottom;
-}
-  .set-of-icons-2 > li > a:hover >.i-photo,
-  .set-of-icons-2 > li.active > a >.i-photo {
-    background-position: -165px top;
-  }
-.set-of-icons-2 .i-faq {
-  background-position: -220px bottom;
-}
-  .set-of-icons-2 > li > a:hover >.i-faq,
-  .set-of-icons-2 > li.active > a >.i-faq {
-    background-position: -220px top;
-  }
-/*
-.i-faq {
-  background-position: -90px;
-}
-.i-pricing-plans {
-  background-position: -210px;
-}
-.i-comment {
-  background-position: -270px;
-}
-.i-bookmark {
-  background-position: -330px;
-}*/
 /******************* end-icon *****************/
 /********* wra-box + title ********/
 .box {
@@ -825,11 +713,6 @@ border-color: #18191c;
 }
 /************ end Recent News **************/
 /*********** breadcrumb *************/
-/*.breadcrumb {
-  background-color:#25262b;
-  box-shadow:inset 1px 1px 3px #131217;
-  border:none;
-}*/
 .breadcrumb {
   border:none;
   box-shadow:inset 1px 1px 3px #131217;
@@ -989,13 +872,6 @@ display:block;
   color:#fff;
   padding:10px 0px;
   border-bottom:1px solid #24262c;
- /* background-color: #4a5361;
-  background-image: -ms-linear-gradient(top, #4a5361, #3f4652);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4a5361), to(#3f4652));
-  background-image: -webkit-linear-gradient(top, #4a5361, #3f4652);
-  background-image: -o-linear-gradient(top, #4a5361, #3f4652);
-  background-image: -moz-linear-gradient(top, #4a5361, #3f4652);
-  background-image: linear-gradient(top, #4a5361, #3f4652);*/
   background-color: #23242A;
   background-image: -ms-linear-gradient(top, #23242A, #17171B);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23242A), to(#17171B));
@@ -1055,10 +931,6 @@ display:block;
     color:#3dacb8;
    
     text-shadow:1px 3px 0px black;
-}
-.plan-business,.plan-container {
-  /*margin:0px;*/
-  /*box-shadow:0px 0px 10px #60AEB0;*/
 }
 .plan-business {
   padding:0px;
@@ -1274,12 +1146,9 @@ div.uploader input {
 @media (min-width: 979px) and (max-width: 1360px) {
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  .subhead .nav li {
+  .navbar-f .nav li {
     border-top:1px solid #3b3c41;
     border-bottom:1px solid #1a1b20;
-  }
-  .wra-stat .box-stat .stat .stat-value{
-  margin:0px 15%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) { 
@@ -1287,20 +1156,17 @@ div.uploader input {
     width:49%;
     margin-bottom:20px;
   }
-  .subhead .nav li {
+  .navbar-f .nav li {
     width:100%;
     border:none;
     border-top:1px solid #3b3c41;
     border-bottom:1px solid #1a1b20;
   }
-  .subhead .nav-pills > li:first-child{
+  .navbar-f .nav > li:first-child{
   box-shadow:none;
   }
-  .subhead .nav-pills > li:last-child{
+  .navbar-f .nav > li:last-child{
     box-shadow:none;
-  }
-  .wra-stat .box-stat .stat .stat-value{
-  margin:0px 15%;
   }
 }
 @media (min-width: 100px) and (max-width:480px){
@@ -1308,23 +1174,20 @@ div.uploader input {
     width:100%;
     margin-bottom:20px;
   }
-  .subhead .nav li {
+  .navbar-f .nav li {
     width:100%;
     border:none;
     border-top:1px solid #3b3c41;
     border-bottom:1px solid #1a1b20;
   }
-  .subhead .nav-pills > li:first-child{
+  .navbar-f .nav > li:first-child{
   box-shadow:none;
   }
-  .subhead .nav-pills > li:last-child{
+  .navbar-f .nav > li:last-child{
     box-shadow:none;
   }
   .navbar-search {
     width:100%;
-  }
-  .wra-stat .box-stat .stat .stat-value{
-  margin:0px 5%;
   }
   .calendar .table tbody tr td,.table thead tr th,
   .calendar .table tbody tr th {
@@ -1342,3 +1205,5 @@ li ul.nav {
 li.active > a {
     font-weight: bold;
 }
+
+
