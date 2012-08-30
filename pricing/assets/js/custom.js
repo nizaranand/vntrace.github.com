@@ -1,26 +1,35 @@
 (function($){
 	$(document).ready(function(){
         
-		$('.change-color').children().click(function(){
-			$(this).siblings().removeClass('active')
+		$('.change-color button[class*=btn-]').click(function(){
+			$(this).siblings('button[class*=btn-]').removeClass('active')
 			$(this).addClass('active')
 		});
-		$('.change-color .btn-success').click(function(){
+		//change color plan
+		$('.btn-success').click(function(){
 			$(this).parents('.plan-container').removeClass('red blue orange')
 			$(this).parents('.plan-container').addClass('green')
 		});
-		$('.change-color .btn-danger').click(function(){
+		$('.btn-danger').click(function(){
 			$(this).parents('.plan-container').removeClass('green blue orange')
 			$(this).parents('.plan-container').addClass('red')
 		});
-		$('.change-color .btn-info').click(function(){
+		$('.btn-info').click(function(){
 			$(this).parents('.plan-container').removeClass('green red orange')
 			$(this).parents('.plan-container').addClass('blue')
 		});
-		$('.change-color .btn-warning').click(function(){
+		$('.btn-warning').click(function(){
 			$(this).parents('.plan-container').removeClass('green red blue')
 			$(this).parents('.plan-container').addClass('orange')
 		});
+		$('.change-color .plan-fluid').toggle(function(){
+			$(this).addClass('active')
+			$(this).parents('.plan-container').addClass('plan-fluid')
+		},function(){
+			$(this).parents('.plan-container').removeClass('plan-fluid')
+			$(this).removeClass('active')
+		});
+
 		$(window).scroll(function () { 
 	      $('.gotop').show()
 	    });

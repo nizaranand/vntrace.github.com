@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta cjharset="utf-8">
-	<title>pricing</title>
+	<title>Clgt pricing</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
@@ -16,7 +16,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="#">Pricing Bootstrap</a>
+				<a class="brand" href="#">Clgt Pricing</a>
 				<ul class="nav">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dont Click Me<b class="caret"></b></a>
@@ -24,7 +24,6 @@
                           <li><a href="#plan-easy">Easy Plan</a></li>
                           <li><a href="#pricing">Cool Plan</a></li>
                           <li><a href="#choose-list-plan">Old-Man Plan</a></li>
-                          <li><a href="#pricing-5-colum">Old-Lady Plan</a></li>
                         </ul>
 					</li>
 					<!-- <li><a href="grid-help.html">Grid Help</a></li> -->
@@ -38,7 +37,7 @@
 		<div class="header span12" id="header">
 			<h1>Clgt Pricing Plan</h1>
 			<p>
-                Four type of plans, with 4 different colors.
+                3 type of plans, with 4 different colors.
             </p>
             <p>
                 Clgt pricing plan covers your ass for any business websites, hosting websites, service websites, whatsoever !
@@ -46,7 +45,7 @@
 		</div>
 	</div>
     <div class="tip">
-        <h3>Read me, there was something you must khow first</h3>
+        <h3>Read me, there was somethings you must khow first</h3>
         <p>
             All plan begin with <code>plan-container</code>, then <code>plan-xxxx</code> (xxxx can be <code>easy</code> or <code> cool </code> or <code>old-man</code> or ... ), and then your plan color: <code>blue</code>, <code>green</code>, <code>orange</code>, <code>red</code>.
         </p>
@@ -64,21 +63,27 @@
 				<p>
                     Hi there, I'm <code>plan-easy</code>. Please click the button below to see how i can change my color.
                 </p>
-				<div class="change-color">
+            
+        		<div class="change-color">
 					<button class="btn btn-info">blue</button>
 					<button class="btn btn-success active">green</button>
 					<button class="btn btn-warning">orange</button>
 					<button class="btn btn-danger">red</button>
+					<button class="btn plan-fluid">plan-fluid</button>
 				</div>
 			</div><!-- /title -->
 			<div class="row-fluid">
-				<div class="plan span4">
+				<div class="plan plan-list span4">
 					<div class="plan-header">
 						<h3 class="plan-title">Standard</h3>
-						<div class="plan-price"><span>$</span>7</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">7</span>
+                        	<span class="text">Choose <b>your</b> plan</span>
+                    	</p>
 						<div class="save">Save 16$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>100MB</b> Disk Space</li>
 							<li><b>200MB</b> Monthly Traffic</li>
@@ -89,7 +94,7 @@
 							<li>--</li>
 							<li>--</li>
 						</ul>
-					</div><!-- plan-content -->
+					</div><!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
@@ -99,10 +104,13 @@
 				<div class="plan plan-best-choose span4">
 					<div class="plan-header">
 						<h3 class="plan-title">Advanced</h3>
-						<div class="plan-price"><span>$</span>15</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">15</span>
+                    	</p>
 						<div class="save">Save 24$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>300MB</b> Disk Space</li>
 							<li><b>400MB</b> Monthly Traffic</li>
@@ -113,7 +121,7 @@
 							<li>PHP5 Support</li>
 							<li>--</li>
 						</ul>
-					</div><!-- plan-content -->
+					</div><!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
@@ -123,10 +131,13 @@
 				<div class="plan span4">
 					<div class="plan-header">
 						<h3 class="plan-title">Business</h3>
-						<div class="plan-price"><span>$</span>37</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">37</span>
+                    	</p>
 						<div class="save">Save 36$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>1GB</b> Disk Space</li>
 							<li><b>2GB</b> Monthly Traffic</li>
@@ -138,13 +149,13 @@
 							<li>Plesk Control Panel</li>
 						</ul>
 					</div>
-					<!-- plan-content -->
+					<!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
 				</div><!-- plan -->
 			</div><!-- /row-fluid -->
-		</div><!-- end pricing-plans plans-blue -->
+		</div><!-- end plan-container plan-easy -->
 	</section><!-- /row-fluid -->
 
 
@@ -160,20 +171,26 @@
                 <p>
                     Yo, look at me man, i'm <code>plan-cool</code>, for short cool ! Please click a button below to see what cool about me.
                 </p>
-				<div class="change-color">
+        		<div class="change-color">
 					<button class="btn btn-info active">blue</button>
 					<button class="btn btn-success">green</button>
 					<button class="btn btn-warning">orange</button>
 					<button class="btn btn-danger">red</button>
+					<button class="btn plan-fluid">plan-fluid</button>
 				</div>
 			</div><!-- /title -->
 			<div class="row-fluid">
-				<div class="plan span3">
+				<div class="plan plan-list span3">
 					<div class="plan-header">
 						<h3 class="plan-title">Micro</h3>
-						<div class="plan-price"><span>$</span>7</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">7</span>
+                        	<span class="text">Choose <b>your</b> plan</span>
+                    	</p>
+                    	<div class="save">Save 36$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>100MB</b> Disk Space</li>
 							<li><b>200MB</b> Monthly Traffic</li>
@@ -185,7 +202,7 @@
 							<li>--</li>
 							<li>--</li>
 						</ul>
-					</div><!-- plan-content -->
+					</div><!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
@@ -194,9 +211,13 @@
 				<div class="plan span3">
 					<div class="plan-header">
 						<h3 class="plan-title">Corporate</h3>
-						<div class="plan-price"><span>$</span>15</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">15</span>
+                    	</p>
+                    	<div class="save">Save 36$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>300MB</b> Disk Space</li>
 							<li><b>400MB</b> Monthly Traffic</li>
@@ -208,7 +229,7 @@
 							<li>--</li>
 							<li>--</li>
 						</ul>
-					</div><!-- plan-content -->
+					</div><!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
@@ -217,11 +238,13 @@
 				<div class="plan plan-best-choose span3">
 					<div class="plan-header">
 						<h3 class="plan-title">Business</h3>
-						<div class="plan-price">
-							<span>$</span>37
-						</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">37</span>
+                    	</p>
+                    	<div class="save">Save 36$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>1GB</b> Disk Space</li>
 							<li><b>2GB</b> Monthly Traffic</li>
@@ -233,7 +256,7 @@
 							<li>Plesk Control Panel</li>
 							<li>--</li>
 						</ul>
-					</div><!-- plan-content -->
+					</div><!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
@@ -243,11 +266,13 @@
 				<div class="plan span3">
 					<div class="plan-header">
 						<h3 class="plan-title">Platinum</h3>
-						<div class="plan-price">
-							<span>$</span>97
-						</div>
+						<p>
+                        	<span class="currency">$</span>
+                        	<span class="money">97</span>
+                    	</p>
+                    	<div class="save">Save 36$/year</div>
 					</div><!-- end plan-header -->
-					<div class="plan-content">
+					<div class="plan-body">
 						<ul>
 							<li><b>5GB</b> Disk Space</li>
 							<li><b>Unlimited</b> Monthly Traffic</li>
@@ -259,14 +284,14 @@
 							<li>Plesk Control Panel</li>
 							<li>Spam Assassin</li>
 						</ul>
-					</div><!-- plan-content -->
+					</div><!-- plan-body -->
 					<div class="plan-footer">
 						<a class="btn-plan" href="#">Purchase</a>
 					</div><!-- end plan-footer -->
 				</div><!-- plan -->
 			</div><!-- /row-fluid -->
 
-		</div><!-- end pricing-plans plans-blue -->
+		</div><!-- end plan-container plan-cool -->
 	</section><!-- /row-fluid -->
 
 
@@ -276,235 +301,124 @@
 
 
 	<section class="row-fluid" id="choose-list-plan">
-		<div class="plan-container plan-old-man orange span12">
+		
+		<div class="plan-container plan-old-man red span12">
+
 			<div class="title">
 				<h3>The Old-Man plan.</h3>
 				<p>"Nowaday, people don't use me for pricing plan anymore", <code>plan-old-man</code> said. He looks so lonely.
-				<div class="change-color">
-					<button class="btn btn-info">blue</button>
-					<button class="btn btn-success">green</button>
-					<button class="btn btn-warning active">orange</button>
-					<button class="btn btn-danger">red</button>
-				</div>
-			</div><!-- /title -->
-			<div class="plan span3">
-				<div class="plan-header">
-					<div class="choose-list-plan">
-						Choose <span>your</span> plan
-					</div>
-				</div>
-				<!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>Amount of space</li>
-						<li>Bandwidth per month</li>
-						<li>No of e-,mail accounts</li>
-						<li>No of MySql databases</li>
-						<li>24h support</li>
-						<li>Support tickets per month</li>
-					</ul>
-				</div><!-- plan-content -->
-			</div><!-- plan -->
-
-
-			<div class="plan span3">
-				<div class="plan-header">
-					<h3 class="plan-title">Micro</h3>
-					<div class="plan-price"><span>$</span>7</div>
-				</div><!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>10 GB</li>
-						<li>100 GB</li>
-						<li>1</li>
-						<li>1</li>
-						<li>Yes</li>
-						<li>1</li>
-					</ul>
-				</div><!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
-
-
-			<div class="plan plan-best-choose span3">
-				<div class="plan-header">
-					<h3 class="plan-title">Business</h3>
-                    <p>
-                        <span class="currency">$</span>
-                        <span class="money">37</span>
-                    </p>
-				</div><!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>100 GB</li>
-						<li>500 GB</li>
-						<li>50</li>
-						<li>50</li>
-						<li>Yes</li>
-						<li>5</li>
-					</ul>
-				</div><!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
-
-
-			<div class="plan span3">
-				<div class="plan-header">
-					<h3 class="plan-title">Platinum</h3>
-					<div class="plan-price">
-						<span>$</span>97
-					</div>
-				</div><!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>Unlimited</li>
-						<li>1000 GB</li>
-						<li>Unlimited</li>
-						<li>Unlimited</li>
-						<li>Yes</li>
-						<li>10</li>
-					</ul>
-				</div><!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
-		</div><!-- end pricing-plans plans-red-->
-	</section><!-- /row-fluid -->
-
-	<div class="row-fluid">
-		<div class="dash"></div>
-	</div>
-
-	<section class="row-fluid" id="pricing-5-colum">
-		<div class="plan-container pricing-5-colum red span12">
-			<div class="title">
-				<h3>There Was An Old Lady</h3>
-                <p>A term used to refer to your GF or your wife, etc. Usually somebody who you may like, but really don't have much respect for<p>
-                <p>Ohh wait nevermind! <code>plan-old-lady</code> just have more thing for ya to choose</p>
-				<div class="change-color">
+        		<div class="change-color">
 					<button class="btn btn-info">blue</button>
 					<button class="btn btn-success">green</button>
 					<button class="btn btn-warning">orange</button>
 					<button class="btn btn-danger active">red</button>
+					<button class="btn plan-fluid">plan-fluid</button>
 				</div>
 			</div><!-- /title -->
-			<div class="plan">
-				<div class="plan-header">
-					<div class="choose-list-plan">
-						Choose <span>your</span> plan
+			<div class="row-fluid">
+				<div class="plan plan-list span3">
+					<div class="plan-header">
+						<h3 class="plan-title">Micro</h3>
+						<p>
+	                    	<span class="currency">$</span>
+	                    	<span class="money">7</span>
+	                    	<span class="text">Choose <b>your</b> plan</span>
+	                	</p>
+	                	<div class="save">Save 36$/year</div>
 					</div>
-				</div>
-				<!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>Amount of space</li>
-						<li>Bandwidth per month</li>
-						<li>No of e-,mail accounts</li>
-						<li>No of MySql databases</li>
-						<li>24h support</li>
-						<li>Support tickets per mo</li>
-					</ul>
-				</div><!-- plan-content -->
-			</div><!-- plan -->
+					<!-- end plan-header -->
+					<div class="plan-body">
+						<ul>
+							<li>Amount of space</li>
+							<li>Bandwidth per month</li>
+							<li>No of e-,mail accounts</li>
+							<li>No of MySql databases</li>
+							<li>24h support</li>
+							<li>Support tickets per month</li>
+						</ul>
+					</div><!-- plan-body -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Purchase</a>
+					</div><!-- end plan-footer -->
+				</div><!-- plan -->
 
 
-			<div class="plan">
-				<div class="plan-header">
-					<h3 class="plan-title">Micro</h3>
-					<div class="plan-price"><span>$</span>7</div>
-				</div><!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>10 GB</li>
-						<li>100 GB</li>
-						<li>1</li>
-						<li>1</li>
-						<li>Yes</li>
-						<li>1</li>
-					</ul>
-				</div>
-				<!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
+				<div class="plan span3">
+					<div class="plan-header">
+						<h3 class="plan-title">Micro</h3>
+						<p>
+	                    	<span class="currency">$</span>
+	                    	<span class="money">7</span>
+	                	</p>
+	                	<div class="save">Save 36$/year</div>
+					</div><!-- end plan-header -->
+					<div class="plan-body">
+						<ul>
+							<li>10 GB</li>
+							<li>100 GB</li>
+							<li>1</li>
+							<li>1</li>
+							<li>Yes</li>
+							<li>1</li>
+						</ul>
+					</div><!-- plan-body -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Purchase</a>
+					</div><!-- end plan-footer -->
+				</div><!-- plan -->
 
 
-			<div class="plan">
-				<div class="plan-header">
-					<h3 class="plan-title">Corporate</h3>
-					<div class="plan-price"><span>$</span>15</div>
-				</div>
-				<!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>30 GB</li>
-						<li>200 GB</li>
-						<li>10</li>
-						<li>10</li>
-						<li>Yes</li>
-						<li>3</li>
-					</ul>
-				</div>
-				<!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
+				<div class="plan plan-best-choose span3">
+					<div class="plan-header">
+						<h3 class="plan-title">Business</h3>
+	                    <p>
+	                        <span class="currency">$</span>
+	                        <span class="money">37</span>
+	                    </p>
+	                    <div class="save">Save 36$/year</div>
+					</div><!-- end plan-header -->
+					<div class="plan-body">
+						<ul>
+							<li>100 GB</li>
+							<li>500 GB</li>
+							<li>50</li>
+							<li>50</li>
+							<li>Yes</li>
+							<li>5</li>
+						</ul>
+					</div><!-- plan-body -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Purchase</a>
+					</div><!-- end plan-footer -->
+				</div><!-- plan -->
 
 
-			<div class="plan plan-best-choose">
-				<div class="plan-header">
-					<h3 class="plan-title">Business</h3>
-					<div class="plan-price">
-						<span>$</span>37
-					</div>
-				</div><!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>100 GB</li>
-						<li>500 GB</li>
-						<li>50</li>
-						<li>50</li>
-						<li>Yes</li>
-						<li>5</li>
-					</ul>
-				</div><!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
-
-
-			<div class="plan">
-				<div class="plan-header">
-					<h3 class="plan-title">Platinum</h3>
-					<div class="plan-price">
-						<span>$</span>97
-					</div>
-				</div><!-- end plan-header -->
-				<div class="plan-content">
-					<ul>
-						<li>Unlimited</li>
-						<li>1000 GB</li>
-						<li>Unlimited</li>
-						<li>Unlimited</li>
-						<li>Yes</li>
-						<li>10</li>
-					</ul>
-				</div><!-- plan-content -->
-				<div class="plan-footer">
-					<a class="btn-plan" href="#">Purchase</a>
-				</div><!-- end plan-footer -->
-			</div><!-- plan -->
+				<div class="plan span3">
+					<div class="plan-header">
+						<h3 class="plan-title">Platinum</h3>
+						<p>
+	                    	<span class="currency">$</span>
+	                    	<span class="money">37</span>
+	                	</p>
+	                	<div class="save">Save 36$/year</div>
+					</div><!-- end plan-header -->
+					<div class="plan-body">
+						<ul>
+							<li>Unlimited</li>
+							<li>1000 GB</li>
+							<li>Unlimited</li>
+							<li>Unlimited</li>
+							<li>Yes</li>
+							<li>10</li>
+						</ul>
+					</div><!-- plan-body -->
+					<div class="plan-footer">
+						<a class="btn-plan" href="#">Purchase</a>
+					</div><!-- end plan-footer -->
+				</div><!-- plan -->
+			</div><!-- /row-fluid -->
 		</div><!-- end pricing-plans plans-red-->
 	</section><!-- /row-fluid -->
-	
 </div>
 </body>
 </html>
