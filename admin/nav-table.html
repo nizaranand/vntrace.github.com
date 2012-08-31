@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta CHARSET="UTF-8">
+	<title>nav-tabble</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/color-button.css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top navbar-f">
+		<div class="navbar-inner navbar-inverse">
+			<div class="container-fluid">
+				<a class="brand" href="#">
+					<span>Clgt</span>Admin
+				</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="dashboard.html">Dashboard</a></li>
+						<li><a href="faq.html">Faq</a></li>
+						<li>
+							<a href="photo.html">Photo</a>
+						</li>
+						<li><a href="pricing-plans.html">Pricing plans</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								<!-- <i class="i-setting"></i> -->
+								Setting
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+									<i class="icon-user icon-gray-shadow"></i> 
+									 Account
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-lock icon-gray-shadow"></i>
+										Change Password
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav pull-right">
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								John doe
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+										<i class="icon-user icon-gray-shadow"></i>
+										Account Setting  
+		                            </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-lock icon-gray-shadow"></i> Change Password
+		                            </a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="index.html"><i class="icon-off icon-gray-shadow"></i> Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<form class="navbar-search pull-right">
+					<input class="search-query span2" type="text" placeholder="Search">
+				</form>
+			</div>
+		</div>
+	</div>
+
+<div class="main">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="sidebar span2">
+				<div class="list-menu">
+					<ul class="nav nav-list">
+						<li class="active"><a href="dashboard.html"><i class="icon-home icon-white"></i>Dashboard</a></li>
+						<li>
+							<a href="#">
+						      	<i class="icon-th"></i>
+                                Article
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+							<ul class="nav nav-list">
+								<li><a href="#"><i class="icon-th-large"></i>Write a new Article</a></li>
+								<li><a href="#"><i class="icon-th-large"></i>Manage Articles</a></li>
+                                <li><a href="#"><i class="icon-th-large"></i>Manage Comments</a></li>
+								<li><a href="#"><i class="icon-th-large"></i>Manage Categories</a></li>
+							</ul>
+						</li>
+						<li>
+                            <a href="#">
+                                <i class="icon-user"></i>Page
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                            <ul class="nav nav-list">
+                                <li><a href="#"><i class="icon-th-large"></i>Create a new Page</a></li>
+                                <li><a href="#"><i class="icon-th-large"></i>Manage Pages</a></li>
+                            </ul>
+							
+						</li>
+						<li>
+                            <a href="#">
+                                <i class="icon-cog"></i>Image Galary
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                            <ul class="nav nav-list">
+                                <li><a href="#"><i class="icon-th-large"></i>Upload Images</a></li>
+                                <li><a href="#"><i class="icon-th-large"></i>Manage Galleries</a></li>
+                                <li><a href="#"><i class="icon-th-large"></i>Album Settings</a></li>
+                            </ul>
+                        </li>
+						<li>
+                            <a href="#">
+                                <i class="icon-flag"></i>Setting
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                            <ul class="nav nav-list">
+                                <li><a href="#"><i class="icon-th-large"></i>General</a></li>
+                                <li><a href="#"><i class="icon-th-large"></i>Permission</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="table.html">
+                                <i class="icon-flag"></i>Table
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nav-table.html">
+                                <i class="icon-flag"></i>Nav,pill,table
+                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                            </a>
+                        </li>
+					</ul>
+				</div>
+			</div><!-- end sidebar -->
+			<div class="span10">
+				<!-- nav and pills-->
+				<div class="bg-title">
+					<h3><i class="i-bookmark"></i>Nav and pills</h3>
+				</div>
+				<!-- Basic tabs and Basic pills -->
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h4>Basic pills</h4>
+							</div>
+							<div class="box-content">
+								<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+								<ul class="nav nav-pills">
+									<li class="active"><a href="#">Apps</a></li>
+									<li><a href="#">Messages</a></li>
+									<li><a href="#">Notes</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h4>Basic tabs</h4>
+							</div>
+							<div class="box-content">
+								<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#">Apps</a></li>
+									<li><a href="#">Messages</a></li>
+									<li><a href="#">Notes</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end Basic tabs and Basic pills -->
+
+				<!-- Stacked tabs and Stacked pills-->
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h4>Stacked tabs</h4>
+							</div>
+							<div class="box-content">
+								<ul class="nav nav-pills nav-stacked">
+									<li class="active"><a href="#">Apps</a></li>
+									<li><a href="#">Messages</a></li>
+									<li><a href="#">Notes</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h4>Stacked tabs</h4>
+							</div>
+							<div class="box-content">
+								<ul class="nav nav-tabs nav-stacked">
+									<li class="active"><a href="#">Apps</a></li>
+									<li><a href="#">Messages</a></li>
+									<li><a href="#">Notes</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- endStacked tabs and Stacked pills -->
+
+				<!-- Tabs with dropdowns and Example nav list-->
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box">
+							<div class="box-header">
+								<h4>Example nav list</h4>
+							</div>
+							<div class="box-content">
+								<p>Take a list of links and add <code>class="nav nav-list"</code>:</p>
+								<div class="well" style="padding: 8px 0;">
+									<ul class="nav nav-list">
+										<li class="nav-header">List header</li>
+										<li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
+										<li><a href="#"><i class="icon-book icon-white"></i> Library</a></li>
+										<li><a href="#"><i class="icon-pencil icon-white"></i> Applications</a></li>
+										<li class="nav-header">Another list header</li>
+										<li><a href="#"><i class="icon-user icon-white"></i> Profile</a></li>
+										<li><a href="#"><i class="icon-cog icon-white"></i> Settings</a></li>
+										<li class="divider"></li>
+										<li><a href="#"><i class="icon-flag icon-white"></i> Help</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="box-header">
+							<h4>Tabs with dropdowns</h4>
+						</div>
+						<div class="box">
+							<div class="box-content">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#">Home</a></li>
+									<li><a href="#">Help</a></li>
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											Dropdown
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Tabs with dropdowns and Example nav list -->
+
+				<!-- List-menu nav list -->
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="title">
+							<h3>Example list-menu nav list</h3>
+						</div>
+						<p>Take a list of links and add <code>class="list-menu"</code> and <code>class="nav nav-list"</code>:</p>
+						<div class="list-menu">
+							<ul class="nav nav-list">
+								<li><a href="#"><i class=" icon-home"></i>Dashboard</a></li>
+								<li><a href="#"><i class="icon-book "></i>Library</a></li>
+								<li><a href="#"><i class="icon-pencil "></i>Applications</a></li>
+								<li class="active"><a href="#">
+								<i class="icon-user"></i>Profile</a></li>
+								<li><a href="#"><i class="icon-cog "></i>Settings</a></li>
+								<li><a href="#"><i class="icon-flag "></i>Help</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="title">
+							<h3>Example list-menu nav list</h3>
+						</div>
+						<p>Take a list of links and add <code>class="list-menu"</code></p>
+						<div class="list-menu">
+							<ul class="nav nav-list">
+								<li><a href="#"><i class=" icon-home"></i>Dashboard</a></li>
+								<li><a href="#">
+									<i class="icon-book "></i>
+									Library</a>
+									<span class="badge">1</span>
+								</li>
+								<li class="active"><a href="#">
+									<i class="icon-th"></i>Grid Layout<i class="pull-right icon-circle-arrow-right icon-gray"></i></a>
+									<ul class="nav nav-list " style="display:block">
+										<li><a href="#"><i class="icon-check"></i>Form</a></li>
+										<li class="active"><a href="#"><i class="icon-list-alt"></i>Table</a></li>
+										<li><a href="#"><i class="icon-th-large"></i>Nav,pills,</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><i class="icon-user"></i>Profile</a></li>
+								<li><a href="#"><i class="icon-cog "></i>Settings</a></li>
+								<li><a href="#"><i class="icon-flag "></i>Help</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end list-menu nav list -->
+
+				<!-- Tabbable nav -->
+				<div class="bg-title">
+					<h3><i class="i-bookmark"></i>Tabbable nav</h3>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-content">
+								<div class="tabbable">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+										<li class=""><a href="#tab2" data-toggle="tab">Section 2</a></li>
+										<li class=""><a href="#tab3" data-toggle="tab">Section 3</a></li>
+							        </ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab1">
+											<p>I'm in Section A.</p>
+										</div>
+										<div class="tab-pane" id="tab2">
+											<p>Howdy, I'm in Section B.</p>
+										</div>
+								        <div class="tab-pane" id="tab3">
+											<p>What up girl, this is Section C.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span4">
+						<h4>Tabs on the bottom</h4>
+						<p>Flip the order of the HTML and add a class to put tabs on the bottom.</p>
+						<div class="tabbable tabs-below">
+							<div class="tab-content">
+								<div class="tab-pane active" id="A">
+									<p>I'm in Section A.</p>
+								</div>
+								<div class="tab-pane" id="B">
+									<p>Howdy, I'm in Section B.</p>
+								</div>
+								<div class="tab-pane" id="C">
+									<p>What up girl, this is Section C.</p>
+								</div>
+							</div>
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
+								<li class=""><a href="#B" data-toggle="tab">Section 2</a></li>
+								<li class=""><a href="#C" data-toggle="tab">Section 3</a></li>
+							</ul>
+						</div>
+					</div><!-- End tabs on the bottom -->
+				
+					<div class="span4">
+						<h4>Tabs on the right</h4>
+						<p>Swap the class to put tabs on the right.</p>
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li class=""><a href="#lA" data-toggle="tab">Section 1</a></li>
+								<li class=""><a href="#lB" data-toggle="tab">Section 2</a></li>
+								<li class="active"><a href="#lC" data-toggle="tab">Section 3</a></li>
+							</ul>
+								<div class="tab-content">
+									<div class="tab-pane" id="lA">
+										<p>I'm in Section A.</p>
+										</div>
+										<div class="tab-pane" id="lB">
+										<p>Howdy, I'm in Section B.</p>
+										</div>
+										<div class="tab-pane active" id="lC">
+										<p>What up girl, this is Section C.</p>
+									</div>
+							</div>
+						</div>
+					</div><!-- End tabs on the left -->
+
+					<div class="span4">
+						<h4>Tabs on the right</h4>
+						<p>Swap the class to put tabs on the right.</p>
+						<div class="tabbable tabs-right">
+					        <ul class="nav nav-tabs">
+					          <li class="active"><a href="#rA" data-toggle="tab">Section 1</a></li>
+					          <li><a href="#rB" data-toggle="tab">Section 2</a></li>
+					          <li><a href="#rC" data-toggle="tab">Section 3</a></li>
+					        </ul>
+						    <div class="tab-content">
+					          <div class="tab-pane active" id="rA">
+					            <p>I'm in Section A.</p>
+					          </div>
+
+					          <div class="tab-pane" id="rB">
+					            <p>Howdy, I'm in Section B.</p>
+					          </div>
+
+					          <div class="tab-pane" id="rC">
+					            <p>What up girl, this is Section C.</p>
+					          </div>
+						    </div>
+					    </div>
+					</div><!-- End tabs on the right -->
+				</div>
+				<!-- Tabbable nav -->
+				<!-- end nav and pills -->
+				<div class="clear-10"></div><!-- fix padding 10px 0px -->
+				<!-- breadcrumb -->
+				<div class="bg-title">
+					<h3><i class="i-bookmark"></i>Breadcrumbs</h3>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<ul class="breadcrumb">
+							<li class="active">
+								<span>Home</span>
+							</li>
+						</ul>
+						<ul class="breadcrumb">
+							<li>
+								<a href="#">Home</a> <span class="divider">/</span>
+							</li>
+							<li class="active">
+								<span>Library</span>
+							</li>
+						</ul>
+						<ul class="breadcrumb">
+							<li>
+								<a href="#">Home</a> <span class="divider">/</span>
+							</li>
+							<li>
+								<a href="#">Library</a> <span class="divider">/</span>
+							</li>
+							<li class="active">
+								<span>Data</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end breadcrumb -->
+
+				<!-- Pagination -->
+				<div class="bg-title">
+					<h3><i class="i-bookmark"></i>Pagination</h3>
+				</div>
+				<div class="row-fluid">
+					<div class="span4">
+						<div class="pagination">
+							<ul>
+								<li><a href="#">Prev</a></li>
+								<li class="active">
+								<a href="#">1</a>
+								</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">Next</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="pagination">
+							<ul>
+								<li><a href="#">Prev</a></li>
+								<li class="active">
+								<a href="#">1</a>
+								</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">Next</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="pagination">
+							<ul>
+								<li><a href="#">Prev</a></li>
+								<li class="active">
+								<a href="#">1</a>
+								</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">Next</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end pagination -->
+				<!-- Pager -->
+				<div class="bg-title">
+					<h3><i class="i-bookmark"></i>Pager</h3>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="title">
+							<h3>Aligned links</h3>
+						</div>
+						<p>Alternatively, you can align each link to the sides:</p>
+						<ul class="pager">
+							<li class="previous">
+								<a href="#">← Older</a>
+							</li>
+							<li class="next">
+								<a href="#">Newer →</a>
+							</li>
+						</ul>
+					</div>
+					<div class="span6">
+						<div class="box">
+							<div class="box-content">
+								<div class="title">
+									<h3>Default example</h3>
+								</div>
+								<p>By default, the pager centers links.</p>
+								<ul class="pager">
+									<li>
+										<a href="#">Previous</a>
+									</li>
+									<li>
+										<a href="#">Next</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end body-content -->
+		</div>
+	</div><!-- container-fluid -->
+</div>
+
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span6 logo-bt">
+					<a class="brand" href="#">
+						<span>Admin</span>Tuds
+					</a>
+					<span>
+						<p>Lorem ipsum dolor sit </p>
+					</span>
+				</div>
+				<div class="span2">
+					<ul class="nav nav-list">
+						<li class="nav-header">Contact</li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div>
+				<div class="span2">
+					<ul class="nav nav-list">
+						<li class="nav-header">Blog</li>
+						<li><a href="#">Regulation</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="span2">
+					<ul class="nav nav-list">
+						<li class="nav-header">Follow Us</li>
+						<li><a href="#"><i class="icon-twitter"></i>Twitter</a></li>
+						<li><a href="#"><i class="icon-facebook"></i>Facebook</a></li>
+						<li><a href="#"><i class="icon-google"></i>Google+</a></li>
+						<li><a href="#"><i class="icon-skyle"></i>Skyle</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div >@2012 All Rights Reserved.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
