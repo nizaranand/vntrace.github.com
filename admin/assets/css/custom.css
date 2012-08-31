@@ -49,8 +49,8 @@ font-size: 20px;
 }
 .well {
   border:none;
-  background:#1b1c20;
-  margin:0px;
+  background:#25262B;
+  /*margin:0px;*/
 }
 .hero-unit {
   background-color: #1f2227;
@@ -80,6 +80,11 @@ h4 {
   box-shadow:0px 1px 0px #45484C;
   border-bottom:1px solid #1a1b20;
   margin-bottom:20px;
+}
+.wrapper-box {
+  box-shadow:0px 1px 0px #45484C;
+  border-bottom:1px solid #1a1b20;
+  margin-bottom:40px;
 }
 .title i,.bg-title i {
   position:absolute;
@@ -146,6 +151,15 @@ background-color: #131217;
   text-shadow:none;
   border-radius:0px;
 }
+.navbar-f .navbar-inverse .nav li.dropdown > .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle .caret {
+border-top-color: #60AEB0;
+border-bottom-color: #60AEB0;
+}
+.navbar-f .navbar-inverse .nav li.open > .dropdown-toggle:hover .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
 /**********main***********/
 .main {
   padding-top:70px;
@@ -164,7 +178,7 @@ background-color: #131217;
   * width:24.9%;
 }
 .quick-shortcuts .nav-pills > li > a {
-  background:#19181d;
+  background:#232428;
   color:#8e8e8e;
   box-shadow:inset 1px 1px 3px #131215;
   margin:0.5em;
@@ -282,7 +296,7 @@ background-color: #131217;
   color:#b55c5b;
   height:34px;
   padding-left:30px;
-  background:#1b1c20 url('../img/icons/icons-header.png') left top no-repeat;
+  background:#1E2024 url('../img/icons/icons-header.png') left top no-repeat;
   border-bottom:1px solid #16171c;
 }
 .box-content {
@@ -306,7 +320,7 @@ background-color: #131217;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   -o-border-radius:4px;
-  background:#25262b;
+  background:#232428;
   box-shadow:inset 1px 1px 3px #131217;
 }
 .stat-wrapper .box-stat p {
@@ -478,37 +492,32 @@ border-color: #18191c;
 .list-menu {
   padding-bottom:20px;
 }
-.list-menu .nav {
-  border-left:3px solid #1b1b20;
-}
 .list-menu .nav-list > li{
   display:block;
   position:relative;
+  border-top:1px solid #2f3236;
+  border-bottom:1px solid #1a1b20;
+  margin: 0px -15px;
 }
 .list-menu .nav > li > a > i{
   margin:0px 10px;
 }
 .list-menu .nav > li > a {
+  margin:0px;
   color:#999;
   padding:8px 0px;
   border-radius:none;
   text-decoration: none;
   text-shadow:none;
-  border-top:1px solid #2f3236;
-  border-bottom:1px solid #1a1b20;
-  background-color: #23242A;
-  background-image: -ms-linear-gradient(top, #23242a, #17171b);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23242a), to(#17171b));
-  background-image: -webkit-linear-gradient(top, #23242a, #17171b);
-  background-image: -o-linear-gradient(top, #23242a, #17171b);
-  background-image: -moz-linear-gradient(top, #23242a, #17171b);
-  background-image: linear-gradient(top, #23242a, #17171b);
+  border-left:5px solid #1E2024;
+  background-color: #23242a;
 }
 .list-menu .nav > li.active > a,.list-menu .nav > li > a:hover{
   text-decoration: none;
   background-image:none;
-  background-color: #17171b;
+  background-color: #1E2024;
   color:#60AEB0;
+  border-left-color:#60AEB0;
 }
 .list-menu .nav > li.active > a > i.icon-circle-arrow-right {
   background-position:-312px -144px;
@@ -520,13 +529,15 @@ border-color: #18191c;
   padding:0px;
   border:none;
 }
-.list-menu .nav-list > li > ul > li > a{
-  background:#23242a;
-  padding-left:10px;
+.list-menu .nav-list > li > ul > li {
+  margin:0px;
 }
-.list-menu .nav-list > li > ul > li > a:hover,
-.list-menu .nav-list > li > ul > li.active > a{
-  background:#17171b;
+.list-menu .nav-list > li > ul > li:last-child {
+  border-bottom:none;
+}
+.list-menu .nav-list > li > ul > li > a{
+  background:#292b31;
+  padding-left:10px;
 }
 /**** badges ****/
 .nav-pills > li {
@@ -773,18 +784,10 @@ border-color: #18191c;
 }
 /************* end pagination ****************/
 /************* form ****************/
-.docs-input-sizes select,.docs-input-sizes input[type="text"] {
-margin-bottom: 9px;
+.docs-input-sizes select,
+.docs-input-sizes input[type="text"] {
 display:block;
-}
-.docs-input-sizes input[class*="span"],.docs-input-sizes select[class*="span"] {
-  padding:0px;
-}
-.input-append,.input-prepend {
-  width:100%;
-}
-.input-append input,.input-prepend input{
-  padding:0px;
+margin-bottom: 9px;
 }
 .input-prepend .add-on, .input-append .add-on {
   color:#fff;
@@ -810,9 +813,8 @@ display:block;
   margin-right:5px;
 }
 .form-actions  {
-  background:#191a1d;
+  background:#25262B;
   border:none;
-  padding:20px 0px;
   display:block;
 }
 .sandbox {
