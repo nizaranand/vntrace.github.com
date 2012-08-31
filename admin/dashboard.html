@@ -117,7 +117,7 @@
 						</li>
 						<li>
                             <a href="#">
-                                <i class="icon-cog"></i>Image Galary
+                            	<i class="icon-camera"></i>Image Galary
                                 <i class="pull-right icon-circle-arrow-right icon-gray"></i>
                             </a>
                             <ul class="nav nav-list">
@@ -128,7 +128,7 @@
                         </li>
 						<li>
                             <a href="#">
-                                <i class="icon-flag"></i>Setting
+                                <i class="icon-cog"></i>Setting
                                 <i class="pull-right icon-circle-arrow-right icon-gray"></i>
                             </a>
                             <ul class="nav nav-list">
@@ -137,21 +137,23 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="grid-layout.html">
+                                <i class="icon-th-large"></i>Grid Layout
+                            </a>
+                        </li>
+                        <li>
                             <a href="table.html">
-                                <i class="icon-flag"></i>Table
-                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                                <i class="icon-th"></i>Table
                             </a>
                         </li>
                         <li>
                             <a href="nav-table.html">
-                                <i class="icon-flag"></i>Nav,pill,table
-                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                                <i class="icon-list"></i>Navs
                             </a>
                         </li>
                         <li>
                             <a href="form.html">
-                                <i class="icon-flag"></i>Form
-                                <i class="pull-right icon-circle-arrow-right icon-gray"></i>
+                                <i class="icon-th-list"></i>Form
                             </a>
                         </li>
 					</ul>
@@ -692,26 +694,40 @@
 					<div class="span4">
 						<div class="box">
 							<div class="box-header">
-								<h4>Pagination</h4>
+								<h4>Refferers</h4>
 							</div>
 							<div class="box-content">
-								<div class="pagination">
-									<ul>
-										<li><a href="#">Prev</a></li>
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">Next</a></li>
-									</ul>
-								</div>
-								<div class="pagination .pagination-righ">
-									<ul>
-										<li><a href="#">Prev</a></li>
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">Next</a></li>
-									</ul>
+								<div>
+									<table class="table table-bordered table-striped">
+								
+										<thead>
+											<tr>								
+											<th>Referrer</th>
+											<th>Uniques</th>								
+											</tr>
+										</thead>
+									
+										<tbody>
+											<tr>
+												<td class="description"><a href="http://google.com">http://google.com</a></td>
+												<td><span class="label label-success">3241</span></td>
+
+											</tr>
+											<tr>
+												<td class="description"><a href="http://yahoo.com">http://yahoo.com</a></td>
+												<td><span class="label label-warning">641</span></td>
+											</tr>
+											<tr>
+												<td class="description"><a href="http://themeforest.net">http://themeforest.net</a></td>
+												<td><span class="label">241</span></td>
+											</tr>
+											<tr>
+												<td class="description"><a href="http://clgt.vn">http://clgt.vn</a></td>
+												<td><span class="label label-important">214</span></td>
+											</tr>
+										
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
