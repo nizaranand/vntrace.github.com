@@ -67,12 +67,9 @@ margin-bottom: 9px;
 .navbar .nav > li > a:hover,
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  margin:-2px -1px 0px -1px;
-  text-decoration: none;
   color:#555;
-  background-color: #dfdfdf;
-  box-shadow:inset 0px 0px 5px #b9b9b9;
-  border:1px solid #bbb;
+  background-color: #E5E5E5;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav > li.dropdown > .dropdown-toggle:hover .caret,
