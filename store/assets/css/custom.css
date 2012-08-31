@@ -52,13 +52,6 @@ margin-bottom: 9px;
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #2C2C2C;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #ccc);
-  background-image: -ms-linear-gradient(top, #f9f9f9, #ccc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), #ccc));
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #ccc);
-  background-image: -o-linear-gradient(top, #f9f9f9, #ccc);
-  background-image: linear-gradient(top, #f9f9f9, #ccc);
 }
 .navbar .nav > li > a {
   text-shadow:none;
@@ -91,8 +84,6 @@ margin-bottom: 9px;
 height: 49px;
 margin: 0px 9px;
 overflow: hidden;
-border-right: 1px solid #f0f0f0;
-border-left: 1px solid #b9b9b9;
 }
 .navbar .nav > li > a .avatar-small {
   float:left;
