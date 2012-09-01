@@ -31,5 +31,16 @@
 		});
 
 		$('a[rel=tooltip]').tooltip({placement: 'bottom'});
+
+		$(window).bind('scroll', function(){
+			if(window.scrollY > 500) {
+				$('#go-top').addClass('active').unbind('click').bind('click', function(e){
+					e.preventDefault();
+					window.scroll(0, 0);
+				});
+			} else {
+				$('#go-top').removeClass('active').unbind('click');
+			}
+		});
 	});
 })(jQuery);

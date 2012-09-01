@@ -34,7 +34,7 @@ li {
 /***********************************/
 .header {
   z-index:100;
-  position:absolute;
+  position:fixed;
   width:100% ;
 }
 .header-line {
@@ -346,6 +346,10 @@ li {
 a.like {
     display: inline-block;
     float: left;
+}
+
+#new-image {
+    padding: 19px 19px 5px !important;
 }
 
 /******** fix ****** width fluid********/
