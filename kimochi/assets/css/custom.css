@@ -292,6 +292,10 @@ li {
 [class*=" icon"] {
   background-image: url("../images/glyphicons-halflings.png");
 }
+.icon-red [class^="icon"],
+[class*=" icon"] {
+  background-image: url("../images/glyphicons-halflings-red.png");
+}
 [class^="ic-"],
 [class*=" ic-"] {
   display: inline-block;
