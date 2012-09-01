@@ -23,6 +23,7 @@ li {
   right:150px;
   opacity:0.7;
   filter: alpha(opacity = 70);
+  z-index:1000;
 }
 .gotop:hover {
   opacity:1;
@@ -60,18 +61,10 @@ li {
   top:0px;
 }
 .header-content {
-  /*padding-left:20px;*/
   height:51px;
   display:block;
   width:100%;
   background:url('../images/bg-header-repeat.png') repeat-x;
-  /*
-  background:#e1e1e1;
-  background-image: -ms-linear-gradient(top, #ebebeb, #dfdfdf);
-  background-image: -webkit-linear-gradient(top, #ebebeb, #dfdfdf);
-  background-image: -o-linear-gradient(top, #ebebeb, #dfdfdf);
-  background-image: linear-gradient(top, #ebebeb, #dfdfdf);
-  background-image: -moz-linear-gradient(top, #ebebeb, #dfdfdf);*/
 }
 .header-content a {
   float:left;
@@ -181,8 +174,6 @@ li {
 .thumbnails .thumbnail{
   background:#fff;
   padding:7px;
-  /*width:100%;*/
-  /*margin-left:-8px;*/
   position:relative;
 }
 .main-content {
@@ -249,40 +240,23 @@ li {
   padding:10px;
   * margin-top:-35px;
 }
-/*.box-img-content .next,.box-img-content .prev {
-  display:block;
-  position:absolute;
-  top:45%;
-}
-.box-img-content .next {
-  right:25px;
-}
-.box-img-content .prev{
-  left:25px;
-}
-.box-img-content .next.active i,.box-img-content .prev.active i{
-  background-image:url('../images/icons/icon-hover.png');
-}*/
 /***********************************/
 /************** upload *************/
 /***********************************/
 .form-upload {
   border:1px solid #d1d1d1;
-  /*margin-left:-20px;*/
-  /*height:70px;*/
 }
 .form-upload form{
   position:relative;
-  text-align:center;
 }
 .input-fileupload,.fake-input-file button{
   height:62px;
   width:62px;
   position:absolute;
   z-index:10;
-  top:-45px;
-  left:45%;
+  top:-10px;
   background:#333;
+  right:0px;
 }
 .input-file-wrapper .input-fileupload {
   opacity:0;
@@ -294,13 +268,13 @@ li {
 }
 @-moz-document url-prefix(){.input-file-wrapper .input-fileupload{
   background:red;
-    left:11%;
+    right:32%;
   }}
 .fake-input-file button{
   background:url('../images/add-images.png') left top no-repeat;
   display:block;
   border:none;
-  top:-55px;
+  top:-20px;
 }
 .fake-input-file h3 {
   width:100%;
