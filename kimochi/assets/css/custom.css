@@ -292,6 +292,10 @@ li {
 [class*=" icon"] {
   background-image: url("../images/glyphicons-halflings.png");
 }
+.icon-red [class^="icon"],
+[class*=" icon"] {
+  background-image: url("../images/glyphicons-halflings-red.png");
+}
 [class^="ic-"],
 [class*=" ic-"] {
   display: inline-block;
@@ -347,7 +351,6 @@ a.like {
     display: inline-block;
     float: left;
 }
-
 /******** fix ****** width fluid********/
 /*
 @media (min-width: 979px) and (max-width: 1360px) {
