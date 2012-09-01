@@ -173,7 +173,7 @@ li {
 /***********************************/
 .thumbnails .thumbnail{
   background:#fff;
-  padding:7px;
+  padding:5px;
   position:relative;
 }
 .main-content {
@@ -224,6 +224,9 @@ li {
   bottom: 5px;
   background-color: white;
   height: 20px;
+  width:610px;
+}
+.box-img-content img{
   width:610px;
 }
 .box-img-footer .box-link {
