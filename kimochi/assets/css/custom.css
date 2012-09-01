@@ -220,7 +220,7 @@ li {
   display:block;
 }
 .box-img-footer {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 5px;
   background-color: white;
   height: 20px;
