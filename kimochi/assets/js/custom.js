@@ -42,5 +42,7 @@
 				$('#go-top').removeClass('active').unbind('click');
 			}
 		});
+
+		$('.l-comment').collapse('hide');
 	});
 })(jQuery);
