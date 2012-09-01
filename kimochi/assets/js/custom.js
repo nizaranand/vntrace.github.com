@@ -29,5 +29,7 @@
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();
 		});
+
+		$('a[rel=tooltip]').tooltip({placement: 'bottom'});
 	});
 })(jQuery);

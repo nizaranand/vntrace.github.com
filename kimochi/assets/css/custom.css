@@ -368,17 +368,26 @@ li {
 .ic-next,.ic-next:hover {
  background-position: 0px -400px;   
 }
+    
+a.like {
+    display: inline-block;
+    float: left;
+}
+
 /******** fix ****** width fluid********/
-/*@media (min-width: 979px) and (max-width: 1360px) {
-  .header-content form{
-    width:55%;
-  }
+/*
+@media (min-width: 979px) and (max-width: 1360px) {
+    .container {
+        width: 800px;
+    }
 }
+*/
 @media (min-width: 768px) and (max-width: 979px) {
-  .header-content form{
-    width:40%;
-  }
+    .container {
+        float: left;
+    }
 }
+/*
 @media (min-width: 480px) and (max-width: 767px) { 
   .header-content form input{
     width:63%;
@@ -404,6 +413,3 @@ li {
   }
 }*/
 /******** end fix width fluid ********/
-
-
-
