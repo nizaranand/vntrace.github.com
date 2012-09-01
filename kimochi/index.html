@@ -10,7 +10,14 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=382460485131155";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="header">
 	<div class="header-line"></div>
 	<div class="container">
@@ -52,7 +59,7 @@
 	                            </button>
 	                        </div>
 
-	                        <label>Image title</label>
+	                        <label>Say something</label>
 	                        <input class="span6" type="text" name="title" placeholder="Title">
 	                    </div>
 
@@ -72,20 +79,40 @@
 						</div>
 						<div class="box-img-footer">
 							<div class="box-link">
-								
-								<a href="#top-page" class="facebook"><i class="ic-facebook"></i></a>
-								<a href="#" class="twitter"><i class="ic-twitter"></i></a>
-								<a href="#" class="google-add"><i class="ic-google-add"></i></a>
-								<a href="#" class="flickr"><i class="ic-flickr"></i></a>
-
 								<div class="pull-right">
-									<a href="#" class="like"><i class="ic-like"></i></a>
-									<span href="#" class="number-like">
-										<i class="icon-heart icon-red"></i>
-										12,543
-									</span>
+									<i class="icon-comment"></i>
+									<a href="#">12 comments</a>
 								</div>
+							</div>
+						</div>
+						<div class="vote-box-right">
+							<a href="#" class="like"><i class="ic-like"></i></a>
+							<span href="#" class="number-like">
+								<i class="i-arrow-up"></i>
+								<i class="icon-heart icon-red"></i>
+								12,543
+							</span>
+							<a href="#" class="facebook"><i class="ic-facebook"></i></a>
+							<a href="#" class="twitter"><i class="ic-twitter"></i></a>
+							<!--
+							<a href="#" class="google-add"><i class="ic-google-add"></i></a>
+							<a href="#" class="flickr"><i class="ic-flickr"></i></a>
+							<a href="#" class="dislike"><i class="ic-dislike"></i></a> -->
+						</div>
 
+						<div class="fb-comments" data-href="http://example.com" data-num-posts="1" data-width="620"></div>
+						
+					</li>
+					<li class="thumbnail">
+						<div class="box-img-content">
+							<a href="#"><img src="assets/images/project/pj-big-1.jpg"></a>
+						</div>
+						<div class="box-img-footer">
+							<div class="box-link">
+								<div class="pull-right">
+									<i class="icon-comment"></i>
+									<a href="#">12 comments</a>
+								</div>
 							</div>
 						</div>
 						<div class="vote-box-right">
@@ -96,32 +123,14 @@
 								12,543
 							</span>
 							<a href="#" class="facebook"><i class="ic-facebook"></i></a>
-							<!-- <a href="#" class="twitter"><i class="ic-twitter"></i></a>
+							<a href="#" class="twitter"><i class="ic-twitter"></i></a>
+							<!--
 							<a href="#" class="google-add"><i class="ic-google-add"></i></a>
 							<a href="#" class="flickr"><i class="ic-flickr"></i></a>
 							<a href="#" class="dislike"><i class="ic-dislike"></i></a> -->
 						</div>
-					</li>
-					<li class="thumbnail">
-						<div class="box-img-content">
-							<a href="#"><img src="assets/images/project/pj-big-5.jpeg"></a>
-						</div>
-						<div class="box-img-footer">
-							<div class="box-link">
-								<a href="#top-page" class="facebook"><i class="ic-facebook"></i></a>
-								<a href="#" class="twitter"><i class="ic-twitter"></i></a>
-								<a href="#" class="google-add"><i class="ic-google-add"></i></a>
-								<a href="#" class="flickr"><i class="ic-flickr"></i></a>
 
-								<div class="pull-right">
-									<a href="#" class="like"><i class="ic-like"></i></a>
-									<span href="#" class="number-like">
-										<i class="icon-heart"></i>
-										12,543
-									</span>
-								</div>
-							</div>
-						</div>
+						<div class="fb-comments" data-href="http://example.com" data-num-posts="1" data-width="620"></div>
 					</li>
 					<li class="thumbnail">
 						<div class="box-img-content">
@@ -129,20 +138,28 @@
 						</div>
 						<div class="box-img-footer">
 							<div class="box-link">
-								<a href="#top-page" class="facebook"><i class="ic-facebook"></i></a>
-								<a href="#" class="twitter"><i class="ic-twitter"></i></a>
-								<a href="#" class="google-add"><i class="ic-google-add"></i></a>
-								<a href="#" class="flickr"><i class="ic-flickr"></i></a>
-
 								<div class="pull-right">
-									<a href="#" class="like"><i class="ic-like"></i></a>
-									<span href="#" class="number-like">
-										<i class="icon-heart"></i>
-										12,543
-									</span>
+									<i class="icon-comment"></i>
+									<a href="#">12 comments</a>
 								</div>
 							</div>
 						</div>
+						<div class="vote-box-right">
+							<a href="#" class="like"><i class="ic-like"></i></a>
+							<span href="#" class="number-like">
+								<i class="i-arrow-up"></i>
+								<i class="icon-heart"></i>
+								12,543
+							</span>
+							<a href="#" class="facebook"><i class="ic-facebook"></i></a>
+							<a href="#" class="twitter"><i class="ic-twitter"></i></a>
+							<!--
+							<a href="#" class="google-add"><i class="ic-google-add"></i></a>
+							<a href="#" class="flickr"><i class="ic-flickr"></i></a>
+							<a href="#" class="dislike"><i class="ic-dislike"></i></a> -->
+						</div>
+
+						<div class="fb-comments" data-href="http://example.com" data-num-posts="1" data-width="620"></div>
 					</li>
 					<li class="thumbnail">
 						<div class="box-img-content">
@@ -150,22 +167,38 @@
 						</div>
 						<div class="box-img-footer">
 							<div class="box-link">
-								<a href="#top-page" class="facebook"><i class="ic-facebook"></i></a>
-								<a href="#" class="twitter"><i class="ic-twitter"></i></a>
-								<a href="#" class="google-add"><i class="ic-google-add"></i></a>
-								<a href="#" class="flickr"><i class="ic-flickr"></i></a>
-
 								<div class="pull-right">
-									<a href="#" class="like"><i class="ic-like"></i></a>
-									<span href="#" class="number-like">
-										<i class="icon-heart"></i>
-										12,543
-									</span>
+									<i class="icon-comment"></i>
+									<a href="#">12 comments</a>
 								</div>
 							</div>
 						</div>
+						<div class="vote-box-right">
+							<a href="#" class="like"><i class="ic-like"></i></a>
+							<span href="#" class="number-like">
+								<i class="i-arrow-up"></i>
+								<i class="icon-heart"></i>
+								12,543
+							</span>
+							<a href="#" class="facebook"><i class="ic-facebook"></i></a>
+							<a href="#" class="twitter"><i class="ic-twitter"></i></a>
+							<!--
+							<a href="#" class="google-add"><i class="ic-google-add"></i></a>
+							<a href="#" class="flickr"><i class="ic-flickr"></i></a>
+							<a href="#" class="dislike"><i class="ic-dislike"></i></a> -->
+						</div>
+
+						<div class="fb-comments" data-href="http://example.com" data-num-posts="1" data-width="620"></div>
 					</li>
 				</ul>
+
+				<div class="div-loading">
+					<img src="assets/images/loading.gif">
+					<div>
+						<span>Loading more photo...</span>
+					</div>
+				</div>
+
 			</div><!-- /main-content -->
 		</div><!-- /row -->
 	</div>

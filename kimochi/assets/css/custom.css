@@ -223,7 +223,7 @@ li {
   position: absolute;
   bottom: 5px;
   background-color: white;
-  height: 40px;
+  height: 20px;
   width:610px;
 }
 .box-img-footer .box-link {
@@ -354,6 +354,19 @@ a.like {
 
 #new-image {
     padding: 19px 19px 5px !important;
+}
+
+.div-loading {
+    text-align: center;
+    margin: 0 auto;
+    left: 45%;
+    bottom: 0;
+    width: 200px;
+    background: black;
+    opacity: 0.8;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 /******** fix ****** width fluid********/
