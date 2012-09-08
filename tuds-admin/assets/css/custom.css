@@ -113,6 +113,13 @@ margin-bottom: 9px;
   float:right;
   margin:0px;
 }
+/***************** navbar-fixed-right ********************/
+.navbar-fixed-right .form-search {
+  margin:10px 0px 10px 10px;
+}
+.navbar-fixed-right .form-search input{
+  width:200px;
+}
 .navbar-fixed-right {
   position:fixed;
   right:0px;
@@ -158,28 +165,51 @@ margin-bottom: 9px;
 .navbar-fixed-right .tab-content ul{
   text-align:left;
 }
+.navbar-fixed-right .tab-content ul li {
+  position:relative;
+}
 .navbar-fixed-right .tab-content ul li a {
   padding:10px;
   border-left:1px solid #3d3d3d;
+}
+.navbar-fixed-right .nav li > ul > li {
+  margin:0px -15px;
+}
+.navbar-fixed-right .nav li > ul > li > a {
+  text-shadow:none;
+}
+.navbar-fixed-right .nav > li > a > b {
+  position:absolute;
+  right:10px;
+  top:18px;
+}
+.navbar-fixed-right .nav>li>ul{
+  display:none;
+}
+.navbar-fixed-right .nav>li.active>ul{
+  display:block;
+}
+.navbar-fixed-right .nav li > ul > li > a,
+.navbar-fixed-right .nav li > ul > li.active > a {
+  padding-left:30px;
 }
 /***********************************/
 /************** main *************/
 /***********************************/
 .main {
-  padding-top:100px;
+  padding-top:20px;
+  * padding-top:100px;
 }
-.scroll .container-fluid {
-  padding-left:20px;
-  padding-right:260px;
-  margin-bottom:120px;
-} 
 .scroll{
-  padding-right:10px;
-  width:100%;
+  margin-right:250px;
   position:fixed;
-  right:-10px;
-  overflow:scroll;
-  height:100%;
+  left:0px;
+  top:80px;
+  width:82%;
+  height:85%;
+  overflow:auto;
+  * position:none;
+  * overflow:none;
 }
 .title-main {
   position:fixed;
@@ -200,7 +230,7 @@ margin-bottom: 9px;
   position:fixed;
   top:40px;
   right:38px;
-  width:200px;
+  width:15%;
   background:#fafafa;
   border-left:4px solid #eee;
   height:100%;
@@ -213,12 +243,14 @@ margin-bottom: 9px;
 }
 .list-menu-right .form-search input {
   color:#777;
+  width:84%;
 }
 .list-menu-right .nav-list li{
   margin:0px -15px;
   background:#eee;
   border-bottom:1px solid #e4e4e4;
   border-top:1px solid #fff;
+  position:relative;
 }
 .list-menu-right .nav-list li a,
 .list-menu-right .nav-list li.active > a {
@@ -245,7 +277,9 @@ margin-bottom: 9px;
   background-image: url("../img/glyphicons-halflings-blue.png")
 }
 .list-menu-right .nav > li > a > b {
-  margin-top:8px;
+  position:absolute;
+  right:10px;
+  top:13px;
   border-top-color:#777;
   border-bottom-color:#777;
 }
@@ -263,7 +297,6 @@ margin-bottom: 9px;
 .list-menu-right .nav-list li > ul > li > a,
 .list-menu-right .nav-list li > ul > li.active > a {
   padding-left:30px;
-  
 }
 .stats {
   box-shadow:inset 0px 1px 3px #20586f;
@@ -427,7 +460,7 @@ background-color: #eee;
 .calendar .table tbody tr td,
 .calendar .table thead tr th,
 .calendar .table tbody tr th {
-    padding:2%;
+    padding:20px;
   }
 .calendar .table tr td{
   background:none;
@@ -554,7 +587,7 @@ div.uploader input {
 /******* page-login *******/
 .page-login {
   margin:0px auto;
-  margin-top:5%;
+  margin-top:10%;
   width:300px; 
 }
 .login-content form{
@@ -827,7 +860,9 @@ top: 5px;
 .thumbnail-horizontal .thumbnail [class*="span"]:first-child {
   margin-left:0px;
 }
-
+.thumbnail-horizontal h5 {
+  margin:0px;
+}
 /******** fix ****** width fluid********/
 @media (min-width: 980px) and (max-width: 1200px) {
 .row-fluid .thumbnails {
@@ -880,6 +915,12 @@ top: 5px;
   }
   .form-horizontal .controls {
     margin-left:15%;
+  }
+  .scroll {
+    width:79%;
+  }
+  .list-menu-right {
+    width:200px;
   }
 }
 
@@ -947,6 +988,12 @@ top: 5px;
   .form-horizontal .controls {
     margin-left:15%;
   }
+  .scroll {
+    width:75%;
+  }
+  .list-menu-right {
+    width:200px;
+  }
 
 }
 
@@ -956,7 +1003,7 @@ top: 5px;
   margin-left: 2.7624309392265194%;
   }
   .row-fluid [class*="span"] {
-  width: 100%;
+  width: 98%;
   }
   .navbar-fix .navbar-inner,
   .navbar-fix .navbar-inner {
@@ -976,13 +1023,29 @@ top: 5px;
   .navbar-fix .nav > li > a {
     border:none;
   }
+  .calendar .table tbody tr td,
+  .calendar .table thead tr th,
+  .calendar .table tbody tr th {
+    padding:10px;
+  }
+  .stats {
+    margin-bottom:20px;
+  }
+  .scroll {
+    width:90%;
+    padding-right:20px;
+    padding-left:10px;
+  }
+  .list-menu-right {
+    display:none;
+  }
 }
 @media (min-width: 100px) and (max-width:479px){
   .row-fluid .thumbnails [class*="span"] {
   margin-left: 2.7624309392265194%;
   }
   .row-fluid [class*="span"] {
-  width: 100%;
+  width: 98%;
   }
   .navbar-fix .navbar-inner,
   .navbar-fix .navbar-inner {
@@ -998,6 +1061,23 @@ top: 5px;
 
   .navbar-fix .nav > li > a {
     border:none;
+  }
+
+  .calendar .table tbody tr td,
+  .calendar .table thead tr th,
+  .calendar .table tbody tr th {
+    padding:10px;
+  }
+  .stats {
+    margin-bottom:20px;
+  }
+  .scroll {
+    width:85%;
+    padding-right:20px;
+    padding-left:10px;
+  }
+  .list-menu-right {
+    display:none;
   }
 }
 /******** end fix width fluid ********/

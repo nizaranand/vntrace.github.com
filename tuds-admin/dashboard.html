@@ -70,9 +70,15 @@
 		<li>
 			<a class="tip-left" data-original-title="Setting" href="#tab2" data-toggle="tab"><i class="icon-cog icon-white"></i></a>
 		</li>
+		<li>
+			<a class="tip-left" data-original-title="List menu" href="#tab3" data-toggle="tab"><i class="icon-list icon-white"></i></a>
+		</li>
 		
 	</ul>
 	<div class="tab-content">
+		<form class="form-search">
+			<input type="text" class="input-medium search-query">
+		</form>
 		<div class="tab-pane" id="tab1">
 			<ul class="nav">
 				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -86,6 +92,29 @@
 				<li><a href="#">Change password</a></li>
 			</ul>
 		</div>
+		<div class="tab-pane" id="tab3">
+			<ul class="nav" rel="submenu">
+				<li><a href="dashboard.html"><i class="icon-home icon-white"></i> Dashboard</a></li>
+				<li><a href="chart.html"><i class="icon-signal icon-white"></i> Charts</a></li>
+				<li><a href="form.html"><i class="icon-pencil icon-white"></i> Forms</a></li>
+				<li><a href="table.html"><i class="icon-th-list icon-white"></i> Table</a></li>
+				<li><a href="navs.html"><i class="icon-list icon-white"></i> Navs</a></li>
+				<li><a href="element.html"><i class="icon-align-justify icon-white"></i> Elements</a></li>
+				<li><a href="btn-icon.html"><i class="icon-th-large icon-white"></i> Button & Icon</a></li>
+				<li>
+					<a href="#">
+						<i class="icon-file icon-white"></i>
+						Sample pages
+						<b class="caret"></b>
+					</a>
+					<ul class="nav nav-list">
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 1</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 2</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
 <div class="main scroll">
@@ -97,7 +126,7 @@
 			<form class="form-search">
 				<input type="text" class="input-medium search-query">
 			</form>
-			<ul class="nav nav-list">
+			<ul class="nav nav-list" rel="submenu">
 				<li class="nav-header">List menu</li>
 				<li class="active"><a href="dashboard.html"><i class="icon-home"></i> Dashboard</a></li>
 				<li><a href="chart.html"><i class="icon-signal"></i> Charts</a></li>
@@ -110,7 +139,7 @@
 					<a href="#">
 						<i class="icon-file"></i>
 						Sample pages
-						<b class="caret pull-right"></b>
+						<b class="caret"></b>
 					</a>
 					<ul class="nav nav-list">
 						<li><a href="#"><i class="icon-share-alt"></i> Page 1</a></li>
@@ -121,320 +150,333 @@
 			</ul>
 		</div><!-- /list-menu-right -->
 
-		<section class="row-fluid">
-			<div class="span3">
-				<div class="stats">
-					<span class="number">16</span>
-					<span>Open Orders</span>
+		<section>
+			<div class="row-fluid">
+				<div class="span3">
+					<div class="stats">
+						<span class="number">16</span>
+						<span>Open Orders</span>
+					</div>
 				</div>
-			</div>
-			<div class="span3">
-				<div class="stats">
-					<span class="number">148</span>
-					<span>Members</span>
+				<div class="span3">
+					<div class="stats">
+						<span class="number">148</span>
+						<span>Members</span>
+					</div>
 				</div>
-			</div>
-			<div class="span3">
-				<div class="stats">
-					<span class="number">$1,436</span>
-					<span>Revenue</span>
+				<div class="span3">
+					<div class="stats">
+						<span class="number">$1,436</span>
+						<span>Revenue</span>
+					</div>
 				</div>
-			</div>
-			<div class="span3">
-				<div class="stats">
-					<span class="number">16</span>
-					<span>Subscribers</span>
+				<div class="span3">
+					<div class="stats">
+						<span class="number">16</span>
+						<span>Subscribers</span>
+					</div>
 				</div>
 			</div>
 		</section>
+
+
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Simple</h4>
+						</div>
+						<div class="box-body">
+							<img src="assets/img/charts-1.png">
+						</div>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Bar Graph</h4>
+						</div>
+						<div class="box-body">
+							<img src="assets/img/charts-2.png">
+						</div>
+					</div>
+				</div>
+			</div><!-- /charts-->
+		</section>
+
+		<section>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>QUICK SHORTCUTS</h4>
+						</div>
+						<div class="box-body">
+							<ul class="quick-shortcuts">
+								<li><a href="#"><i class="i-home"></i><span>Dashboard</span></a></li>
+								<li><a href="#"><i class="i-faq"></i><span>FAQ</span></a></li>
+								<li><a href="#"><i class="i-bookmarks"></i><span>Bookmarks</span></a></li>
+								<li><a href="#"><i class="i-apps"></i><span>Apps</span></a></li>
+								<li>
+									<a href="#"><i class="i-photo"></i><span>Messages</span></a>
+									<span class="badge badge-important">6</span>
+								</li>
+								<li><a href="#"><i class="i-notes"></i><span>Notes</span></a></li>
+								<li><a href="#"><i class="i-user"></i><span>User</span></a></li>
+								<li><a href="#"><i class="i-photo"></i><span>Photo</span></a></li>
+								<li><a href="#"><i class="i-report"></i><span>Report</span></a></li>
+								<li>
+									<a href="#"><i class="i-messages"></i><span>Messages</span></a>
+									<span class="badge badge-success">2</span>
+								</li>
+								<li><a href="#"><i class="i-comment"></i><span>Comment</span></a></li>
+								<li><a href="#"><i class="i-tags"></i><span>Tags</span></a></li>
+								<li><a href="#"><i class="i-setting"></i><span>Setting</span></a></li>
+								<li><a href="index.html"><i class="i-logout"></i><span>Log Out</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- /quick-shortcuts -->
+		</section>
+
 		
-		<section class="row-fluid">
-			<div class="span6">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Simple</h4>
-					</div>
-					<div class="box-body">
-						<img src="assets/img/charts-1.png">
-					</div>
-				</div>
-			</div>
-			<div class="span6">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Bar Graph</h4>
-					</div>
-					<div class="box-body">
-						<img src="assets/img/charts-2.png">
-					</div>
-				</div>
-			</div>
-		</section><!-- /charts-->
-
-		<section class="row-fluid">
-			<div class="span12">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>QUICK SHORTCUTS</h4>
-					</div>
-					<div class="box-body">
-						<ul class="quick-shortcuts">
-							<li><a href="#"><i class="i-home"></i><span>Dashboard</span></a></li>
-							<li><a href="#"><i class="i-faq"></i><span>FAQ</span></a></li>
-							<li><a href="#"><i class="i-bookmarks"></i><span>Bookmarks</span></a></li>
-							<li><a href="#"><i class="i-apps"></i><span>Apps</span></a></li>
-							<li>
-								<a href="#"><i class="i-photo"></i><span>Messages</span></a>
-								<span class="badge badge-important">6</span>
-							</li>
-							<li><a href="#"><i class="i-notes"></i><span>Notes</span></a></li>
-							<li><a href="#"><i class="i-user"></i><span>User</span></a></li>
-							<li><a href="#"><i class="i-photo"></i><span>Photo</span></a></li>
-							<li><a href="#"><i class="i-report"></i><span>Report</span></a></li>
-							<li>
-								<a href="#"><i class="i-messages"></i><span>Messages</span></a>
-								<span class="badge badge-success">2</span>
-							</li>
-							<li><a href="#"><i class="i-comment"></i><span>Comment</span></a></li>
-							<li><a href="#"><i class="i-tags"></i><span>Tags</span></a></li>
-							<li><a href="#"><i class="i-setting"></i><span>Setting</span></a></li>
-							<li><a href="index.html"><i class="i-logout"></i><span>Log Out</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section><!-- /quick-shortcuts -->
-
-		<section class="row-fluid">
-			<div class="span6">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Newly Registered user</h4>
-					</div>
-					<div class="box-body">
-						<div class="add-userlist">
-							<button class="btn">Add All User</button>
-							<button class="btn">View All Users</button>
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Newly Registered user</h4>
 						</div>
-						<ul class="userlist">
-                            <li>
-                                <div class="avatar">
-                                	<img alt="" src="assets/img/project/avatar-1.jpg">
-                                </div>
-                                <div class="info">
-                                    <a href="">Squint</a> <br>
-                                    Front-End Engineer <br> <i>18 minutes ago</i>
-                                </div><!--info-->
-                                <div class="btn-group">
-									<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
-									<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
-								</div>
-                            </li>
-                            <li>
-                                <div class="avatar">
-                                	<img alt="" src="assets/img/project/avatar-2.jpg">
-                                </div>
-                                <div class="info">
-                                    <a href="">Eunice</a> <br>
-                                    Architectural Designer <br> <i>18 minutes ago</i>
-                                </div><!--info-->
-                                <div class="btn-group">
-									<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
-									<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
-								</div>
-                            </li>
-                            <li>
-                                <div class="avatar">
-                                	<img alt="" src="assets/img/project/avatar-1.jpg">
-                                </div>
-                                <div class="info">
-                                    <a href="">Captain Gutt</a> <br>
-                                    Software Engineer <br> <i>18 minutes ago</i>
-                                </div><!--info-->
-                                <div class="btn-group">
-									<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
-									<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
-								</div>
-                            </li>
-                            <li>
-                                <div class="avatar">
-                                	<img alt="" src="assets/img/project/avatar-2.jpg">
-                                </div>
-                                <div class="info">
-                                    <a href="">Flynn</a> <br>
-                                    Accounting Manager <br> <i>18 minutes ago</i>
-                                </div><!--info-->
-                                <div class="btn-group">
-									<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
-									<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
-								</div>
-                            </li>
-                        </ul>
-                        <a class="more" href="">View More Users</a>
-					</div>
-				</div>
-			</div>
-			<div class="span6">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Top Rated Sites</h4>
-					</div>
-					<div class="box-body">
-						<ul class="toplist">
-							<li>
-								<div class="toplist-left">
-									<a href="#">http://themeforest.net/</a>
-									<p><i>Social Network</i></p>
-								</div>
-								<div class="toplist-right">
-									<b>8.5</b>
-								</div>
-							</li>
-
-							<li>
-								<div class="toplist-left">
-									<a href="#">http://google.com/</a>
-									<p><i>Social Network</i></p>
-								</div>
-								<div class="toplist-right">
-									<b>8.2</b>
-								</div>
-							</li>
-
-							<li>
-								<div class="toplist-left">
-									<a href="#">http://kimochi.clgt.vn/</a>
-									<p><i>Social Network</i></p>
-								</div>
-								<div class="toplist-right">
-									<b>8.1</b>
-								</div>
-							</li>
-
-							<li>
-								<div class="toplist-left">
-									<a href="#">http://yahoo.com.vn/</a>
-									<p><i>Social Network</i></p>
-								</div>
-								<div class="toplist-right">
-									<b>8</b>
-								</div>
-							</li>
-							<li>
-								<div class="toplist-left">
-									<a href="#">http://clgt.vn/</a>
-									<p><i>Social Network</i></p>
-								</div>
-								<div class="toplist-right">
-									<b>7.9</b>
-								</div>
-							</li>
-							<li>
-								<div class="toplist-left">
-									<a href="#">http://cdcm.clgt.vn/</a>
-									<p><i>Social Network</i></p>
-								</div>
-								<div class="toplist-right">
-									<b>7.8</b>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section><!-- /row-fluid-->
-
-		<section class="row-fluid">
-			<div class="span12">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Calendar</h4>
-					</div>
-					<div class="calendar">
-						<div class="header-calendar">
-							<a class="pull-left" href="#"><i class="icon-chevron-left"></i></a>
-								August 2012
-							<a class="pull-right" href="#"><i class="icon-chevron-right"></i></a>
+						<div class="box-body">
+							<div class="add-userlist">
+								<button class="btn">Add All User</button>
+								<button class="btn">View All Users</button>
+							</div>
+							<ul class="userlist">
+	                            <li>
+	                                <div class="avatar">
+	                                	<img alt="" src="assets/img/project/avatar-1.jpg">
+	                                </div>
+	                                <div class="info">
+	                                    <a href="">Squint</a> <br>
+	                                    Front-End Engineer <br> <i>18 minutes ago</i>
+	                                </div><!--info-->
+	                                <div class="btn-group">
+										<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
+										<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
+									</div>
+	                            </li>
+	                            <li>
+	                                <div class="avatar">
+	                                	<img alt="" src="assets/img/project/avatar-2.jpg">
+	                                </div>
+	                                <div class="info">
+	                                    <a href="">Eunice</a> <br>
+	                                    Architectural Designer <br> <i>18 minutes ago</i>
+	                                </div><!--info-->
+	                                <div class="btn-group">
+										<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
+										<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
+									</div>
+	                            </li>
+	                            <li>
+	                                <div class="avatar">
+	                                	<img alt="" src="assets/img/project/avatar-1.jpg">
+	                                </div>
+	                                <div class="info">
+	                                    <a href="">Captain Gutt</a> <br>
+	                                    Software Engineer <br> <i>18 minutes ago</i>
+	                                </div><!--info-->
+	                                <div class="btn-group">
+										<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
+										<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
+									</div>
+	                            </li>
+	                            <li>
+	                                <div class="avatar">
+	                                	<img alt="" src="assets/img/project/avatar-2.jpg">
+	                                </div>
+	                                <div class="info">
+	                                    <a href="">Flynn</a> <br>
+	                                    Accounting Manager <br> <i>18 minutes ago</i>
+	                                </div><!--info-->
+	                                <div class="btn-group">
+										<button class="btn btn-small tip-top" data-original-title="Delete"><i class="icon-remove"></i></button>
+										<button class="btn btn-small tip-top" data-original-title="Add"><i class="icon-plus"></i></button>
+									</div>
+	                            </li>
+	                        </ul>
+	                        <a class="more" href="">View More Users</a>
 						</div>
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>Su</th>
-									<th>Mo</th>
-									<th>Tu</th>
-									<th>We</th>
-									<th>Th</th>
-									<th>Fr</th>
-									<th>Sa</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td></td>
-									<td></td>
-									<td>1</td>
-									<td>2</td>
-									<td>3</td>
-									<td>4</td>
-									<td>5</td>
-								</tr>
-								<tr>
-									<td>6
-										<div class="modal" style="display:none">
-											<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">×</button>
-											<a href="#"><i class="icon-pencil"></i></a>
-											</div>
-											<div class="modal-body">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-											</div>
-										</div>
-									</td>
-									<td>7</td>
-									<td>8</td>
-									<td>9</td>
-									<td class="active">10</td>
-									<td>11</td>
-									<td>12</td>
-								</tr>
-								<tr>
-									<td>13</td>
-									<td>14</td>
-									<td>15</td>
-									<td>16</td>
-									<td>17</td>
-									<td>18</td>
-									<td>19</td>
-								</tr>
-								<tr>
-									<td>20</td>
-									<td>21</td>
-									<td>22</td>
-									<td>23</td>
-									<td>24</td>
-									<td>25</td>
-									<td>26</td>
-								</tr>
-								<tr>
-									<td>27</td>
-									<td>28</td>
-									<td>29</td>
-									<td>30</td>
-									<td>..</td>
-									<td>..</td>
-									<td>..</td>
-								</tr>
-							</tbody>
-						</table>
 					</div>
 				</div>
-			</div>
+				<div class="span6">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Top Rated Sites</h4>
+						</div>
+						<div class="box-body">
+							<ul class="toplist">
+								<li>
+									<div class="toplist-left">
+										<a href="#">http://themeforest.net/</a>
+										<p><i>Social Network</i></p>
+									</div>
+									<div class="toplist-right">
+										<b>8.5</b>
+									</div>
+								</li>
+
+								<li>
+									<div class="toplist-left">
+										<a href="#">http://google.com/</a>
+										<p><i>Social Network</i></p>
+									</div>
+									<div class="toplist-right">
+										<b>8.2</b>
+									</div>
+								</li>
+
+								<li>
+									<div class="toplist-left">
+										<a href="#">http://kimochi.clgt.vn/</a>
+										<p><i>Social Network</i></p>
+									</div>
+									<div class="toplist-right">
+										<b>8.1</b>
+									</div>
+								</li>
+
+								<li>
+									<div class="toplist-left">
+										<a href="#">http://yahoo.com.vn/</a>
+										<p><i>Social Network</i></p>
+									</div>
+									<div class="toplist-right">
+										<b>8</b>
+									</div>
+								</li>
+								<li>
+									<div class="toplist-left">
+										<a href="#">http://clgt.vn/</a>
+										<p><i>Social Network</i></p>
+									</div>
+									<div class="toplist-right">
+										<b>7.9</b>
+									</div>
+								</li>
+								<li>
+									<div class="toplist-left">
+										<a href="#">http://cdcm.clgt.vn/</a>
+										<p><i>Social Network</i></p>
+									</div>
+									<div class="toplist-right">
+										<b>7.8</b>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- /row-fluid-->
+		</section>
+
+		
+		<section>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Calendar</h4>
+						</div>
+						<div class="calendar">
+							<div class="header-calendar">
+								<a class="pull-left" href="#"><i class="icon-chevron-left"></i></a>
+									August 2012
+								<a class="pull-right" href="#"><i class="icon-chevron-right"></i></a>
+							</div>
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Su</th>
+										<th>Mo</th>
+										<th>Tu</th>
+										<th>We</th>
+										<th>Th</th>
+										<th>Fr</th>
+										<th>Sa</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>1</td>
+										<td>2</td>
+										<td>3</td>
+										<td>4</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>6
+											<div class="modal" style="display:none">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">×</button>
+												<a href="#"><i class="icon-pencil"></i></a>
+												</div>
+												<div class="modal-body">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
+											</div>
+										</td>
+										<td>7</td>
+										<td>8</td>
+										<td>9</td>
+										<td class="active">10</td>
+										<td>11</td>
+										<td>12</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>14</td>
+										<td>15</td>
+										<td>16</td>
+										<td>17</td>
+										<td>18</td>
+										<td>19</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>21</td>
+										<td>22</td>
+										<td>23</td>
+										<td>24</td>
+										<td>25</td>
+										<td>26</td>
+									</tr>
+									<tr>
+										<td>27</td>
+										<td>28</td>
+										<td>29</td>
+										<td>30</td>
+										<td>..</td>
+										<td>..</td>
+										<td>..</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div><!-- /row-fluid -->
 		</section>
 
 	</div>

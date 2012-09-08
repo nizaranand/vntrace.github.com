@@ -70,9 +70,15 @@
 		<li>
 			<a class="tip-left" data-original-title="Setting" href="#tab2" data-toggle="tab"><i class="icon-cog icon-white"></i></a>
 		</li>
+		<li>
+			<a class="tip-left" data-original-title="List menu" href="#tab3" data-toggle="tab"><i class="icon-list icon-white"></i></a>
+		</li>
 		
 	</ul>
 	<div class="tab-content">
+		<form class="form-search">
+			<input type="text" class="input-medium search-query">
+		</form>
 		<div class="tab-pane" id="tab1">
 			<ul class="nav">
 				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -86,8 +92,31 @@
 				<li><a href="#">Change password</a></li>
 			</ul>
 		</div>
+		<div class="tab-pane" id="tab3">
+			<ul class="nav" rel="submenu">
+				<li><a href="dashboard.html"><i class="icon-home icon-white"></i> Dashboard</a></li>
+				<li><a href="chart.html"><i class="icon-signal icon-white"></i> Charts</a></li>
+				<li><a href="form.html"><i class="icon-pencil icon-white"></i> Forms</a></li>
+				<li><a href="table.html"><i class="icon-th-list icon-white"></i> Table</a></li>
+				<li><a href="navs.html"><i class="icon-list icon-white"></i> Navs</a></li>
+				<li><a href="element.html"><i class="icon-align-justify icon-white"></i> Elements</a></li>
+				<li><a href="btn-icon.html"><i class="icon-th-large icon-white"></i> Button & Icon</a></li>
+				<li>
+					<a href="#">
+						<i class="icon-file icon-white"></i>
+						Sample pages
+						<b class="caret"></b>
+					</a>
+					<ul class="nav nav-list">
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 1</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 2</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
-</div>
+</div><!-- /navbar-fixed-right -->
 <div class="main scroll">
 	<div class="container-fluid">
 		<div class="title-main">
@@ -97,7 +126,7 @@
 			<form class="form-search">
 				<input type="text" class="input-medium search-query">
 			</form>
-			<ul class="nav nav-list">
+			<ul class="nav nav-list" rel="submenu">
 				<li class="nav-header">List menu</li>
 				<li><a href="dashboard.html"><i class="icon-home"></i> Dashboard</a></li>
 				<li><a href="chart.html"><i class="icon-signal"></i> Charts</a></li>
@@ -110,7 +139,7 @@
 					<a href="#">
 						<i class="icon-file"></i>
 						Sample pages
-						<b class="caret pull-right"></b>
+						<b class="caret"></b>
 					</a>
 					<ul class="nav nav-list">
 						<li><a href="#"><i class="icon-share-alt"></i> Page 1</a></li>
@@ -125,353 +154,367 @@
 		<div class="page-header">
 			<h2>Nav: tabs, pills, and lists</h2>
 		</div>
-		<section class="row-fluid">
-			<div class="span6">
-				<h3>Basic tabs</h3>
-				<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
-				<ul class="nav nav-tabs">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><!-- /nav-tabs -->
-			</div><!-- /span6-->
+
+		<section>
+
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>Basic tabs</h3>
+					<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><!-- /nav-tabs -->
+				</div><!-- /span6-->
 
 
-			<div class="span6" style="padding-bottom:5px">
-				<h3>Basic pills</h3>
-				<p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
-				<ul class="nav nav-pills">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><!-- /Basic pills -->
-			</div><!-- /span6-->
+				<div class="span6" style="padding-bottom:5px">
+					<h3>Basic pills</h3>
+					<p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><!-- /Basic pills -->
+				</div><!-- /span6-->
+			</div>
 		</section>
 
-
-		<section class="row-fluid">
-			<div class="span6">
-				<h3>Basic tabs gradient</h3>
-				<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs .gradient</code></p>
-				<ul class="nav nav-tabs gradient">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><!-- /nav-tabs -->
-			</div><!-- /span6-->
-
-
-			<div class="span6" style="padding-bottom:5px">
-				<h3>Basic pills gradient</h3>
-				<p>Take that same HTML, but use <code>.nav-pills .gradient</code> instead:</p>
-				<ul class="nav nav-pills gradient">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><!-- /Basic pills -->
-			</div><!-- /span6-->
-		</section>
-
-
-		<section class="row-fluid">
-			<div class="span6" style="padding-bottom:8px">
-				<h3>Stacked tabs</h3>
-				<p>Use <code>.nav-stacked</code></p>
-				<ul class="nav nav-tabs nav-stacked gradient">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><!-- /Stacked tabs -->
-			</div><!-- /span6-->
-
-			<div class="span6">
-				<h3>Stacked pills</h3>
-				<p>Use <code>.nav-pills</code></p>
-				<ul class="nav nav-pills nav-stacked gradient">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><!-- /Stacked pills -->
-				<br>
-			</div><!-- /span6-->
-		</section>
-
-
-		<section class="row-fluid">
-			<div class="span6">
-				<h3>Tabs with dropdowns</h3>
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Help</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-							Dropdown
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-						</ul>
-					</li>
-				</ul><!-- /Tabs with dropdowns -->
-			</div><!-- /span6-->
-
-
-			<div class="span6" style="padding-bottom:5px">
-				<h3>Pills with dropdowns</h3>
-				<ul class="nav nav-pills">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Help</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-							Dropdown
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-						</ul>
-					</li>
-				</ul><!-- /Pills with dropdowns -->
-			</div><!-- /span6-->
-		</section>
-
-
-		<section class="row-fluid">
-			<div class="span6">
-				<h3>Tabs with dropdowns</h3>
-				<p>Add <code>gradient</code></p>
-				<ul class="nav nav-tabs gradient">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Help</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-							Dropdown
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-						</ul>
-					</li>
-				</ul><!-- /Tabs with dropdowns -->
-			</div><!-- /span6-->
-
-
-			<div class="span6" style="padding-bottom:5px">
-				<h3>Pills with dropdowns</h3>
-				<p>Add <code>gradient</code></p>
-				<ul class="nav nav-pills gradient">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Help</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-							Dropdown
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-						</ul>
-					</li>
-				</ul><!-- /Pills with dropdowns -->
-			</div><!-- /span6-->
-		</section>
-
-
-		<section class="row-fluid">
-			<div class="span6" style="padding-bottom:8px">
-				<h3>Nav list</h3>
-				<p>Take a list of links and add <code>class="nav nav-list"</code> <code>.divider</code>:</p>
-				<ul class="nav nav-list well">
-					<li class="nav-header">List header</li>
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li class="divider"></li>
-					<li class="nav-header">List header</li>
-					<li><a href="#">Library</a></li>
-				</ul><!-- /Pills with dropdowns -->
-			</div><!-- /span6-->
-
-			<div class="span6">
-				<h3>Tabbable</h3>
-				<p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>.</p>
-				<div class="tabbable"> <!-- Only required for left/right tabs -->
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>Basic tabs gradient</h3>
+					<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs .gradient</code></p>
 					<ul class="nav nav-tabs gradient">
-						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-						<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-						<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane active" id="tab1">
-							<p>I'm in Section 1.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-						</div>
-						<div class="tab-pane" id="tab2">
-							<p>Howdy, I'm in Section 2.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ...</p>
-						</div>
-						<div class="tab-pane" id="tab3">
-							<p>Howdy, I'm in Section 3.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ...</p>
-						</div>
-					</div>
-				</div><!-- /Tabbable -->
-			</div><!-- /span6-->
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><!-- /nav-tabs -->
+				</div><!-- /span6-->
+
+
+				<div class="span6" style="padding-bottom:5px">
+					<h3>Basic pills gradient</h3>
+					<p>Take that same HTML, but use <code>.nav-pills .gradient</code> instead:</p>
+					<ul class="nav nav-pills gradient">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><!-- /Basic pills -->
+				</div><!-- /span6-->
+			</div>
+		</section>
+
+		<section>
+			<div class="row-fluid">
+				<div class="span6" style="padding-bottom:8px">
+					<h3>Stacked tabs</h3>
+					<p>Use <code>.nav-stacked</code></p>
+					<ul class="nav nav-tabs nav-stacked gradient">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><!-- /Stacked tabs -->
+				</div><!-- /span6-->
+
+				<div class="span6">
+					<h3>Stacked pills</h3>
+					<p>Use <code>.nav-pills</code></p>
+					<ul class="nav nav-pills nav-stacked gradient">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><!-- /Stacked pills -->
+					<br>
+				</div><!-- /span6-->
+			</div>
 		</section>
 
 
-		<section class="row-fluid">
-			<div class="span4">
-				<h3>Tabs on the bottom</h3>
-				<div class="tabbable tabs-below">
-					<div class="tab-content">
-						<div class="tab-pane active" id="A">
-							<p>I'm in Section 1.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitiqua ... </p>
-						</div>
-						<div class="tab-pane" id="B">
-							<p>Howdy, I'm in Section 2.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitiqua ... </p>
-						</div>
-						<div class="tab-pane" id="C">
-							<p>Howdy, I'm in Section 3.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitiqua ... </p>	
-						</div>
-					</div>
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>Tabs with dropdowns</h3>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								Dropdown
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Action</a></li>
+							</ul>
+						</li>
+					</ul><!-- /Tabs with dropdowns -->
+				</div><!-- /span6-->
+
+
+				<div class="span6" style="padding-bottom:5px">
+					<h3>Pills with dropdowns</h3>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								Dropdown
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Action</a></li>
+							</ul>
+						</li>
+					</ul><!-- /Pills with dropdowns -->
+				</div><!-- /span6-->
+			</div>
+		</section>
+
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>Tabs with dropdowns</h3>
+					<p>Add <code>gradient</code></p>
 					<ul class="nav nav-tabs gradient">
-						<li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
-						<li><a href="#B" data-toggle="tab">Section 2</a></li>
-						<li><a href="#C" data-toggle="tab">Section 3</a></li>
-					</ul>
-				</div><!-- /Tabs on the bottom -->
-			</div><!-- /span4-->
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								Dropdown
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Action</a></li>
+							</ul>
+						</li>
+					</ul><!-- /Tabs with dropdowns -->
+				</div><!-- /span6-->
 
 
-			<div class="span4">
-				<h3>Tabs on the left</h3>
-				<div class="tabbable tabs-left">
-					<ul class="nav nav-tabs gradient">
-						<li class="active"><a href="#lA" data-toggle="tab">Section 1</a></li>
-						<li><a href="#lB" data-toggle="tab">Section 2</a></li>
-						<li><a href="#lC" data-toggle="tab">Section 3</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane active" id="lA">
-							<p>I'm in Section 1.</p>
-						</div>
-						<div class="tab-pane" id="lB">
-							<p>Howdy, I'm in Section 2.</p>
-						</div>
-						<div class="tab-pane" id="lC">
-							<p>Howdy, I'm in Section 3.</p>
-						</div>
-					</div>
-				</div><!-- /Tabs on the left -->
-			</div><!-- /span4-->
-
-
-			<div class="span4">
-				<h3>Tabs on the right</h3>
-				<div class="tabbable tabs-right">
-					<ul class="nav nav-tabs gradient">
-						<li class="active"><a href="#rA" data-toggle="tab">Section 1</a></li>
-						<li><a href="#rB" data-toggle="tab">Section 2</a></li>
-						<li><a href="#rC" data-toggle="tab">Section 3</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane active" id="rA">
-							<p>I'm in Section 1.</p>
-						</div>
-						<div class="tab-pane" id="rB">
-							<p>Howdy, I'm in Section 2.</p>
-						</div>
-						<div class="tab-pane" id="rC">
-							<p>Howdy, I'm in Section 3.</p>
-						</div>
-					</div>
-				</div><!-- /Tabs on the right -->
-			</div><!-- /span4-->
+				<div class="span6" style="padding-bottom:5px">
+					<h3>Pills with dropdowns</h3>
+					<p>Add <code>gradient</code></p>
+					<ul class="nav nav-pills gradient">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								Dropdown
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Action</a></li>
+							</ul>
+						</li>
+					</ul><!-- /Pills with dropdowns -->
+				</div><!-- /span6-->
+			</div>
 		</section>
 
 
-		<section class="row-fluid">
-			<div class="span6">
-				<h3>Standard pagination</h3>
-				<p>Use class <code>.pagination</code></p>
-				<div class="pagination">
-					<ul>
-						<li><a href="#">Prev</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">Next</a></li>
-					</ul>
-				</div><!-- /Standard pagination -->
-			</div><!-- /span6-->
+		<section>
+			<div class="row-fluid">
+				<div class="span6" style="padding-bottom:8px">
+					<h3>Nav list</h3>
+					<p>Take a list of links and add <code>class="nav nav-list"</code> <code>.divider</code>:</p>
+					<ul class="nav nav-list well">
+						<li class="nav-header">List header</li>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li class="divider"></li>
+						<li class="nav-header">List header</li>
+						<li><a href="#">Library</a></li>
+					</ul><!-- /Pills with dropdowns -->
+				</div><!-- /span6-->
 
-
-			<div class="span6">
-				<h3>Disabled and active and gradient states</h3>
-				<p>Use class <code>.disabled</code> <code>.active</code> <code>.gradient</code></p>
-				<div class="pagination gradient">
-					<ul>
-						<li class="disabled"><a href="#">Prev</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">Next</a></li>
-					</ul>
-				</div><!-- /Disabled and active states -->
-			</div><!-- /span6-->
+				<div class="span6">
+					<h3>Tabbable</h3>
+					<p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>.</p>
+					<div class="tabbable"> <!-- Only required for left/right tabs -->
+						<ul class="nav nav-tabs gradient">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+							<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<p>I'm in Section 1.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+							</div>
+							<div class="tab-pane" id="tab2">
+								<p>Howdy, I'm in Section 2.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ...</p>
+							</div>
+							<div class="tab-pane" id="tab3">
+								<p>Howdy, I'm in Section 3.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ...</p>
+							</div>
+						</div>
+					</div><!-- /Tabbable -->
+				</div><!-- /span6-->
+			</div>
 		</section>
 
+		<section>
+			<div class="row-fluid">
+				<div class="span4">
+					<h3>Tabs on the bottom</h3>
+					<div class="tabbable tabs-below">
+						<div class="tab-content">
+							<div class="tab-pane active" id="A">
+								<p>I'm in Section 1.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitiqua ... </p>
+							</div>
+							<div class="tab-pane" id="B">
+								<p>Howdy, I'm in Section 2.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitiqua ... </p>
+							</div>
+							<div class="tab-pane" id="C">
+								<p>Howdy, I'm in Section 3.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitiqua ... </p>	
+							</div>
+						</div>
+						<ul class="nav nav-tabs gradient">
+							<li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
+							<li><a href="#B" data-toggle="tab">Section 2</a></li>
+							<li><a href="#C" data-toggle="tab">Section 3</a></li>
+						</ul>
+					</div><!-- /Tabs on the bottom -->
+				</div><!-- /span4-->
 
-		<section class="row-fluid">
-			<div class="span6">
-				<h3>Pagination-centered</h3>
-				<p>Use class <code>.pagination-centered</code></p>
-				<div class="pagination pagination-centered gradient">
-					<ul>
-						<li><a href="#">Prev</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">Next</a></li>
-					</ul>
-				</div><!-- /Pagination-left -->
-			</div><!-- /span6-->
 
-			<div class="span6">
-				<h3>Pagination-right</h3>
-				<p>Use class <code>.pagination-right</code></p>
-				<div class="pagination pagination-right gradient">
-					<ul>
-						<li><a href="#">Prev</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">Next</a></li>
-					</ul>
-				</div><!-- /Pagination-right -->
-			</div><!-- /span6-->
-		</div>
+				<div class="span4">
+					<h3>Tabs on the left</h3>
+					<div class="tabbable tabs-left">
+						<ul class="nav nav-tabs gradient">
+							<li class="active"><a href="#lA" data-toggle="tab">Section 1</a></li>
+							<li><a href="#lB" data-toggle="tab">Section 2</a></li>
+							<li><a href="#lC" data-toggle="tab">Section 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="lA">
+								<p>I'm in Section 1.</p>
+							</div>
+							<div class="tab-pane" id="lB">
+								<p>Howdy, I'm in Section 2.</p>
+							</div>
+							<div class="tab-pane" id="lC">
+								<p>Howdy, I'm in Section 3.</p>
+							</div>
+						</div>
+					</div><!-- /Tabs on the left -->
+				</div><!-- /span4-->
+
+
+				<div class="span4">
+					<h3>Tabs on the right</h3>
+					<div class="tabbable tabs-right">
+						<ul class="nav nav-tabs gradient">
+							<li class="active"><a href="#rA" data-toggle="tab">Section 1</a></li>
+							<li><a href="#rB" data-toggle="tab">Section 2</a></li>
+							<li><a href="#rC" data-toggle="tab">Section 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="rA">
+								<p>I'm in Section 1.</p>
+							</div>
+							<div class="tab-pane" id="rB">
+								<p>Howdy, I'm in Section 2.</p>
+							</div>
+							<div class="tab-pane" id="rC">
+								<p>Howdy, I'm in Section 3.</p>
+							</div>
+						</div>
+					</div><!-- /Tabs on the right -->
+				</div><!-- /span4-->
+			</div>
+		</section>
+
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>Standard pagination</h3>
+					<p>Use class <code>.pagination</code></p>
+					<div class="pagination">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div><!-- /Standard pagination -->
+				</div><!-- /span6-->
+
+
+				<div class="span6">
+					<h3>Disabled and active and gradient states</h3>
+					<p>Use class <code>.disabled</code> <code>.active</code> <code>.gradient</code></p>
+					<div class="pagination gradient">
+						<ul>
+							<li class="disabled"><a href="#">Prev</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div><!-- /Disabled and active states -->
+				</div><!-- /span6-->
+			</div>
+		</section>
+
+		<section>
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>Pagination-centered</h3>
+					<p>Use class <code>.pagination-centered</code></p>
+					<div class="pagination pagination-centered gradient">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div><!-- /Pagination-left -->
+				</div><!-- /span6-->
+
+				<div class="span6">
+					<h3>Pagination-right</h3>
+					<p>Use class <code>.pagination-right</code></p>
+					<div class="pagination pagination-right gradient">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div><!-- /Pagination-right -->
+				</div><!-- /span6-->
+			</div>
+		</section>
 
 	</div>
 </div>

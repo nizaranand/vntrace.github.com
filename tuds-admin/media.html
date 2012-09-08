@@ -70,9 +70,15 @@
 		<li>
 			<a class="tip-left" data-original-title="Setting" href="#tab2" data-toggle="tab"><i class="icon-cog icon-white"></i></a>
 		</li>
+		<li>
+			<a class="tip-left" data-original-title="List menu" href="#tab3" data-toggle="tab"><i class="icon-list icon-white"></i></a>
+		</li>
 		
 	</ul>
 	<div class="tab-content">
+		<form class="form-search">
+			<input type="text" class="input-medium search-query">
+		</form>
 		<div class="tab-pane" id="tab1">
 			<ul class="nav">
 				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -86,8 +92,31 @@
 				<li><a href="#">Change password</a></li>
 			</ul>
 		</div>
+		<div class="tab-pane" id="tab3">
+			<ul class="nav" rel="submenu">
+				<li><a href="dashboard.html"><i class="icon-home icon-white"></i> Dashboard</a></li>
+				<li><a href="chart.html"><i class="icon-signal icon-white"></i> Charts</a></li>
+				<li><a href="form.html"><i class="icon-pencil icon-white"></i> Forms</a></li>
+				<li><a href="table.html"><i class="icon-th-list icon-white"></i> Table</a></li>
+				<li><a href="navs.html"><i class="icon-list icon-white"></i> Navs</a></li>
+				<li><a href="element.html"><i class="icon-align-justify icon-white"></i> Elements</a></li>
+				<li><a href="btn-icon.html"><i class="icon-th-large icon-white"></i> Button & Icon</a></li>
+				<li>
+					<a href="#">
+						<i class="icon-file icon-white"></i>
+						Sample pages
+						<b class="caret"></b>
+					</a>
+					<ul class="nav nav-list">
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 1</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 2</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
-</div>
+</div><!-- /navbar-fixed-right -->
 <div class="main scroll">
 	<div class="container-fluid">
 		<div class="title-main">
@@ -97,7 +126,7 @@
 			<form class="form-search">
 				<input type="text" class="input-medium search-query">
 			</form>
-			<ul class="nav nav-list">
+			<ul class="nav nav-list" rel="submenu">
 				<li class="nav-header">List menu</li>
 				<li><a href="dashboard.html"><i class="icon-home"></i> Dashboard</a></li>
 				<li><a href="chart.html"><i class="icon-signal"></i> Charts</a></li>
@@ -110,7 +139,7 @@
 					<a href="#">
 						<i class="icon-file"></i>
 						Sample pages
-						<b class="caret pull-right"></b>
+						<b class="caret"></b>
 					</a>
 					<ul class="nav nav-list">
 						<li><a href="#"><i class="icon-share-alt"></i> Page 1</a></li>

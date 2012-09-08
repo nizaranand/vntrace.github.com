@@ -70,9 +70,15 @@
 		<li>
 			<a class="tip-left" data-original-title="Setting" href="#tab2" data-toggle="tab"><i class="icon-cog icon-white"></i></a>
 		</li>
+		<li>
+			<a class="tip-left" data-original-title="List menu" href="#tab3" data-toggle="tab"><i class="icon-list icon-white"></i></a>
+		</li>
 		
 	</ul>
 	<div class="tab-content">
+		<form class="form-search">
+			<input type="text" class="input-medium search-query">
+		</form>
 		<div class="tab-pane" id="tab1">
 			<ul class="nav">
 				<li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -86,8 +92,31 @@
 				<li><a href="#">Change password</a></li>
 			</ul>
 		</div>
+		<div class="tab-pane" id="tab3">
+			<ul class="nav" rel="submenu">
+				<li><a href="dashboard.html"><i class="icon-home icon-white"></i> Dashboard</a></li>
+				<li><a href="chart.html"><i class="icon-signal icon-white"></i> Charts</a></li>
+				<li><a href="form.html"><i class="icon-pencil icon-white"></i> Forms</a></li>
+				<li><a href="table.html"><i class="icon-th-list icon-white"></i> Table</a></li>
+				<li><a href="navs.html"><i class="icon-list icon-white"></i> Navs</a></li>
+				<li><a href="element.html"><i class="icon-align-justify icon-white"></i> Elements</a></li>
+				<li><a href="btn-icon.html"><i class="icon-th-large icon-white"></i> Button & Icon</a></li>
+				<li>
+					<a href="#">
+						<i class="icon-file icon-white"></i>
+						Sample pages
+						<b class="caret"></b>
+					</a>
+					<ul class="nav nav-list">
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 1</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 2</a></li>
+						<li><a href="#"><i class="icon-share-alt icon-white"></i> Page 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
-</div>
+</div><!-- /navbar-fixed-right -->
 <div class="main scroll">
 	<div class="container-fluid">
 		<div class="title-main">
@@ -97,7 +126,7 @@
 			<form class="form-search">
 				<input type="text" class="input-medium search-query">
 			</form>
-			<ul class="nav nav-list">
+			<ul class="nav nav-list" rel="submenu">
 				<li class="nav-header">List menu</li>
 				<li><a href="dashboard.html"><i class="icon-home"></i> Dashboard</a></li>
 				<li><a href="chart.html"><i class="icon-signal"></i> Charts</a></li>
@@ -110,7 +139,7 @@
 					<a href="#">
 						<i class="icon-file"></i>
 						Sample pages
-						<b class="caret pull-right"></b>
+						<b class="caret"></b>
 					</a>
 					<ul class="nav nav-list">
 						<li><a href="#"><i class="icon-share-alt"></i> Page 1</a></li>
@@ -121,102 +150,105 @@
 			</ul>
 		</div><!-- /list-menu-right -->
 
-		<section class="row-fluid">
-			<div class="span8">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Frequently Asked Questions</h4>
-					</div>
-					<div class="box-body">
-						<h4>Search ....</h4>
-						<form class="form-inline">
-							<input type="text" name="search" placeholder="Search by Keyword">
-							<button class="btn"><i class="icon-search"></i></button>
-						</form>
-						<div class="faq-link">
-							<ol>
-								<li>1. <a href="#faq-1">How can I get my own domain name?</a></li>
-								<li>2. <a href="#faq-2">How can I block my hosting service's advertisements?</a></li>
-								<li>3. <a href="#faq-3">How do I redirect someone to another page?</a></li>
-								<li>4. <a href="#faq-4">How do I password protect my web site?</a></li>
-								<li>5. <a href="#faq-5">How do I stop my page from being cached?</a></li>
-							</ol>
+		<section>
+
+			<div class="row-fluid">
+				<div class="span8">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Frequently Asked Questions</h4>
 						</div>
-						<div class="faq-list">
-							<ol>
-				
-								<li id="faq-1">
-									<div class="faq-icon">
-										<div class="faq-number">1</div>
-									</div>
-									<div class="faq-text">
-										<h4>How can I get my own domain name?</h4>
-										<p>The Internet Corporation for Assigned Names and Numbers (ICANN) maintains a list of accredited registrars . Any of the companies on this list can register a domain name for you..</p>	
-										
-									</div>
-								</li>
-								
-								<li id="faq-2">
-									<div class="faq-icon">
-										<div class="faq-number">2</div>
-									</div>
-									<div class="faq-text">
-										<h4>How can I block my hosting service's advertisements?</h4>
-										<p>Check the Terms of Service (TOS) agreement for your hosting service. It almost certainly prohibits interfering with the advertisements they add to your web pages. If you use some trick to block their advertisements on your own, then your hosting service may delete your account for violating its TOS.</p>	
-										
-									</div>
-								</li>
-								
-								<li id="faq-3">
-									<div class="faq-icon">
-										<div class="faq-number">3</div>
-									</div>
-									<div class="faq-text">
-									
-										<h4>How do I redirect someone to another page?</h4>
-										<p>The most reliable way is to configure the server to send out a redirection instruction when the old URL is requested. Then the browser will automatically get the new URL. This is the fastest and most efficient way, and is the only way described here that can convince indexing robots to phase out the old URL. For configuration details consult your server admin or documentation (with NCSA or Apache servers, use a Redirect statement in .htaccess).</p>	
-										<p>If you can't set up a redirect, there are other possibilities. These are inferior because they tell the search engines that there's still a page at the old location, not that the page has moved to a new location. But if it's impossible for you to configure redirection at your server, here are two alternatives:</p>	
-									</div>
-								</li>
-								
-								<li id="faq-4">
-									<div class="faq-icon">
-										<div class="faq-number">4</div>
-									</div>
+						<div class="box-body">
+							<h4>Search ....</h4>
+							<form class="form-inline">
+								<input type="text" name="search" placeholder="Search by Keyword">
+								<button class="btn"><i class="icon-search"></i></button>
+							</form>
+							<div class="faq-link">
+								<ol>
+									<li>1. <a href="#faq-1">How can I get my own domain name?</a></li>
+									<li>2. <a href="#faq-2">How can I block my hosting service's advertisements?</a></li>
+									<li>3. <a href="#faq-3">How do I redirect someone to another page?</a></li>
+									<li>4. <a href="#faq-4">How do I password protect my web site?</a></li>
+									<li>5. <a href="#faq-5">How do I stop my page from being cached?</a></li>
+								</ol>
+							</div>
+							<div class="faq-list">
+								<ol>
+					
+									<li id="faq-1">
+										<div class="faq-icon">
+											<div class="faq-number">1</div>
+										</div>
 										<div class="faq-text">
-										<h4>How do I password protect my web site?</h4>
-										<p>Password protection is done through HTTP authentication. The configuration details vary from server to server, so you should read the authentication section of your server documentation. Contact your server administrator if you need help with this.</p>	
-										<p>JavaScript password scripts provide only a facade of security. At a fundamental level, they work in one of two ways. Some scripts convert the password into a URL, which keeps the document secret by limiting the number of people who know its URL. Some scripts check the password and then go to a specific URL, which protects the document only from those who don't view the JavaScript source to get the URL of the document. Neither mechanism is really secure.</p>	
-										
-									</div>
-								</li>
-								
-								<li id="faq-5">
-									<div class="faq-icon">
-										<div class="faq-number">5</div>
-									</div>
-									<div class="faq-text">
+											<h4>How can I get my own domain name?</h4>
+											<p>The Internet Corporation for Assigned Names and Numbers (ICANN) maintains a list of accredited registrars . Any of the companies on this list can register a domain name for you..</p>	
+											
+										</div>
+									</li>
 									
-										<h4>How do I stop my page from being cached?</h4>
-										<p>Browsers cache web documents; they store local copies of documents to speed up repeated references to documents that haven't changed. Also, many browsers are configured to use public proxy caches, which serve many users (e.g., all customers of an ISP, or all employees behind a corporate firewall). To effectively control how your documents are cached you must configure your server to send appropriate HTTP headers.</p>	
-										<p>The Expires header is understood by virtually all caches. The cached document will be retrieved again automatically once it has expired. The Expires header must contain an HTTP date, which must be Greenwich Mean Time (GMT), not local time.</p>	
+									<li id="faq-2">
+										<div class="faq-icon">
+											<div class="faq-number">2</div>
+										</div>
+										<div class="faq-text">
+											<h4>How can I block my hosting service's advertisements?</h4>
+											<p>Check the Terms of Service (TOS) agreement for your hosting service. It almost certainly prohibits interfering with the advertisements they add to your web pages. If you use some trick to block their advertisements on your own, then your hosting service may delete your account for violating its TOS.</p>	
+											
+										</div>
+									</li>
+									
+									<li id="faq-3">
+										<div class="faq-icon">
+											<div class="faq-number">3</div>
+										</div>
+										<div class="faq-text">
 										
-									</div>
-								</li>
-							</ol>
-						</div><!-- /faq-list -->
-					</div>
-				</div><!-- end box -->
-			</div><!-- /span8 -->
-			<div class="span4">
-				<div class="box">
-					<div class="box-header">
-						<i class="ic-title-box"></i>
-						<h4>Most Popular Questions</h4>
-					</div>
-					<div class="box-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											<h4>How do I redirect someone to another page?</h4>
+											<p>The most reliable way is to configure the server to send out a redirection instruction when the old URL is requested. Then the browser will automatically get the new URL. This is the fastest and most efficient way, and is the only way described here that can convince indexing robots to phase out the old URL. For configuration details consult your server admin or documentation (with NCSA or Apache servers, use a Redirect statement in .htaccess).</p>	
+											<p>If you can't set up a redirect, there are other possibilities. These are inferior because they tell the search engines that there's still a page at the old location, not that the page has moved to a new location. But if it's impossible for you to configure redirection at your server, here are two alternatives:</p>	
+										</div>
+									</li>
+									
+									<li id="faq-4">
+										<div class="faq-icon">
+											<div class="faq-number">4</div>
+										</div>
+											<div class="faq-text">
+											<h4>How do I password protect my web site?</h4>
+											<p>Password protection is done through HTTP authentication. The configuration details vary from server to server, so you should read the authentication div of your server documentation. Contact your server administrator if you need help with this.</p>	
+											<p>JavaScript password scripts provide only a facade of security. At a fundamental level, they work in one of two ways. Some scripts convert the password into a URL, which keeps the document secret by limiting the number of people who know its URL. Some scripts check the password and then go to a specific URL, which protects the document only from those who don't view the JavaScript source to get the URL of the document. Neither mechanism is really secure.</p>	
+											
+										</div>
+									</li>
+									
+									<li id="faq-5">
+										<div class="faq-icon">
+											<div class="faq-number">5</div>
+										</div>
+										<div class="faq-text">
+										
+											<h4>How do I stop my page from being cached?</h4>
+											<p>Browsers cache web documents; they store local copies of documents to speed up repeated references to documents that haven't changed. Also, many browsers are configured to use public proxy caches, which serve many users (e.g., all customers of an ISP, or all employees behind a corporate firewall). To effectively control how your documents are cached you must configure your server to send appropriate HTTP headers.</p>	
+											<p>The Expires header is understood by virtually all caches. The cached document will be retrieved again automatically once it has expired. The Expires header must contain an HTTP date, which must be Greenwich Mean Time (GMT), not local time.</p>	
+											
+										</div>
+									</li>
+								</ol>
+							</div><!-- /faq-list -->
+						</div>
+					</div><!-- end box -->
+				</div><!-- /span8 -->
+				<div class="span4">
+					<div class="box">
+						<div class="box-header">
+							<i class="ic-title-box"></i>
+							<h4>Most Popular Questions</h4>
+						</div>
+						<div class="box-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
 					</div>
 				</div>
 			</div>
