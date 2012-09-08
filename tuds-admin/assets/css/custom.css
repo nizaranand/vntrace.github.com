@@ -149,13 +149,14 @@ margin-bottom: 9px;
 }
 .navbar-fixed-right .nav-tabs{
   border-right-color:#222;
-  height:100%;
   margin-right:0px;
+  height:100%;
 }
 .navbar-fixed-right .nav-tabs li {
   margin:0px;
 }
 .navbar-fixed-right .tab-content {
+  float:left;
   display:none;
   width:260px;
 }
@@ -633,7 +634,7 @@ div.uploader input {
 .quick-shortcuts > li{
    float:left;
    position:relative;
-   width:150px;
+   width:148px;
 }
 .quick-shortcuts > li > a {
   color:#777;
