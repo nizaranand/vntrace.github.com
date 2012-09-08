@@ -769,6 +769,9 @@ top: 5px;
 /***********************************/
 /************** icons *************/
 /***********************************/
+[class^="icon-"], [class*=" icon-"] { 
+  margin-top:0px;
+}
 .icon-gray {
   background-image: url("../img/glyphicons-halflings-gray.png");
 }
