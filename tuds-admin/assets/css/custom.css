@@ -21,14 +21,15 @@ li {
 }*/
 /************** global *************/
 .the-icons li {
-float: left;
-width: 25%;
-line-height: 25px;
+  float: left;
+  width: 25%;
+  line-height: 25px;
 }
 section{
   margin-bottom:40px;
   float:left;
   width:100%;
+  display:block;
 }
 .well,.form-actions {
   background:#fafafa;
@@ -591,6 +592,7 @@ div.uploader input {
 .page-login {
   margin:0px auto;
   margin-top:10%;
+  * margin-top:5%;
   width:300px; 
 }
 .login-content form{
