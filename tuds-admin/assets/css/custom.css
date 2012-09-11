@@ -30,6 +30,7 @@ section{
   float:left;
   width:100%;
   display:block;
+  * padding-bottom:40px;
 }
 .well,.form-actions {
   background:#fafafa;
