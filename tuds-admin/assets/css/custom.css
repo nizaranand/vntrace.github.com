@@ -27,6 +27,8 @@ line-height: 25px;
 }
 section{
   margin-bottom:40px;
+  float:left;
+  width:100%;
 }
 .well,.form-actions {
   background:#fafafa;
