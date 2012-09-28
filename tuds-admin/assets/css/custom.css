@@ -642,13 +642,20 @@ div.uploader input {
 }
 /******************* icons *****************/
 .quick-shortcuts{
-  display:inline-block;
+    display:inline-block;
+    text-align: center;
 }
 .quick-shortcuts > li{
-   float:left;
+   /*float:left;*/
    position:relative;
    width:148px;
 }
+
+.quick-shortcuts li {
+    text-align: center;
+    display: inline-block;
+}
+
 .quick-shortcuts > li > a {
   color:#777;
   display:block;
