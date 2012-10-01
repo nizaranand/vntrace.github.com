@@ -1,47 +1,73 @@
-ul,li {
-  list-style-type:none;
+body {
+    padding-top: 50px;
 }
-.container-fluid {
-  padding-top:50px;
-  padding-bottom:50px;
+
+.navbar .nav {
+    margin-left: 10px;
 }
-.box-wrapper {
-  border:1px solid #333;
-  border-bottom:none;
+
+.widget-header {
+    border-bottom: 2px solid #E5E5E5;
+    color: #777;
+    padding: 10px;
 }
-.box-wrapper:last-child {
-  border-bottom:1px solid #333;
+
+.widget-header h4 {
+    padding: 0;
+    margin: 0; 
 }
-.box-right {
-  border-left:1px solid #333;
+
+.widget-container {
+    padding: 10px;
 }
-.box-right>.row-fluid{
-  border-bottom:1px solid #333;
-  border-top:1px solid #333;
-  margin-bottom:20px;
+
+ul.shortcut {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
 }
-.box-right>.row-fluid:first-child {
-  border-top:none;
+
+ul.shortcut li {
+    list-style: none;
+    display: inline-block;
+    width: 120px;
+    background-color: #EFEFEF;
+    margin-top: 10px; 
 }
-.box-right>.row-fluid:last-child{
-  border-bottom:none;
-  margin-bottom:0px;
+
+ul.shortcut li:hover {
+    background-color: #777;
 }
-.content-right ,.content-right .span8{
-  border-left:1px solid #333;
-  position:relative;
+
+ul.shortcut li:hover a {
+    color: #DDD;
 }
-.content-right .btn-small {
-  position:absolute;
-  right:-5px;
-  top:-8px;
+
+ul.shortcut li a {
+    margin: 0;
+    padding: 20px 0px;
+    text-decoration: none;
 }
-.content-right ul {
-  margin:0px;
+
+ul.shortcut li a,
+ul.shortcut li span {
+    display: block;
 }
-.content-right ul li{
-  border-bottom:1px solid #333;
+
+.icon {
+    background: url("../img/icon-blue-big.png") left top;
+    width: 52px;
+    height: 40px;
+    display: inline-block;
 }
-.content-right ul li:last-child{
-  border-bottom:none;
+
+.icon.home {
+    background-position: -650px bottom;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding: 0;
+    }
 }
