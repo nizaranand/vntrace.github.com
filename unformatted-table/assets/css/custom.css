@@ -55,6 +55,22 @@ ul.shortcut li span {
     display: block;
 }
 
+.card {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.card span {
+    display: block;
+    padding: 7px;
+    background-color: #EFEFEF;
+    margin-bottom: 5px;
+}
+
 .icon {
     background: url("../img/icon-blue-big.png") left top;
     width: 52px;
