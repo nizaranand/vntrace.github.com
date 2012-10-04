@@ -39,7 +39,8 @@ table tr,
 table td {
   background:#f0f0f0;
 }
-.docs-input-sizes select, .docs-input-sizes input[type="text"] {
+.docs-input-sizes select,
+.docs-input-sizes input[type="text"] {
 display: block;
 margin-bottom: 9px;
 }
@@ -1110,8 +1111,8 @@ top: 5px;
 }
 
 .m-dropdown-menu .divider{
-    background-color: #45A1C8;
-    border-bottom: 1px solid #45A1C8;
+    background-color: #222;
+    border-bottom: 1px solid #444;
 }
 
 .navbar .nav > li > .m-dropdown-menu::after {

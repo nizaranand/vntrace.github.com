@@ -34,7 +34,7 @@
 
 
 		// list-menu-right
-		$('ul[rel=submenu]').find('a').click(function(e){
+		$('ul[data-submenu=submenu]').find('a').click(function(e){
             var li = $(this).parent();
             if(li.hasClass('active')) {
                 li.removeClass('active');
