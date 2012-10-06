@@ -20,5 +20,11 @@
                 $(this).children('i').addClass('icon-white');
             }   
         });
+        $('[data-change-color=change-color] a').click(function(e){
+            var add = $(this).attr('class');
+            var remo = $('body').attr('class');
+            $('body').removeClass(remo);
+            $('body').addClass(add);
+        });
 	});
 })(jQuery);

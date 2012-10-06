@@ -60,7 +60,6 @@ font-size: 20px;
 }
 h4 {
   line-height:2.5em;
-  color:#cdcdcd;
   font-size:14px;
 }
 .bg-title {
@@ -98,20 +97,9 @@ input[type="datetime-local"], input[type="date"],
 input[type="month"], input[type="time"], input[type="week"],
 input[type="number"], input[type="email"], input[type="url"],
 input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-background-color: #1d1f24;
-border: 1px solid #33363b;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
--webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
--moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
--webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
--moz-transition: border linear 0.2s, box-shadow linear 0.2s;
--ms-transition: border linear 0.2s, box-shadow linear 0.2s;
--o-transition: border linear 0.2s, box-shadow linear 0.2s;
-transition: border linear 0.2s, box-shadow linear 0.2s;
- background:#1d1f24;
+  background-color: #1d1f24;
+  border: 1px solid #33363b;
+  background:#1d1f24;
   border:1px solid #3b3c41;
   color:#999;
   box-shadow:inset 1px 1px 3px #131217;
@@ -199,11 +187,17 @@ border-bottom-color: #60AEB0;
   width:100%;
 }
 /******************* icons *****************/
-.i-home,.i-setting,.i-pricing-plans,.i-setting,
+/*.i-home,.i-setting,.i-pricing-plans,.i-setting,
 .i-faq,.i-photo,.i-messages,.i-apps,.i-user,.i-notes,
 .i-report,.i-comment,.i-bookmark,.i-faq
- {
+ ,*/i[class^="i-"]{
   background:url("../img/icons/icon-blue-big.png") left top;
+  width:52px;
+  height:40px;
+  display:inline-block;
+}
+.color-green i[class^="i-"]{
+  background:url("../img/icons/icon-green-big.png") left top;
   width:52px;
   height:40px;
   display:inline-block;
@@ -211,77 +205,88 @@ border-bottom-color: #60AEB0;
 .nav > li > a:hover > .i-messages{
     background-position: left bottom;
   }
-.nav .i-apps{
+.nav .i-apps,
+.color-green .nav .i-apps{
  background-position: -65px top;
 }
   .nav > li > a:hover > .i-apps,
   .nav > li.active > a > .i-apps{
     background-position: -65px bottom;
   }
-.nav .i-photo {
+.nav .i-photo,
+.color-green .nav .i-photo {
   background-position: -130px top;
 }
   .nav > li > a:hover > .i-photo,
   .nav > li.active > a >.i-photo{
     background-position: -130px bottom;
   }
-.nav .i-notes {
+.nav .i-notes,
+.color-green .nav .i-notes {
   background-position: -195px top;
 }
   .nav > li > a:hover > .i-notes,
   .nav > li.active > a > .i-notes {
     background-position: -195px bottom;
   }
-.nav .i-user {
+.nav .i-user,
+.color-green .nav .i-user {
   background-position: -260px top; 
 }
   .nav > li > a:hover >.i-user,
   .nav > li.active > a >.i-user {
     background-position: -260px bottom;
   }
-.nav .i-report {
+.nav .i-report,
+.color-green .nav .i-report {
   background-position: -325px top;
 }
   .nav > li > a:hover >.i-report,
   .nav > li.active > a >.i-report {
     background-position: -325px bottom;
   }
-.nav .i-setting {
+.nav .i-setting,
+.color-green .nav .i-setting {
   background-position: -390px top;
 }
   .nav > li > a:hover >.i-setting,
   .nav > li.active > a >.i-setting {
     background-position: -390px bottom;
   }
-.nav .i-comment {
+.nav .i-comment,
+.color-green .nav .i-comment {
   background-position: -455px top;
 }
   .nav > li > a:hover >.i-comment,
   .nav > li.active > a >.i-comment {
     background-position: -455px bottom;
   }
-.nav .i-pricing-plans {
+.nav .i-pricing-plans,
+.color-green .nav .i-pricing-plans {
   background-position: -520px top;
 }
   .nav > li > a:hover >.i-pricing-plans,
   .nav > li.active > a >.i-pricing-plans {
     background-position: -520px bottom;
   }
-.nav .i-faq {
+.nav .i-faq,
+.color-green .nav .i-faq {
   background-position: -585px top;
 }
   .nav > li > a:hover >.i-faq,
   .nav > li.active > a >.i-faq {
     background-position: -585px bottom;
   }
-.nav .i-home {
+.nav .i-home,
+.color-green .nav .i-faq {
   background-position: -650px top;
 }
   .nav > li > a:hover >.i-home,
   .nav > li.active > a >.i-home {
     background-position: -650px bottom;
   }
-.i-bookmark {
+.bg-title .i-bookmark,
+.color-green .bg-title .i-bookmark {
   background-position: -715px top;
 }
 /******************* end-icon *****************/
@@ -298,6 +303,9 @@ border-bottom-color: #60AEB0;
   padding-left:30px;
   background:#1E2024 url('../img/icons/icons-header.png') left top no-repeat;
   border-bottom:1px solid #16171c;
+}
+.box-header h4 {
+  color:#c4c4c4;
 }
 .box-content {
   border-top:1px solid #2e3136;
@@ -1203,9 +1211,338 @@ li.active ul.nav {
 li ul.nav {
     display: none;
 }
-
 li.active > a {
-    font-weight: bold;
+    font-weight: 400;
+}
+/******************************************/
+/******** change-color color-green ********/
+/******************************************/
+body.color-green {
+  background:#fff;
+  color:#4F575A;
+  font-weight:200;
+}
+.color-green .well{
+  background:#eee;
+}
+.color-green code {
+  padding: 2px 4px;
+  color: #E17931;
+  background-color: #f3f3f3;
+  border: 1px solid #DFE89D;
+}
+.color-green input,.color-green textarea{
+  background:#fff;
+  border-color:#ddd;
+  box-shadow: none;
+}
+.color-green .bg-title {
+  background: #eee;
+  box-shadow: inset 1px 1px 3px #ddd;
+  color: #4F575A;
+}
+.color-green .title {
+  color: #4F575A;
+  box-shadow: 0px 1px 0px #fff;
+  border-bottom: 1px solid #DFE89D;
+}
+.color-green a,
+.color-green .navbar-f .brand{
+  color:#9CCB55;
+}
+.color-green a:hover{
+  color:#869E00;
+  text-decoration:none;
+}
+.color-green .btn {
+  /*color:#fff;*/
+}
+.color-green .btn:hover {
+  color:#fff; 
+}
+.color-green .navbar-f .navbar-inner {
+  background:#4F575A;
+  border-bottom-color:#394144;
+  border-top-color:#60686b;
+  color:#fff;
+}
+.color-green .navbar-f .nav > li > a {
+  color:#fff;
+  text-shadow:none;
+}
+.color-green .navbar-f .nav > li > a:hover,
+.color-green .navbar-f .nav > li.active > a,
+.color-green .navbar-f .nav > .dropdown.active > a:hover,
+.color-green .navbar-f .nav > li.active > a:hover
+{
+  background:#9CCB55;
+  color:#fff;
+  text-shadow:none;
+  border-radius:0px;
+}
+.color-green .navbar-f .navbar-inverse .nav li.dropdown > .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle .caret,
+.color-green .navbar-f .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+border-top-color: #fff;
+border-bottom-color: #fff;
+}
+.color-green .navbar-f .navbar-inverse .nav li.open > .dropdown-toggle,
+.color-green .navbar-f .navbar-inverse .nav li.open > .dropdown-toggle:hover .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  background:#9CCB55;
+}
+.color-green .navbar-f .navbar-inverse .divider-vertical {
+  border-right-color: #60686b;
+  border-left-color: #394144;
+}
+.color-green .navbar-f .navbar-inverse .navbar-search .search-query {
+  background:#f5f5f5;
+  color:#4F575A;
+}
+.color-green .navbar-f .navbar-inverse .navbar-search .search-query:focus {
+  text-shadow:none;
+  background:#fff;
+}
+.color-green .navbar-f .nav .dropdown-menu li a {
+  color:#9CCB55;
+}
+.color-green .navbar-f .nav .dropdown-menu li a:hover{
+  background:#9CCB55;
+  color:#fff;
+}
+
+/***************** list-menu ****************/
+.color-green .list-menu {
+  padding-bottom:20px;
+}
+.color-green .list-menu .nav-list > li{
+  border-top:1px solid #71797c;
+  border-bottom:1px solid #394144;
+}
+.color-green .list-menu .nav > li > a {
+  color:#fff;
+  border-left:5px solid #4F575A;
+  background-color: #60686b;
+}
+.color-green .list-menu .nav > li.active > a,
+.color-green .list-menu .nav > li > a:hover{
+  background-color: #4F575A;
+  color:#fff;
+  border-left-color:#9ccb55;
+}
+.color-green .list-menu .nav > li > ul > li > a {
+  color:#ddd;
+  border-left-color:#394144;
+}
+/***************** box ****************/
+.color-green .box-header {
+  color:#fff;
+  background: #9CCB55;
+  border:1px solid #9CCB55;
+  padding-left:10px;
+}
+.color-green .box-header h4 {
+  color:#fff;
+}
+.color-green .box-content {
+  background:#fff;
+  border:1px solid #DFE89D;
+  color:#4F575A;
+}
+.color-green .breadcrumb {
+  box-shadow: inset 1px 1px 3px #394144;
+  background-color: #60686b;
+  color:#fff;
+}
+.color-green .thumbnails li .thumbnail {
+  background:#ddd;
+}
+/***************** dashboarh ****************/
+.color-green .stat-wrapper .box-stat, .box-stat {
+  background: #9CCB55;
+  box-shadow: inset 1px 1px 3px #869E00;
+}
+.color-green .stat-wrapper .box-stat .stat-value {
+  color: #fff;
+}
+.color-green .quick-shortcuts .nav-pills > li > a {
+  box-shadow: inset 1px 1px 3px #ddd;
+  background: #eee;
+  color:#999;
+}
+.color-green .quick-shortcuts .nav-pills > li > a:hover {
+  background: #f9f9f9;
+  color:#9CCB55; 
+}
+.color-green .news-items li {
+  box-shadow: none;
+  border-bottom-color: #ddd;
+}
+.color-green .news-item-detail {
+  border-right-color: #ddd;
+}
+.news-item-date {
+  border-left: none;
+}
+/***************** FAQ ****************/
+.color-green .faq-icon .faq-number {
+  background: #9CCB55;
+  border-bottom: 1px solid #869E00;
+  box-shadow: inset 1px 1px 3px #869E00;
+  color: #fff;
+  padding:3px 9px;
+}
+.color-green .faq-text h4{
+  color:#4F575A;
+}
+/***************** table ****************/
+.color-green .table tbody tr td a:hover {
+  
+}
+.color-green .table thead tr th {
+  color:#4F575A;
+  background: #e5e5e5;
+}
+.color-green .table tr td {
+  background: #f5f5f5;
+  color:#4F575A;
+}
+.color-green .table tbody tr:nth-child(odd) td,
+.color-green .table tbody tr:nth-child(odd) th {
+  background:#eee;
+}
+.color-green .table tbody tr:hover td,
+.color-green .table tbody tr:hover th {
+  background-color: #f8f8f8;
+}
+.color-green .table tbody tr td,
+.color-green .table-condensed tr td,
+.color-green .table-striped tr td,
+.color-green .table-bordered tr th,
+.color-green .table-bordered tr td {
+  border-top: none;
+  border-bottom: 1px solid #ccc;
+}
+.color-green .table-bordered,
+.color-green .table-bordered thead tr {
+    border:none;
+}
+.color-green .table-bordered thead tr th,
+.color-green .table-bordered tr td {
+  border:1px solid #ddd;
+}
+.color-green .table-bordered-none thead tr th,
+.color-green .table-bordered-none tr td {
+  border-bottom:1px solid #ccc;
+}
+.color-green .hero-unit {
+  background-color: #4F575A;
+  color:#fff;
+}
+/************ end table **************/
+/************ nav **************/
+.color-green .nav > li > a {
+  color:#9CCB55;
+}
+.color-green .nav-tabs > .active > a,
+.color-green .nav-tabs > .active > a:hover,
+.color-green .nav > li > a:hover,
+.color-green .nav-pills > .active > a,
+.color-green .nav-pills > .active > a:hover {
+  color: #4F575A;
+  background-color: #eee;
+  border-color: #eee;
+}
+.color-green .nav-tabs {
+  border-bottom: 1px solid #eee;
+  box-shadow: none;
+}
+.color-green .nav-tabs > li > a {
+  border-color: #eee;
+  background: #f7f7f7;
+}
+.color-green .nav-tabs.nav-stacked > li > a {
+  border: 1px solid #ddd;
+}
+.color-green .nav-list > li > a:hover,
+.color-green .nav-list > .active > a,
+.color-green .nav-list > .active > a:hover {
+  background-image:none;
+  background:#ddd;
+  text-shadow:none;
+}
+.color-green .nav-list .divider {
+  background-color: #ddd;
+  border-bottom: 1px solid #fafafa;
+}
+.color-green .tab-content {
+  background:none;
+  border:1px solid #eee;
+  padding:10px;
+}
+.color-green .tabs-below .nav-tabs {
+  box-shadow: none;
+  border-top-color:#eee;
+  border-bottom:none;
+}
+.color-green .tabs-below .tab-content {
+  border-bottom:none; 
+}
+.color-green .tabs-left > .nav-tabs,
+.color-green .tabs-right > .nav-tabs{
+  border-right:none;
+  border-bottom:none;
+}
+.color-green .tabs-right > .nav-tabs{
+  border-left:none;
+}
+.color-green .tabs-left > .nav-tabs > li.active a:hover,
+.color-green .tabs-right > .nav-tabs > li.active a:hover{
+  border-bottom-color:#eee;
+}
+.color-green .pagination a {
+  background: #60686B;
+  border:1px solid #71797c;
+  border-right:1px solid #394144;
+}
+.color-green .pagination ul > li > a:hover,
+.color-green .pagination .active a {
+  background: #4F575A;
+  color:#DFE89D;
+}
+.color-green .pager > li > a {
+  background: #eee;
+  border-color:#ddd;
+}
+/***************** calenda ****************/
+.calendar .header-calendar {
+  background: #ddd;
+  padding: 10px 0px 13px 0px;
+  color: #4F575A;
+  font-size: 16px;
+}
+/***************** footer ****************/
+.color-green .footer {
+  background: #4F575A;
+  border-top: 1px solid #60686b;
+  box-shadow: 0px -1px 0px #394144;
+  border-bottom: 1px solid #394144;
+}
+.color-green .footer .nav-list a{
+  color:#9CCB55;
+}
+.color-green .footer .nav-list a:hover {
+  color:#DFE89D;
+  background:none;
+}
+.color-green .footer .nav-list > li > a:hover i{
+  background:url("../img/glyphicons-halflings-green.png") 0px -168px;
+}
+.color-green .copyright {
+  border-top: 1px solid #60686b;
+  background: #394144;
+  color:#fff;
 }
 
 

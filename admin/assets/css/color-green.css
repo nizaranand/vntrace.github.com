@@ -1,0 +1,182 @@
+body {
+  background:#fff;
+  color:#fff;
+  font-weight:200;
+}
+a,.color-green .navbar-f .brand{
+  color:#9CCB55;
+}
+a:hover{
+  color:#DFE89D;
+  text-decoration:none;
+}
+.color-green .navbar-f .navbar-inner {
+  background:#4F575A;
+  border-bottom-color:#394144;
+  border-top-color:#60686b;
+  color:#fff;
+}
+.color-green .navbar-f .nav > li > a {
+  color:#fff;
+  text-shadow:none;
+}
+.color-green .navbar-f .nav > li > a:hover,
+.color-green .navbar-f .nav > li.active > a,
+.color-green .navbar-f .nav > .dropdown.active > a:hover,
+.color-green .navbar-f .nav > li.active > a:hover
+{
+  background:#9CCB55;
+  color:#fff;
+  text-shadow:none;
+  border-radius:0px;
+}
+.color-green .navbar-f .navbar-inverse .nav li.dropdown > .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle .caret,
+.color-green .navbar-f .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+border-top-color: #fff;
+border-bottom-color: #fff;
+}
+.color-green .navbar-f .navbar-inverse .nav li.open > .dropdown-toggle,
+.color-green .navbar-f .navbar-inverse .nav li.open > .dropdown-toggle:hover .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  background:#9CCB55;
+}
+.color-green .navbar-f .navbar-inverse .divider-vertical {
+  border-right-color: #60686b;
+  border-left-color: #394144;
+}
+.color-green .navbar-f .navbar-inverse .navbar-search .search-query {
+  background:#f5f5f5;
+  color:#4F575A;
+}
+.color-green .navbar-f .navbar-inverse .navbar-search .search-query:focus {
+  text-shadow:none;
+  background:#fff;
+}
+.color-green .navbar-f .nav .dropdown-menu li a {
+  color:#9CCB55;
+}
+.color-green .navbar-f .nav .dropdown-menu li a:hover{
+  background:#9CCB55;
+  color:#fff;
+}
+/***************** list-menu ****************/
+.list-menu {
+  padding-bottom:20px;
+}
+.list-menu .nav-list > li{
+  display:block;
+  position:relative;
+  border-top:1px solid #71797c;
+  border-bottom:1px solid #394144;
+  margin: 0px -15px;
+}
+.list-menu .nav > li > a > i{
+  margin:0px 10px;
+}
+.list-menu .nav > li > a {
+  margin:0px;
+  color:#fff;
+  padding:8px 0px;
+  border-radius:none;
+  text-decoration: none;
+  text-shadow:none;
+  border-left:5px solid #4F575A;
+  background-color: #60686b;
+}
+.list-menu .nav > li.active > a,
+.list-menu .nav > li > a:hover{
+  text-decoration: none;
+  background-image:none;
+  background-color: #4F575A;
+  color:#fff;
+  border-left-color:#9ccb55;
+}
+.list-menu .nav > li.active > a > i.icon-circle-arrow-right {
+  background-position:-312px -144px;
+}
+.sidebar .list-menu .nav-list {
+  padding-right:0px;
+}
+.list-menu .nav-list > li > ul {
+  padding:0px;
+  border:none;
+}
+.list-menu .nav-list > li > ul > li {
+  margin:0px;
+}
+.list-menu .nav-list > li > ul > li:last-child {
+  border-bottom:none;
+}
+.list-menu .nav-list > li > ul > li > a{
+  background:#60686b;
+  padding-left:10px;
+}
+/**** badges ****/
+.nav-pills > li {
+  position:relative;
+}
+.nav-list > li > .badge ,.nav-pills > li > .badge{
+  position:absolute;
+  right:5px;
+  top:9px;
+}
+.nav-pills > li > .badge{
+  right:0px;
+  top:0px;
+}
+.box-header {
+  color:#fff;
+  background: #9CCB55;
+  border:1px solid #9CCB55;
+  padding-left:10px;
+}
+.box-header h4 {
+  color:#fff;
+}
+.box-content {
+  background:#fff;
+  border:1px solid #DFE89D;
+  color:#4F575A;
+}
+.breadcrumb {
+  border: none;
+  box-shadow: inset 1px 1px 3px #394144;
+  padding: 7px 14px;
+  margin: 0 0 18px;
+  list-style: none;
+  background-color: #60686b;
+}
+
+/***************** footer ****************/
+.footer {
+  padding: 10px 0px;
+  background: #4F575A;
+  border-top: 1px solid #60686b;
+  box-shadow: 0px -1px 0px #394144;
+  border-bottom: 1px solid #394144;
+}
+.footer .nav-list a{
+  color:#9CCB55;
+}
+.footer .nav-list a:hover {
+  color:#DFE89D;
+}
+.footer .nav-list > li > a:hover i{
+  background:url("../img/glyphicons-halflings-green.png") 0px -168px;
+}
+.copyright {
+  border-top: 1px solid #60686b;
+  padding-top: 10px;
+  background: #394144;
+  text-align: center;
+}
+
+
+
+
+
+
+
+

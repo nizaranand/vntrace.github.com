@@ -2,16 +2,19 @@
 <html>
 <head>
 	<meta CHARSET="UTF-8">
-	<title>form</title>
+	<title>Grid-layout</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<!-- change color -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/color-green.css"> -->
+	<!-- change color button -->
 	<link rel="stylesheet" type="text/css" href="assets/css/color-button.css">
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 </head>
-<body>
+<body class="color-green">
 
 	<div class="navbar navbar-fixed-top navbar-f">
 		<div class="navbar-inner navbar-inverse">
@@ -44,6 +47,27 @@
 									<a href="#">
 										<i class="icon-lock icon-gray-shadow"></i>
 										Change Password
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								<!-- <i class="i-setting"></i> -->
+								Choose color
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu" data-change-color="change-color">
+								<li>
+									<a href="#dark">
+									<i class="icon-edit icon-gray-shadow"></i> 
+									 Dark
+									</a>
+								</li>
+								<li>
+									<a class="color-green" href="#">
+										<i class="icon-edit icon-gray-shadow"></i>
+										Green	
 									</a>
 								</li>
 							</ul>
@@ -89,7 +113,7 @@
 			<div class="sidebar span2">
 				<div class="list-menu">
 					<ul class="nav nav-list">
-						<li><a href="dashboard.html"><i class="icon-home icon-white"></i>Dashboard</a></li>
+						<li><a href="dashboard.html"><i class="icon-home"></i>Dashboard</a></li>
 						<li>
 							<a href="#">
 						      	<i class="icon-th"></i>
