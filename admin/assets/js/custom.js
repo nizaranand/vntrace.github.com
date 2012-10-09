@@ -20,11 +20,11 @@
                 $(this).children('i').addClass('icon-white');
             }   
         });
-        $('[data-change-color=change-color] a').click(function(e){
-            var color = $(this).attr('data');
-            var remo = $('.plan-business a').attr('class');
-            $('.plan-business a').removeClass(remo);
-            $('.plan-business a').addClass(color);
-        });
+        // $('[data-change-color=change-color] a').click(function(e){
+        //     var color = $(this).attr('data');
+        //     var remo = $('.plan-business a').attr('class');
+        //     $('.plan-business a').removeClass(remo);
+        //     $('.plan-business a').addClass(color);
+        // });
 	});
 })(jQuery);

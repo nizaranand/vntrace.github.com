@@ -2,14 +2,16 @@
 <html>
 <head>
 	<meta CHARSET="UTF-8">
-	<title>Grid-layout</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/color-button.css">
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<title>Faq</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/color-green.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/color-button.css">
+	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/custom.js"></script>
+	
 </head>
 <body>
 
@@ -27,14 +29,13 @@
 				<div class="nav-collapse collapse">
 					<ul class="nav">
 						<li><a href="dashboard.html">Dashboard</a></li>
-						<li><a href="faq.html">Faq</a></li>
+						<li class="active"><a href="faq.html">Faq</a></li>
 						<li>
 							<a href="photo.html">Photo</a>
 						</li>
 						<li><a href="pricing-plans.html">Pricing plans</a></li>
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown">
-								<!-- <i class="i-setting"></i> -->
 								Setting
 								<b class="caret"></b>
 							</a>
@@ -61,21 +62,21 @@
 							</a>
 							<ul class="dropdown-menu bg-dropdown-menu">
 								<li>
-									<a href="dashboard.html">
+									<a href="../dashboard.html">
 									<i class="icon-edit icon-white"></i> 
 									 Dark
 									</a>
 								</li>
 								<li>
-									<a href="color-green/dashboard.html">
+									<a href="../color-green/dashboard.html">
 										<i class="icon-edit icon-white"></i>
 										Green	
 									</a>
 								</li>
 								<li>
-									<a href="color-blue/dashboard.html">
+									<a href="../color-blue/dashboard.html">
 										<i class="icon-edit icon-white"></i>
-										Blue
+										Blue	
 									</a>
 								</li>
 							</ul>
@@ -114,7 +115,6 @@
 			</div>
 		</div>
 	</div>
-
 <div class="main">
 	<div class="container-fluid">
 		<div class="row-fluid">
@@ -167,7 +167,7 @@
                                 <li><a href="#"><i class="icon-th-large"></i>Permission</a></li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="grid-layout.html">
                                 <i class="icon-th-large"></i>Grid Layout
                             </a>
@@ -195,11 +195,11 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<ul class="breadcrumb">
-							<li>
-								<a href="#">Dashboard</a> <span class="divider">/</span>
+							<li class="active">
+								<a href="dashboard.html">Dashboard</a> <span class="divider">/</span>
 							</li>
 							<li>
-								Grid Layout
+								FAQ
 							</li>
 						</ul>
 					</div>
@@ -207,123 +207,103 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="box">
-							<div class="box-header">
-								<h4>Span12</h4>
+							<div class="bg-title">
+								<h3><i class="i-bookmark"></i>Frequently Asked Questions</h3>
 							</div>
 							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<div class="faq-container">
+									<div class="title">
+										<h3>Search ....</h3>
+									</div>
+									<form class="form-search">
+										<input type="text" name="search" placeholder="Search by Keyword">
+										<button class="btn"><i class="icon-search"></i></button>
+									</form>
+									<div class="faq-link">
+										<ol>
+											<li>1. <a href="#faq-1">How can I get my own domain name?</a></li>
+											<li>2. <a href="#faq-2">How can I block my hosting service's advertisements?</a></li>
+											<li>3. <a href="#faq-3">How do I redirect someone to another page?</a></li>
+											<li>4. <a href="#faq-4">How do I password protect my web site?</a></li>
+											<li>5. <a href="#faq-5">How do I stop my page from being cached?</a></li>
+										</ol>
+									</div>
+									<div class="faq-list">
+										<ol>
+							
+											<li id="faq-1">
+												<div class="faq-icon">
+													<div class="faq-number">1</div>
+												</div>
+												<div class="faq-text">
+													<h4>How can I get my own domain name?</h4>
+													<p>The Internet Corporation for Assigned Names and Numbers (ICANN) maintains a list of accredited registrars . Any of the companies on this list can register a domain name for you..</p>	
+													
+												</div>
+											</li>
+											
+											<li id="faq-2">
+												<div class="faq-icon">
+													<div class="faq-number">2</div>
+												</div>
+												<div class="faq-text">
+													<h4>How can I block my hosting service's advertisements?</h4>
+													<p>Check the Terms of Service (TOS) agreement for your hosting service. It almost certainly prohibits interfering with the advertisements they add to your web pages. If you use some trick to block their advertisements on your own, then your hosting service may delete your account for violating its TOS.</p>	
+													
+												</div>
+											</li>
+											
+											<li id="faq-3">
+												<div class="faq-icon">
+													<div class="faq-number">3</div>
+												</div>
+												<div class="faq-text">
+												
+													<h4>How do I redirect someone to another page?</h4>
+													<p>The most reliable way is to configure the server to send out a redirection instruction when the old URL is requested. Then the browser will automatically get the new URL. This is the fastest and most efficient way, and is the only way described here that can convince indexing robots to phase out the old URL. For configuration details consult your server admin or documentation (with NCSA or Apache servers, use a Redirect statement in .htaccess).</p>	
+													<p>If you can't set up a redirect, there are other possibilities. These are inferior because they tell the search engines that there's still a page at the old location, not that the page has moved to a new location. But if it's impossible for you to configure redirection at your server, here are two alternatives:</p>	
+												</div>
+											</li>
+											
+											<li id="faq-4">
+												<div class="faq-icon">
+													<div class="faq-number">4</div>
+												</div>
+													<div class="faq-text">
+													<h4>How do I password protect my web site?</h4>
+													<p>Password protection is done through HTTP authentication. The configuration details vary from server to server, so you should read the authentication section of your server documentation. Contact your server administrator if you need help with this.</p>	
+													<p>JavaScript password scripts provide only a facade of security. At a fundamental level, they work in one of two ways. Some scripts convert the password into a URL, which keeps the document secret by limiting the number of people who know its URL. Some scripts check the password and then go to a specific URL, which protects the document only from those who don't view the JavaScript source to get the URL of the document. Neither mechanism is really secure.</p>	
+													
+												</div>
+											</li>
+											
+											<li id="faq-5">
+												<div class="faq-icon">
+													<div class="faq-number">5</div>
+												</div>
+												<div class="faq-text">
+												
+													<h4>How do I stop my page from being cached?</h4>
+													<p>Browsers cache web documents; they store local copies of documents to speed up repeated references to documents that haven't changed. Also, many browsers are configured to use public proxy caches, which serve many users (e.g., all customers of an ISP, or all employees behind a corporate firewall). To effectively control how your documents are cached you must configure your server to send appropriate HTTP headers.</p>	
+													<p>The Expires header is understood by virtually all caches. The cached document will be retrieved again automatically once it has expired. The Expires header must contain an HTTP date, which must be Greenwich Mean Time (GMT), not local time.</p>	
+													
+												</div>
+											</li>
+							
+							
+									</div>
+								</div>
 							</div>
-						</div>
+						</div><!-- end box -->
+						<!-- end wra-box -->
 					</div>
-				</div><!-- /span12 -->
-
-				
-				<div class="row-fluid">
-					<div class="span6">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span6</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-					<div class="span6">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span6</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-				</div><!-- /span6 -->
-
-
-				<div class="row-fluid">
-					<div class="span3">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span3</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-					<div class="span3">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span3</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-					<div class="span3">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span3</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-					<div class="span3">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span3</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-				</div><!-- /span3 -->
-
-
-				<div class="row-fluid">
-					<div class="span4">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span4</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-					<div class="span4">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span4</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-					<div class="span4">
-						<div class="box">
-							<div class="box-header">
-								<h4>Span4</h4>
-							</div>
-							<div class="box-content">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
-				</div><!-- /span4 -->
-
-			</div><!-- end body-content -->
+				</div>
+				<!-- row-fluid -->
+			</div>
+			<!-- end body-conter -->
 		</div>
-	</div><!-- container-fluid -->
+	</div>
 </div>
-
 	<div class="footer">
 		<div class="container-fluid">
 			<div class="row-fluid">
@@ -331,7 +311,7 @@
 					<a class="brand" href="#">
 						<span>Clgt</span>Admin
 					</a>
-                    <p>Awesome slogan of your company</p>
+					<p>Awesome slogan of your company</p>
 				</div>
 				<div class="span2">
 					<ul class="nav nav-list">
