@@ -21,10 +21,10 @@
             }   
         });
         $('[data-change-color=change-color] a').click(function(e){
-            var add = $(this).attr('class');
-            var remo = $('body').attr('class');
-            $('body').removeClass(remo);
-            $('body').addClass(add);
+            var color = $(this).attr('data');
+            var remo = $('.plan-business a').attr('class');
+            $('.plan-business a').removeClass(remo);
+            $('.plan-business a').addClass(color);
         });
 	});
 })(jQuery);
