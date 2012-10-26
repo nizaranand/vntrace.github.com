@@ -1,26 +1,177 @@
 body {
-  height:1000px;
+  font-family:'Avenir Next';
+  background:url('../img/bg-repeat-body.png') repeat;
+  font-size:14px;
+}
+ul,li {
+  list-style-type:none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family:'Avenir Next';
+  font-weight:500;
+}
+/************************************************/
+/********************* header **********************/
+/************************************************/
+.navbar .brand {
+  font-family:'Arial Black';
+  color:#fff;
+  width:240px;
+  text-shadow:none;
+  background:url('../img/bg-light-logo.png') left top no-repeat;
+}
+.navbar-fix .navbar-search{
+  display:none;
+}
+.navbar-fix .navbar-inner {
+  border:none;
+  box-shadow:none;
+  background:url('../img/bg-repeat-top.png') repeat;
 }
 .navbar .nav.nav-lock li > a{
-  padding-right:0px;
+  margin-left:2px;
+  background:url('../img/overplay-gray.png') repeat;
 }
-.nav-fix {
+.navbar .nav.nav-lock li > a:hover {
+  background:url('../img/overplay-gray-hover.png') repeat;
+}
+.menu-top{
   top:40px;
-  background:#ddd;
   width:100%;
+  padding-top:15px;
+  background:#5fa6bc;
+  border-top:1px solid #8ec6d7;
+  box-shadow:0px -2px 5px #2b2b2b;
 }
-.nav-fix .nav > li > a{
-  padding-left:0px;
-  padding-right:30px;
+.menu-top .nav > li > a{
+  color:#fff;
+  height:30px;
+  margin-bottom:-5px;
+  text-shadow:0px 1px 1px #0077a1;
+  border-bottom:5px solid #fff;
 }
-.nav-fix .nav.cart > li > a {
-  padding-right:0px;
-
+.menu-top .nav > li > a:hover,
+.menu-top .nav > li.active > a,
+.menu-top .nav > li.active > a:hover {
+  color:#fff;
+  box-shadow:none;
+  background:none;
+  text-shadow:none;
+  border-bottom:5px solid #5fa6bc;
+}
+.menu-top .submenu {
+  position:relative;
+}
+.menu-top .submenu .nav-submenu {
+  display:none;
+  position:absolute;
+  left:-30px;
+  top:55px;
+  background:#3d3d3d;
+  width:240px;
+}
+.menu-top .submenu .nav-submenu > li > a {
+  color:#fff;
+  padding:7px 15px;
+  display:block;
+  background:#3d3d3d;
+  border-bottom:1px solid #565656;
+}
+.menu-top .submenu .nav-submenu > li > a:hover,
+.menu-top .submenu .nav-submenu > li.active > a {
+  color:#5fa6bc;
+  background:#454545;
+  text-decoration:none;
 }
 .ic-cart {
-  background:url('../img/icon.png') left -100px no-repeat;
   height:25px;
   width:25px;
   float:left;
   margin-right:5px;
+  background:url('../img/icon.png') left -100px no-repeat;
 }
+/************************************************/
+/********************* end header **********************/
+/************************************************/
+
+/************************************************/
+/********************* end main **********************/
+/************************************************/
+.title {
+  border-top:5px solid #fff;
+  border-bottom:2px solid #f0e8e8;
+  box-shadow:0px -1px 3px #0077a1;
+  background:url('../img/bg-repeat-title.png') repeat;
+}
+
+
+
+
+
+
+
+/************************************************/
+/********************* end main **********************/
+/************************************************/
+.main {
+  padding-top:150px;
+  height:1000px;
+}
+
+/************************************************/
+/********************* footer **********************/
+/************************************************/
+.footer {
+  width:100%;
+  float:left;
+  height:250px;
+  padding:30px 0px;
+  position:relative;
+  border-top:5px solid #5fa6bc;
+  background:url('../img/bg-repeat-bottom.png') repeat;
+}
+.footer .nav-list .nav-header{
+  color:#fff;
+  font-size:14px;
+  font-weight: bold !important;
+  text-shadow:none;
+}
+.footer .nav-list .nav-header h5{
+  margin:0px;
+  padding:0px;
+  border-bottom:2px solid #5fa6bc;
+}
+.footer .nav-list > li {
+  color:#fff;
+}
+.footer .nav-list > li > a{
+  background:none;
+  text-shadow:none;
+  color:#fff;
+}
+.footer .nav-list > li > a:hover,
+.footer .nav-list > li.active > a {
+  color:#5fa6bc;
+  background:none;
+}
+.logo-bottom {
+  font-family:'Arial Black';
+  color:#fff;
+  text-shadow:none;
+  font-size:20px;
+}
+.logo-bottom:hover {
+  color:#5fa6bc;
+  text-decoration:none;
+}
+.copy {
+  color:#fff;
+  bottom:0px;
+  width:100%;
+  padding:8px 0px 5px 0px;
+  position:absolute;
+  background:#3d3d3d;
+}
+/************************************************/
+/********************* end footer **********************/
+/************************************************/

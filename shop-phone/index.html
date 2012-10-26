@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Index</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+	<title>My-Account</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 <body>
@@ -22,29 +22,43 @@
 				<ul class="nav pull-right nav-lock">
 					<li>
 						<form class="navbar-search pull-left" action="">
-							<input type="text" class="search-query span2" placeholder="Search">
+							<input type="text" class="search-query span3" placeholder="Search">
 						</form>
 					</li>
 					<li>
-						<a href="#"><i class="icon-search icon-white"></i>123</a>
+						<a class="search" href="#"><i class="icon-search icon-white"></i></a>
 					</li>
-					<li><a href="home.html"><i class="icon-lock icon-white"></i>123</a></li>
+					<li><a href="home.html"><i class="icon-lock icon-white"></i></a></li>
 				</ul>
 			</div>
 		</div><!-- end container -->
-		<div class="nav-fix">
+		<div class="menu-top">
 			<div class="container">
 				<ul class="nav">
-					<li><a href="home.html">Home</a></li>
-					<li class="dropdown">
-						<a href="#shop.html" class="dropdown-toggle" data-toggle="dropdown">Shop<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">123</a></li>
-							<li><a href="#">123</a></li>
+					<li class="active"><a href="home.html">Home</a></li>
+					<li class="submenu">
+						<a href="#shop.html" data-submenu="submenu">Shop</a>
+						<ul class="nav-submenu">
+							<li><a href="detail-product.html">iPhone</a></li>
+							<li><a href="detail-product.html">iPad</a></li>
+							<li><a href="detail-product.html">iPod</a></li>
 						</ul>
 					</li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="page.html">Page</a></li>
+					<li class="submenu">
+						<a href="#news.html" data-submenu="submenu">News</a>
+						<ul class="nav-submenu">
+							<li><a href="news-sidebar.html">News with Sidebar</a></li>
+							<li><a href="Full-width-sidebar.html">Full width News</a></li>
+						</ul>
+					</li>
+					<li class="submenu">
+						<a href="#news.html" data-submenu="submenu">Page</a>
+						<ul class="nav-submenu">
+							<li><a href="table.html">Table</a></li>
+							<li><a href="button-icon.html">Button&Icon</a></li>
+							<li><a href="element.html">Elements</a></li>
+						</ul>
+					</li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<ul class="pull-right nav cart">
@@ -54,15 +68,88 @@
 		</div>
 		<div class="title">
 			<div class="container">
-				<h2>123</h2>
+				<h2>My Account</h2>
+			</div>
+		</div>
+	</div><!-- /navbar-inner -->
+</div><!-- /navbar-fix -->
+<div class="main">
+	<div class="container">
+		123
+	</div>
+</div><!-- /main -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<a class="logo-bottom" href="home.html">
+					ShopPhone
+				</a>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>Shop</h5>
+					</li>
+					<li class="active">
+						<a href="#">iPhone</a>
+					</li>
+					<li><a href="#">iPad</a></li>
+					<li><a href="#">iPod</a></li>
+					<li><a href="#">Other</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>Top product</h5>
+					</li>
+					<li>
+						<a href="#">iPhone</a>
+					</li>
+					<li><a href="#">iPad</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>List menu</h5>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Photography</a></li>
+				</ul>
+			</div>
+			<div class="span3">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>Contact</h5>
+					</li>
+					<li>
+						Phone : +1 (305) 374-4404
+					</li>
+					<li>
+						Email:<a href="#">crazychicken@clgt.vn</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-</div>
+	<div class="copy">
+		<div class="container">
+			<div class="row">
+				© 2012 All Rights Reserved.
+			</div>
+		</div>
+	</div>
+</div><!-- /footer -->
 	<!-- script -->
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-	<script type="text/javascript" scr="assets/js/cuctom.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- /end script -->
 </body>
 </html>
