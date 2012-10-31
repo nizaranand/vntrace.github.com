@@ -267,8 +267,12 @@ a:hover {
 }
 
 /*************** comment ****************/
+.wrapper-comment .nav-list.nav-list-fix{
+  padding-bottom:0px;
+}
 .nav-list.nav-list-fix .box-comment {
   border:none;
+  padding-bottom:30px;
 }
 .nav-list.nav-list-fix .box-comment .text {
   position:relative;
@@ -302,15 +306,53 @@ a:hover {
 .box-comment .nav-list.nav-list-fix li {
   border:none;
 }
-.nav-list.nav-list-fix .box-comment img {
+.nav-list.nav-list-fix .box-comment .avata img,
+.comment-post .avata img{
   width:50px;
   height:50px;
 }
+.nav-list.nav-list-fix .reply {
+  float:right;
+  color:#fff;
+  opacity:0.9;
+  padding:5px 20px;
+  background:#5fa6bc;
+  margin:10px 10px 0px 0px;
+  text-shadow:0px 1px 1px #5fa6bc;
+}
+.nav-list.nav-list-fix .reply:hover {
+  color:#fff;
+  opacity:1;
+  background:#5fa6bc;
+  box-shadow:inset 0px 0px 3px #0077a1;
+}
+.comment-post {
+  padding-left:100px;
+  padding-top:20px;
+  clear:both;
+}
+.comment-post .avata {
+  float:left;
+}
+.comment-post form {
+  float:left;
+  padding-left:30px;
+}
+.comment-post form textarea {
+  width:100%;
+  height:40px;
+}
+.comment-post form input {
+  float:left;
+  width:40%;
+  margin-right:2%;
+  
+}
 /********************* sidebar **********************/
 .nav-list.nav-list-fix {
-  padding-bottom:50px;
   width:100%;
   float:left;
+  padding-bottom:50px;
 }
 .nav-list.nav-list-fix .nav-header {
   padding-left:0px;
@@ -431,3 +473,7 @@ a:hover {
 /************************************************/
 /********************* end footer **********************/
 /************************************************/
+
+
+
+
