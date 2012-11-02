@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-page</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-fix">
+	
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand">ShopPhone</a>
+			<div class="nav-collapse">
+				<ul class="nav pull-right nav-lock">
+					<li>
+						<form class="navbar-search pull-left" action="">
+							<input type="text" class="search-query span3" placeholder="Search">
+						</form>
+					</li>
+					<li>
+						<a class="search" href="#"><i class="icon-search icon-white"></i></a>
+					</li>
+					<li><a href="index.html"><i class="icon-lock icon-white"></i></a></li>
+				</ul>
+			</div>
+		</div><!-- end container -->
+		<div class="menu-top">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<ul class="nav">
+							<li><a href="home.html">Home</a></li>
+							<li class="submenu">
+								<a href="product.html" data-submenu="submenu">Shop</a>
+								<ul class="nav-submenu">
+									<li><a href="iPhone.html">iPhone</a></li>
+									<li><a href="iPad.html">iPad</a></li>
+									<li><a href="iPod.html">iPod</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="news-with-sidebar.html" data-submenu="submenu">News</a>
+								<ul class="nav-submenu">
+									<li><a href="news-with-sidebar.html">News with Sidebar</a></li>
+									<li><a href="full-width-news.html">Full width News</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="page-all.html" data-submenu="submenu">Page</a>
+								<ul class="nav-submenu">
+									<li><a href="table-page.html">Table</a></li>
+									<li><a href="button-icon.html">Button&Icon</a></li>
+									<li><a href="form-page.html">From</a></li>
+									<li><a href="elements-page.html">Elements</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="pull-right nav cart">
+							<li><a href="cart.html"><i class="ic-cart"></i>Crat(0)</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- /end menu-top -->
+		<div class="title">
+			<div class="container">
+				<div class="row">
+				<h2 class="span4">Form</h2>
+				<ul class="breadcrumb">
+					<li class="active">Form</li>
+					<li><a href="page.html">Page</a> <span class="divider">/</span></li>
+				</ul>
+				</div>
+			</div>
+		</div><!-- end title -->
+	</div><!-- /navbar-inner -->
+</div><!-- /navbar-fix -->
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<section>
+				<div class="span6">
+					<h3>Default styles</h3>
+					<p>Default styles <code>&lt;form&gt;</code></p>
+					<form class="well">
+						<label>Label name</label>
+						<input type="text" placeholder="Type something…">
+						<span class="help-block">Example block-level help text here.</span>
+						<label class="checkbox">
+						<input type="checkbox"> Check me out
+						</label>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+				</div><!-- /Default styles -->
+
+				<div class="span6">
+					<h3>Horizontal form</h3>
+					<form class="well form-horizontal">
+						<div class="control-group">
+							<label class="control-label" for="inputEmail">Email</label>
+							<div class="controls">
+								<input type="text" id="inputEmail" placeholder="Email">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputPassword">Password</label>
+							<div class="controls">
+								<input type="password" id="inputPassword" placeholder="Password">
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<label class="checkbox">
+									<input type="checkbox"> Remember me
+								</label>
+								<button type="submit" class="btn">Sign in</button>
+							</div>
+						</div>
+					</form>
+				</div><!-- /Horizontal form -->
+			</section>
+
+			<section>
+				<div class="span6">
+					<h3>Search form</h3>
+					<p>Add <code>.form-inline</code> for left-aligned labels and inline-block controls for a compact layout.</p>
+					<form class="form-search">
+						<input type="text" class="input-medium search-query">
+						<button type="submit" class="btn">Search</button>
+					</form>
+				</div><!-- Search form -->
+
+				<div class="span6">
+					<div class="">
+						<h3>Inline form</h3>
+						<p>Add <code>.form-inline</code> for left-aligned labels and inline-block controls for a compact layout.</p>
+					</div>
+					<form class="form-inline">
+						<input type="text" class="input-small" placeholder="Email">
+						<input type="password" class="input-small" placeholder="Password">
+						<label class="checkbox">
+						<input type="checkbox"> Remember me
+						</label>
+						<button type="submit" class="btn">Sign in</button>
+					</form>
+				</div><!-- /Inline form -->
+			</section>
+
+			<section>
+				<div class="span6">
+					<h3>Inputs</h3>
+					<p>Add <code>placeholder</code></p>
+					<form>
+						<input type="text" placeholder="Text input">
+					</form>
+				</div><!-- /Inputs -->
+				<div class="span6" style="padding-bottom:9px">
+					<h3>Search form</h3>
+					<p><code>.input-append</code> and <code>.input-prepend</code></p>
+					<form class="form-search">
+						<div class="input-append">
+							<input type="text" class="span2 search-query">
+							<button type="submit" class="btn">Search</button>
+						</div>
+						<div class="input-prepend">
+							<button type="submit" class="btn">Search</button>
+							<input type="text" class="span2 search-query">
+						</div>
+					</form>
+				</div><!-- /Search form -->
+			</section>
+
+
+			<section>
+				<div class="span6" style="padding-bottom:15px">
+					<h3>Textarea</h3>
+					<p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+					<form class="form-search">
+						<textarea class="span6" rows="5"></textarea>
+					</form>
+				</div><!-- /textarea -->
+				<div class="span6">
+					<h3>Selects</h3>
+					<p>Add <code>multiple="multiple"</code></p>
+					<form>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+						<br>
+						<select multiple="multiple">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</form>
+				</div><!-- /selects -->
+			</section>
+
+			<section>
+				<div class="span6">
+					<h3>Checkboxes and radios</h3>
+					<p>Add <code>.inline</code></p>
+					<form>
+						<label class="checkbox">
+							<input type="checkbox" value="">
+							Option one is this and that—be sure to include why it's great
+						</label>
+
+						<label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+							Option one is this and that—be sure to include why it's great
+						</label>
+						<label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							Option two can be something else and selecting it will deselect option one
+						</label>
+
+						<label class="checkbox inline">
+							<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+						</label>
+						<label class="checkbox inline">
+							<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+						</label>
+						<label class="checkbox inline">
+							<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+						</label>
+					</form>
+				</div><!-- /Checkboxes and radios -->
+				<div class="span6">
+					<h3>Prepended and appended inputs</h3>
+					<p>Use both classes and two instances of <code>.add-on</code> to prepend and append an input.</p>
+					<form>
+						<div class="input-prepend">
+							<span class="add-on">@</span>
+							<input class="span2" id="prependedInput" size="16" type="text" placeholder="Username">
+						</div>
+						<div class="input-append">
+							<input class="span3" id="appendedInput" size="16" type="text"><span class="add-on">.00</span>
+						</div>
+						<div class="input-prepend input-append">
+							<span class="add-on">$</span><input class="span4" id="appendedPrependedInput" size="16" type="text"><span class="add-on">.00</span>
+						</div>
+					</form>
+				</div><!-- /Prepended and appended inputs -->
+			</section>
+
+		<section>
+				<div class="span6">
+					<h3>Buttons instead of text</h3>
+					<p>Instead of a <code>&lt;span&gt;</code> with text, use a <code>.btn</code> to attach a button (or two) to an input.</p>
+					<br>
+					<form>
+						<div class="input-append">
+							<input class="span2" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Go!</button>
+						</div>
+						<br>
+						<div class="input-append">
+							<input class="span2" id="appendedInputButtons" size="16" type="text"><button class="btn" type="button">Search</button><button class="btn" type="button">Options</button>
+						</div>
+					</form>
+				</div><!-- /Buttons instead of text -->
+				<div class="span6" style="padding-bottom:5px">
+					<h3>Form actions</h3>
+					<p>End a form with a group of actions (buttons). When placed within a <code>.form-horizontal</code>, the buttons will automatically indent to line up with the form controls.</p>
+					<form>
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Save changes</button>
+							<button type="button" class="btn">Cancel</button>
+						</div>
+					</form>
+				</div><!-- /Form actions -->
+			</section>
+
+			<section>
+				<div class="span6">
+					<h3>Relative sizing</h3>
+					<p>Use <code>.input-large</code></p>
+					<form>
+						<div class="controls docs-input-sizes">
+							<input class="input-mini" type="text" placeholder=".input-mini">
+							<input class="input-small" type="text" placeholder=".input-small">
+							<input class="input-medium" type="text" placeholder=".input-medium">
+							<input class="input-large" type="text" placeholder=".input-large">
+							<input class="input-xlarge" type="text" placeholder=".input-xlarge">
+						</div>
+					</form>
+				</div><!-- /Relative sizing -->
+				<div class="span6">
+					<h3>Grid sizing</h3>
+					<p>Use <code>.span1</code> to <code>.span12</code> for inputs that match the same sizes of the grid columns.</p>
+					<form>
+						<div class="controls docs-input-sizes">
+							<input class="span3" type="text" placeholder=".span3">
+							<input class="span4" type="text" placeholder=".span4">
+							<input class="span5" type="text" placeholder=".span5">
+							<select class="span3">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<select class="span4">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</form>
+				</div><!-- /Relative sizing -->
+			</section>
+
+			<section>
+				<div class="span6">
+					<h3>Inline held text</h3>
+					<p>Use class<code>.help-inline</code></p>
+					<br>
+					<form>
+						<input type="text"><span class="help-inline">Inline help text</span>
+					</form>
+				</div><!-- /help-inline -->
+				<div class="span6">
+					<h3>Block held text</h3>
+					<p>Use class<code>.help-block</code></p>
+					<form>
+						<input type="text"><span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+					</form>
+				</div><!-- /Block held text -->
+			</section>
+
+			<section>
+				<div class="span12">
+					<h3>Validation states</h3>
+					<p>Use class<code>.control-group</code> <code>.warning</code> <code>.error</code> <code>.success</code></p>
+					<form class="form-horizontal">
+						<div class="control-group">
+							<label class="control-label">Input with warning</label>
+							<div class="controls">
+								<input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
+								<span class="help-inline">Something may have gone wrong</span>
+							</div>
+						</div>
+						<div class="control-group warning">
+							<label class="control-label" for="inputWarning">Input with warning</label>
+							<div class="controls">
+								<input type="text" id="inputWarning">
+								<span class="help-inline">Something may have gone wrong</span>
+							</div>
+						</div>
+						<div class="control-group error">
+							<label class="control-label" for="inputError">Input with error</label>
+							<div class="controls">
+								<input type="text" id="inputError">
+								<span class="help-inline">Please correct the error</span>
+							</div>
+						</div>
+						<div class="control-group success">
+							<label class="control-label" for="inputSuccess">Input with success</label>
+							<div class="controls">
+								<input type="text" id="inputSuccess">
+								<span class="help-inline">Woohoo!</span>
+							</div>
+						</div>
+					</form>
+				</div><!-- /Block held text -->
+			</section>
+		</div>
+	</div>
+</div><!-- /main -->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<a class="logo-bottom" href="home.html">
+					ShopPhone
+				</a>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>Shop</h5>
+					</li>
+					<li class="active">
+						<a href="iPhone.html">iPhone</a>
+					</li>
+					<li><a href="iPad.html">iPad</a></li>
+					<li><a href="iPod">iPod</a></li>
+					<li><a href="page.html">Other</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>Top product</h5>
+					</li>
+					<li>
+						<a href="iPhone.html">iPhone</a>
+					</li>
+					<li><a href="iPad.html">iPad</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>List menu</h5>
+					</li>
+					<li>
+						<a href="news-with-sidebar.html">About</a>
+					</li>
+					<li><a href="news-with-sidebar.html">News</a></li>
+					<li><a href="news-with-sidebar.html">FAQs</a></li>
+					<li><a href="photo.html">Photography</a></li>
+				</ul>
+			</div>
+			<div class="span3">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						<h5>Contact</h5>
+					</li>
+					<li>
+						Phone : +1 (305) 374-4404
+					</li>
+					<li>
+						Email:<a href="#">crazychicken@clgt.vn</a>
+					</li>
+					<li class="link-social">
+						<a class="tip-bottom" href="#" data-original-title="Skyle">
+							<i class="icon-skyle"></i>
+						</a>
+						<a class="tip-bottom" href="#" data-original-title="Facebook">
+							<i class="icon-twitter"></i>
+						</a>
+						<a class="tip-bottom" href="#" data-original-title="Twitter">
+							<i class="icon-facebook"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="copy">
+		<div class="container">
+			<div class="row">
+				© 2012 All Rights Reserved.
+			</div>
+		</div>
+	</div>
+</div><!-- /footer -->
+	<!-- script -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- /end script -->
+</body>
+</html>

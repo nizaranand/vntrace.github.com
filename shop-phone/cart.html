@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Home</title>
+	<title>Cart</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
@@ -73,81 +73,98 @@
 		</div><!-- /end menu-top -->
 		<div class="title">
 			<div class="container">
-				<h2>Home</h2>
+				<div class="row">
+				<h2 class="span4">Cart</h2>
+				<ul class="breadcrumb">
+					<li class="active">Cart</li>
+					<li><a href="product.html">Product</a> <span class="divider">/</span></li>
+					<li><a href="home.html">Home</a> <span class="divider">/</span></li>
+				</ul>
+				</div>
 			</div>
-		</div>
+		</div><!-- end title -->
 	</div><!-- /navbar-inner -->
 </div><!-- /navbar-fix -->
 
 <div class="main">
-	<div class="slider">
-		slider
-	</div>
 	<div class="container">
-		<div class="row box-iteam">
-			<div class="span8">
-				<div class="box-text">
-					<h3><a href="news-detail.html">Lorem ipsum dolor sit amet</a></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p><a href="#">Learn more ...</a></p>
-				</div>
+		<div class="row">
+			<div class="span12 table-cart">
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="span2"></th>
+							<th class="span3">Product</th>
+							<th class="span3">Name</th>
+							<th class="span2">Price</th>
+							<th class="span1">Quantity</th>
+							<th class="span3">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><button>Delete</button></td>
+							<td>
+								<a class="cart-img" href="#"><img src="assets/img/product/product-4.png"></a>
+							</td>
+							<td>
+								<a href="#">iPhone5</a>
+								<p>Color : Black</p>
+								<p>Code :3D79d</p>
+							</td>
+							<td>1,000 $</td>
+							<td><input type="text" value="1"></td>
+							<td>1,000 $</td>
+						</tr>
+						<tr>
+							<td><button>Delete</button></td>
+							<td>
+								<a class="cart-img" href="#"><img src="assets/img/product/product-6.png"></a>
+							</td>
+							<td>
+								<a href="#">iPhone3</a>
+								<p>Color : Black</p>
+								<p>Code :3D79d</p>
+							</td>
+							<td>1,000 $</td>
+							<td><input type="text" value="1"></td>
+							<td>1,000 $</td>
+						</tr>
+						<tr>
+							<td class="update-cart" colspan="6"><button>Update Cart</button></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="span4">
-				<div class="box-img">
-					<img src="assets/img/img-big-4.png" alt="">
-					<div class="hot-price-left">1,000$</div>
-				</div>
+
+			<div class="span12 table-cart">
+				<h3>CART TOTALS</h3>
+				<table class="table table-cart">
+					<tbody>
+						<tr>
+							<td class="span7">Cart Subtotal</td>
+							<td class="span6 color-pink">2,000 $</td>
+						</tr>
+						<tr>
+							<td>Shipping</td>
+							<td class="td-checkbox color-pink">
+								<p><input type="checkbox">Free Shipping</p>
+								<p><input type="checkbox">Free Shipping</p>
+							</td>
+						</tr>
+						<tr>
+							<td>TAX</td>
+							<td class="color-pink">100 $</td>
+						</tr>
+						<tr>
+							<td>Order Total</td>
+							<td class="color-pink">2,100$</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="checkout.html" class="btn-checkout">Checkout →</a>
 			</div>
 		</div>
-
-		<div class="row box-iteam">
-			<div class="span4">
-				<div class="box-img">
-					<div class="hot-price-right">1,000$</div>
-					<img src="assets/img/img-big-1.jpg" alt="">
-				</div>
-			</div>
-			<div class="span8">
-				<div class="box-text">
-					<h3><a href="news-detail.html">Lorem ipsum dolor sit amet</a></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p><a href="#">Learn more ...</a></p>
-				</div>
-			</div>
-		</div>
-
-		<div class="row box-iteam">
-			<div class="span7">
-				<div class="box-text">
-					<h3><a href="news-detail.html">Lorem ipsum dolor sit amet</a></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p><a href="#">Learn more ...</a></p>
-				</div>
-			</div>
-			<div class="span5">
-				<div class="box-img">
-					<img src="assets/img/img-big-5.png" alt="">
-					<div class="hot-price-left">1,000$</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row box-iteam">
-			<div class="span4">
-				<div class="box-img">
-					<img src="assets/img/img-big-3.jpg" alt="">
-					<div class="hot-price-right">1,000$</div>
-				</div>
-			</div>
-			<div class="span8">
-				<div class="box-text">
-					<h3><a href="news-detail.html">Lorem ipsum dolor sit amet</a></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p><a href="#">Learn more ...</a></p>
-				</div>
-			</div>
-		</div>
-
 	</div>
 </div><!-- /main -->
 

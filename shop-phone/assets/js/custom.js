@@ -18,6 +18,16 @@
 			$('.navbar-search').hide()
 		});
 
+		//new-account
+		$('.new-account').click(function(){
+			$('.register').slideDown()
+		})
+		// tooltip
+        $('.tip-top').tooltip({placement: 'top'});
+        $('.tip-left').tooltip({placement: 'left'});
+        $('.tip-right').tooltip({placement: 'right'});
+        $('.tip-bottom').tooltip({placement: 'bottom'});
+
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();
