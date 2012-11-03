@@ -502,13 +502,13 @@ section {
 }
 /********************* list-product **********************/
 .list-product .iteam-product {
-  margin-bottom:50px;
+  margin-bottom:80px;
 }
 .iteam-product .img-product a{
   display:block;
   text-align:center;
   height:260px;
-  position:relative
+  position:relative;
 }
 .iteam-product .img-product a:hover .icon-view {
   display:block;
@@ -517,12 +517,13 @@ section {
   height:75px;
   width:75px;
   background:url('../img/icon.png') -25px -75px no-repeat;
-  display:block;
-  position:absolute;
+  float:left;
   top:75px;
-  left:30%;
+  left:50%;
   z-index:100;
   display:none;
+  margin-left:-40px;
+  position:absolute;
 }
 .iteam-product .wra-info-product {
   margin-left:0px;
@@ -550,15 +551,16 @@ section {
   color:#5fa6bc;
   font-size:20px;
 }
-.wra-info-product .info-product button{
+a.btn-blue{
   border:none;
+  padding:5px 8px;
   color:#fff;
   opacity:0.9;
   background:none;
   background:#5fa6bc;
   text-shadow:0px 1px 1px #0077a1;
 }
-.wra-info-product .info-product button:hover {
+a.btn-blue:hover {
   opacity:1;
   box-shadow:inset 0px 1px 3px #0077a1;
 }
