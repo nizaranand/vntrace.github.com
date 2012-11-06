@@ -47,6 +47,15 @@ section {
 .navbar-fix .navbar-search{
   display:none;
 }
+.navbar-fix .navbar-search.active {
+  display:block;
+}
+.navbar-fix .nav-collapse .navbar-form,
+.navbar-fix .nav-collapse .navbar-search {
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  border:none medium;
+}
 .navbar-fix .navbar-inner {
   border:none;
   box-shadow:none;
@@ -57,6 +66,7 @@ section {
   padding:0px 10px;
 }
 .navbar .nav.nav-lock li > a{
+  text-align:center;
   margin-left:2px;
   background:url('../img/overplay-gray.png') repeat;
 }
@@ -70,6 +80,9 @@ section {
   background:#5fa6bc;
   border-top:1px solid #8ec6d7;
   box-shadow:0px -2px 5px #2b2b2b;
+}
+.menu-top .nav {
+  z-index:100;
 }
 .menu-top .nav > li > a{
   color:#fff;
@@ -112,7 +125,7 @@ section {
   background:#454545;
   text-decoration:none;
 }
-.ic-cart {
+.ic-cart,.ic-home {
   height:25px;
   width:25px;
   float:left;
@@ -244,6 +257,8 @@ section {
 .box-img {
   text-align:center;
   position:relative;
+  background:url('../img/img-overplay-bg.png') left bottom no-repeat;
+  margin:10px 0px;
 }
 .hot-price-right,.hot-price-left {
   color:#fff;
@@ -588,8 +603,6 @@ section {
 }
 .iteam-product .wra-info-product {
   margin-left:0px;
-  position:relative;
-  height:260px;
 }
 .wra-info-product h4 {
   color:#999;
@@ -605,8 +618,7 @@ section {
   border:1px solid #5fa6bc;
 }
 .iteam-product .wra-info-product .info-product {
-  position:absolute;
-  bottom:0px;
+  margin-top:100px;
 }
 .wra-info-product .info-product .price {
   color:#5fa6bc;
@@ -816,14 +828,20 @@ a.btn-blue:hover {
 .icon-twitter {
   background-position: 0px -50px;
 }
+.gotop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity = 80);
+  z-index: 1000;
+}
 /************************************************/
 /********************* end footer **********************/
 /************************************************/
 
 /********************* responsive **********************/
-.navbar-fix .navbar-inner{
-  padding:0px;
-}
 @media (min-width: 1200px) { 
 
 }
@@ -836,15 +854,32 @@ a.btn-blue:hover {
   .menu-top .cart {
     padding-right:20px;
   }
+  .iteam-product .wra-info-product .info-product {
+    margin-top:80px;
+  }
+  .main {
+    padding-top:0px;
+  }
+  .navbar-fix .navbar-search{
+    display:block;
+    text-align:center;
+  }
+  .navbar-fix .navbar-search input {
+    width:50%;
+  }
+  /*.navbar-fix .search {
+    display:none;
+  }*/
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .footer,.copy {
+  .main {
+    padding-top:0px;
+  }
+  .footer {
+    position:absolute;
     margin-left:-20px;
-    margin-right:-20px;
-    padding-left:20px;
-    padding-right:20px;
   }
   .footer {
     padding-bottom:80px;
@@ -857,23 +892,86 @@ a.btn-blue:hover {
   }
   .title {
     position:relative;
-    height:80px;
+    height:90px;
+  }
+  .title.home {
+    height:60px;
   }
   .breadcrumb,.change-price {
     position:absolute;
-    left:0px;
-    bottom:-25px;
+    bottom:15px;
     z-index:20;
+    left:0px;
   }
-  .change-price {
-    bottom:10px;
-    /*margin-left:-10px;*/
+  .breadcrumb {
+    bottom:-10px;
   }
+  .table-responsive {
+    overflow:auto;
+    width:480px;
+    display:block;
+  }
+  .title h2 {
+    overflow:hidden;
+    height:38px;
+  }
+  .iteam-product .wra-info-product {
+    height:160px;
+    text-align:center;
+    padding-top:10px;
+  }
+  .iteam-product .wra-info-product .info-product {
+    margin-top:20px;
+  }
+  .iteam-product .wra-info-product .info-product h4 {
+    border:none;
+  }
+  .iteam-product .img-product .icon-hot-product.right {
+    margin-right:-25px;
+    top:-10px;
+    right:50%;
+  }
+  .iteam-product .img-product .icon-hot-product.left {
+    margin-left:-25px;
+    top:-10px;
+    left:50%;
+  }
+  .box-iteam {
+    margin-bottom:100px;
+  }
+  .hot-price-right{
+    right:0px;
+  }
+  .hot-price-left {
+    left:0px;
+    top:-20px;
+  }
+  .left-chevron,.right-chevron {
+    display:none;
+  }
+  .link-contact {
+    display:none;
+  }
+  /*.navbar-fix .navbar-search{
+    display:block;
+  }*/
+  /*.navbar-fix .search {
+    display:none;
+  }*/
 }
- 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
-
+  .table-responsive {
+    width:330px;
+  }
+  .iteam-product .img-product .icon-hot-product.right {
+    margin-right:0px;
+    right:0px;
+  }
+  .iteam-product .img-product .icon-hot-product.left {
+    margin-left:0px;
+    left:0px;
+  }
 }
 
 
