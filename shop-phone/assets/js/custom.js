@@ -11,12 +11,6 @@
 		},function(){
 			$(this).css({'display':'none'})
 		});
-		//navbar-search
-		$('a.search').toggle(function(){
-			$('.navbar-search').slideDown(100)
-		},function(){
-			$('.navbar-search').slideUp(100)
-		});
 
 		//
 		$('a.search').click(function(e){
@@ -44,6 +38,12 @@
         $('.tip-bottom').tooltip({placement: 'bottom'});
 
         // goto top
+        $('.gotop').click(function(){
+            $("body, html").animate({
+                scrollTop: "0px"
+            });
+        });
+
         $(window).scroll(function () {
             if ($(window).scrollTop() > 0) {
                 $('.gotop').fadeIn();

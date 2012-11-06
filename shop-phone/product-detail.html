@@ -8,7 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 <body>
-<div class="navbar navbar-fixed-top navbar-fix">
+<a href="#header" class="gotop btn btn-info btn-large" style="display: inline; "><i class="icon-chevron-up icon-white"></i></a>
+<div class="navbar navbar-fixed-top navbar-fix" id="header">
 	
 	<div class="navbar-inner">
 		<div class="container">
@@ -17,7 +18,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand">ShopPhone</a>
+			<a class="brand" href="home.html">ShopPhone</a>
 			<div class="nav-collapse">
 				<ul class="nav pull-right nav-lock">
 					<li>
@@ -28,7 +29,11 @@
 					<li>
 						<a class="search" href="#"><i class="icon-search icon-white"></i></a>
 					</li>
-					<li><a href="index.html"><i class="icon-lock icon-white"></i></a></li>
+					<li>
+						<a href="index.html" class="tip-bottom" data-original-title="Login">
+							<i class="icon-lock icon-white"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div><!-- end container -->
@@ -45,7 +50,7 @@
 							</li>
 							<li class="submenu">
 								<a href="product.html" data-submenu="submenu">
-									<i class="icon-gift icon-white"></i>
+									<i class="icon-shopping-cart icon-white"></i>
 									<span>Shop</span>
 								</a>
 								<ul class="nav-submenu">
@@ -72,20 +77,20 @@
 								<ul class="nav-submenu">
 									<li><a href="table-page.html">Table</a></li>
 									<li><a href="button-icon.html">Button&Icon</a></li>
-									<li><a href="form-page.html">From</a></li>
+									<li><a href="form-page.html">Form</a></li>
 									<li><a href="elements-page.html">Elements</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="contact.html">
-									<i class="icon-headphones icon-white"></i>
+									<i class="icon-envelope icon-white"></i>
 									<span>Contact</span>
 								</a>
 							</li>
 						</ul>
 						<ul class="pull-right nav cart">
 							<li>
-								<a href="cart.html"><i class="ic-cart"></i>Crat(0)</a>
+								<a href="cart.html"><i class="ic-cart"></i>Cart(0)</a>
 							</li>
 						</ul>
 					</div>
@@ -111,15 +116,15 @@
 	<div class="product-detail">
 		<div class="container">
 			<div class="row">
-				<div class="span1 wra-info-product">
+				<div class="span1 wrapper-product-info">
 					<a href="#">
 						<img src="assets/img/product/iphone-big-1.png">
 					</a>
 				</div>
-				<div class="img-product span4">
+				<div class="product-img span4">
 					<img src="assets/img/product/iphone-big-1.png">
 				</div>
-				<div class="wra-info-product span7">
+				<div class="wrapper-product-info span7">
 					<div class="info-product">
 						<h4>iPhone4</h4>
 						<p class="price">1,000$</p>
@@ -157,16 +162,16 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row list-product">
-			<div class="span4 iteam-product">
+		<div class="row products">
+			<div class="span4 product">
 				<div class="row">
-					<div class="img-product span2">
+					<div class="product-img span2">
 						<a href="product-detail.html">
 							<span class="icon-view"></span>
 							<img src="assets/img/product/product-4.png">
 						</a>
 					</div>
-					<div class="wra-info-product span2">
+					<div class="wrapper-product-info span2">
 						<a href="#">
 							<img src="assets/img/product/product-4.png">
 						</a>
@@ -180,17 +185,17 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- /end iteam-product -->
+			</div><!-- /end product -->
 
-			<div class="span4 iteam-product">
+			<div class="span4 product">
 				<div class="row">
-					<div class="img-product span2">
+					<div class="product-img span2">
 						<a href="product-detail.html">
 							<span class="icon-view"></span>
 							<img src="assets/img/product/product-5.png">
 						</a>
 					</div>
-					<div class="wra-info-product span2">
+					<div class="wrapper-product-info span2">
 						<a href="#">
 							<img src="assets/img/product/product-5.png">
 						</a>
@@ -204,17 +209,17 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- /end iteam-product -->
+			</div><!-- /end product -->
 
-			<div class="span4 iteam-product">
+			<div class="span4 product">
 				<div class="row">
-					<div class="img-product span2">
+					<div class="product-img span2">
 						<a href="product-detail.html">
 							<span class="icon-view"></span>
 							<img src="assets/img/product/product-1.png">
 						</a>
 					</div>
-					<div class="wra-info-product span2">
+					<div class="wrapper-product-info span2">
 						<a class="active" href="#">
 							<img src="assets/img/product/product-1.png">
 						</a>
@@ -231,17 +236,17 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- /end iteam-product -->
+			</div><!-- /end product -->
 
-			<div class="span4 iteam-product">
+			<div class="span4 product">
 				<div class="row">
-					<div class="img-product span2">
+					<div class="product-img span2">
 						<a href="product-detail.html">
 							<span class="icon-view"></span>
 							<img src="assets/img/product/product-2.png">
 						</a>
 					</div>
-					<div class="wra-info-product span2">
+					<div class="wrapper-product-info span2">
 						<a href="#">
 							<img src="assets/img/product/product-1.png">
 						</a>
@@ -258,17 +263,17 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- /end iteam-product -->
+			</div><!-- /end product -->
 
-			<div class="span4 iteam-product">
+			<div class="span4 product">
 				<div class="row">
-					<div class="img-product span2">
+					<div class="product-img span2">
 						<a href="product-detail.html">
 							<span class="icon-view"></span>
 							<img src="assets/img/product/product-3.png">
 						</a>
 					</div>
-					<div class="wra-info-product span2">
+					<div class="wrapper-product-info span2">
 						<a href="#">
 							<img src="assets/img/product/product-3.png">
 						</a>
@@ -282,17 +287,17 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- /end iteam-product -->
+			</div><!-- /end product -->
 
-			<div class="span4 iteam-product">
+			<div class="span4 product">
 				<div class="row">
-					<div class="img-product span2">
+					<div class="product-img span2">
 						<a href="product-detail.html">
 							<span class="icon-view"></span>
 							<img src="assets/img/product/product-6.png">
 						</a>
 					</div>
-					<div class="wra-info-product span2">
+					<div class="wrapper-product-info span2">
 						<a href="#">
 							<img src="assets/img/product/product-6.png">
 						</a>
@@ -306,8 +311,8 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- /end iteam-product -->
-		</div><!-- /end list-product -->
+			</div><!-- /end product -->
+		</div><!-- /end products -->
 
 		<div class="row">
 			<div class="span12">
