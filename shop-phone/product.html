@@ -104,9 +104,7 @@
 							<!-- <a class="choose-price-left" href="#"></a>
 							<a class="choose-price-right" href="#"></a>
 							<button class="icon-search-product"></button> -->
-							<div class="value-price">
-								$0 - $1,000
-							</div>
+							<div class="value-price"></div>
 						</div>
 					</div> 
 					<!-- /end change-price -->
@@ -485,6 +483,7 @@
                 $( ".value-price" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
             }
         });
+        
         $(".value-price").text("$" + $("#slider").slider("values", 0) +
             " - $" + $("#slider").slider("values", 1));
 		
