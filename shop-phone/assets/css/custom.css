@@ -166,7 +166,7 @@ section {
   top:-4px;
   right:-5px;
   opacity:0.8;
-  filter:alpha(opacity=80);
+  filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 .choose-price-right:hover,.choose-price-left:hover {
   opacity:1;
@@ -275,9 +275,9 @@ section {
   padding:10px 20px;
   border-radius:8px;
   position:relative;
-  o-border-radius:8px;
-  moz-border-radius:8px;
-  webkit-border-radius:8px;
+  -o-border-radius:8px;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
   border:1px solid #5fa6bc;
 }
 .box-text {
@@ -331,18 +331,19 @@ section {
 }
 .slide-content .slide-img {
   float:left;
-  width:60%;
-  text-align:center;
+  text-align:left;
+  padding-left:50px;
 }
 .slide-content .item {
   position:absolute;
   left:0px;
   top:0px;
+  width:100%;
 }
 .slide-content .slide-info {
-  position:relative;
+  position:absolute;
+  right:10%;
   width:40%;
-  float:right;
   padding-top:40px;
 }
 .slide-content .slide-info .show-me-more {
@@ -939,6 +940,14 @@ a.btn-blue:hover {
   .navbar-fix .navbar-search input {
     width:50%;
   }
+  .slide-content .slide-info .info h1,
+  .slide-content .slide-info .info h3{
+    background:url('../img/overplay-gray.png') repeat;
+    color:#fff;
+    padding:5px;
+    margin-bottom:10px;
+    border-left:3px solid #5fa6bc;
+  }
 }
  
 /* Landscape phone to portrait tablet */
@@ -1021,6 +1030,14 @@ a.btn-blue:hover {
   .link-contact {
     display:none;
   }
+  .slide-content .slide-info .info h1,
+  .slide-content .slide-info .info h3{
+    background:url('../img/overplay-gray.png') repeat;
+    color:#fff;
+    padding:5px;
+    margin-bottom:10px;
+    border-left:3px solid #5fa6bc;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) { 
@@ -1034,6 +1051,9 @@ a.btn-blue:hover {
   .product .product-img .icon-hot-product.left {
     margin-left:0px;
     left:0px;
+  }
+  .wrapper-slide {
+    display:none;
   }
 }
 
