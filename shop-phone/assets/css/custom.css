@@ -240,6 +240,13 @@ section {
 .login legend {
   font-weight:300;
 }
+.login input[type="checkbox"] {
+  margin-top:-5px;
+}
+.login .sign-in{
+  margin-top:10px;
+  float:left;
+}
 /*****************  home-news *******************/
 .main .container {
   padding:40px 0px;
