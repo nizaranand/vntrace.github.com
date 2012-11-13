@@ -19,11 +19,11 @@ h3 {
   font-weight:300;
 }
 a {
-  color:#5fa6bc;
+  color:#0077a1;
 }
 a:hover {
   text-decoration:none;
-  color:#0077a1;
+  color:#5fa6bc;
 }
 section {
   float:left;
@@ -59,6 +59,7 @@ section {
   box-shadow:none;
   padding:0px;
   background:url('../img/bg-repeat-top.png') repeat;
+  box-shadow:0px -2px 5px #2b2b2b;
 }
 .navbar-fix .navbar-inner .container {
   padding:0px 10px;
@@ -74,17 +75,18 @@ section {
 .menu-top{
   top:40px;
   width:100%;
-  padding-top:15px;
+  padding-top:5px;
   background:#5fa6bc;
   border-top:1px solid #8ec6d7;
-  box-shadow:0px -2px 5px #2b2b2b;
+  border-bottom:5px solid #fff;
+  box-shadow:inset 0px -1px 3px #0077a1;
 }
 .menu-top .nav {
   z-index:100;
 }
 .menu-top .nav > li > a{
   color:#fff;
-  height:30px;
+  height:25px;
   margin-bottom:-5px;
   text-shadow:0px 1px 1px #0077a1;
   border-bottom:5px solid #fff;
@@ -206,9 +208,8 @@ section {
   padding-top:200px;
 }
 .title {
-  border-top:5px solid #fff;
+  /*border-top:5px solid #fff;*/
   border-bottom:2px solid #f0e8e8;
-  box-shadow:0px -1px 3px #0077a1;
   background:url('../img/bg-repeat-title.png') repeat;
 }
 /*****************  login *******************/
