@@ -115,9 +115,9 @@
 		<div class="row">
 			<div class="span4">
 				<div class="link-contact">
-					<a class="active" href="#where">Where we are</a>
-					<a href="#we">We'd love to hear from you</a>
-					<a href="#contact-us">Contact Us</a>
+					<a class="active" data-direction="#where" href="#">Where we are</a>
+					<a data-direction="#mail" href="#">We'd love to hear from you</a>
+					<a data-direction="#contact-us" href="#">Contact Us</a>
 				</div>
 			</div>
 			<div class="span8">
@@ -126,7 +126,7 @@
 						<h3>WHERE WE ARE</h3>
 						<img src="assets/img/map.jpg" alt="">
 					</div>
-					<div class="form-contact" id="we">
+					<div class="form-contact" id="mail">
 						<h3>WE’D LOVE TO HEAR FROM YOU</h3>
 						<form>
 							<label>User name</label>
@@ -203,7 +203,7 @@
 						Phone : +1 (305) 374-4404
 					</li>
 					<li>
-						Email:<a href="#">crazychicken@clgt.vn</a>
+						Email:<a href="#">johndoe@email.com</a>
 					</li>
 					<li class="link-social">
 						<a class="tip-bottom" href="#" data-original-title="Skyle">
@@ -231,7 +231,25 @@
 	<!-- script -->
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.scrollto.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript">
+		$('.link-contact').children('a').click(function(e){
+			// e.preventDefault();
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
+			var direction = $(this).data('direction');
+			var top;
+			if(direction == '#where') {
+				top = 150;
+			} else {
+				top = 100;
+			}
+			$(direction).ScrollTo({
+				offsetTop: top,
+			});
+		});
+	</script>
 	<!-- /end script -->
 </body>
 </html>

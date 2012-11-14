@@ -121,8 +121,8 @@
 
 						<div class="slider-info">
 							<div class="info">
-								<h1>iPhone 5</h1>
-								<h3>The biggest thing to open to iPhone since iPhone</h3>
+								<h1>iPhone 6</h1>
+								<h3>The biggesssssst thing to open to iPhone since iPhone</h3>
 							</div>
 							<a href="#" class="btn-blue show-me-more">
 								SHOW ME MORE
@@ -136,8 +136,8 @@
 							</div>
 						<div class="slider-info">
 							<div class="info">
-								<h1>iPhone 5</h1>
-								<h3>The biggest thing to open to iPhone since iPhone</h3>
+								<h1>iPhone 7</h1>
+								<h3>The biggesssssssssssssssssssssssst thing to open to iPhone since iPhone</h3>
 							</div>
 							<a href="#" class="btn-blue show-me-more">
 								SHOW ME MORE
@@ -160,7 +160,10 @@
 							</a>
 						</div>
 					</div>
-				</div>
+				</div> 
+				<!-- end slider-content	 -->
+				<div id="slider-direction-nav"></div>
+				<div id="slider-control-nav"></div>
 			</div>
 			
 		</div>
@@ -311,7 +314,11 @@
 	<!-- /end script -->
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('#slider').leanSlider();
+		$('#slider').leanSlider({
+			pauseTime: 3000,
+			directionNav: '#slider-direction-nav',
+			controlNav: '#slider-control-nav'
+		});
 	});
 	</script>
 </body>

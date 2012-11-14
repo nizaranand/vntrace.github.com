@@ -41,19 +41,12 @@
         });
 
         $(window).scroll(function () {
-            if ($(window).scrollTop() > 200) {
-                $('.gotop').fadeIn(200);
+            if ($(window).scrollTop() > 150) {
+                $('.gotop').fadeIn();
+                $('.title').slideUp('fast');
             } else {
-                $('.gotop').fadeOut(200);
-            }
-        });
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 200) {
-                $('.title').slideUp();
-                // $('.menu-top').css({'border-bottom':'5px solid #fff'});
-            } else {
-                $('.title').slideDown();
-                // $('.menu-top').css({'border-bottom':'none'});
+                $('.gotop').fadeOut();
+                $('.title').slideDown('fast');
             }
         });
         // product-img data="slide"
