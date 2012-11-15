@@ -53,6 +53,9 @@ section {
   border-bottom: 1px solid #F2F2F2;
   border:none medium;
 }
+.navbar-fix .nav-collapse .navbar-search input {
+  margin-top:2px;
+}
 .navbar-fix .navbar-inner {
   border:none;
   box-shadow:none;
@@ -106,7 +109,7 @@ section {
   display:none;
   position:absolute;
   left:-30px;
-  top:55px;
+  top:50px;
   background:#3d3d3d;
   width:240px;
   z-index:30;
@@ -1065,7 +1068,7 @@ a.btn-blue:hover {
     margin-left:0px;
     left:0px;
   }
-  .wrapper-slider {
+  .slider-wrapper {
     display:none;
   }
   .day span {
@@ -1100,7 +1103,7 @@ a.btn-blue:hover {
 #slider-control-nav {
   position:absolute;
   right:0px;
-  bottom:0px;
+  bottom:10px;
   z-index:100;
 }
 #slider-control-nav a {
