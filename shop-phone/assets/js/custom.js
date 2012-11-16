@@ -50,18 +50,18 @@
             }
         });
         // product-img data="slide"
-        $('.product-img[data="slide"] a[class^="ic"]').hide()
-        $('.product-img[data="slide"]').hover(function(){
-            $('.product-img[data="slide"] a[class^="ic"]').show()
+        $('.product-img[data="slider"] a[class^="ic"]').hide()
+        $('.product-img[data="slider"]').hover(function(){
+            $('.product-img[data="slider"] a[class^="ic"]').show()
         },function(){
-            $('.product-img[data="slide"] a[class^="ic"]').hide()
+            $('.product-img[data="slider"] a[class^="ic"]').hide()
         });
         //reply form chat
         $('.reply').click(function(e){
-            // $(this).parents('.box-comment').find('.comment-post').hide()
-            // var a = $('.reply').parent()
-            // $(this).removeClass('reply')
-        	$('.comment-post').appendTo(this)
+            $('.box-comment .reply').show()
+            $(this).hide()
+            var a = $(this).parent()
+        	$('.comment-post').appendTo(a)
         })
 
 		//end zoom img

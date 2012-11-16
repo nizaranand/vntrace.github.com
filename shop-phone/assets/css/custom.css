@@ -1085,7 +1085,7 @@ a.btn-blue:hover {
   }
 }
 
-#slider-direction-nav a {
+#slider-direction-nav a,.ic-next,.ic-prev {
   height:75px;
   width:75px;
   display:block;
@@ -1096,7 +1096,7 @@ a.btn-blue:hover {
   filter:alpha(opacity="80");
   text-indent: -9999px;
 }
-#slider-direction-nav .lean-slider-next  {
+#slider-direction-nav .lean-slider-next,.ic-prev  {
   background:url('../img/icon.png') -100px top no-repeat;
   right:0px;
 }
