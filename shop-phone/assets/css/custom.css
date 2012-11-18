@@ -53,8 +53,10 @@ section {
   border-bottom: 1px solid #F2F2F2;
   border:none medium;
 }
-.navbar-fix .nav-collapse .navbar-search input {
+.navbar-fix.navbar-inverse .navbar-search .search-query {
   margin-top:2px;
+  background:#fff;
+  border:none;
 }
 .navbar-fix .navbar-inner {
   border:none;
