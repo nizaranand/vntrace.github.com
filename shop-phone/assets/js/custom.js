@@ -15,16 +15,21 @@
           })();
           // end asyn google webfont loader
 
+        // sub-menu
 		$('a[data-submenu="submenu"]').hover(function(){
-			$(this).next().css({'display':'block'})
+			$(this).next().slideDown(200)
+            $(this).css({'border-bottom':'solid 5px #5fa6bc'})
 		},function(){
 			$(this).next().css({'display':'none'})
+            $(this).css({'border-bottom':'solid 5px #fff'})
 		});
 
 		$('.nav-submenu').hover(function(){
 			$(this).css({'display':'block'})
+            $(this).prev().css({'border-bottom':'solid 5px #5fa6bc'})
 		},function(){
 			$(this).css({'display':'none'})
+            $(this).prev().css({'border-bottom':'solid 5px #fff'})
 		});
 
 		// tooltip
