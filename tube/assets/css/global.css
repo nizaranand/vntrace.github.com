@@ -64,7 +64,7 @@ ul,li{
 .bg-title h3{
 	padding-left:10px;
 }
-.bg-title,.thumbnails .price {
+.bg-title,.thumbnails .view-count {
 	background:#17171b;
 	background-image: -ms-linear-gradient(top, #23242a, #17171b);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23242a), to(#17171b));
@@ -370,7 +370,7 @@ border-bottom-color: #999;
 	width:200px;
 	height:160px;
 }
-.thumbnails .price{
+.thumbnails .view-count{
 	padding:10px 10px 3px;
 }
 .thumbnails .number-view {
@@ -379,11 +379,11 @@ border-bottom-color: #999;
 	font-size:11px;
 	padding-left:10px;
 }
-.price  {
+.view-count  {
 	display:block;
 	height:25px;
 }
-.price i {
+.view-count i {
     margin-right: 5px;
 }
 .thumbnails-vertical .thumbnail{
