@@ -600,7 +600,7 @@ border-bottom-color: #999;
 .pager>li>a:hover {
 	background:#18191c;
 }
-/***************** widget *******************/
+/***************** box *******************/
 .box {
 	border-radius:4px;
 	-moz-border-radius:4px;
@@ -611,27 +611,17 @@ border-bottom-color: #999;
 	float:left;
 	width:100%;
 }
-.widget-content,.box-content {
+.box-content {
 	padding:10px;
 }
 .box-content-pd{
 	padding:20px 90px;
 }
-.widget-content .well,.box-content-pd .well {
+.box-content-pd .well {
 	background:#191a1d;
 }
 .box-video-play .box-content {
 	padding:10px;
-}
-.widget-content p{
-	margin-bottom:20px;
-	text-align:justify;
-}
-.widget-content p img {
-	width:510px;
-	height:auto;
-	padding:4px;
-	border:1px solid #555;
 }
 /********/
 .box-message ul{
@@ -926,7 +916,7 @@ code {
 	background-image: linear-gradient(top, #d3d3d3, #888);
 }
 /*************************** fix error IE7 ************************************/
-.widget {
+.box {
 	* float:none;
 }
 .pagination {
