@@ -69,6 +69,21 @@
         	$('.comment-post').appendTo(a)
         })
 
+        // submenu responsive
+        $(window).width(function () {
+            if ($(window).width() < 767) {
+                $('a[data-submenu="submenu"]').toggle(function(){
+                    $(this).next().slideDown(200)
+                    $(this).css({'border-bottom':'solid 5px #5fa6bc'})
+                },function(){
+                    $(this).next().css({'display':'none'})
+                    $(this).css({'border-bottom':'solid 5px #fff'})
+                });
+            } else {
+                // $('.container').show()
+            }
+        });
+
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();
