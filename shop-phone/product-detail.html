@@ -6,6 +6,7 @@
 	<title>product-detail</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/lean-slider.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	
 </head>
@@ -117,7 +118,7 @@
 	<div class="product-detail">
 		<div class="container">
 			<div class="row">
-				<div class="product-img span5" data="slider">
+				<!-- <div class="product-img span5" data="slider">
 					<img src="assets/img/product/iphone-big-1.png">
 					<ul class="list">
 						<li><a class="active" href="#"></a></li>
@@ -127,10 +128,37 @@
 					</ul>
 					<a href="#" class="ic-prev"></a>
 					<a href="#" class="ic-next"></a>
+				</div> -->
+				<div class="product-img span5">
+					<div class="slider">
+						<div id="slider" class="slider-content">
+
+							<div class="item">
+								<div class="slider-img">
+									<img src="assets/img/img-big-6.png" alt="">
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="slider-img">
+									<img src="assets/img/img-big-7.png" alt="">
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="slider-img">
+									<img src="assets/img/img-big-2.png" alt="">
+								</div>
+							</div>
+						</div> 
+						<!-- /end slider-content -->
+						<div id="slider-direction-nav"></div>
+						<div id="slider-control-nav"></div>
+					</div><!-- /end slider -->
 				</div>
 				<div class="wrapper-product-info span7">
 					<div class="info-product">
-						<h4>iPhone4</h4>
+						<h4>iPhone</h4>
 						<p class="price">1,000$</p>
 						<a href="cart.html" class="btn-blue">
 							<i class="icon-shopping-cart icon-white"></i>
@@ -394,7 +422,17 @@
 	<!-- script -->
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/lean-slider.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- /end script -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#slider').leanSlider({
+			pauseTime: 3000,
+			directionNav: '#slider-direction-nav',
+			controlNav: '#slider-control-nav'
+		});
+	});
+	</script>
 </body>
 </html>
