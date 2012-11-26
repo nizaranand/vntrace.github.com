@@ -1,5 +1,5 @@
 body {
-  color:#666;
+  color:#4a4a4a;
   background:#f5f5f5;
   font: 13px/1.6 "Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
   line-height:1.5em;
@@ -87,29 +87,25 @@ input[type="tel"], input[type="color"], .uneditable-input {
 /************************************************/
 .logo {
   color:#fff;
-  font-size:30px;
+  font-size:25px;
   padding:20px;
   display:block;
+  text-align: center;
 }
 .logo:hover {
   color:#fff;
 }
-.sidebar {
-  width:220px;
-  background:#ddd;
-  position:fixed;
-  top:0px;
-  left:0px;
+#sidebar {
   height:100%;
+  position:relative;
   background:#333;
-  border-right:2px solid #bbb;
-  overflow:auto;
 }
-.sidebar .nav-list > li {
+
+#sidebar .nav-list > li {
   border-left:5px solid #444;
   margin-left:-15px;
 }
-.sidebar .nav-list > li > a{
+#sidebar .nav-list > li > a{
   color:#fff;
   text-shadow:none;
   padding:8px 10px;
@@ -117,65 +113,75 @@ input[type="tel"], input[type="color"], .uneditable-input {
   border-bottom:1px solid #282828;
   padding-left:20px;
 }
-.sidebar .nav-list > li > a:hover,
-.sidebar .nav-list > li.active > a {
+#sidebar .nav-list > li > a:hover,
+#sidebar .nav-list > li.active > a {
   background:#444;
   border-top-color: #4a4a4a;
 }
-.sidebar .nav-list > li > a > i {
+#sidebar .nav-list > li > a > i {
   margin-right:5px;
 }
-/*account*/
-.sidebar .nav-list > li.account {
-  border-left:5px solid #d56738;
+/*sun*/
+#sidebar .nav-list > li.sun {
+  border-left:5px solid #EB6841;
 }
-.sidebar .nav-list > li.account > a:hover,
-.sidebar .nav-list > li.account.active > a {
-  background:#d56738;
-  border-top-color: #e97f52;
+#sidebar .nav-list > li.sun > a:hover,
+#sidebar .nav-list > li.sun.active > a {
+  background:#EB6841;
+  border-top-color: #EB6841;
 }
-/*login*/
-.sidebar .nav-list > li.login {
-  border-left:5px solid #3795bc;
+/*daylight*/
+#sidebar .nav-list > li.daylight {
+  border-left:5px solid #EDC951;
 }
-.sidebar .nav-list > li.login > a:hover,
-.sidebar .nav-list > li.login.active > a {
-  background:#3795bc;
-  border-top-color: #4db0d9;
+#sidebar .nav-list > li.daylight > a:hover,
+#sidebar .nav-list > li.daylight.active > a {
+  background:#EDC951;
+  border-top-color: #EDC951;
 }
-.social {
+/*red*/
+#sidebar .nav-list > li.red {
+  border-left:5px solid #CC333F;
+}
+#sidebar .nav-list > li.red > a:hover,
+#sidebar .nav-list > li.red.active > a {
+  background:#CC333F;
+  border-top-color: #CC333F;
+}
+/*brown*/
+#sidebar .nav-list > li.brown {
+  border-left:5px solid #6A4A3C;
+}
+#sidebar .nav-list > li.brown > a:hover,
+#sidebar .nav-list > li.brown.active > a {
+  background:#6A4A3C;
+  border-top-color: #6A4A3C;
+}
+/*ufo*/
+#sidebar .nav-list > li.ufo {
+  border-left:5px solid #00A0B0;
+}
+#sidebar .nav-list > li.ufo > a:hover,
+#sidebar .nav-list > li.ufo.active > a {
+  background:#00A0B0;
+  border-top-color: #00A0B0;
+}
+.footer {
   bottom:0px;
   width:100%;
-  text-align:center;
   position:absolute;
 }
-.social a {
+.footer a {
   margin-left:25px;
   float:left;
 }
-.social p {
+.footer p {
   width:100%;
   color:#fff;
   float:left;
   margin-top:10px;
 }
-.form-login {
-  display:none;
-  text-align:center;
-  padding:10px;
-}
-.form-login label {
-  text-align:left;
-  color:#999;
-}
-.form-login input {
-  width:180px;
-  padding:10px 8px;
-}
-.form-login button {
-  width:200px;
-  margin:10px 0px 5px 0px;
-}
+
 /************************************************/
 /********************* end sidebar **********************/
 /************************************************/
@@ -183,36 +189,40 @@ input[type="tel"], input[type="color"], .uneditable-input {
 /************************************************/
 /********************* body-content **********************/
 /************************************************/
-.body-content {
-  margin-left: 222px;
-  margin-right: 0px;
+#main {
   position: relative;
-  min-height: 500px;
-  width: auto;
-}
-.body-content .container-fluid {
+  height: 100%;
   padding-top:20px;
   padding-bottom:30px;
+}
+
+.container-fluid {
+  padding-left: 0;
 }
 .box {
   margin-bottom:20px;
 }
-.box-body,.box-header {
+.box-header {
   padding:10px;
-  background:#fcfcfc;
   border:1px solid #eee;
+}
+.box-body {
+  padding:10px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.box-body {
+  background:#fff;
+}
+.box-header  {
+  background:#fff; 
 }
 .box-header {
   padding:3px 10px;
-  border-bottom-color:#fcfcfc;
 }
-.form-create-account input{
-  padding:10px 1%;
-  width:97%;
-}
-.form-create-account label i {
-  color:#d56738;
-}
+
 .box-body.box-table {
   padding:0px;
 }
@@ -340,24 +350,22 @@ background-color: #fcfcfc;
 .ic-check-gray {
   background-position: -9px top;
 }
-/********************* responsive **********************/
-@media (min-width: 1200px) { 
-}
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-  
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  body{
-    margin:0px;
-    padding:0px;
-  }
-}
-/* Landscape phones and down */
-@media (max-width: 480px) { 
-  
-}
 
+/* Ocean Five
+http://www.colourlovers.com/palette/1473/Ocean_Five
+=======================================*/
+.ufo {
+  color: #00A0B0;
+}
+.brown {
+  color: #6A4A3C;
+}
+.red {
+  color: #CC333F;
+}
+.sun {
+  color: #EB6841;
+}
+.daylight {
+  color: #EDC951;
+}
