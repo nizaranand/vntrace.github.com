@@ -105,11 +105,11 @@ input[type="tel"], input[type="color"], .uneditable-input {
   border-right:2px solid #bbb;
   overflow:auto;
 }
-.sidebar .nav-list > li {
+.sidebar .nav-list-fix.nav-list > li {
   border-left:5px solid #444;
   margin-left:-15px;
 }
-.sidebar .nav-list > li > a{
+.sidebar .nav-list-fix.nav-list > li > a{
   color:#fff;
   text-shadow:none;
   padding:8px 10px;
@@ -117,29 +117,29 @@ input[type="tel"], input[type="color"], .uneditable-input {
   border-bottom:1px solid #282828;
   padding-left:20px;
 }
-.sidebar .nav-list > li > a:hover,
-.sidebar .nav-list > li.active > a {
+.sidebar .nav-list-fix.nav-list > li > a:hover,
+.sidebar .nav-list-fix.nav-list > li.active > a {
   background:#444;
   border-top-color: #4a4a4a;
 }
-.sidebar .nav-list > li > a > i {
+.sidebar .nav-list-fix.nav-list > li > a > i {
   margin-right:5px;
 }
 /*account*/
-.sidebar .nav-list > li.account {
+.sidebar .nav-list-fix.nav-list > li.account {
   border-left:5px solid #d56738;
 }
-.sidebar .nav-list > li.account > a:hover,
-.sidebar .nav-list > li.account.active > a {
+.sidebar .nav-list-fix.nav-list > li.account > a:hover,
+.sidebar .nav-list-fix.nav-list > li.account.active > a {
   background:#d56738;
   border-top-color: #e97f52;
 }
 /*login*/
-.sidebar .nav-list > li.login {
+.sidebar .nav-list-fix.nav-list > li.login {
   border-left:5px solid #3795bc;
 }
-.sidebar .nav-list > li.login > a:hover,
-.sidebar .nav-list > li.login.active > a {
+.sidebar .nav-list-fix.nav-list > li.login > a:hover,
+.sidebar .nav-list-fix.nav-list > li.login.active > a {
   background:#3795bc;
   border-top-color: #4db0d9;
 }
@@ -289,9 +289,17 @@ background-color: #fcfcfc;
 /************************************************/
 /********************* end footer **********************/
 /************************************************/
-
+.icon-blue[class^="icon-"],.icon-blue[class*="icon-"] {
+  background-image: url("../img/glyphicons-halflings-blue.png");
+}
+.icon-red[class^="icon-"],.icon-red[class*="icon-"] {
+  background-image: url("../img/glyphicons-halflings-red.png");
+}
+.icon-orange[class^="icon-"],.icon-orange[class*="icon-"] {
+  background-image: url("../img/glyphicons-halflings-orange.png");
+}
 [class^="ic-"],
-[class*=" ic-"] {
+[class*="ic-"] {
   height:20px;
   width:20px;
   float:left;
