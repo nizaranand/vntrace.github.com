@@ -223,8 +223,8 @@ body > .container-fluid > .row-fluid {
   padding-right:0px;
 }
 .box {
-  margin-bottom:20px;
-  padding:10px;
+  padding:0px 10px 30px 10px;
+  overflow:hidden;
 }
 .box-header,.box-body,.box-footer {
   padding:3px 10px;
@@ -261,7 +261,7 @@ body > .container-fluid > .row-fluid {
 background-color: #fcfcfc;
 }
 .plans-header {
-  background:#3795bc;
+  background:#00A0B0;
   width:100%;
   padding:20px 0px;
   border-radius:4px;
@@ -291,22 +291,30 @@ background-color: #fcfcfc;
 .plans-body a:hover{
   background:#fff;
 }
-.plans-body .btn-danger {
-  background:#d56738;
+.plans-body .btn-sun {
+  background:#EB6841;
   color:#fff;
   border:none;
   padding:15px 0px;
   margin-top:10px;
 }
-.plans-body .btn-danger:hover {
-  background:#b45126;
+.plans-body .btn-sun:hover {
+  background:#da5f3b;
 }
 .plans-footer .table tr td,
 .plans-footer .table tr th {
+  text-align:center;
+}
+.plans-footer .table tr td {
+  color:#ccc;
+}
+.plans-footer .table tr td:first-child,
+.plans-footer .table tr th:first-child {
   text-align:left;
+  color:#4a4a4a;
 }
 .plans-best-choose .plans-header {
-  background:#d56738;
+  background:#EB6841;
 }
 #form-login {
   margin-top:150px;
@@ -342,7 +350,7 @@ background-color: #fcfcfc;
   text-align:center;
 }
 .box-stats {
-  margin-bottom:20px;
+  margin-bottom:30px;
 }
 .box-stats a,.box-stats span{
   background:#00A0B0;
@@ -350,10 +358,14 @@ background-color: #fcfcfc;
   display:block;
   width:100%;
   color:#fff;
-  font-size:2.5em;
+  font-size:3em;
   float:left;
-  padding:20px 0px;
+  padding:30px 0px 20px 0px;
   height:20px;
+  border-radius:2px 2px 0px 0px;
+  -o-border-radius:2px 2px 0px 0px;
+  -moz-border-radius:2px 2px 0px 0px;
+  -webkit-border-radius:2px 2px 0px 0px;
 }
 .box-stats a:hover,
 .box-stats a.active{
@@ -362,7 +374,11 @@ background-color: #fcfcfc;
 .box-stats span {
   font-size:1em;
   background:#0093a2;
-  padding:5px 0px;
+  padding:7px 0px;
+  border-radius:0px 0px 2px 2px;
+  -o-border-radius:0px 0px 2px 2px;
+  -moz-border-radius:0px 0px 2px 2px;
+  -webkit-border-radius:0px 0px 2px 2px;
 }
 .recent-news ul{
   margin:0px;
@@ -395,7 +411,7 @@ background-color: #fcfcfc;
   margin:0px;
 }
 .box-table {
-  margin:30px 0px;
+  margin-bottom:30px;
 }
 .box-table .box-header h3 {
   padding:0px 0px 10px 10px;
@@ -420,7 +436,7 @@ background-color: #fcfcfc;
 }
 .box-table .table td:first-child,
 .box-table .table th:first-child {
-  border-left-color:#fff;
+  border-left:none;
 }
 .box-table .table tbody tr:nth-child(odd) td,
 .box-table .table tbody tr:nth-child(odd) th {
