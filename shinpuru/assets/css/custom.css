@@ -17,11 +17,11 @@ h1 {
   margin:20px 0px 40px 0px;
 }
 a {
-  color:#3795bc;
+  color:#00A0B0;
 }
 a:hover {
   text-decoration:none;
-  color:#2c7695;
+  color:#0093a2;
 }
 /*************** btn ****************/
 .btn {
@@ -29,6 +29,7 @@ a:hover {
   border:none;
   background:#eee;
   color:#2c7695;
+  text-shadow:none;
 }
 .btn-ufo,.btn-red,
 .btn-sun {
@@ -327,10 +328,10 @@ background-color: #fcfcfc;
   width:26px;
   padding:7px 5px;
   margin:0px;
-  margin-top:-1px;
   background:#00A0B0;
   color:#fff;
   text-shadow:none;
+  border:none;
 }
 #form-login .input-prepend #prependedInput {
   height:36px;
@@ -385,6 +386,81 @@ background-color: #fcfcfc;
 }
 .time .day {
   font-size:2em;
+}
+.box-table,
+.box-table .box-body,
+.box-table .box-header,
+.box-table .box-footer {
+  padding:0px;
+  margin:0px;
+}
+.box-table {
+  margin:30px 0px;
+}
+.box-table .box-header h3 {
+  padding:0px 0px 10px 10px;
+  border-bottom:1px solid #eee;
+}
+.box-table .box-header form {
+  padding-left:10px;
+  margin:0px 0px 10px 0px;
+}
+.box-table .box-header form select {
+  width:80px;
+  height:20px;
+}
+.box-table .table{
+  padding:10px;
+  margin:0px;
+}
+.box-table .table td,
+.box-table .table th{
+  border-color:#e9e9e9;
+  border-left:1px solid #eee;
+}
+.box-table .table td:first-child,
+.box-table .table th:first-child {
+  border-left-color:#fff;
+}
+.box-table .table tbody tr:nth-child(odd) td,
+.box-table .table tbody tr:nth-child(odd) th {
+  background-color: #F9F9F9;
+}
+.box-table .table tbody tr:hover td,
+.box-table .table tbody tr:hover th {
+  background-color: #eee;
+}
+.box-table .table tfoot .nav-pills {
+  float:right;
+  margin:0px;
+  padding:0px;
+}
+.box-table .table tfoot .nav-pills a,
+.box-table .table tfoot .nav-pills a span{
+  background:#eee;
+  color:#555;
+  border-radius:2px;
+  -o-border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+}
+.box-table .table tfoot .nav-pills a:hover,
+.box-table .table tfoot .nav-pills a.active,
+.box-table .table tfoot .nav-pills a:hover span,
+.box-table .table tfoot .nav-pills a.active span {
+  background:#00a0b0;
+  color:#fff;
+}
+.box-table .page-number {
+  float:left;
+  margin-top:8px;
+}
+.box-table .table-media p{
+  margin:0px;
+}
+.box-table .table-media tr th,
+.box-table .table-media tr td{
+  text-align:center;
 }
 /************************************************/
 /********************* end #main **********************/

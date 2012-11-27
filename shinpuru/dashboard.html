@@ -119,30 +119,383 @@
 
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="box">
+						<div class="box box-table">
 							<div class="box-header">
-								<h3>table</h3>
+								<h3>Table</h3>
+								<form class="form-inline">
+									Show 
+									<select>
+									<option>5</option>
+									<option>10</option>
+									<option>15</option>
+									</select>
+									 entries
+								</form>
 							</div>
 							<div class="box-body">
-								<table>
+								<table class="table">
 									<thead>
 										<tr>
-											<th>123</th>
-											<th>123</th>
-											<th>123</th>
+											<th>Rendering engine</th>
+											<th>Browser</th>
+											<th>Platform(s)</th>
+											<th>Engine version</th>
+											<th>Css grade</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<th>123</th>
-											<th>123</th>
+											<td>Gecko</td>
+											<td>Seamonkey 1.1</td>
+											<td>Win 98+ / OSX.2+</td>
+											<td>1.8</td>
+											<td>A</td>
+										</tr>
+											<td>Webkit</td>
+											<td>Safari 3.0</td>
+											<td>OSX.4+</td>
+											<td>522.1</td>
+											<td>A</td>
+										</tr>
+										<tr>
+											<td>Webkit</td>
+											<td>Safari 2.0</td>
+											<td>OSX.4+</td>
+											<td>419.3</td>
+											<td>A</td>
+										</tr>
+											<td>Webkit</td>
+											<td>Safari 1.3</td>
+											<td>OSX.3</td>
+											<td>312.8</td>
+											<td>A</td>
+										</tr>
+										<tr>
+											<td>Webkit</td>
+											<td>Safari 1.2</td>
+											<td>OSX.3</td>
+											<td>125.5</td>
+											<td>A</td>
+										</tr>
+											<td>Webkit</td>
+											<td>S60</td>
+											<td>S60</td>
+											<td>413</td>
+											<td>A</td>
+										</tr>
+										<tr>
+											<td>Presto</td>
+											<td>Opera for Wii</td>
+											<td>Wii</td>
+											<td>-</td>
+											<td>A</td>
+										</tr>
+											<td>Presto</td>
+											<td>Opera 9.5</td>
+											<td>Win 88+ / OSX.3+</td>
+											<td>-</td>
+											<td>A</td>
+										</tr>
+										<tr>
+											<td>Presto</td>
+											<td>Opera 9.2</td>
+											<td>Win 88+ / OSX.3+</td>
+											<td>-</td>
+											<td>A</td>
+										</tr>
+											<td>Presto</td>
+											<td>Opera 9.0</td>
+											<td>Win 95+ / OSX.3+</td>
+											<td>-</td>
+											<td>A</td>
 										</tr>
 									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="5">
+												<div class="page-number">
+													Showing 1 to 10 of 51 entries
+												</div>
+												<ul class="nav nav-pills">
+													<li><a href="#">First</a></li>
+													<li><a href="#">Prev</a></li>
+													<li ><a class="active" href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">Next</a></li>
+													<li><a href="#">Last</a></li>
+												</ul>
+											</td>
+										</tr>
+									</tfoot>
 								</table>
 							</div><!-- /end box-body -->
 						</div><!-- /end box -->
 					</div>
-				</div>
+				</div><!-- /end row-fluid -->
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box box-table">
+							<div class="box-header">
+								<h3>Media Table</h3>
+								<form class="form-inline">
+									Show 
+									<select>
+									<option>5</option>
+									<option>10</option>
+									<option>15</option>
+									</select>
+									 entries
+									 <input type="text" class="input-medium search-query">
+									<button type="submit" class="btn">Search</button>
+								</form>
+								<form class="form-search">
+									
+								</form>
+							</div>
+							<div class="box-body">
+								<table class="table table-media">
+									<thead>
+										<tr>
+											<th><input type="checkbox"></th>
+											<th>Image</th>
+											<th>Description</th>
+											<th>Date</th>
+											<th>File info</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-1.png">
+											</td>
+											<td><a href="#">Image1 description</a></td>
+											<td>Feb 12, 2012. 12:28</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-2.png">
+											</td>
+											<td><a href="#">Image2 description</a></td>
+											<td>Feb 12, 2012. 12:27</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-3.png">
+											</td>
+											<td><a href="#">Image3 description</a></td>
+											<td>Feb 12, 2012. 12:26</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-4.png">
+											</td>
+											<td><a href="#">Image4 description</a></td>
+											<td>Feb 12, 2012. 12:24</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-5.png">
+											</td>
+											<td><a href="#">Image5 description</a></td>
+											<td>Feb 12, 2012. 12:23</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-6.png">
+											</td>
+											<td><a href="#">Image6 description</a></td>
+											<td>Feb 12, 2012. 12:22</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-7.png">
+											</td>
+											<td><a href="#">Image7 description</a></td>
+											<td>Feb 12, 2012. 12:21</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-8.png">
+											</td>
+											<td><a href="#">Image8 description</a></td>
+											<td>Feb 12, 2012. 12:18</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-9.png">
+											</td>
+											<td><a href="#">Image9 description</a></td>
+											<td>Feb 12, 2012. 12:16</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<img src="assets/img/img-avata/img-10.png">
+											</td>
+											<td><a href="#">Image10 description</a></td>
+											<td>Feb 12, 2012. 12:14</td>
+											<td>
+												<p><strong>Size:</strong> 215 Kb</p>
+												<p><strong>Format:</strong> .jpg</p>
+											</td>
+											<td>
+												<button class="btn btn-sun tip-bottom" data-original-title="Delete">
+													<i class="icon-trash"></i>
+												</button>
+
+												<button class="btn btn-ufo tip-bottom" data-original-title="Edit">
+													<i class="icon-pencil"></i>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="6">
+												<div class="page-number">
+													Showing 1 to 10 of 51 entries
+												</div>
+												<ul class="nav nav-pills">
+													<li><a href="#">First</a></li>
+													<li><a href="#">Prev</a></li>
+													<li ><a class="active" href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">Next</a></li>
+													<li><a href="#">Last</a></li>
+												</ul>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div><!-- /end box-body -->
+						</div><!-- /end box -->
+					</div>
+				</div><!-- /end row-fluid -->
 
 			</div> <!-- end main -->
 		</div>	 <!-- end row-fluid -->
