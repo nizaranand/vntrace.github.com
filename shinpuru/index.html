@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>Shinpuru Template</title>
+	<title>Shinpuru Template Login</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
@@ -11,59 +11,33 @@
 <body>
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div id="sidebar" class="span2">
-				<a class="logo" href="#">Shinpuru</a>
-				<ul class="nav nav-list">
-					<li class="ufo active">
-						<a href="#"><i class="icon-home"></i>Dashboard</a>
-					</li>
-					<li class="brown">
-						<a href="#"><i class="icon-signal"></i>Charts</a>
-					</li>
-					<li class="ufo">
-						<a href="#"><i class="icon-shopping-cart"></i>Pricing</a>
-					</li>
-					<li class="sun">
-						<a href="#"><i class="icon-reorder"></i>Grids</a>
-					</li>
-					<li class="daylight">
-						<a href="#"><i class="icon-comment"></i>Blog</a>
-					</li>
-					<li class="red">
-						<a href="#"><i class="icon-user"></i>Create Account</a>
-					</li>
-					<li class="brown">
-						<a href="#"><i class="icon-signin"></i> Signin</a>
-					</li>
-				</ul>
-				
-
-				<div class="footer">
-					<!-- <div class="social">
-						<a href="#"><i class="ic-google-add"></i></a>
-						<a href="#"><i class="ic-twitter"></i></a>
-						<a href="#"><i class="ic-facebook"></i></a>
-					</div> -->
-					<p>© 2012 All Rights Reserved.</p>
-				</div>
-
-			</div> <!-- end sidebar -->
-
-			<div id="main" class="span10">
-
-				
+			<div class="span4 offset4" id="form-login">
 				<div class="box">
 					<div class="box-header">
-						<h3>Span12</h3>
+						<h3>Login</h3>
 					</div>
 					<div class="box-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div><!-- /box-body -->
-				</div><!-- /box -->
-
-
-			</div> <!-- end main -->
-			
+						<form class="form-stacked">
+							<div class="input-prepend">
+								<span class="add-on"><i class="icon-user"></i></span>
+								<input class="span10" id="prependedInput" type="text" placeholder="Username">
+							</div>
+							<div class="input-prepend">
+								<span class="add-on"><i class="icon-lock"></i></span>
+								<input class="span10" id="prependedInput" type="text" placeholder="Username">
+							</div>
+							<div class="actions">
+								<label class="checkbox span6">
+									<input type="checkbox" value="">
+									Remember me
+								</label>
+								<a href="dashboard.html" class="btn btn-ufo span6">Login</a>
+							</div>
+							</div>
+						</form>
+					</div><!-- /end box-body -->
+				</div><!-- /end box -->
+			</div>
 		</div>	 <!-- end row-fluid -->
 	</div> <!-- end container-fluid -->
 

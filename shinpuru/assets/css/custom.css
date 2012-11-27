@@ -3,7 +3,7 @@ html, body {
 body {
   color:#4a4a4a;
   background:#f5f5f5;
-  font: 13px/1.6 "Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
+  font: 13px "Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
   line-height:1.5em;
 }
 ul,li {
@@ -23,27 +23,39 @@ a:hover {
   text-decoration:none;
   color:#2c7695;
 }
-.btn-primary {
-  background:#3795bc;
-  padding:10px 35px;
-}
-.btn-primary:hover {
-  background:#2c7695;
-}
-.btn-danger {
-  background:#d56738;
+/*************** btn ****************/
+.btn {
+  background:none;
   border:none;
-  padding:10px 35px;
+  background:#eee;
+  color:#2c7695;
 }
-.btn-danger:hover {
-  background:#b45126;
+.btn-ufo,.btn-red,
+.btn-sun {
+  color:#fff;
 }
-.orange {
-  color:#d56738;
+.btn-ufo {
+  background:#00A0B0;
 }
-.blue {
-  color:#3795bc;
+.btn-ufo:hover,
+.btn-ufo.active {
+  background:#0093a2;
 }
+.btn-red {
+  background:#CC333F;
+}
+.btn-red:hover,
+.btn-red.active {
+  background:#bb2c37;
+}
+.btn-sun {
+  background:#EB6841;
+}
+.btn-sun:hover,
+.btn-sun.active {
+  background:#da5f3b;
+}
+/*************** end btn ****************/
 .title {
   border-bottom:1px solid #eee;
   padding-bottom:8px;
@@ -111,7 +123,7 @@ body > .container-fluid > .row-fluid {
   padding-bottom:50px;
 }
 #sidebar .nav-list > li {
-  border-left:5px solid #444;
+  /*border-left:5px solid #444;*/
   margin-left:-15px;
 }
 #sidebar .nav-list > li > a{
@@ -202,7 +214,6 @@ body > .container-fluid > .row-fluid {
   height: 100%;
   padding-top:20px;
   padding-bottom:20px;
-  /*background:green;*/
   overflow-x:hidden;
   padding-right:2.127659574468085%;
 }
@@ -212,28 +223,21 @@ body > .container-fluid > .row-fluid {
 }
 .box {
   margin-bottom:20px;
-}
-.box-header {
   padding:10px;
-  border:1px solid #eee;
 }
-.box-body {
-  padding:10px;
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
-}
-
-.box-body {
-  background:#fff;
-}
-.box-header  {
-  background:#fff; 
-}
-.box-header {
+.box-header,.box-body,.box-footer {
   padding:3px 10px;
+  border:1px solid #eee;
+  background:#fff;
+  float:left;
+  width:100%;
+  background:#fff;
+  margin-left:-10px;
 }
-
+.box-body,.box-footer {
+  padding:10px;
+  border-top:none;
+}
 .box-body.box-table {
   padding:0px;
 }
@@ -303,64 +307,89 @@ background-color: #fcfcfc;
 .plans-best-choose .plans-header {
   background:#d56738;
 }
+#form-login {
+  margin-top:150px;
+  box-shadow:0px 0px 20px #ddd;
+}
+#form-login .box {
+  margin-bottom:0px;
+  padding-top:0px;
+}
+#form-login .actions {
+  border-top:1px solid #eee;
+  padding:10px 30px;
+  margin-left:-10px;
+  margin-right:-10px;
+}
+#form-login .input-append .add-on,
+#form-login .input-prepend .add-on {
+  height:22px;
+  width:26px;
+  padding:7px 5px;
+  margin:0px;
+  margin-top:-1px;
+  background:#00A0B0;
+  color:#fff;
+  text-shadow:none;
+}
+#form-login .input-prepend #prependedInput {
+  height:36px;
+}
+#form-login .input-prepend,
+#form-login .input-append {
+  margin:10px 0px 20px 0px;
+  text-align:center;
+}
+.box-stats {
+  margin-bottom:20px;
+}
+.box-stats a,.box-stats span{
+  background:#00A0B0;
+  text-align:center;
+  display:block;
+  width:100%;
+  color:#fff;
+  font-size:2.5em;
+  float:left;
+  padding:20px 0px;
+  height:20px;
+}
+.box-stats a:hover,
+.box-stats a.active{
+  background:#0093a2;
+}
+.box-stats span {
+  font-size:1em;
+  background:#0093a2;
+  padding:5px 0px;
+}
+.recent-news ul{
+  margin:0px;
+  padding:0px;
+}
+.recent-news ul li {
+  border-bottom:1px solid #f5f5f5;
+  float:left;
+  margin-bottom:10px;
+  width:100%;
+}
+.news-item {
+  width:85%;
+  float:left;
+}
+.time {
+  text-align:right;
+  width:15%;
+  float:left;
+  color:#999;
+}
+.time .day {
+  font-size:2em;
+}
 /************************************************/
 /********************* end #main **********************/
 /************************************************/
 
-/************************************************/
-/********************* end footer **********************/
-/************************************************/
-
-[class^="ic-"],
-[class*=" ic-"] {
-  height:20px;
-  width:20px;
-  float:left;
-  background: url('../img/icon.png') left top no-repeat;
-}
-.ic-home {
-  background-position: left top;
-}
-.ic-charts {
-  background-position: left -20px;
-}
-.ic-plans {
-  background-position: left -40px;
-}
-.ic-grid {
-  background-position: left -60px;
-}
-.ic-blog {
-  background-position: left -80px;
-}
-.ic-account {
-  background-position: left -100px;
-}
-.ic-login {
-  background-position: left -120px;
-}
-.ic-google-add,.ic-facebook,.ic-twitter {
-  background:url('../img/icon.png') -20px top no-repeat;
-  height:40px;
-  width:40px;
-  float:left;
-}
-.ic-twitter {
-  background-position:-20px -40px;
-}
-.ic-facebook {
-  background-position:-20px -80px;
-}
-.ic-check,.ic-check-gray {
-  background:url('../img/ic-check.png') left top no-repeat;
-  height:9px;
-  width:9px;
-  float:left;
-  margin:5px;
-}
-.ic-check-gray {
-  background-position: -9px top;
-}
 
 /* Ocean Five
 http://www.colourlovers.com/palette/1473/Ocean_Five
