@@ -27,8 +27,8 @@ a:hover {
 .btn {
   background:none;
   border:none;
-  background:#eee;
-  color:#2c7695;
+  background:#ddd;
+  /*color:#2c7695;*/
   text-shadow:none;
 }
 .btn-ufo,.btn-red,
@@ -322,7 +322,7 @@ background-color: #fcfcfc;
 }
 #form-login .box {
   margin-bottom:0px;
-  padding-top:0px;
+  padding-bottom:0px;
 }
 #form-login .actions {
   border-top:1px solid #eee;
