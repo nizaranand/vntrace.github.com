@@ -2,7 +2,7 @@
 	$(document).ready(function(){
         // asyn google webfont loader
          WebFontConfig = {
-            google: { families: [ 'Anaheim', 'Audiowide' ] }
+            google: { families: [ 'Ubuntu' ] }
           };
           (function() {
             var wf = document.createElement('script');
