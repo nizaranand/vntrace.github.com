@@ -28,11 +28,26 @@ a:hover {
   background:none;
   border:none;
   background:#ddd;
-  /*color:#2c7695;*/
   text-shadow:none;
 }
-.btn-ufo,.btn-red,
-.btn-sun {
+.btn-large {
+  padding:10px 20px;
+}
+.btn-ufo,
+.btn-red,
+.btn-sun,
+.btn-brown,
+.btn-daylight,
+.btn-ufo:hover,
+.btn-red:hover,
+.btn-sun:hover,
+.btn-brown:hover,
+.btn-daylight:hover,
+.btn-ufo.active,
+.btn-red.active,
+.btn-sun.active,
+.btn-brown.active,
+.btn-daylight.active {
   color:#fff;
 }
 .btn-ufo {
@@ -56,7 +71,42 @@ a:hover {
 .btn-sun.active {
   background:#da5f3b;
 }
+.btn-brown {
+  background:#6A4A3C;
+}
+.btn-brown:hover,
+.btn-brown:active {
+  background: #5a3f33;
+}
+.btn-daylight {
+  background: #EDC951;
+}
+.btn-daylight:hover,
+.btn-daylight:active {
+  background: #ddbb4b;
+}
+.btn-primary {
+  background:#006DCC;
+}
+.btn-info {
+  background:#49AFCD;
+}
+.btn-danger {
+  background:#BD362F;
+}
+.btn-success {
+  background:#5BB75B;
+}
+.btn-warning {
+  background:#F89406;
+}
+.btn-inverse {
+  background:#363636;
+}
 /*************** end btn ****************/
+.label-brown, .badge-brown {
+  background:#6A4A3C;
+}
 .title {
   border-bottom:1px solid #eee;
   padding-bottom:8px;
@@ -481,6 +531,23 @@ background-color: #fcfcfc;
 .box-table .table-media tr th,
 .box-table .table-media tr td{
   text-align:center;
+}
+.box.tabbable .box-header {
+  padding-bottom:0px;
+}
+.tabbable.box-table .box-header{
+  padding-top:3px;
+}
+.box.tabbable .nav{
+  margin:0px 0px 0px 10px;
+  padding:0px;
+}
+.box.tabbable .nav-tabs {
+  border:none;
+  margin-bottom:1px;
+}
+.box.tabbable .nav-tabs li {
+  /*margin-left:10px;*/
 }
 /************************************************/
 /********************* end #main **********************/
