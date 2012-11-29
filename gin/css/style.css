@@ -250,6 +250,10 @@ a.m-stats-item:hover{
 	z-index: 9999;
 }
 
+.m-sidebar-collapsed ul > li {
+	position: relative;
+}
+
 .m-sidebar-collapsed ul > li > a{
 	background-color: white !important;
 	text-align: center;

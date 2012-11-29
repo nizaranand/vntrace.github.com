@@ -1,0 +1,97 @@
+body {
+	background-image: url(../img/subtle_dots.png);
+	padding: 10px;
+	color: #3881F6;
+}
+
+#boundary {
+	display: block;
+}
+
+#boundary div{
+	position: fixed;
+	z-index: 75;
+	margin: 0;
+	background-color: #3881F6;
+	background-color: rgba(56, 129, 246, .25);
+}
+
+#boundary .left{
+	width: 10px;
+	bottom: 10px;
+	left: 0;
+	top: 10px;
+}
+
+#boundary .right {
+	width: 10px;
+	bottom: 10px;
+	right: 0;
+	top: 10px;	
+}
+
+#boundary .top {
+	height: 10px;
+	top: 0;	
+	left: 0;
+	right: 0;
+}
+
+#boundary .bottom {
+	height: 10px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.navigator {
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+}
+
+
+.navigator ul,
+.navigator li {
+	display: block;
+}
+
+.navigator ul{
+	list-style: none;
+	float: left;
+	margin: 0;
+	background-color: #3881F6;
+	background-color: rgba(56, 129, 246, .25);
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.navigator li {
+	list-style-type: none;
+	float: left;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	color: white;
+}
+
+.navigator li a {
+	display: block;
+	text-align: center;
+}
+
+.navigator li a:hover, 
+.navigator li a.active {
+	background-color: #6BCBFF;
+}
+
+.page-header {
+	text-align: right;
+	float: right;
+	padding: 0 20px;
+}
