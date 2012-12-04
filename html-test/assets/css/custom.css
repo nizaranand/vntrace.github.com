@@ -139,6 +139,7 @@ a:hover {
   border:none;
   color:#fff;
   padding:5px 10px 5px 30px;
+  * padding:5px 10px 1px 30px;
   background:#19868a url('../img/icon-search.png') 5px 4px no-repeat;
   border-radius:0px 4px 4px 0px;
   -o-border-radius:0px 4px 4px 0px;
@@ -150,6 +151,8 @@ a:hover {
 }
 #header .form-inline input{
   width:260px;
+  * width:240px;
+  float:left;
   margin-right:-5px;
   border-radius:4px 0px 0px 4px;
   -o-border-radius:4px 0px 0px 4px;
