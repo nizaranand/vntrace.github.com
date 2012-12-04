@@ -101,12 +101,13 @@
 .navigator a {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
+	position: relative;
 	display: block;
 	float: left;
 	height: 60px;
 	width: 60px;
 	text-align: center;
-	margin: 5px 2px 0 0;
+	margin: 5px 2px 0 2px;
 	line-height: 3;
 	color: #495359;
 	border: 1px solid #353947;
@@ -142,24 +143,31 @@
 }
 
 .navigator .sub-nav {
-	display: none;
 	position: absolute;
-	z-index: 9999;
-	top: -70px;
+	z-index: 1000;
+	top: -74px;
+	display: none;
+	border: 1px solid #52A8EC;
 }
 
-.sub-nav .arrow-border {
-	border-color: #969696 transparent transparent transparent;
+.has-sub.open .sub-nav {
+	display: block;
+}
+
+.has-sub .arrow-border {
+	border-color: #52A8EC transparent transparent transparent;
 	border-style: solid;
 	border-width: 10px;
 	height: 0;
 	width: 0;
 	position: absolute;
-	top: 65px;
+	top: -11px;
 	left: 20px;
+	display: none;
+	z-index: 1001;
 }
 
-.sub-nav .arrow-inner {
+.has-sub .arrow-inner {	
 	border-color: #30323D transparent transparent transparent;
 	border-style: solid;
 	border-width: 10px;
@@ -168,6 +176,10 @@
 	position: absolute;
 	top: -10px;
 	left: -10px;
+}
+
+.has-sub.open .arrow-border {
+	display: block;
 }
 
 .sub-nav ul {

@@ -5,10 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-device.css">	
 
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('a[rel=tooltip]').tooltip();
@@ -29,12 +30,30 @@
 					<i class="icon">&#9834;</i>Home
 				</a>
 			</li>
-			<li>
+			<li class="has-sub">
 				<a href="#">
 					<i class="icon">&#128101;</i>Home
+					<div class="arrow-border">
+						<div class="arrow-inner"></div>
+					</div>
 				</a>
+
+				<div class="sub-nav">
+					<ul class="">
+						<li>
+							<a href="#">
+								<i class="icon">&#59141;</i>Home
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon">&#127925;</i>Home
+							</a>
+						</li>
+					</ul>
+				</div>
 			</li>
-			<li>
+			<li class="has-sub">
 				<a href="#">
 					<i class="icon">&#59212;</i>Sub
 				</a>
@@ -51,10 +70,6 @@
 							</a>
 						</li>
 					</ul>
-
-					<div class="arrow-border">
-						<div class="arrow-inner"></div>
-					</div>
 				</div>
 			</li>
 		</ul>
