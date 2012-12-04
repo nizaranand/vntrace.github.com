@@ -22,11 +22,19 @@ a:hover {
 
 /*************** navbar ****************/
 .navbar-fixed-top .navbar-inner {
-  background-image:none;
-  background:#28a9ae;
-  box-shadow:none;
-  border-bottom-color:#148488;
   min-height:20px;
+}
+.navbar-blue .navbar-inner {
+  box-shadow:none;
+  background-color: #28a9ae;
+  background-image: -moz-linear-gradient(top, #28a9ae, #28a9ae);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28a9ae), to(#28a9ae));
+  background-image: -webkit-linear-gradient(top, #28a9ae, #28a9ae);
+  background-image: -o-linear-gradient(top, #28a9ae, #28a9ae);
+  background-image: linear-gradient(to bottom, #28a9ae, #28a9ae);
+  background-repeat: repeat-x;
+  border-color: #148488;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#28a9ae', endColorstr='#28a9ae', GradientType=0);
 }
 .navbar .nav {
   margin:0px;
@@ -369,6 +377,8 @@ i.icon-notice {
 }
 #slides .nav li {
   float:left;
+  * width:145px;/*IE7*/
+  * padding-right:5px;
   margin:0px 0px 10px 0px;
 }
 #slides .nav li:nth-child(odd) {
