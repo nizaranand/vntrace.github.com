@@ -157,7 +157,7 @@ a:hover {
 .box-user span{
   display:block;
   font-size:12px;
-  line-height:1.5em;
+  line-height:1.3em;
 }
 .box-user strong{
   color:#f46611;
@@ -331,6 +331,7 @@ i.icon-notice {
 #slides {
   position:relative;
   overflow:hidden;
+  * height:430px;/*IE7*/
 }
 #slides .slides_container {
   width:100%;
