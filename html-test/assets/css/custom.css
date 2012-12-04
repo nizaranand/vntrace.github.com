@@ -26,6 +26,7 @@ a:hover {
   background:#28a9ae;
   box-shadow:none;
   border-bottom-color:#148488;
+  min-height:20px;
 }
 .navbar .nav {
   margin:0px;
@@ -35,12 +36,9 @@ a:hover {
 .navbar .nav > li > a {
   text-shadow:none;
   color:#fff;
-  padding:10px 10px 10px 7px;
   border-left:1px solid #3fb7bc;
-}
-.navbar .nav > li > a {
   background:#28a9ae url('../img/icon-nav.gif') no-repeat;
-  padding:10px 13px 10px 40px;
+  padding:10px 13px 6px 40px;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li.active > a,
@@ -311,7 +309,7 @@ i.icon-notice {
   margin:-3px 5px 0px 0px;
 }
 .icon-messages {
-  background:url('../img/icon.png') -16px -216px;
+  background:url('../img/icon.png') -17px -216px;
   height:17px;
   width:27px;
   margin-top:0px;
