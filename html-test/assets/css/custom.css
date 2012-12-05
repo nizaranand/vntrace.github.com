@@ -364,15 +364,15 @@ h5.forumtitle{
   top:0px;
   z-index:100;
   padding-left:20px;
-  background:url('../img/icon.png') -16px -240px no-repeat;
+  background:url('../img/icon-slider.png') -16px top no-repeat;
 }
 #slides .prev {
   position:absolute;
   left:-30px;
   top:0px;
   z-index:100;
-  padding-right:20px;
-  background:url('../img/icon.png') 32px -240px no-repeat;
+  padding-right:25px;
+  background:url('../img/icon-slider.png') 32px top no-repeat;
 }
 
 
