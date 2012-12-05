@@ -593,6 +593,48 @@ background-color: #fcfcfc;
 .box.tabbable .nav-tabs li {
   /*margin-left:10px;*/
 }
+
+.add-userlist {
+  background:#eee;
+  padding:10px;
+}
+.userlist {
+  margin:0px;
+  padding:0px;
+}
+.userlist li {
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed #DDD;
+  padding: 10px;
+  position:relative;
+}
+.userlist .btn-group {
+  position:absolute;
+  right:0px;
+  top:10px;
+}
+.userlist li .avatar{
+  float: left;
+  margin-right: 10px;
+  padding: 2px;
+  border: 1px solid #EEE;
+  width:50px;
+  height:50px;
+}
+.more {
+margin-top:10px;
+display: block;
+text-align: center;
+background: #EEE;
+padding: 5px 0;
+font-size: 12px;
+text-transform: uppercase;
+border-top: 1px solid #DDD;
+}
+.more:hover {
+  background:#f4f4f4;
+}
 /************************************************/
 /********************* end #main **********************/
 /************************************************/
