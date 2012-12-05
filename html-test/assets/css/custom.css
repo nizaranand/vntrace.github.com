@@ -61,9 +61,9 @@ a:hover {
 .navbar .nav > li.market > a{
   background-color:#cb60b0;
   color:#fff;
-  height:20px;
-  padding-right:13px;
+  height:20px; 
 }
+html>/**/body .navbar .nav > .market > a{padding-right:13px;}
 /*************** icon ****************/
 .navbar .nav > li.forum > a{
   background-position:0px -40px;
