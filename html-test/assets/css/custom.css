@@ -311,12 +311,10 @@ h5.forumtitle{
 #slides {
   position:relative;
   overflow:hidden;
-  * height:430px;/*IE7*/
 }
 #slides .slides_container {
   width:100%;
-  height:430px;
-  /*background:#333;*/
+  height:430px; 
 }
 #slides .slides_container .view-more {
   width:100%;
@@ -351,7 +349,7 @@ h5.forumtitle{
 }
 #slides .nav li {
   float:left;
-  * width:145px;/*IE7*/
+  * width:145px;
   * padding-right:5px;
   margin:0px 0px 10px 0px;
 }
