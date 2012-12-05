@@ -54,35 +54,40 @@ a:hover {
   background:#00A0B0;
 }
 .btn-ufo:hover,
-.btn-ufo.active {
+.btn-ufo.active,
+.btn-group.open .btn-ufo.dropdown-toggle {
   background:#0093a2;
 }
 .btn-red {
   background:#CC333F;
 }
 .btn-red:hover,
-.btn-red.active {
+.btn-red.active,
+.btn-group.open .btn-red.dropdown-toggle {
   background:#bb2c37;
 }
 .btn-sun {
   background:#EB6841;
 }
 .btn-sun:hover,
-.btn-sun.active {
+.btn-sun.active,
+.btn-group.open .btn-sun.dropdown-toggle {
   background:#da5f3b;
 }
 .btn-brown {
   background:#6A4A3C;
 }
 .btn-brown:hover,
-.btn-brown:active {
+.btn-brown:active,
+.btn-group.open .btn-brown.dropdown-toggle {
   background: #5a3f33;
 }
 .btn-daylight {
   background: #EDC951;
 }
 .btn-daylight:hover,
-.btn-daylight:active {
+.btn-daylight:active,
+.btn-group.open .btn-daylight.dropdown-toggle {
   background: #ddbb4b;
 }
 .btn-primary {
@@ -102,6 +107,12 @@ a:hover {
 }
 .btn-inverse {
   background:#363636;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  background:none;
+  background-color:#49AFCD;
 }
 /*************** end btn ****************/
 .label-brown, .badge-brown {

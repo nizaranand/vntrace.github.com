@@ -119,6 +119,378 @@
 
 				<div class="row-fluid">
 					<div class="span12">
+						<div class="box tabbable box-table">
+							<div class="box-header">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab1" data-toggle="tab">Button</a></li>
+									<li><a href="#tab2" data-toggle="tab">Button dropdowns</a></li>
+									<li><a href="#tab3" data-toggle="tab">Labels and badges</a></li>
+								</ul>
+							</div>
+							<div class="box-body">
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab1">
+										<table class="table">
+											<thead>
+											<tr>
+												<th>Button</th>
+												<th>class=""</th>
+												<th>Button</th>
+												<th>class=""</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><button class="btn">Default</button></td>
+													<td><code>btn</code></td>
+													<td>
+														<button class="btn btn-primary">btn-primary</button>
+													</td>
+													<td><code>btn btn-primary</code></td>
+												</tr>
+												<tr>
+													<td><button class="btn btn-ufo">btn-ufo</button></td>
+													<td><code>btn btn-ufo</code></td>
+													<td>
+														<button class="btn btn-info">btn-info</button>
+													</td>
+													<td><code>btn btn-info</code></td>
+												</tr>
+												<tr>
+													<td><button class="btn btn-sun">btn-sun</button></td>
+													<td><code>btn btn-sun</code></td>
+													<td>
+														<button class="btn btn-warning">btn-warning</button>
+													</td>
+													<td><code>btn btn-warning</code></td>
+												</tr>
+												<tr>
+													<td><button class="btn btn-red">btn-red</button></td>
+													<td><code>btn btn-red</code></td>
+													<td><button class="btn btn-danger">btn-danger</button></td>
+													<td><code>btn btn-danger</code></td>
+												</tr>
+												<tr>
+													<td><button class="btn btn-brown">btn-brown</button></td>
+													<td><code>btn btn-brown</code></td>
+													<td><button class="btn btn-inverse">btn-inverse</button></td>
+													<td><code>btn btn-inverse</code></td>
+												</tr>
+												<tr>
+													<td><button class="btn btn-daylight">btn-daylight</button></td>
+													<td><code>btn btn-daylight</code></td>
+													<td><button class="btn btn-success">btn-success</button></td>
+													<td><code>btn btn-success</code></td>
+												</tr>
+											</tbody>
+										</table>
+									</div><!-- /tab1 -->
+									<div class="tab-pane" id="tab2">
+										<table class="table">
+											<thead>
+											<tr>
+												<th>Button dropdowns</th>
+												<th>class=""</th>
+												<th>Button dropdowns</th>
+												<th>class=""</th>
+												<th>Code</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-default">Default</button>
+															<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn</code></td>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-primary">Primary</button>
+															<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-primary</code></td>
+													<td rowspan="6">
+														<div class="prettyprint linenums well"><ol class="linenums"> <li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-group"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Action</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn dropdown-toggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="com">&lt;!-- dropdown menu links --&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/ul&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-ufo">btn-ufo</button>
+															<button class="btn btn-ufo dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-ufo</code></td>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-info">Info</button>
+															<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-info</code></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-sun">btn-sun</button>
+															<button class="btn btn-sun dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-sun</code></td>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-warning">btn-warning</button>
+															<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-warning</code></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-red">btn-red</button>
+															<button class="btn btn-red dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-red</code></td>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-danger">btn-danger</button>
+															<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-danger</code></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-brown">btn-brown</button>
+															<button class="btn btn-brown dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-brown</code></td>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-inverse">btn-inverse</button>
+															<button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-inverse</code></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-daylight">btn-daylight</button>
+															<button class="btn btn-daylight dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-daylight</code></td>
+													<td>
+														<div class="btn-group">
+															<button class="btn btn-success">btn-success</button>
+															<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu">
+																<li><a href="#">Action</a></li>
+																<li><a href="#">Action</a></li>
+															</ul>
+														</div>
+													</td>
+													<td><code>btn btn-success</code></td>
+												</tr>
+											</tbody>
+										</table>
+									</div><!-- /tab2 -->
+									<div class="tab-pane" id="tab3">
+										<table class="table">
+											<thead>
+											  <tr>
+												<th>Labels</th>
+												<th>Markup</th>
+												<th>Badge</th>
+												<th>Markup</th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td>
+												  <span class="label">Default</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge">Default</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge"&gt;Default&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+												  <span class="label label-success">Success</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge badge-success">Success</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+												  <span class="label label-warning">Warning</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge badge-warning">Warning</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+												  <span class="label label-important">Important</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge badge-important">Important</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge badge-important"&gt;Important&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+												  <span class="label label-info">Info</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge badge-info">Info</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge badge-info"&gt;Info&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+												  <span class="label label-inverse">Inverse</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge badge-inverse">Inverse</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge badge-inverse"&gt;Inverse&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+												  <span class="label label-brown">Brown</span>
+												</td>
+												<td>
+												  <code>&lt;span class="label label-brown"&gt;Brown&lt;/span&gt;</code>
+												</td>
+												<td>
+												  <span class="badge badge-brown">Brown</span>
+												</td>
+												<td>
+												  <code>&lt;span class="badge badge-brown"&gt;Brown&lt;/span&gt;</code>
+												</td>
+											  </tr>
+											</tbody>
+										  </table>
+									</div><!-- /tab3 -->
+								</div>
+							</div>
+						</div><!-- /end box -->
+					</div>
+				</div><!-- /end row-fluid -->
+
+				<div class="row-fluid">
+					<div class="span12">
 						<div class="box box-table">
 							<div class="box-header">
 								<h3>Table</h3>
@@ -742,377 +1114,6 @@
 									</div>
 								</form>
 							</div><!-- /end box-body -->
-						</div><!-- /end box -->
-					</div>
-				</div><!-- /end row-fluid -->
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="box tabbable box-table">
-							<div class="box-header">
-								<ul class="nav nav-tabs">
-									<li class="active"><a href="#tab1" data-toggle="tab">Button</a></li>
-									<li><a href="#tab2" data-toggle="tab">Button dropdowns</a></li>
-									<li><a href="#tab3" data-toggle="tab">Labels and badges</a></li>
-								</ul>
-							</div>
-							<div class="box-body">
-								<div class="tab-content">
-									<div class="tab-pane active" id="tab1">
-										<table class="table">
-											<thead>
-											<tr>
-												<th>Button</th>
-												<th>class=""</th>
-												<th>Button</th>
-												<th>class=""</th>
-											</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td><button class="btn">Default</button></td>
-													<td><code>btn</code></td>
-													<td>
-														<button class="btn btn-primary">btn-primary</button>
-													</td>
-													<td><code>btn btn-primary</code></td>
-												</tr>
-												<tr>
-													<td><button class="btn btn-ufo">btn-ufo</button></td>
-													<td><code>btn btn-ufo</code></td>
-													<td>
-														<button class="btn btn-info">btn-info</button>
-													</td>
-													<td><code>btn btn-info</code></td>
-												</tr>
-												<tr>
-													<td><button class="btn btn-sun">btn-sun</button></td>
-													<td><code>btn btn-sun</code></td>
-													<td>
-														<button class="btn btn-warning">btn-warning</button>
-													</td>
-													<td><code>btn btn-warning</code></td>
-												</tr>
-												<tr>
-													<td><button class="btn btn-red">btn-red</button></td>
-													<td><code>btn btn-red</code></td>
-													<td><button class="btn btn-danger">btn-danger</button></td>
-													<td><code>btn btn-danger</code></td>
-												</tr>
-												<tr>
-													<td><button class="btn btn-brown">btn-brown</button></td>
-													<td><code>btn btn-brown</code></td>
-													<td><button class="btn btn-inverse">btn-inverse</button></td>
-													<td><code>btn btn-inverse</code></td>
-												</tr>
-												<tr>
-													<td><button class="btn btn-daylight">btn-daylight</button></td>
-													<td><code>btn btn-daylight</code></td>
-													<td><button class="btn btn-success">btn-success</button></td>
-													<td><code>btn btn-success</code></td>
-												</tr>
-											</tbody>
-										</table>
-									</div><!-- /tab1 -->
-									<div class="tab-pane" id="tab2">
-										<table class="table">
-											<thead>
-											<tr>
-												<th>Button dropdowns</th>
-												<th>class=""</th>
-												<th>Button dropdowns</th>
-												<th>class=""</th>
-												<th>Code</th>
-											</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-default">Default</button>
-															<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn</code></td>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-primary">Primary</button>
-															<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-primary</code></td>
-													<td rowspan="6">
-														<div class="prettyprint linenums well"><ol class="linenums"> <li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-group"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Action</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn dropdown-toggle"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"caret"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="com">&lt;!-- dropdown menu links --&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/ul&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></div>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-ufo">btn-ufo</button>
-															<button class="btn btn-ufo dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-ufo</code></td>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-info">Info</button>
-															<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-info</code></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-sun">btn-sun</button>
-															<button class="btn btn-sun dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-sun</code></td>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-warning">btn-warning</button>
-															<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-warning</code></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-red">btn-red</button>
-															<button class="btn btn-red dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-red</code></td>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-danger">btn-danger</button>
-															<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-danger</code></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-brown">btn-brown</button>
-															<button class="btn btn-brown dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-brown</code></td>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-inverse">btn-inverse</button>
-															<button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-inverse</code></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-daylight">btn-daylight</button>
-															<button class="btn btn-daylight dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-daylight</code></td>
-													<td>
-														<div class="btn-group">
-															<button class="btn btn-success">btn-success</button>
-															<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-															<span class="caret"></span>
-															</button>
-															<ul class="dropdown-menu">
-																<li><a href="#">Action</a></li>
-																<li><a href="#">Action</a></li>
-															</ul>
-														</div>
-													</td>
-													<td><code>btn btn-success</code></td>
-												</tr>
-											</tbody>
-										</table>
-									</div><!-- /tab2 -->
-									<div class="tab-pane" id="tab3">
-										<table class="table">
-											<thead>
-											  <tr>
-												<th>Labels</th>
-												<th>Markup</th>
-												<th>Badge</th>
-												<th>Markup</th>
-											  </tr>
-											</thead>
-											<tbody>
-											  <tr>
-												<td>
-												  <span class="label">Default</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge">Default</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge"&gt;Default&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											  <tr>
-												<td>
-												  <span class="label label-success">Success</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge badge-success">Success</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											  <tr>
-												<td>
-												  <span class="label label-warning">Warning</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge badge-warning">Warning</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											  <tr>
-												<td>
-												  <span class="label label-important">Important</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge badge-important">Important</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge badge-important"&gt;Important&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											  <tr>
-												<td>
-												  <span class="label label-info">Info</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge badge-info">Info</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge badge-info"&gt;Info&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											  <tr>
-												<td>
-												  <span class="label label-inverse">Inverse</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge badge-inverse">Inverse</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge badge-inverse"&gt;Inverse&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											  <tr>
-												<td>
-												  <span class="label label-brown">Brown</span>
-												</td>
-												<td>
-												  <code>&lt;span class="label label-brown"&gt;Brown&lt;/span&gt;</code>
-												</td>
-												<td>
-												  <span class="badge badge-brown">Brown</span>
-												</td>
-												<td>
-												  <code>&lt;span class="badge badge-brown"&gt;Brown&lt;/span&gt;</code>
-												</td>
-											  </tr>
-											</tbody>
-										  </table>
-									</div><!-- /tab3 -->
-								</div>
-							</div>
 						</div><!-- /end box -->
 					</div>
 				</div><!-- /end row-fluid -->
