@@ -46,7 +46,7 @@ a:hover {
   color:#fff;
   border-left:1px solid #3fb7bc;
   background:#28a9ae url('../img/icon-nav.gif') no-repeat;
-  padding:10px 13px 6px 40px;
+  padding:10px 15px 6px 40px;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li.active > a,
@@ -159,32 +159,35 @@ a:hover {
   -moz-border-radius:4px 0px 0px 4px;
   -webkit-border-radius:4px 0px 0px 4px;
 }
-.box-user img {
+.userbar img {
   float:left;
   margin-right:5px;
 }
-.box-user span{
+.userbar .avata {
+  border:1px solid #c1c1c1;
+}
+.userbar span{
   display:block;
   font-size:12px;
-  line-height:1.3em;
+  line-height:1.5em;
 }
-.box-user strong{
+.userbar strong{
   color:#f46611;
 }
-.footer-header {
+.header-bottom {
   background:url('../img/bg-bottom-hd.png') no-repeat;
   height:142px;
   position:relative;
 }
-.footer-header .members{
+.header-bottom .members{
   position:absolute;
   bottom:8px;
   left:0px;
 }
-.footer-header .members span {
+.header-bottom .members span {
   margin-left:55px;
 }
-.footer-header .members span strong {
+.header-bottom .members span strong {
   color:#f46611;
   font-size:15px;
   margin-right:5px;
@@ -229,34 +232,27 @@ a:hover {
   border:1px solid #e0e0e0;
   margin-top:1px;
 }
-.box-info {
+#forum {
+  width:100%;
+  margin:0px;
+}
+.foruminfo {
   border-bottom:1px solid #e7e7e7;
   width:100%;
   float:left;
   margin-bottom:10px;
 }
-.box-info>i,
-i.icon-notice {
-  background:url('../img/icon.png') left top no-repeat;
+.foruminfo .forumicon {
   height:48px;
   width:50px;
   float:left;
 }
-.box-info>i.icon-commenting {
-  background-position:0px -48px;
-}
-.box-info>i.icon-birthday {
-  background-position:0px -96px;
-}
-.box-info>i.icon-product {
-  background-position:0px -144px;
-}
-.info {
+.datacontainer {
   margin-left:10px;
   float:left;
   width:560px;
 }
-.info h5{
+h5.forumtitle{
   background:#fff7ec;
   position:relative;
   padding:7px 5px;
@@ -264,28 +260,28 @@ i.icon-notice {
   margin:0px;
   font-size:15px;
 }
-.info .nav-pills {
+.datacontainer .nav-pills {
   margin-top:15px;
 }
-.info .nav-pills li {
+.datacontainer .nav-pills li {
   width:50%;
 }
-.info .nav-pills li a {
+.datacontainer .nav-pills li a {
   font-weight:bold;
   margin:0px 0px 5px 0px;
   padding:0px;
 }
-.info .nav-pills li a:hover{
+.datacontainer .nav-pills li a:hover{
   background:none;
 }
-.info-post {
+.forum-stats {
   position:absolute;
   right:5px;
   top:5px;
   font-size:11px;
   color:#565656;
 }
-.writing-master a{
+.lastpostby a{
   color:#f46611;
 }
 /*************** sidebar ****************/
@@ -307,31 +303,6 @@ i.icon-notice {
   height:30px;
   display:block;
   width:100%;
-}
-/*************** icon ****************/
-[class*="icon-"] {
-  float:left;
-}
-.icon-comment,.icon-detailed,
-.icon-repeat,.icon-messages{
-  background:url('../img/icon.png') left -222px no-repeat;
-  height:16px;
-  width:16px;
-  margin:-3px 5px 0px 0px;
-}
-.icon-messages {
-  background:url('../img/icon.png') -17px -216px;
-  height:17px;
-  width:27px;
-  margin-top:0px;
-}
-.icon-detailed {
-  background-position:0px -208px;
-  float:none;
-}
-.icon-repeat {
-  background-position:0px -256px;
-  margin-top:0px;
 }
 /*************** slider ****************/
 .pagination {
