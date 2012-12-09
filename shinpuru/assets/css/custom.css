@@ -383,38 +383,59 @@ background-color: #fcfcfc;
 .plans-best-choose .plans-header {
   background:#EB6841;
 }
+.header-login {
+  text-align:center;
+  font-size:30px;
+  border-bottom:1px solid #fff;
+  padding:25px 0px;
+  background:url('../img/bg-repeat.png') repeat;
+  box-shadow:0px 1px 1px #e0e0e0;
+}
+.header-login a {
+  color:#7c7c7c;
+  font-weight:bold;
+}
 #form-login {
-  margin-top:150px;
-  box-shadow:0px 0px 20px #ddd;
+  width:430px;
+  margin:0px auto;
+  padding:0px auto;
+  padding-top:120px;
+}
+#form-login .dash{
+  position:absolute;
+  width:490px;
+  height:10px;
+  z-index:1000;
+  display:block;
+  margin-left:-30px;
 }
 #form-login .box {
   margin-bottom:0px;
   padding-bottom:0px;
 }
-#form-login .actions {
-  border-top:1px solid #eee;
-  padding:10px 30px;
-  margin-left:-10px;
-  margin-right:-10px;
+#form-login .box-header {
+  padding:10px 20px;
+  color:#7c7c7c;
 }
-#form-login .input-append .add-on,
-#form-login .input-prepend .add-on {
-  height:22px;
-  width:26px;
-  padding:7px 5px;
-  margin:0px;
-  background:#00A0B0;
-  color:#fff;
-  text-shadow:none;
-  border:none;
+#form-login .box-body {
+  padding:20px 20px 0px 20px;
 }
-#form-login .input-prepend #prependedInput {
-  height:36px;
+#form-login .form-actions {
+  margin:20px -20px 0px -20px;
 }
-#form-login .input-prepend,
-#form-login .input-append {
-  margin:10px 0px 20px 0px;
-  text-align:center;
+#form-login form input[type="text"] {
+  width:360px;
+  padding-right:20px;
+}
+#form-login form .user-name {
+  background:url('../img/ic-user.png') 365px 5px no-repeat;
+}
+#form-login form .password {
+  background:url('../img/ic-password.png') 365px 5px no-repeat;
+}
+#form-login form .checkbox {
+  color:#999;
+  font-size:12px;
 }
 .box-stats {
   margin-bottom:30px;
