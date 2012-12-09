@@ -52,9 +52,11 @@
 
         //
         $('.collapse').toggle(function(){
+            $(this).children().removeClass('icon-resize-small').addClass('icon-resize-full')
             $(this).parents('.box').find('.box-body').slideUp()
             $(this).parents('.box').find('.box-footer').slideUp()
         },function(){
+            $(this).children().removeClass('icon-resize-full').addClass('icon-resize-small')
             $(this).parents('.box').find('.box-body').slideDown()
             $(this).parents('.box').find('.box-footer').slideDown()
         });
