@@ -10,7 +10,6 @@ ul,li {
   list-style-type:none;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-weight:500;
   line-height:1em;
 }
 h1 {
@@ -291,6 +290,22 @@ body > .container-fluid > .row-fluid {
   padding:10px;
   border-top:none;
 }
+.box-header .collapse {
+  position:absolute;
+  right:10px;
+  top:10px;
+  height:20px;
+  width:20px;
+  border:1px solid #eee;
+  text-align:center;
+  /*border-radius:4px;*/
+  background:#f9f9f9;
+  color:#999;
+}
+.box-header .collapse:hover {
+  background:#f1f1f1;
+  color:#777;
+}
 .box-body.box-table {
   padding:0px;
 }
@@ -432,39 +447,7 @@ background-color: #fcfcfc;
   -moz-border-radius:0px 0px 2px 2px;
   -webkit-border-radius:0px 0px 2px 2px;
 }
-.left-stats {
-  background:#0093a2;
-  border-radius:2px;
-  -o-border-radius:2px;
-  -moz-border-radius:2px;
-  -webkit-border-radius:2px;
-}
-.left-stats a,.left-stats span{
-  margin-left:4%;
-  padding-left:4%;
-  text-align:left;
-  width:93%;
-}
-.left-stats span {
-  background:#00A0B0;
-}
-.inline-stats a,.inline-stats span {
-  width:60%;
-  border-radius:2px 0px 0px 2px;
-  -o-border-radius:2px 0px 0px 2px;
-  -moz-border-radius:2px 0px 0px 2px;
-  -webkit-border-radius:2px 0px 0px 2px;
-  min-height:70px;
-  padding:10px 0px;
-  line-height:1.7em;
-}
-.inline-stats span {
-  width:40%;
-  border-radius:0px 2px 2px 0px;
-  -o-border-radius:0px 2px 2px 0px;
-  -moz-border-radius:0px 2px 2px 0px;
-  -webkit-border-radius:0px 2px 2px 0px;
-}
+
 .recent-news ul{
   margin:0px;
   padding:0px;
@@ -476,14 +459,17 @@ background-color: #fcfcfc;
   width:100%;
 }
 .news-item {
-  width:85%;
+  width:80%;
   float:left;
 }
 .time {
   text-align:right;
-  width:15%;
+  width:20%;
   float:left;
   color:#999;
+}
+.time span {
+  display:block;
 }
 .time .day {
   font-size:2em;
@@ -508,20 +494,26 @@ background-color: #fcfcfc;
 }
 .box-table .box-header form select {
   width:80px;
-  height:20px;
+  height:26px;
 }
 .box-table .box-header .form-search{
   position:absolute;
-  right:10px;
+  right:40px;
   top:7px;
 }
 .box-table .box-header .form-search input {
   padding-left:25px;
 }
-.box-table .box-header .form-search .icon-search {
+.box-table .box-header .form-search input:focus {
+  width:300px;
+}
+.box-table .box-header .form-search .icon-search-white {
   left:20px;
-  top:6px;
+  top:8px;
   position:absolute;
+  background:url('../img/search-white.png') left top no-repeat;
+  height:15px;
+  width:15px;
 }
 .box-table .table{
   padding:10px;
@@ -575,24 +567,40 @@ background-color: #fcfcfc;
 .box-table .table-media tr th,
 .box-table .table-media tr td{
   text-align:center;
+  vertical-align: middle;
 }
 .box.tabbable .box-header {
   padding-bottom:0px;
 }
 .tabbable.box-table .box-header{
-  padding-top:3px;
+  /*background:none;*/
+  border-top:none;
+  border-left:none;
 }
 .box.tabbable .nav{
-  margin:0px 0px 0px 10px;
   padding:0px;
 }
 .box.tabbable .nav-tabs {
   border:none;
-  margin-bottom:1px;
+  margin-bottom:0px;
 }
 .box.tabbable .nav-tabs li {
-  /*margin-left:10px;*/
+
 }
+.box.tabbable .nav-tabs li a {
+  padding:10px;
+  border-bottom-color:#E9E9E9;
+  background:#fafafa;
+  border-radius:0px;
+  -o-border-radius:0px;
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+}
+.box.tabbable .nav-tabs li.active a,
+.box.tabbable .nav-tabs li a:hover {
+  background:#fff;
+}
+
 
 .add-userlist {
   background:#eee;
@@ -634,6 +642,15 @@ border-top: 1px solid #DDD;
 }
 .more:hover {
   background:#f4f4f4;
+}
+.box-body>form {
+  margin:0px;
+}
+.box-body .form-actions {
+  margin-left:-20px;
+  margin-right:-20px;
+  margin:0px -10px -10px -10px;
+  background:#F9F9F9;
 }
 /************************************************/
 /********************* end #main **********************/
