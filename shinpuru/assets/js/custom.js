@@ -50,6 +50,15 @@
             }
         });
 
+        //
+        $('.collapse').toggle(function(){
+            $(this).parents('.box').find('.box-body').slideUp()
+            $(this).parents('.box').find('.box-footer').slideUp()
+        },function(){
+            $(this).parents('.box').find('.box-body').slideDown()
+            $(this).parents('.box').find('.box-footer').slideDown()
+        });
+
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();

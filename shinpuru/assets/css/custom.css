@@ -258,9 +258,9 @@ body > .container-fluid > .row-fluid {
 /************************************************/
 
 /************************************************/
-/********************* #main **********************/
+/********************* .main **********************/
 /************************************************/
-#main {
+.main {
   position: relative;
   height: 100%;
   padding-top:20px;
@@ -564,6 +564,9 @@ background-color: #fcfcfc;
 .box-table .table-media p{
   margin:0px;
 }
+.table-media .description {
+  width:40%;
+}
 .box-table .table-media tr th,
 .box-table .table-media tr td{
   text-align:center;
@@ -652,8 +655,18 @@ border-top: 1px solid #DDD;
   margin:0px -10px -10px -10px;
   background:#F9F9F9;
 }
+.alert i {
+  font-size:30px;
+  float:left;
+  margin-right:10px;
+}
+.alert-block i {
+  font-size:50px;
+  height:100px;
+  margin-top:5px;
+}
 /************************************************/
-/********************* end #main **********************/
+/********************* end .main **********************/
 /************************************************/
 
 
