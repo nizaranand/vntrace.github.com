@@ -2,7 +2,7 @@
 	$(document).ready(function(){
         // asyn google webfont loader
          WebFontConfig = {
-            google: { families: [ 'Ubuntu' ] }
+            google: { families: [ 'Audiowide'] }
           };
           (function() {
             var wf = document.createElement('script');
