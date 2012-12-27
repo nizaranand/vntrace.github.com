@@ -770,25 +770,6 @@ border-top: 1px solid #DDD;
 /********************* end .main **********************/
 /************************************************/
 
-
-/* Ocean Five
-http://www.colourlovers.com/palette/1473/Ocean_Five
-=======================================*/
-.ufo {
-  color: #00A0B0;
-}
-.brown {
-  color: #6A4A3C;
-}
-.red {
-  color: #CC333F;
-}
-.sun {
-  color: #EB6841;
-}
-.daylight {
-  color: #EDC951;
-}
 /**************ic-icon**************/
 /*=======================================*/
 .box-stats {
@@ -890,6 +871,7 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
   height:45px;
   padding:0px 10px;
   margin-left:-20px;
+  color:#CC333F;
 }
 .stats-table .left span {
   font-size:26px;
@@ -918,9 +900,11 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 }
 .stats-table li:nth-child(odd) .left{
   background:#eaeaea;
+  color:#6A4A3C;
 }
 .stats-table li:nth-child(odd) .right {
   background:#f8f8f8;
+  color:#6A4A3C;
 }
 /**************ic-icon**************/
 /*=======================================*/
@@ -965,3 +949,57 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 .stats-list .ic-pending-orders {
   background-position:-30px -530px;
 }
+
+/* Ocean Five
+http://www.colourlovers.com/palette/1473/Ocean_Five
+=======================================*/
+.ufo {
+  color: #00A0B0;
+}
+.box-stats .left.ufo,
+.box-stats .right.ufo .progress .bar {
+  background-image:none;
+  background-color: #00A0B0;
+}
+.brown{
+  color: #6A4A3C;
+}a.brown:hover {
+  color:#5f4236;
+}
+.box-stats .left.brown,
+.box-stats .right.brown .progress .bar {
+  background-image:none;
+  background-color: #6A4A3C;
+}
+.red{
+  color: #CC333F;
+}a.red:hover {
+  color:#bd2f3b;
+}
+.box-stats .left.red,
+.box-stats .right.red .progress .bar {
+  background-image:none;
+  background-color: #CC333F;
+}
+.sun{
+  color: #EB6841;
+}a.sun:hover {
+  color:#df623c;
+}
+.box-stats .left.sun,
+.box-stats .right.sun .progress .bar {
+  background-image:none;
+  background-color: #EB6841;
+}
+.daylight {
+  color: #EDC951;
+}a.daylight:hover {
+  color:#e0be4c;
+}
+.box-stats .left.daylight,
+.box-stats .right.daylight .progress .bar {
+  background-image:none;
+  background-color: #EDC951;
+}
+
+
