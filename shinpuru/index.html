@@ -9,29 +9,32 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<!-- font-body -->
 <body>
+	<div class="header-login">
+		<a href="#">Shinpuru</a>
+	</div>
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div class="span4 offset4" id="form-login">
+			<div id="form-login">
+				<img class="dash" src="assets/img/bg-dash.png" alt="">
 				<div class="box">
 					<div class="box-header">
 						<h3>Login</h3>
 					</div>
 					<div class="box-body">
-						<form class="form-stacked">
-							<div class="input-prepend">
-								<span class="add-on"><i class="icon-user"></i></span>
-								<input class="span10" id="prependedInput" type="text" placeholder="Username">
-							</div>
-							<div class="input-prepend">
-								<span class="add-on"><i class="icon-lock"></i></span>
-								<input class="span10" id="prependedInput" type="text" placeholder="Password">
-							</div>
-							<div class="actions">
-								<label class="checkbox span6">
-									<input type="checkbox" value="">
-									Remember me
-								</label>
-								<a href="dashboard.html" class="btn btn-ufo span6">Login</a>
+						<form>
+							<label>Name</label>
+							<input class="user-name" type="text">
+							<label>Password</label>
+							<input class="password" type="text">
+							<label class="checkbox">
+								<input type="checkbox" value="">
+								Remember me
+							</label>
+							<div class="form-actions">
+								<a href="dashboard.html" class="btn btn-ufo">
+									<i class="icon-signin"></i>
+									Login
+								</a>
 							</div>
 							</div>
 						</form>
