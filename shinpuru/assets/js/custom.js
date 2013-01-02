@@ -52,11 +52,11 @@
 
         //
         $('.collapse').toggle(function(){
-            $(this).children().removeClass('icon-resize-small').addClass('icon-resize-full')
+            $(this).children().removeClass('icon-minus').addClass('icon-plus')
             $(this).parents('.box').find('.box-body').slideUp()
             $(this).parents('.box').find('.box-footer').slideUp()
         },function(){
-            $(this).children().removeClass('icon-resize-full').addClass('icon-resize-small')
+            $(this).children().removeClass('icon-plus').addClass('icon-minus')
             $(this).parents('.box').find('.box-body').slideDown()
             $(this).parents('.box').find('.box-footer').slideDown()
         });
