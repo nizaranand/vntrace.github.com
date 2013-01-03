@@ -73,6 +73,7 @@ header > nav > ul {
 
 header > nav > ul > li {
     float: left;
+    margin-left: 5px;
 }
 
 header > nav > ul > li a {
@@ -92,4 +93,34 @@ header > nav > ul > li a:hover {
     text-decoration: none;
     background-color: #610C19;
     color: #FFF;
+}
+
+.m-profile {
+    margin: 20px 0 0;
+}
+
+.m-profile .m-avatar {
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid #D9D9D9;
+}
+
+.m-profile .m-avatar img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.m-profile  ul{
+    margin: 0;
+    list-style: none;
+    padding: 0 5px;
+}
+
+.m-profile ul > li > a {
+    color: #3D3331;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: underline;
 }
