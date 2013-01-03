@@ -45,39 +45,51 @@ body {
 	color: #FFF;
 }
 
-a, a:active, a:link, a:visited {
+a {
 	color: #00A8E6;
 }
 
-header {
-    position: relative;
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 0;
 }
 
-a.logo {
-    position: absolute;
-    left: 0;
-    top: 0;
+header > nav {
+    height: 60px;
+    margin-top: 18px;
+    margin-left: 20px;
 }
 
 header > nav > ul {
     list-style: none;
     background-color: white;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 5px 5px 5px 120px;
+    border: 1px solid #d9d9d9;
 }
 
 header > nav > ul > li {
     float: left;
-    width: 50px;
-    height: 50px;
-    background-color: #00A8E6;  
 }
 
 header > nav > ul > li a {
     font-family: "entypo";
     font-size: 50px;
     text-align: center;
-    padding: 5px;
-    color: white !important;
     width: 50px;
     height: 50px;
     float: left;
+    color: #FFF;
+    line-height: 45px;
+    text-decoration: none;
+    background-color: #00A8E6;
+}
+
+header > nav > ul > li a:hover {
+    text-decoration: none;
+    background-color: #610C19;
+    color: #FFF;
 }
