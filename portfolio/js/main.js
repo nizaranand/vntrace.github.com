@@ -12,7 +12,7 @@ $(document).ready(function(){
 	});
 
 	$(window).bind('resize', function(e){
-		updateNavbar();
+		//updateNavbar();
 	});
 
 	function updateNavbar() {
