@@ -74,17 +74,17 @@ header nav ul {
 header nav ul li {
     float: left;
     margin-left: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 header nav ul li a {
     font-family: "entypo";
-    font-size: 50px;
+    font-size: 6em;
     text-align: center;
-    width: 50px;
-    height: 50px;
     float: left;
     color: #FFF;
-    line-height: 0.5em;
+    line-height: 1;
     text-decoration: none;
     background-color: #00A8E6;
 }
@@ -96,7 +96,7 @@ header nav ul li a:hover {
 }
 
 .m-profile {
-    margin: 20px 20px 0px 0px;
+    margin: 20px 20px 0 0;
 }
 
 .m-profile .m-avatar {
