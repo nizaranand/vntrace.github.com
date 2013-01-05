@@ -34,7 +34,7 @@
 				</li>
 				<li>
 					<a rel="tooltip" data-placement="bottom" data-original-title="Video" href="#">
-						<i class="icon-camera-retro"></i>
+						<i class="icon-film"></i>
 					</a>
 				</li>
 				<li>
@@ -43,16 +43,24 @@
 					</a>
 				</li>
 				<li>
-					<a rel="tooltip" data-placement="bottom" data-original-title="Stats" href="#">&#128200;</a>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Stats" href="#">
+						<i class="icon-bar-chart"></i>
+					</a>
 				</li>
 				<li>
-					<a rel="tooltip" data-placement="bottom" data-original-title="Photo" href="#">&#127748;</a>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Photo" href="#">
+						<i class="icon-picture"></i>
+					</a>
 				</li>
 				<li>
-					<a rel="tooltip" data-placement="bottom" data-original-title="Setting" href="#">&#9881;</a>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Setting" href="#">
+						<i class="icon-cog"></i>
+					</a>
 				</li>
 				<li class="last hide" id="more-nav-item">
-					<a rel="tooltip" data-placement="bottom" data-original-title="More" href="#">&#62977;</a>
+					<a rel="tooltip" data-placement="bottom" data-original-title="More" href="#">
+						<i class="icon-th-large"></i>
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -89,13 +97,97 @@
 			<section id="dashboard">
 				<div class="m-widget span12">
 					<div class="title">
-						<h4>Category</h4>
+						<h5> <i class="icon-th"></i> Category</h5>
 					</div>
 
 					<div class="content">
 						<div class="row-fluid">
-							<div class="span12">
-								<span class="font-icon"></span>
+							<div class="span6">
+								<h4> <i class="icon-plus-sign-alt"></i> Add new category</h4>
+								<hr/>
+								<form class="form-horizontal">
+									<div class="control-group">
+									    <label class="control-label" for="inputName">Name</label>
+									    <div class="controls">
+									      	<input type="text" id="inputName" placeholder="Name">
+									      	<span class="help-inline">Give your new category a name</span>
+									    </div>
+									</div>
+
+									<div class="control-group">
+									    <label class="control-label" for="inputDescription">Description</label>
+									    <div class="controls">
+									      	<textarea class="input-block-level" rows="3" type="text" id="inputDescription" placeholder=""></textarea>
+									      	<span class="help-inline">And how do we recognize it ?</span>
+									    </div>
+									</div>
+
+									<div class="control-group">
+									    <label class="control-label" for="inputDescription">Parent</label>
+									    <div class="controls">
+									      	<select>
+									      		<option>--- Choose category ---</option>
+									      		<option>Gaming</option>
+									      		<option>Entertainment</option>
+									      		<option>Pet</option>
+									      		<option>Sports</option>
+									      	</select>
+									      	<span class="help-inline">Which should be following ?</span>
+									    </div>
+									</div>
+								</form>	
+							</div>
+							<div class="span6">
+								<h4><i class="icon-list-alt"></i> Category collection</h4>
+								<hr/>
+								<div class="input-append">
+									<input class="span4" id="appendedInputButtons" type="text">
+								  	<button class="btn" type="button">Search</button>
+								  	<div class="btn-group">
+						                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+						                <ul class="dropdown-menu">
+						                  	<li><a href="#">Action</a></li>
+						                  	<li><a href="#">Another action</a></li>
+						                  	<li><a href="#">Something else here</a></li>
+						                  	<li class="divider"></li>
+						                  	<li><a href="#">Separated link</a></li>
+						                </ul>
+						            </div>
+								</div>
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Gaming</a>
+
+											</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td><a href="#"><i class="icon-folder-close-alt"></i> Entertainment</a></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Pet</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Sports</td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
