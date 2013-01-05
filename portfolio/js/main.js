@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+	$('#thumb li a').bind('hover', function(){
+		var _imgShow = $('img.show');
+		var _hoverImg = $(this).attr('rel');
+		if(_imgShow.attr('src') != _hoverImg) {
+			_imgShow.attr('src', _hoverImg);
+		}
+	});
+
 	$('#more-nav-item').bind('click', function(e){
 
 		/*Get offset*/
@@ -12,7 +21,7 @@ $(document).ready(function(){
 	});
 
 	$(window).bind('resize', function(e){
-		updateNavbar();
+		//updateNavbar();
 	});
 
 	function updateNavbar() {
