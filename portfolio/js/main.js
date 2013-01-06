@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
-	$('#thumb li a').bind('hover', function(){
-		var _imgShow = $('img.show');
-		var _hoverImg = $(this).attr('rel');
-		if(_imgShow.attr('src') != _hoverImg) {
-			_imgShow.attr('src', _hoverImg);
-		}
+	$('a.delete').bind('click', function(e){
+		$('#responsive').modal();
 	});
 
 	$('#more-nav-item').bind('click', function(e){
@@ -23,39 +19,6 @@ $(document).ready(function(){
 	$(window).bind('resize', function(e){
 		//updateNavbar();
 	});
-
-	function updateNavbar() {
-		var _navbarWidth = $('.m-navbar').innerWidth();
-		var _navbarInnerWidth = $('.m-navbar-inner').innerWidth();
-		var _profileBarWidth = $('.m-profile').innerWidth();
-
-		console.log(_navbarWidth, _navbarInnerWidth, _profileBarWidth);
-
-		var _round = 45;
-
-		var _navCurrentWidth = _navbarInnerWidth + _profileBarWidth + _round;
-
-		if(_navCurrentWidth > _navbarWidth) {
-			/*Overflow*/
-			var _subWidth = _navCurrentWidth - _navbarWidth;
-
-			var _nHiden = Math.ceil(_subWidth/55);
-
-			console.log(_nHiden);
-
-			if($('.hidden-item-container ul li').length === 0) {
-				_nHiden += 1;
-			}
-
-			for (var i = 0; i < _nHiden; i++) {
-				$('.hidden-item-container ul').prepend($('#more-nav-item').prev());
-			};
-
-			$('#more-nav-item').removeClass('hide');
-		} else {
-			
-		}
-	}	
 });
 
 $.fn.hasOverflow = function() {

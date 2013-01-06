@@ -5,6 +5,7 @@
 	<title>*C - L - G - T*</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style3.css">
 	<link rel="stylesheet" type="text/css" href="css/style-device.css">	
@@ -15,6 +16,7 @@
 
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -25,8 +27,8 @@
 <body>
 	<header>
 		<a href="#" class="logo"><img src="img/logo.png"></a>
-		<nav class="pull-left">
-			<ul>
+		<nav>
+			<ul class="nav pull-left">
 				<li>
 					<a rel="tooltip" data-placement="bottom" data-original-title="Dashboard" href="#">
 						<i class="icon-home"></i>
@@ -68,9 +70,10 @@
 			<div class="link pull-left">
 				<ul>
 			    	<li>
-			    		<a href="#">
-			    			<i class="icon-user"></i>Profile
+			    		<a href="#" id="profile-flag">
+			    			hi Clgt !
 			    		</a>
+			    		<div class="arrow"></div>
 			    	</li>
 			    	<li>
 			    		<a href="#">
@@ -91,10 +94,9 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<section id="dashboard">
+	<section id="dashboard">
+		<div class="container-fluid">
+			<div class="row-fluid">
 				<div class="m-widget span12">
 					<div class="title">
 						<h5> <i class="icon-th"></i> Category</h5>
@@ -102,7 +104,7 @@
 
 					<div class="content">
 						<div class="row-fluid">
-							<div class="span6">
+							<div class="span4">
 								<h4> <i class="icon-plus-sign-alt"></i> Add new category</h4>
 								<hr/>
 								<form class="form-horizontal">
@@ -135,64 +137,144 @@
 									      	<span class="help-inline">Which should be following ?</span>
 									    </div>
 									</div>
+
+									<div class="control-group">
+									    <label class="control-label" for="inputDescription"></label>
+									    <div class="controls">
+									      	<a class="button">
+									      		<i class="icon-spinner icon-spin"></i>
+									      		Save
+									      	</a>
+									    </div>
+									</div>
 								</form>	
 							</div>
-							<div class="span6">
+							<div class="span8">
 								<h4><i class="icon-list-alt"></i> Category collection</h4>
 								<hr/>
-								<div class="input-append">
-									<input class="span4" id="appendedInputButtons" type="text">
-								  	<button class="btn" type="button">Search</button>
-								  	<div class="btn-group">
-						                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-						                <ul class="dropdown-menu">
-						                  	<li><a href="#">Action</a></li>
-						                  	<li><a href="#">Another action</a></li>
-						                  	<li><a href="#">Something else here</a></li>
-						                  	<li class="divider"></li>
-						                  	<li><a href="#">Separated link</a></li>
-						                </ul>
-						            </div>
-								</div>
-								<table class="table table-striped">
+								<table class="table category">
 									<thead>
 										<tr>
+											<td><input type="checkbox"></td>
 											<th>Name</th>
 											<th>Description</th>
+											<th>Slug</th>
+											<th class="tc">Videos</th>
 											<th></th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
+											<td><input type="checkbox"></td>
 											<td>
-												<a href="#"><i class="icon-folder-close-alt"></i> Gaming</a>
+												<a href="#"><i class="icon-folder-open-alt"></i> Gaming</a>
+											</td>
+											<td></td>
+											<td>gaming</td>
+											<td class="tc">1</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
 
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>&nbsp;&nbsp;&nbsp;<i class="icon-angle-right"></i> PS3</td>
+											<td></td>
+											<td>ps3</td>
+											<td class="tc">10</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>&nbsp;&nbsp;&nbsp;<i class="icon-angle-right"></i> XBox 360</td>
+											<td></td>
+											<td>xbox-360</td>
+											<td class="tc">0</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Entertainment</a>
+											</td>
+											<td></td>
+											<td>entertainment</td>
+											<td class="tc">1</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Pet</a>
+											</td>
+											<td></td>
+											<td>pet</td>
+											<td class="tc">0</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Sports</a>
+											</td>
+											<td></td>
+											<td>sports</td>
+											<td class="tc">2</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2">
+												<select class="not-bt">
+													<option>With selected</option>
+													<option>Delete</option>
+												</select>
+												<button class="button">Apply</button>
 											</td>
 											<td></td>
 											<td></td>
+											<td></td>
+											<td>4 items</td>
 										</tr>
-										<tr>
-											<td><a href="#"><i class="icon-folder-close-alt"></i> Entertainment</a></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>Pet</td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>Sports</td>
-											<td></td>
-											<td></td>
-										</tr>
-									</tbody>
+									</tfoot>
 								</table>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</div>
+	</section>
+
+	<div id="responsive" class="modal hide fade" tabindex="-1" data-width="760">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>Alert</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row-fluid">
+				<div class="span12">
+					<p>You are deleting permanently the item.</p>
+					<p><b style="color:red">Cancel</b> to stop, Ok to delete !</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+			<button type="button" class="btn btn-danger">Delete</button>
 		</div>
 	</div>
 </body>
