@@ -156,7 +156,7 @@ ul.nav li a:hover {
     background-color: #00A8E6;
     color: white;
     font-weight: bold;
-    padding: 5px 15px 5px 5px;
+    padding: 5px 15px 5px 20px;
     -webkit-border-bottom-right-radius: 4px;
     -moz-border-radius-bottomright: 4px;
     border-bottom-right-radius: 4px;
@@ -216,14 +216,43 @@ table.category input[type=checkbox] {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
 .button:hover {
     background-color: #0092C8;
-    color: white;
+    color: #FFF;
 }
 
 
 a.button {
     text-decoration: none;
+}
+
+.button.danger{
+    border-top: 1px solid #BB0D47;
+    border-left: 1px solid #BB0D47;
+    border-right: 0px;
+    border-bottom: 0px;
+    color: #FFF;
+    background-color: #CC0245;
+}
+
+.button.danger:hover {
+    background-color: #BB0D47;
+}
+
+.button.warning {
+    border-top: 1px solid #EDAA1A;
+    border-left: 1px solid #EDAA1A;
+    border-right: 0px;
+    border-bottom: 0px;
+    color: #FFF;
+    background-color: #FFBA19;
+}
+
+.button.warning:hover {
+    background-color: #EDAA1A;
 }
