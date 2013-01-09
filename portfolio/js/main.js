@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	$('a.delete').bind('click', function(e){
 		$('#responsive').modal();
 	});
@@ -16,17 +15,38 @@ $(document).ready(function(){
 		return false;		
 	});
 
-	$(window).bind('resize', function(e){
-		//updateNavbar();
-	});
+	nav();
 });
+
+function nav() {
+	var _settings = {
+		minimal_holding_item: 3
+	};
+
+	/*Get navigation container*/
+	$nav = $('#nav');
+
+	/*Get menu container*/
+	$menu = $('#nav .nav');
+
+	/*Get profile container*/
+	$profile = $('#nav .m-profile');
+
+	$(window).bind('resize', function(e){
+		var _nav_inner_width = $nav.innerWidth();
+		var _menu_inner_width = $menu.innerWidth();
+		var _profile_inner_width = $profile.innerWidth();
+
+		if((_menu_inner_width + _profile_inner_width) > _nav_inner_width) {
+			console.log('hasOverflow');
+		}
+	});
+}
 
 $.fn.hasOverflow = function() {
     var $this = $(this);
     var $children = $this.find('*');
     var len = $children.length;
-
-    console.log(len);
 
     if (len) {
         var maxWidth = 0;
