@@ -257,6 +257,61 @@ ul.nav-tabs > li > a:hover {
     padding: 10px;
 }
 
+.hidden-item-container {
+    text-align: center;
+    position: relative;
+    float: left;
+    display: none;
+}
+
+.hidden-item-container ul,
+.hidden-item-container li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.hidden-item-container ul {
+    padding: 5px 5px 5px 0px;
+    margin: 5px 0 0;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    display: inline-block;
+}
+
+.hidden-item-container ul li {
+    float: left;
+    background-color: #00A8E6;
+    margin-left: 5px;
+}
+
+.hidden-item-container ul li a {
+    font-family: "entypo";
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hidden-item-container .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    top: -4px;
+    right: 25px;
+    margin-left: -5px;
+    border-bottom-color: #FFF;
+    border-width: 5px;
+
+}
+
+.hidden-item-container ul li:hover {
+    background-color: #610C19;
+}
+
 /*Not bootstrap*/
 .not-bt {
     margin: 0;
