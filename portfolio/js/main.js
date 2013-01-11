@@ -65,6 +65,18 @@ function nav() {
 
 				var _i_ = Math.ceil(_sub_width / 55);
 
+				if(_i_ == 1 && $sub_hidden_menu.find('ul li').length == 2) {
+					/*Re-Get all hidden item*/
+					_i_ = 2;
+
+					/*Hidden more item*/
+					$last_hidden_menu_item.hide();
+				}
+
+				for(var i = 0; i < _i_; i++) {
+					$menu.append($sub_hidden_menu.find('ul li').firstChild());
+				}
+
 				console.log(Math.ceil(_i_));
 			}
 		}
