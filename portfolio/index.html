@@ -1,14 +1,22 @@
+<!doctype html>
 <html>
 <head>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>*C - L - G - T* [Portfolio site]</title>
+	<title>*C - L - G - T*</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
 	<link rel="stylesheet" type="text/css" href="css/style-device.css">	
+
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+	<![endif]-->
 
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -17,70 +25,125 @@
 	</script>
 </head>
 <body>
-	<!-- Navigator -->
-	<div class="navigator">
-		<ul>
-			<li class="active">
-				<a href="#">
-					<i class="icon">&#8962;</i>Home
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="icon">&#9834;</i>Home
-				</a>
-			</li>
-			<li class="has-sub">
-				<a href="#">
-					<i class="icon">&#128101;</i>Home
-					<div class="arrow-border">
-						<div class="arrow-inner"></div>
+	<header>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div id="nav" class="span12">
+					<a href="#" class="logo"><img src="img/logo.png"></a>
+					<nav>
+						<ul class="nav pull-left">
+							<li class="active">
+								<a rel="tooltip" data-placement="bottom" data-original-title="Dashboard" href="#">
+									<i class="icon-home"></i>
+								</a>
+							</li>
+							<li>
+								<a rel="tooltip" data-placement="bottom" data-original-title="Video" href="#">
+									<i class="icon-film"></i>
+								</a>
+							</li>
+							<li>
+								<a rel="tooltip" data-placement="bottom" data-original-title="User" href="#">
+									<i class="icon-user"></i>
+								</a>
+							</li>
+							<li>
+								<a rel="tooltip" data-placement="bottom" data-original-title="Stats" href="#">
+									<i class="icon-bar-chart"></i>
+								</a>
+							</li>
+							<li>
+								<a rel="tooltip" data-placement="bottom" data-original-title="Photo" href="#">
+									<i class="icon-picture"></i>
+								</a>
+							</li>
+							<li>
+								<a rel="tooltip" data-placement="bottom" data-original-title="Setting" href="#">
+									<i class="icon-cog"></i>
+								</a>
+							</li>
+							<li class="last hide" id="more-nav-item">
+								<a rel="tooltip" data-placement="bottom" data-original-title="More" href="#">
+									<i class="icon-th-large"></i>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="m-profile pull-right">
+						<div class="link pull-left">
+							<ul>
+						    	<li>
+						    		<a href="#" id="profile-flag">
+						    			hi Clgt !
+						    		</a>
+						    		<div class="arrow"></div>
+						    	</li>
+						    	<li>
+						    		<a href="#">
+						    			<i class="icon-cog"></i>Setting
+						    		</a>
+						    	</li>
+						    	<li>
+						    		<a href="">
+						    			<i class="icon-off"></i>Logout
+						    		</a>
+						    	</li>
+							</ul>
+						</div>
+						<div class="avatar pull-right">
+							<a class="m-avatar" rel="tooltip" data-placement="bottom" data-original-title="hi Clgt" roll="button"href="#">
+								<img src="img/avatar.png">
+							</a>
+						</div>
 					</div>
-				</a>
-
-				<div class="sub-nav">
-					<ul class="">
-						<li>
-							<a href="#">
-								<i class="icon">&#59141;</i>Home
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="icon">&#127925;</i>Home
-							</a>
-						</li>
-					</ul>
 				</div>
-			</li>
-			<li class="has-sub">
-				<a href="#">
-					<i class="icon">&#59212;</i>Sub
-				</a>
-				<div class="sub-nav">
-					<ul class="">
-						<li>
-							<a href="#">
-								<i class="icon">&#59141;</i>Home
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="icon">&#127925;</i>Home
-							</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<!-- End navigator -->
+			</div>
 
-	<div id="boundary">
-		<div class="top"></div>
-		<div class="right"></div>
-		<div class="bottom"></div>
-		<div class="left"></div>
+			<div class="hidden-item-container">
+				<div class="arrow"></div>
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section id="dashboard">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="m-widget span12">
+					<div class="title">
+						<h5> <i class="icon-film"></i> Videos</h5>
+					</div>
+
+					<div class="content">
+						<div class="row-fluid">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div id="responsive" class="modal hide fade" tabindex="-1" data-width="760">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>Alert</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row-fluid">
+				<div class="span12">
+					<p>You are deleting permanently the item.</p>
+					<p><b style="color:red">Cancel</b> to stop, Ok to delete !</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+			<button type="button" class="btn btn-danger">Delete</button>
+		</div>
 	</div>
 </body>
 </html>

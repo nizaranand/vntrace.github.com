@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>*C - L - G - T*</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<link rel="stylesheet" type="text/css" href="css/style-device.css">	
+
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a[rel=tooltip]').tooltip();
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="img/logo.png"></a>
+		<nav>
+			<ul class="nav pull-left">
+				<li>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Dashboard" href="#">
+						<i class="icon-home"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Video" href="#">
+						<i class="icon-film"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" data-placement="bottom" data-original-title="User" href="#">
+						<i class="icon-user"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Stats" href="#">
+						<i class="icon-bar-chart"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Photo" href="#">
+						<i class="icon-picture"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="tooltip" data-placement="bottom" data-original-title="Setting" href="#">
+						<i class="icon-cog"></i>
+					</a>
+				</li>
+				<li class="last hide" id="more-nav-item">
+					<a rel="tooltip" data-placement="bottom" data-original-title="More" href="#">
+						<i class="icon-th-large"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="m-profile pull-right">
+			<div class="link pull-left">
+				<ul>
+			    	<li>
+			    		<a href="#" id="profile-flag">
+			    			hi Clgt !
+			    		</a>
+			    		<div class="arrow"></div>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<i class="icon-cog"></i>Setting
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="">
+			    			<i class="icon-off"></i>Logout
+			    		</a>
+			    	</li>
+				</ul>
+			</div>
+			<div class="avatar pull-right">
+				<a class="m-avatar" rel="tooltip" data-placement="bottom" data-original-title="hi Clgt" roll="button"href="#">
+					<img src="img/avatar.png">
+				</a>
+			</div>
+		</div>
+	</header>
+	<section id="dashboard">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="m-widget span12">
+					<div class="title">
+						<h5> <i class="icon-th"></i> Category</h5>
+					</div>
+
+					<div class="content">
+						<div class="row-fluid">
+							<div class="span4">
+								<h4> <i class="icon-plus-sign-alt"></i> Add new category</h4>
+								<hr/>
+								<form class="form-horizontal">
+									<div class="control-group">
+									    <label class="control-label" for="inputName">Name</label>
+									    <div class="controls">
+									      	<input type="text" id="inputName" placeholder="Name">
+									      	<span class="help-inline">Give your new category a name</span>
+									    </div>
+									</div>
+
+									<div class="control-group">
+									    <label class="control-label" for="inputDescription">Description</label>
+									    <div class="controls">
+									      	<textarea class="input-block-level" rows="3" type="text" id="inputDescription" placeholder=""></textarea>
+									      	<span class="help-inline">And how do we recognize it ?</span>
+									    </div>
+									</div>
+
+									<div class="control-group">
+									    <label class="control-label" for="inputDescription">Parent</label>
+									    <div class="controls">
+									      	<select>
+									      		<option>--- Choose category ---</option>
+									      		<option>Gaming</option>
+									      		<option>Entertainment</option>
+									      		<option>Pet</option>
+									      		<option>Sports</option>
+									      	</select>
+									      	<span class="help-inline">Which should be following ?</span>
+									    </div>
+									</div>
+
+									<div class="control-group">
+									    <label class="control-label" for="inputDescription"></label>
+									    <div class="controls">
+									      	<a class="button">
+									      		<i class="icon-spinner icon-spin"></i>
+									      		Save
+									      	</a>
+									    </div>
+									</div>
+								</form>	
+							</div>
+							<div class="span8">
+								<h4><i class="icon-list-alt"></i> Category collection</h4>
+								<hr/>
+								<table class="table category">
+									<thead>
+										<tr>
+											<td><input type="checkbox"></td>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Slug</th>
+											<th class="tc">Videos</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-open-alt"></i> Gaming</a>
+											</td>
+											<td></td>
+											<td>gaming</td>
+											<td class="tc">1</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>&nbsp;&nbsp;&nbsp;<i class="icon-angle-right"></i> PS3</td>
+											<td></td>
+											<td>ps3</td>
+											<td class="tc">10</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>&nbsp;&nbsp;&nbsp;<i class="icon-angle-right"></i> XBox 360</td>
+											<td></td>
+											<td>xbox-360</td>
+											<td class="tc">0</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Entertainment</a>
+											</td>
+											<td></td>
+											<td>entertainment</td>
+											<td class="tc">1</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Pet</a>
+											</td>
+											<td></td>
+											<td>pet</td>
+											<td class="tc">0</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td>
+												<a href="#"><i class="icon-folder-close-alt"></i> Sports</a>
+											</td>
+											<td></td>
+											<td>sports</td>
+											<td class="tc">2</td>
+											<td>
+												<a class="edit" href="#"><i class="icon-edit"></i>Edit</a>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2">
+												<select class="not-bt">
+													<option>With selected</option>
+													<option>Delete</option>
+												</select>
+												<button class="button">Apply</button>
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>4 items</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="responsive" class="modal hide fade" tabindex="-1" data-width="760">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>Alert</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row-fluid">
+				<div class="span12">
+					<p>You are deleting permanently the item.</p>
+					<p><b style="color:red">Cancel</b> to stop, Ok to delete !</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+			<button type="button" class="btn btn-danger">Delete</button>
+		</div>
+	</div>
+</body>
+</html>

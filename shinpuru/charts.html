@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<!-- Chart-flot -->
+	<link rel="stylesheet" type="text/css" href="assets/css/graph-flot.css">
 	<!-- font-body -->
 <body>
 	<div class="container-fluid">
@@ -42,6 +44,34 @@
 			</div> <!-- end sidebar -->
 
 			<div id="main" class="span10 main">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-header">
+								<h3>Chart-flot</h3>
+								<a class="collapse" href="#"><i class="icon-minus"></i></a>
+							</div>
+							<div class="box-body">
+								<div id="graph-wrapper">
+									<div class="graph-info">
+										<div class="alert">
+											Internet Explorer doesn't support chart flot!
+										</div>
+										<a href="#" id="bars"><span></span></a>
+										<a href="#" id="lines" class="active"><span></span></a>
+									</div>
+
+									<div class="graph-container">
+										<div id="graph-lines"></div>
+										<div id="graph-bars"></div>
+									</div>
+								</div>
+								<!-- graph-wrapper -->
+							</div><!-- /end box-body -->
+						</div><!-- /end box -->
+					</div>
+				</div>
+				<!-- /row-fluid -->
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="box">
@@ -107,6 +137,12 @@
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	<!-- Chart-flot -->
+	<script type="text/javascript" src="assets/js/jquery-flot/jquery.flot.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-flot/jquery-chart-flot.js"></script>
+	<!-- /Chart-flot -->
+
 	<!-- /script -->
 </body>
 </html>
