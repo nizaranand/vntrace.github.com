@@ -4,6 +4,39 @@ body {
 }
 
 /************ Custom **************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 11px;
+}
 a,.brand .cl-blue{
 	color:#8dd1ff;
 }
@@ -26,7 +59,7 @@ ul,li{
 .title-large,.title {
 	border-bottom:1px solid #1e2024;
 	box-shadow:0px 1px 0px #45484c;
-	margin-bottom:10px;
+	margin-bottom:20px;
 }
 .box-header {
 	padding:5px 10px;
@@ -244,12 +277,24 @@ border-color: #18191c;
   margin:-5px;
 }
 /************ end table **************/
-.navbar-inner{
+.navbar-fixed-top .navbar-inner{
 	background:#24262c;
+	border-bottom-color: #24262C;
+}
+.navbar-fixed-top .divider-vertical {
+	border-right: 1px solid #222;
+	border-left: 1px solid #333;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+color: #555;
+background-color: #24262C;
 }
 .navbar .nav > li > a{
 	color:#8dd1ff;
 	margin-left:10px;
+	text-shadow:none;
 }
 .navbar .nav > li > a:hover{
 	color:#08C;
@@ -571,7 +616,9 @@ border-bottom-color: #999;
 	float:left;
 	padding:0px;
 }
-.pagination a{
+.pagination ul > li > a,
+.pagination ul > li > span,
+.pagination ul > .active > a{
 	float:left;
 	background:#26292e;
 	padding:5px 18px;
