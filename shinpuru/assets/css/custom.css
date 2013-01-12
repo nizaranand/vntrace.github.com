@@ -153,6 +153,16 @@ a:hover {
 .input-append, .input-prepend {
   margin-bottom:10px;
 }
+textarea, input[type="text"],
+input[type="password"], input[type="datetime"],
+input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"],
+input[type="week"], input[type="number"],
+input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"],
+input[type="color"], .uneditable-input {
+  border-color:#d9d9d9;
+}
 label {
   margin:0px;
 }
@@ -548,10 +558,14 @@ background-color: #fcfcfc;
 }
 #form-login form input[type="checkbox"] {
   display:none;
+  left:0px;
+  z-index:1000;
+  position:absolute;
 }
 #form-login form .checkbox {
   padding:0px;
   float:left;
+  position:relative;
 }
 #form-login form .checkbox span {
   float:left;
@@ -576,7 +590,6 @@ background-color: #fcfcfc;
   box-shadow:0 0 3px rgba(0,0,0,0.5) inset;
   position:relative;
 }
-
 .button-checkbox a{
   display:block;
   text-align:center;
@@ -590,7 +603,6 @@ background-color: #fcfcfc;
   font-weight:bold;
   color:#00A0B0;
 }
-
 .slide{
   display:block;
   width:38px;
@@ -602,8 +614,37 @@ background-color: #fcfcfc;
   border-radius:4px;
   box-shadow:0 0 2px rgba(0,0,0,0.2);
 }
-
-
+.form-account .box-body {
+  padding:0px;
+  width:100%;
+  border:none;
+}
+.form-account .box-header h3{
+  /*padding-left:10px;*/
+}
+.form-account form {
+  width:100%;
+  padding:0px 10px;
+  margin:0px -10px;
+}
+.form-account form .input-prepend,
+.form-account form label{
+  background:#fff;
+  padding:0px 20px;
+  margin:0px -10px;
+  border-left:1px solid #eee;
+}
+.form-account form .input-prepend {
+  border-bottom:1px solid #f9f9f9;
+  padding-bottom:15px;
+}
+.form-account form .input-prepend i{
+  color:#ccc;
+}
+.form-account form label {
+  padding-top:10px;
+  color:#999;
+}
 .recent-news ul{
   margin:0px;
   padding:0px;
@@ -806,8 +847,6 @@ border-top: 1px solid #DDD;
   margin:0px;
 }
 .box-body .form-actions {
-  margin-left:-20px;
-  margin-right:-20px;
   margin:0px -10px -10px -10px;
   background:#F9F9F9;
 }

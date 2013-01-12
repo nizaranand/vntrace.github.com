@@ -63,12 +63,11 @@
 
         //js button-checkbox
         
-        $('.on').click(function(){
+        $('.button-checkbox').toggle(function(){
             $('.slide').animate({'left':'40px'},200)
-        });
-        $('.off').click(function(){
+        },function(){
             $('.slide').animate({'left':'2px'},200)
-        })
+        });
 
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
