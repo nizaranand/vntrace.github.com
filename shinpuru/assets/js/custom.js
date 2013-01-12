@@ -61,6 +61,15 @@
             $(this).parents('.box').find('.box-footer').slideDown()
         });
 
+        //js button-checkbox
+        
+        $('.on').click(function(){
+            $('.slide').animate({'left':'40px'},200)
+        });
+        $('.off').click(function(){
+            $('.slide').animate({'left':'2px'},200)
+        })
+
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();
