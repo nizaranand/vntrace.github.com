@@ -31,6 +31,26 @@ a:hover {
   text-decoration:none;
   color:#0093a2;
 }
+.file {
+  position:relative;
+  overflow:hidden;
+  width:100px;
+  height:24px;
+  background:#444;
+  border-radius:4px;
+  -o-border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  line-height:1.6em;
+}
+input[type="file"] {
+  left:0px;
+  top:0px;
+  position:absolute;
+  background:#333;
+  opacity:0;
+  filter:alpha(opacity="0");
+}
 /*************** btn ****************/
 .btn {
   background:none;
@@ -201,8 +221,8 @@ body > .container-fluid > .row-fluid {
 }
 .header .form-search {
   float:right;
-  margin:5px 0px 0px 0px;
-  width:45%;
+  margin:5px 15px 0px 0px;
+  width:42%;
 }
 .header .form-search input {
   width:70%;
@@ -428,7 +448,6 @@ body > .container-fluid > .row-fluid {
   width:20px;
   border:1px solid #eee;
   text-align:center;
-  /*border-radius:4px;*/
   background:#f9f9f9;
   color:#999;
 }
@@ -497,6 +516,9 @@ background-color: #fcfcfc;
 }
 .plans-body .btn-sun:hover {
   background:#da5f3b;
+}
+.plans-footer {
+  float:left;
 }
 .plans-footer .table tr td,
 .plans-footer .table tr th {
@@ -614,36 +636,21 @@ background-color: #fcfcfc;
   border-radius:4px;
   box-shadow:0 0 2px rgba(0,0,0,0.2);
 }
-.form-account .box-body {
-  padding:0px;
-  width:100%;
-  border:none;
-}
-.form-account .box-header h3{
-  /*padding-left:10px;*/
-}
-.form-account form {
-  width:100%;
-  padding:0px 10px;
-  margin:0px -10px;
-}
-.form-account form .input-prepend,
-.form-account form label{
-  background:#fff;
-  padding:0px 20px;
-  margin:0px -10px;
-  border-left:1px solid #eee;
-}
-.form-account form .input-prepend {
-  border-bottom:1px solid #f9f9f9;
-  padding-bottom:15px;
-}
-.form-account form .input-prepend i{
-  color:#ccc;
-}
-.form-account form label {
+.form-account label {
   padding-top:10px;
   color:#999;
+}
+.form-account input {
+  padding:20px 10px;
+  background:#fafafa;
+  border-color:#fff;
+}
+.form-account input:focus {
+  background:#fff;
+  border-color:#f9f9f9;
+}
+.form-account .form-actions {
+  padding:15px 10px;
 }
 .recent-news ul{
   margin:0px;
@@ -854,10 +861,12 @@ border-top: 1px solid #DDD;
   font-size:30px;
   float:left;
   margin-right:10px;
+  line-height:20px;
 }
 .alert-block i {
+  line-height:36px;
   font-size:50px;
-  height:100px;
+  min-height:80px;
   margin-top:5px;
 }
 
