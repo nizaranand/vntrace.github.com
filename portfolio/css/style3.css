@@ -286,9 +286,10 @@ ul.nav-tabs > li > a:hover {
 
 .hidden-item-container ul li a {
     font-family: "entypo";
-    font-size: 50px;
+    font-size: 30px;
     width: 50px;
     height: 50px;
+    line-height: 1.7em;
     color: white;
     text-decoration: none;
     display: inline-block;
