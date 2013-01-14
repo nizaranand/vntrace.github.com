@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('a.delete').bind('click', function(e){
+	$('a.search').bind('click', function(e){
 		$('#responsive').modal();
 	});
 
