@@ -1,17 +1,26 @@
 html, body {
-  height: 100%; }
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Open Sans',sans-serif;
+  font-style: normal;
+  src:
+  url('../fonts/OpenSans-Bold.ttf');
+}
 body {
   color:#4a4a4a;
   background:#f5f5f5;
   font-size:13px;
   line-height:1.5em;
-  font-family:tahoma;
+  font-family:'Open Sans',sans-serif;
 }
 ul,li {
   list-style-type:none;
 }
 h1,h2,h3,h4,h5,h6 {
   line-height:1em;
+  font-weight:400;
 }
 h1 {
   margin:20px 0px 40px 0px;
@@ -22,6 +31,36 @@ a {
 a:hover {
   text-decoration:none;
   color:#0093a2;
+}
+.file {
+  position:relative;
+  overflow:hidden;
+  width:100px;
+  width:60px \9;
+  height:24px;
+  background:#444;
+  border-radius:4px;
+  -o-border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  line-height:1.6em;
+  text-align:center;
+}
+input[type="file"] {
+  left:0px;
+  top:0px;
+  position:absolute;
+  background:#333;
+  opacity:0;
+  filter:alpha(opacity="0");
+  left:-150px \9;
+  cursor:pointer;
+}
+.file span {
+  margin-left:-14px \9;
+}
+.row-fluid input[class*="span"] {
+  min-height:20px\9;
 }
 /*************** btn ****************/
 .btn {
@@ -145,6 +184,16 @@ a:hover {
 .input-append, .input-prepend {
   margin-bottom:10px;
 }
+textarea, input[type="text"],
+input[type="password"], input[type="datetime"],
+input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"],
+input[type="week"], input[type="number"],
+input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"],
+input[type="color"], .uneditable-input {
+  border-color:#d9d9d9;
+}
 label {
   margin:0px;
 }
@@ -164,6 +213,8 @@ body > .container-fluid > .row-fluid {
   border-top:0px;
   box-shadow:inset 0px 0px 2px #999;
   border-radius:0px 0px 4px 4px;
+  float:left;
+  width:100%;
 }
 .header .avatar {
   border:1px solid #dadada;
@@ -172,10 +223,12 @@ body > .container-fluid > .row-fluid {
   margin-left:20px;
   background:#f5f5f5;
   padding:2px;
+  width:36px;
 }
 .header .avatar img{
   width:36px;
   height:36px;
+  float:left;
 }
 .header .name {
   margin:13px 0px 0px 8px;
@@ -183,8 +236,8 @@ body > .container-fluid > .row-fluid {
 }
 .header .form-search {
   float:right;
-  margin:5px 0px 0px 0px;
-  width:45%;
+  margin:5px 15px 0px 0px;
+  width:42%;
 }
 .header .form-search input {
   width:70%;
@@ -232,20 +285,19 @@ body > .container-fluid > .row-fluid {
   float:right;
 }
 .title-area {
-  height:70px;
-  margin-bottom:20px;
+  padding-bottom:20px;
+  *padding-top:20px;
+  float:left;
+  width:100%;
 }
 .page-title {
-  background:url('../img/bg-title.png') left top no-repeat;
+  background:url('../img/bg-title.png') left -5px no-repeat;
   float:left;
   height:70px;
-  padding-left:20px;
-  padding-top:5px;
+  padding-top:8px;
 }
-.page-title h3 i{
-  margin-right:10px;
-  color:#ddd;
-  font-size:30px;
+.page-title h3 {
+  margin-left:20px;
 }
 .middle-nav ul li {
   float:left;
@@ -370,19 +422,25 @@ body > .container-fluid > .row-fluid {
 /************************************************/
 
 /************************************************/
-/********************* .main **********************/
+/********************* #main **********************/
 /************************************************/
-.main {
+#main{
   position: relative;
   height: 100%;
   padding-top:20px;
   padding-bottom:20px;
   overflow-x:hidden;
   padding-right:2.127659574468085%;
+  *margin-right:-20px;
+  *margin-left:20px;
+  overflow:auto;
 }
 .container-fluid {
   padding-left: 0px;
   padding-right:0px;
+  *overflow-x:hidden;
+  *height: 100%;
+  *position: relative;
 }
 .box {
   padding:0px 10px 30px 10px;
@@ -410,7 +468,6 @@ body > .container-fluid > .row-fluid {
   width:20px;
   border:1px solid #eee;
   text-align:center;
-  /*border-radius:4px;*/
   background:#f9f9f9;
   color:#999;
 }
@@ -480,6 +537,9 @@ background-color: #fcfcfc;
 .plans-body .btn-sun:hover {
   background:#da5f3b;
 }
+.plans-footer {
+  float:left;
+}
 .plans-footer .table tr td,
 .plans-footer .table tr th {
   text-align:center;
@@ -495,61 +555,126 @@ background-color: #fcfcfc;
 .plans-best-choose .plans-header {
   background:#EB6841;
 }
-.header-login {
-  text-align:center;
-  font-size:30px;
-  border-bottom:1px solid #fff;
-  padding:25px 0px;
-  background:url('../img/bg-repeat.png') repeat;
-  box-shadow:0px 1px 1px #e0e0e0;
-}
-.header-login a {
-  color:#7c7c7c;
-  font-weight:bold;
-}
 #form-login {
-  width:430px;
+  width:100%;
+  background:#353535 url('../img/bg-repeat-login.png') left 50% repeat-x;
+  padding:50px 0px;
+}
+#form-login form {
+  float:none;
   margin:0px auto;
-  padding:0px auto;
-  padding-top:120px;
+  padding-left:140px;
+  height:460px;
+  width:520px;
+  padding-top:200px;
+  background:url('../img/bg-login.png') left top no-repeat;
 }
-#form-login .dash{
-  position:absolute;
-  width:490px;
-  height:10px;
-  z-index:1000;
-  display:block;
-  margin-left:-30px;
+#form-login h4,
+#form-login h4 span {
+  color:#ddd;
+  line-height:1.2em;
+  border-bottom:0px;
+  font-family: tahoma;
+  font-size:18px;
 }
-#form-login .box {
-  margin-bottom:0px;
-  padding-bottom:0px;
+#form-login h4 {
+  margin-bottom:30px;
 }
-#form-login .box-header {
-  padding:10px 20px;
-  color:#7c7c7c;
-}
-#form-login .box-body {
-  padding:20px 20px 0px 20px;
+#form-login h4 span {
+  font-size:13px;
+  color:#ddd;
 }
 #form-login .form-actions {
-  margin:20px -20px 0px -20px;
+  background:none;
+  border-top:none;
+  width:390px;
+  padding:0px;
 }
 #form-login form input[type="text"] {
   width:360px;
   padding-right:20px;
+  height:30px;
+  background-color:#ddd;
+  border-color:#f5f5f5;
+  color:#333;
+  margin-bottom:15px;
 }
-#form-login form .user-name {
-  background:url('../img/ic-user.png') 365px 5px no-repeat;
-}
-#form-login form .password {
-  background:url('../img/ic-password.png') 365px 5px no-repeat;
+#form-login form input[type="checkbox"] {
+  display:none;
+  left:0px;
+  z-index:1000;
+  position:absolute;
 }
 #form-login form .checkbox {
-  color:#999;
+  padding:0px;
+  float:left;
+  position:relative;
+}
+#form-login form .checkbox span {
+  float:left;
+  margin-right:10px;
+  color:#777;
   font-size:12px;
 }
-
+#form-login form .btn {
+  float:right;
+  width:60px;
+  height:25px;
+  line-height:1.8em;
+  border:solid #2d2d2d 3px;
+  border-radius:8px;
+}
+.button-checkbox{
+  display:block;
+  width:80px;
+  height:20px;    
+  background-color:#232323;
+  border-radius:5px;
+  box-shadow:0 0 3px rgba(0,0,0,0.5) inset;
+  position:relative;
+}
+.button-checkbox a{
+  display:block;
+  text-align:center;
+  background-color:transparent;
+  float:left;
+  width:40px;
+  height:20px;
+  line-height:22px;
+  font-size:11px;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#00A0B0;
+}
+.slide{
+  display:block;
+  width:38px;
+  height:16px;
+  background-color:#484848;
+  position:absolute;
+  left:2px;
+  top:2px;
+  border-radius:4px;
+  box-shadow:0 0 2px rgba(0,0,0,0.2);
+}
+.form-account label {
+  padding-top:10px;
+  color:#999;
+}
+.form-account input {
+  padding:20px 10px;
+  padding:10px 10px\9;
+  *padding:10px 0px;
+  background:#fafafa;
+  border-color:#fff;
+}
+.form-account input:focus {
+  background:#fff;
+  border-color:#f9f9f9;
+}
+.form-account .form-actions {
+  padding:15px 10px;
+}
 .recent-news ul{
   margin:0px;
   padding:0px;
@@ -752,8 +877,6 @@ border-top: 1px solid #DDD;
   margin:0px;
 }
 .box-body .form-actions {
-  margin-left:-20px;
-  margin-right:-20px;
   margin:0px -10px -10px -10px;
   background:#F9F9F9;
 }
@@ -761,15 +884,19 @@ border-top: 1px solid #DDD;
   font-size:30px;
   float:left;
   margin-right:10px;
+  line-height:26px;
 }
 .alert-block i {
+  line-height:36px;
+  *line-height:40px;
   font-size:50px;
-  height:100px;
+  min-width:50px;
   margin-top:5px;
+  float:left;
 }
 
 /************************************************/
-/********************* end .main **********************/
+/********************* end #main **********************/
 /************************************************/
 
 /**************ic-icon**************/
@@ -846,7 +973,7 @@ border-top: 1px solid #DDD;
 }
 .stats-list li{
   width:40%;
-  margin:3% 5%;
+  margin:15px 5%;
 }
 .stats-list .left{
   border-radius:4px;
@@ -879,9 +1006,11 @@ border-top: 1px solid #DDD;
   color:#CC333F;
 }
 .stats-table .left span {
-  font-size:26px;
   float:none;
   margin:0px;
+}
+.stats-table .left span i{
+  font-size:26px;
   line-height:1.7em;
 }
 .stats-table .right {
@@ -913,6 +1042,17 @@ border-top: 1px solid #DDD;
 }
 /**************ic-icon**************/
 /*=======================================*/
+[class^="icon-"], [class*=" icon-"] {
+display: inline-block;
+width: auto;
+height: auto;
+margin-top: 1px;
+line-height: 14px;
+vertical-align: middle;
+background-image: none;
+background-position: 14px 14px;
+background-repeat: no-repeat;
+}
 [class^="ic-"]{
   background:url('../img/icon.png') -30px -30px no-repeat;
   height:40px;
@@ -964,6 +1104,7 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 .box-stats .left.ufo,
 .box-stats .right.ufo .progress .bar {
   background-image:none;
+  filter: progid:none;
   background-color: #00A0B0;
 }
 .brown{
@@ -974,6 +1115,7 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 .box-stats .left.brown,
 .box-stats .right.brown .progress .bar {
   background-image:none;
+  filter: progid:none;
   background-color: #6A4A3C;
 }
 .red{
@@ -984,6 +1126,7 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 .box-stats .left.red,
 .box-stats .right.red .progress .bar {
   background-image:none;
+  filter: progid:none;
   background-color: #CC333F;
 }
 .sun{
@@ -994,6 +1137,7 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 .box-stats .left.sun,
 .box-stats .right.sun .progress .bar {
   background-image:none;
+  filter: progid:none;
   background-color: #EB6841;
 }
 .daylight {
@@ -1003,8 +1147,10 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
 }
 .box-stats .left.daylight,
 .box-stats .right.daylight .progress .bar {
+  filter: progid:none;
   background-image:none;
   background-color: #EDC951;
+
 }
 .graph-info .alert{
   float:left;

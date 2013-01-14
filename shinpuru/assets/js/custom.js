@@ -61,6 +61,14 @@
             $(this).parents('.box').find('.box-footer').slideDown()
         });
 
+        //js button-checkbox
+        
+        $('.button-checkbox').toggle(function(){
+            $('.slide').animate({'left':'40px'},200)
+        },function(){
+            $('.slide').animate({'left':'2px'},200)
+        });
+
 		//end zoom img
 		$('a[href$="#"]').click(function(e){
 			e.preventDefault();

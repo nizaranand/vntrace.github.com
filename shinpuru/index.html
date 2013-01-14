@@ -9,44 +9,40 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<!-- font-body -->
 <body>
-	<div class="header-login">
-		<a href="#">Shinpuru</a>
-	</div>
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div id="form-login">
-				<img class="dash" src="assets/img/bg-dash.png" alt="">
-				<div class="box">
-					<div class="box-header">
-						<h3>Login</h3>
+				<form>
+					<h4>
+						LOGIN
+						<span class="help-block">We need your username and password</span>
+					</h4>
+					<input type="text" placeholder="Name" autofocus="autofocus">
+					<input type="text" placeholder="Password">
+
+					<div class="form-actions">
+						<label class="checkbox">
+							<span class="button-checkbox" id="on">
+								<a href="#" class="off" id="off">off</a>
+								<a href="#" class="on">on</a>
+								<span class="slide"></span>
+							</span>
+
+							<input type="checkbox" value="">
+							<span>Remember me</span>
+						</label>
+						<a href="dashboard.html" class="btn btn-ufo">
+							Login
+						</a>
 					</div>
-					<div class="box-body">
-						<form>
-							<label>Name</label>
-							<input class="user-name" type="text">
-							<label>Password</label>
-							<input class="password" type="text">
-							<label class="checkbox">
-								<input type="checkbox" value="">
-								Remember me
-							</label>
-							<div class="form-actions">
-								<a href="dashboard.html" class="btn btn-ufo">
-									<i class="icon-signin"></i>
-									Login
-								</a>
-							</div>
-							</div>
-						</form>
-					</div><!-- /end box-body -->
-				</div><!-- /end box -->
+				</form>
 			</div>
 		</div>	 <!-- end row-fluid -->
 	</div> <!-- end container-fluid -->
 
 	<!-- script -->
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- /script -->
 </body>

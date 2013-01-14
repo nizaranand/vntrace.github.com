@@ -18,6 +18,31 @@ a {
     top: 0;
 }
 
+.searchbox {
+    float: left;
+    background-color: white;
+    padding: 15px 30px 15px 120px;
+    border: 1px solid #d9d9d9;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.searchbox form,
+.searchbox input {
+    margin: 0;
+}
+
+.searchbox input {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.searchbox .button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 header nav {
     float: left;
 }
