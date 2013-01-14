@@ -6,6 +6,7 @@
 	<title>Shinpuru Template Setting</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<!-- font-body -->
 <body>
@@ -41,7 +42,7 @@
 
 			</div> <!-- end sidebar -->
 
-			<div id="main" class="span10 main">
+			<div id="main" class="span10">
 				<div class="row-fluid">
 					<div class="span6">
 						<div class="box">
@@ -49,31 +50,16 @@
 								<h3>Setting</h3>
 							</div>
 							<div class="box-body">
-								<form>
-									<label>Account Username</label>
-									<div class="input-prepend">
-										<span class="add-on"><i class="icon-user"></i></span>
-										<input class="span7" id="prependedInput" type="text">
-									</div>
-									<label>Email</label>
-									<div class="input-prepend">
-										<span class="add-on"><i class="icon-envelope"></i></span>
-										<input class="span7" id="prependedInput" type="text">
-									</div>
+								<form class="form-account">
+									<input class="span12" type="text" placeholder="Account Username">
 
-									<label>Password</label>
-									<div class="input-prepend">
-										<span class="add-on"><i class="icon-lock"></i></span>
-										<input class="span7" id="prependedInput" type="text">
-									</div>
+									<input class="span12" type="text" placeholder="Email">
 
-									<label>Confirm Password</label>
-									<div class="input-prepend">
-										<span class="add-on"><i class="icon-edit"></i></span>
-										<input class="span7" id="prependedInput" type="text">
-									</div>
+									<input class="span12" type="text" placeholder="Password">
+								
+									<input class="span12" type="text" placeholder="Confirm Password">
 
-									<div class="form-actions">
+									<div class="form-actions"> 
 										<button type="submit" class="btn btn-ufo">Save changes</button>
 										<button type="button" class="btn">Cancel</button>
 									</div>
@@ -88,7 +74,7 @@
 
 	<!-- script -->
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- /script -->
 </body>
