@@ -424,110 +424,32 @@ a.button {
 }
 
 /*Stats*/
-.stats-number {
-    display: block;
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.stats-number:after {
-    clear: both;
-    content: "";
-}
-
-.stats-number h4 {
-    float: left;
-    color: #3D3331;
-    padding-left: 20px;
-}
-
-.stats-number .number {
-    float: right;
+.stats-block {
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 2px 2px 4px;
+    border-radius: 4px 2px 2px 4px;
+    border: 1px solid #00A8E6;
     padding: 10px;
-    position: relative;
-    color: #FFF;
-    font-size: 20px;
+    background-color: #EDFBFF;
 }
 
-.stats-number.color1 {
-    border: 2px solid #fcd114;
+.stats-block .stats-val {
+    padding: 15px 0;
 }
 
-.stats-number.color1 .number {
-    background-color: #fcd114;
+.stats-block span {
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.stats-number.color2 {
-    border: 2px solid #5ec8ef;
+
+.stats-block span.number {
+    font-size: 2em;
+    color: #007AA8;
+    padding: 5px 0;
 }
 
-.stats-number.color2 .number {
-    background-color: #5ec8ef;
-}
-
-.stats-number.color3 {
-    border: 2px solid #f50059;
-}
-
-.stats-number.color3 .number {
-    background-color: #f50059;
-}
-
-.stats-number.color4 {
-    border: 2px solid #684541;
-}
-
-.stats-number.color4 .number {
-    background-color: #684541;
-}
-
-.stats-number .number .arrow,
-.stats-number .number .arrow:after {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-}
-
-.stats-number .number .arrow {
-    border-width: 11px;
-}
-
-.stats-number .number .arrow:after {
-    border-width: 10px;
-    content: "";
-}
-
-.stats-number .number .arrow.left {
-    top: 50%;
-    left: -11px;
-    margin-top: -11px;
-    border-right-color: transparent;
-    border-left-width: 0;
-}
-
-.stats-number .number .arrow.left:after {
-    left: 1px;
-    bottom: -10px;
-    border-right-color: #ffffff;
-    border-left-width: 0;
-}
-
-.stats-number.color1 .number .arrow.left:after {
-    border-right-color: #fcd114;
-}
-
-.stats-number.color2 .number .arrow.left:after {
-    border-right-color: #5ec8ef;
-}
-
-.stats-number.color3 .number .arrow.left:after {
-    border-right-color: #f50059;
-}
-
-.stats-number.color4 .number .arrow.left:after {
-    border-right-color: #684541;
+.stats-video i.icon {
+    color: #007AA8;
+    font-size: 50px;
 }
