@@ -4,19 +4,19 @@ html, body {
 
 @font-face {
   font-family: 'Open Sans';
+  font-weight: normal;
+  src:url('../fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
   font-style: normal;
+  font-weight:200;
   src:url('../fonts/OpenSans-Regular.ttf');
 }
 @font-face {
   font-family: 'Open Sans';
   font-weight:bold;
   src:url('../fonts/OpenSans-Bold.ttf');
-}
-@font-face {
-  font-family: 'cooper';
-  font-style: normal;
-  src:
-  url('../fonts/cooper_becker_black_cond.ttf');
 }
 body {
   color:#4a4a4a;
@@ -997,7 +997,8 @@ border-top: 1px solid #DDD;
   font-size:24px;
 }
 .box-stats .right strong a {
-  font-family: 'cooper',sans-serif;
+  font-family: 'Open Sans';
+  font-weight:400;
 }
 .box-stats .right span {
   font-style:italic;
