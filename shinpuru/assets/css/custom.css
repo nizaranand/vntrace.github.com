@@ -1228,3 +1228,15 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
   background-color:#49AFCD;
 }
 /*************** end btn ****************/
+
+#tooltip {
+  position: absolute;
+  display:none;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  background-color: #222222;
+  color: #ffffff;
+  z-index: 25;
+}
