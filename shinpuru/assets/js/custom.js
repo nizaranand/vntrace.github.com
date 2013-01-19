@@ -50,7 +50,16 @@
             }
         });
 
-        //
+        // menu sidebar
+        // var _btn = $('.footer a')
+        // $('#sidebar').hover(function(){
+        //     $(_btn).show()
+        // },function(){
+        //     $(_btn).hide()
+        // });
+
+
+        //hide - show box
         $('.collapse').toggle(function(){
             $(this).children().removeClass('icon-minus').addClass('icon-plus')
             $(this).parents('.box').find('.box-body').slideUp()
