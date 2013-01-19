@@ -27,13 +27,6 @@
         },function(){
             $('.form-login').slideUp()
         });
-        //plans-pricing
-        $('.plans-wrapper').hover(function(){
-            $('.plans-wrapper').css({'opacity':'0.5'})
-            $(this).css({'opacity':'1'})
-        },function(){
-            $('.plans-wrapper').css({'opacity':'1'})
-        });
 
         // submenu responsive
         $(window).width(function () {
