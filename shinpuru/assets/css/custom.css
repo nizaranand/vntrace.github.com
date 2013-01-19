@@ -3,9 +3,9 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'ubuntu';
   font-weight: normal;
-  src:url('../fonts/OpenSans-Light.ttf');
+  src:url('../fonts/Ubuntu-L.ttf');
 }
 @font-face {
   font-family: 'Open Sans';
@@ -23,7 +23,7 @@ body {
   background:#f5f5f5;
   font-size:13px;
   line-height:1.5em;
-  font-family:'Open Sans';
+  font-family:'ubuntu';
 }
 ul,li {
   list-style-type:none;
@@ -74,98 +74,6 @@ input[type="file"] {
 .row-fluid input[class*="span"] {
   min-height:20px\9;
 }
-/*************** btn ****************/
-.btn {
-  background:none;
-  border:none;
-  background:#ddd;
-  text-shadow:none;
-}
-.btn-large {
-  padding:10px 20px;
-}
-.btn-ufo,
-.btn-red,
-.btn-sun,
-.btn-brown,
-.btn-daylight,
-.btn-ufo:hover,
-.btn-red:hover,
-.btn-sun:hover,
-.btn-brown:hover,
-.btn-daylight:hover,
-.btn-ufo.active,
-.btn-red.active,
-.btn-sun.active,
-.btn-brown.active,
-.btn-daylight.active {
-  color:#fff;
-}
-.btn-ufo {
-  background:#00A0B0;
-}
-.btn-ufo:hover,
-.btn-ufo.active,
-.btn-group.open .btn-ufo.dropdown-toggle {
-  background:#0093a2;
-}
-.btn-red {
-  background:#CC333F;
-}
-.btn-red:hover,
-.btn-red.active,
-.btn-group.open .btn-red.dropdown-toggle {
-  background:#bb2c37;
-}
-.btn-sun {
-  background:#EB6841;
-}
-.btn-sun:hover,
-.btn-sun.active,
-.btn-group.open .btn-sun.dropdown-toggle {
-  background:#da5f3b;
-}
-.btn-brown {
-  background:#6A4A3C;
-}
-.btn-brown:hover,
-.btn-brown:active,
-.btn-group.open .btn-brown.dropdown-toggle {
-  background: #5a3f33;
-}
-.btn-daylight {
-  background: #EDC951;
-}
-.btn-daylight:hover,
-.btn-daylight:active,
-.btn-group.open .btn-daylight.dropdown-toggle {
-  background: #ddbb4b;
-}
-.btn-primary {
-  background:#006DCC;
-}
-.btn-info {
-  background:#49AFCD;
-}
-.btn-danger {
-  background:#BD362F;
-}
-.btn-success {
-  background:#5BB75B;
-}
-.btn-warning {
-  background:#F89406;
-}
-.btn-inverse {
-  background:#363636;
-}
-.dropdown-menu li > a:hover,
-.dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a {
-  background:none;
-  background-color:#49AFCD;
-}
-/*************** end btn ****************/
 .label-brown, .badge-brown {
   background:#6A4A3C;
 }
@@ -583,12 +491,20 @@ background-color: #fcfcfc;
 .plans-body a:hover{
   background:#fff;
 }
-.plans-body .btn-sun {
-  background:#EB6841;
+.plans-body .btn {
   color:#fff;
   border:none;
   padding:15px 0px;
   margin-top:10px;
+}
+.plans-body .btn-ufo {
+  background:#00A0B0;
+}
+.plans-body .btn-ufo:hover {
+  background:#0093a2;
+}
+.plans-body .btn-sun {
+  background:#EB6841;
 }
 .plans-body .btn-sun:hover {
   background:#da5f3b;
@@ -646,7 +562,8 @@ background-color: #fcfcfc;
   width:390px;
   padding:0px;
 }
-#form-login form input[type="text"] {
+#form-login form input[type="text"],
+#form-login form input[type="password"] {
   width:360px;
   padding-right:20px;
   height:30px;
@@ -674,8 +591,7 @@ background-color: #fcfcfc;
 }
 #form-login form .btn {
   float:right;
-  width:60px;
-  height:25px;
+  width:90px;
   line-height:1.8em;
   border:solid #2d2d2d 3px;
   border-radius:8px;
@@ -942,6 +858,7 @@ border-top: 1px solid #DDD;
   float:left;
   margin-right:10px;
   line-height:26px;
+
 }
 .alert-block i {
   line-height:36px;
@@ -950,6 +867,7 @@ border-top: 1px solid #DDD;
   min-width:50px;
   margin-top:5px;
   float:left;
+  height:80px;
 }
 
 /************************************************/
@@ -1218,3 +1136,95 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
   margin:0px;
 }
 
+/*************** btn ****************/
+.btn {
+  background:none;
+  border:none;
+  background:#ddd;
+  text-shadow:none;
+}
+.btn-large {
+  padding:10px 20px;
+}
+.btn-ufo,
+.btn-red,
+.btn-sun,
+.btn-brown,
+.btn-daylight,
+.btn-ufo:hover,
+.btn-red:hover,
+.btn-sun:hover,
+.btn-brown:hover,
+.btn-daylight:hover,
+.btn-ufo.active,
+.btn-red.active,
+.btn-sun.active,
+.btn-brown.active,
+.btn-daylight.active {
+  color:#fff;
+}
+.btn-ufo {
+  background:#00A0B0;
+}
+.btn-ufo:hover,
+.btn-ufo.active,
+.btn-group.open .btn-ufo.dropdown-toggle {
+  background:#0093a2;
+}
+.btn-red {
+  background:#CC333F;
+}
+.btn-red:hover,
+.btn-red.active,
+.btn-group.open .btn-red.dropdown-toggle {
+  background:#bb2c37;
+}
+.btn-sun {
+  background:#EB6841;
+}
+.btn-sun:hover,
+.btn-sun.active,
+.btn-group.open .btn-sun.dropdown-toggle {
+  background:#da5f3b;
+}
+.btn-brown {
+  background:#6A4A3C;
+}
+.btn-brown:hover,
+.btn-brown:active,
+.btn-group.open .btn-brown.dropdown-toggle {
+  background: #5a3f33;
+}
+.btn-daylight {
+  background: #EDC951;
+}
+.btn-daylight:hover,
+.btn-daylight:active,
+.btn-group.open .btn-daylight.dropdown-toggle {
+  background: #ddbb4b;
+}
+.btn-primary {
+  background:#006DCC;
+}
+.btn-info {
+  background:#49AFCD;
+}
+.btn-danger {
+  background:#BD362F;
+}
+.btn-success {
+  background:#5BB75B;
+}
+.btn-warning {
+  background:#F89406;
+}
+.btn-inverse {
+  background:#363636;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  background:none;
+  background-color:#49AFCD;
+}
+/*************** end btn ****************/
