@@ -11,6 +11,7 @@
 	<!-- Chart-flot -->
 	<link rel="stylesheet" type="text/css" href="assets/css/graph-flot.css">
 	<!-- font-body -->
+</head>
 <body>
 	<div class="container-fluid">
 		<div class="row-fluid">
@@ -36,7 +37,7 @@
 						<a href="index.html"><i class="icon-signout"></i> Sign Out</a>
 					</li>
 				</ul>
-				
+			
 
 				<div class="footer">
 					<a href="#" class="change-menu tip-right" data-original-title="change-menu">
@@ -49,84 +50,77 @@
 
 			<div id="main" class="span10">
 				<div class="row-fluid">
-					<div class="span12">
-						<div class="box">
-							<div class="box-header">
-								<h3>Chart-flot</h3>
-								<a class="collapse" href="#"><i class="icon-minus"></i></a>
-							</div>
-							<div class="box-body">
-								<div id="graph-wrapper">
-									<div class="graph-info">
-										<div class="alert">
-											Internet Explorer doesn't support chart flot!
-										</div>
-										<a href="#" id="bars"><span></span></a>
-										<a href="#" id="lines" class="active"><span></span></a>
-									</div>
+          <div class="span12">
+            <div class="box">
+              <div class="box-header">
+                <h3>Line Chart</h3>
+              </div>
+              <div class="box-body">
+                <div id="line"></div>
+              </div><!-- /end box-body -->
+            </div><!-- /end box -->
+          </div>
+        </div>
+        <!-- /row-fluid -->
 
-									<div class="graph-container">
-										<div id="graph-lines"></div>
-										<div id="graph-bars"></div>
-									</div>
-								</div>
-								<!-- graph-wrapper -->
-							</div><!-- /end box-body -->
-						</div><!-- /end box -->
-					</div>
-				</div>
-				<!-- /row-fluid -->
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="box">
-							<div class="box-header">
-								<h3>Line chart</h3>
-							</div>
-							<div class="box-body">
-								<div class="line-chart" style="height: 400px"></div>
-							</div><!-- /end box-body -->
-						</div><!-- /end box -->
-					</div>
-				</div><!-- /end row-fluid -->
-				<div class="row-fluid">
-					<div class="span6">
-						<div class="box">
-							<div class="box-header">
-								<h3>Pie Chart</h3>
-							</div>
-							<div class="box-body">
-								<img src="assets/img/charts-3.png" alt="">
-							</div><!-- /end box-body -->
-						</div><!-- /end box -->
-					</div>
-					<div class="span6">
-						<div class="box">
-							<div class="box-header">
-								<h3>Donut Chart</h3>
-							</div>
-							<div class="box-body">
-								<img src="assets/img/charts-4.png" alt="">
-							</div><!-- /end box-body -->
-						</div><!-- /end box -->
-					</div>
-				</div><!-- /end row-fluid -->
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="box">
+              <div class="box-header">
+                <h3>Bar Chart</h3>
+              </div>
+              <div class="box-body">
+                <div id="bar"></div>
+              </div><!-- /end box-body -->
+            </div><!-- /end box -->
+          </div>
+        </div><!-- /end row-fluid -->
+
+        <div class="row-fluid">
+          <div class="span6">
+            <div class="box">
+              <div class="box-header">
+                <h3>Pie Chart</h3>
+              </div>
+              <div class="box-body">
+                <div id="pie"></div>
+              </div><!-- /end box-body -->
+            </div><!-- /end box -->
+          </div>
+          <div class="span6">
+            <div class="box">
+              <div class="box-header">
+                <h3>Donut Chart</h3>
+              </div>
+              <div class="box-body">
+                <div id="donut"></div>
+              </div><!-- /end box-body -->
+            </div><!-- /end box -->
+          </div>
+        </div><!-- /end row-fluid -->
 
 			</div> <!-- end main -->
 		</div>	 <!-- end row-fluid -->
 	</div> <!-- end container-fluid -->
 
-	<!-- script -->
-	<script type="text/javascript" src="assets/js/canvas.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-col2.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
-
-	<!-- Chart-flot -->
-	<script type="text/javascript" src="assets/js/jquery-flot/jquery.flot.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-flot/jquery-chart-flot.js"></script>
-	<!-- /Chart-flot -->
-
 	
+  <!--[if lte IE 8]>
+    <script language="javascript" type="text/javascript" src="assets/js/flot/excanvas.min.js"></script>
+  <![endif]-->
+
+  <!-- Jquery 1.8.3 -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+  <!-- Flot, only need it if you want a chart -->
+  <script type="text/javascript" src="assets/js/flot/jquery.flot.min.js"></script>
+  <!-- Plugin of flot, using to draw pie and donut chart -->
+  <script type="text/javascript" src="assets/js/flot/jquery.flot.pie.js"></script>
+  <!-- Script example for flot -->
+  <script type="text/javascript" src="assets/js/flot/chart.js"></script>
+  <!-- Need for auto calculate bootstrap width -->
+	<script type="text/javascript" src="assets/js/jquery-col2.js"></script>
+  <!-- Bootstrap javascript -->
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <!-- Shinpuru custom javascript -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 </html>
