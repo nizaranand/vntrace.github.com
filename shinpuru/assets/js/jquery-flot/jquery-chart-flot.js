@@ -120,12 +120,12 @@ $(document).ready(function () {
 	var d1 = {
 		label: 'sin',
 		data: sin,
-		color: 'red'
+		color: '#EB6841'
 	};
 	var d2 = {
 		label: 'cos',
 		data: cos,
-		color: 'blue'
+		color: '#00A0B0'
 	};
 	var option = {
 		series: {
