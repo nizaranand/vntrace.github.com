@@ -1549,10 +1549,15 @@
 		</div>   <!-- /end row-fluid -->
 	</div> <!-- /end container-fluid -->
 
-<!-- Jquery 1.8.3 -->
+  <!--[if lte IE 8]>
+    <script language="javascript" type="text/javascript" src="assets/js/flot/excanvas.min.js"></script>
+  <![endif]-->
+  <!-- Jquery 1.8.3 -->
   <script type="text/javascript" src="assets/js/jquery.js"></script>
   <!-- Flot, only need it if you want a chart -->
   <script type="text/javascript" src="assets/js/flot/jquery.flot.min.js"></script>
+  <!-- Plugin Auto resize for flot -->
+  <script type="text/javascript" src="assets/js/flot/jquery.flot.resize.js"></script>
   <!-- Script example for flot -->
   <script type="text/javascript" src="assets/js/flot/chart.js"></script>
   <!-- Need for auto calculate bootstrap width -->
