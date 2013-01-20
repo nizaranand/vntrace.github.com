@@ -882,7 +882,8 @@ border-top: 1px solid #DDD;
 /*=======================================*/
 .box-stats {
   background:#fff;
-  margin:0px 0px 20px 0px;
+  margin:0px;
+  margin-bottom:20px;
   float:left;
   width:100%;
   border:1px solid #eee;
@@ -931,6 +932,7 @@ border-top: 1px solid #DDD;
 .process-bars li {
   margin:0px;
   margin:0px 2%;
+  *margin:0px 1.8%;
 }
 .process-bars .progress{
   height:10px;
