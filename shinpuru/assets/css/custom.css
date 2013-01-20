@@ -864,7 +864,7 @@ border-top: 1px solid #DDD;
   line-height:36px;
   *line-height:40px;
   font-size:50px;
-  min-width:50px;
+  width:50px;
   margin-top:5px;
   float:left;
   height:80px;
@@ -1241,5 +1241,5 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
   z-index: 25;
 }
 .line-chart {
-  
+
 }
