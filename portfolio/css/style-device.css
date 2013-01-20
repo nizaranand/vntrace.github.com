@@ -10,10 +10,18 @@
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	
+	.search-form {
+		display: none;
+	}
+
+	.hidden-search-form {
+		display: block;
+	}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	
+	.searchbox {
+		float: none;
+	}
 }

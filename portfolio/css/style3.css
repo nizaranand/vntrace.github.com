@@ -21,10 +21,10 @@ a {
 .searchbox {
     float: left;
     background-color: white;
-    padding: 15px 30px 15px 120px;
+    padding: 15px 15px 15px 120px;
     border: 1px solid #d9d9d9;
     margin-top: 18px;
-    margin-left: 20px;
+    text-align: right;
 }
 
 .searchbox form,
@@ -43,6 +43,14 @@ a {
     padding-right: 20px;
 }
 
+.hidden-search-form {
+    display: none;
+}
+
+.hidden-search-form .button{
+    font-size: 16px;
+}
+
 header nav {
     float: left;
 }
@@ -51,17 +59,18 @@ ul.nav {
     list-style: none;
     background-color: white;
     display: block;
+    clear: both;
     float: left;
     margin: 0;
-    padding: 5px 5px 5px 120px;
+    padding: 0 5px 5px 0;
     border: 1px solid #d9d9d9;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 ul.nav li {
     float: left;
     margin-left: 5px;
-    
+    margin-top: 5px;
 }
 
 ul.nav li a {
@@ -70,14 +79,16 @@ ul.nav li a {
     color: #FFF;
     text-decoration: none;
     background-color: #00A8E6;
-    width: 50px;
     height: 50px;
-    font-size: 30px;
+    width: 50px;
+    font-size: 10px;
     line-height: 1.7em;
 }
 
 ul.nav li a i {
     font-size: 30px;
+    display: block !important;
+    margin: 10px auto 5px;
 }
 ul.nav li.active a,
 ul.nav li a:hover {
@@ -185,6 +196,8 @@ ul.nav li a:hover {
     -moz-border-radius-bottomright: 4px;
     border-bottom-right-radius: 4px;
     border: 0px 1px 1px 0 solid #D9D9D9;
+    border-bottom: 1px solid #0092C8;
+    border-right: 1px solid #0092C8;
 }
 
 .m-widget .content {
@@ -311,9 +324,10 @@ ul.nav-tabs > li > a:hover {
 
 .hidden-item-container ul li a {
     font-family: "entypo";
-    font-size: 50px;
+    font-size: 30px;
     width: 50px;
     height: 50px;
+    line-height: 1.7em;
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -341,6 +355,7 @@ ul.nav-tabs > li > a:hover {
 .not-bt {
     margin: 0;
     padding: 0;
+    width: auto;
 }
 
 /*Override bootstrap button collection*/
@@ -398,4 +413,43 @@ a.button {
 
 .button.warning:hover {
     background-color: #EDAA1A;
+}
+
+.input-append .button {
+    border-left: none;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    padding: 5px 10px 4px;
+}
+
+/*Stats*/
+.stats-block {
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 2px 2px 4px;
+    border-radius: 4px 2px 2px 4px;
+    border: 1px solid #00A8E6;
+    padding: 10px;
+    background-color: #EDFBFF;
+}
+
+.stats-block .stats-val {
+    padding: 15px 0;
+}
+
+.stats-block span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.stats-block span.number {
+    font-size: 2em;
+    color: #007AA8;
+    padding: 5px 0;
+}
+
+.stats-video i.icon {
+    color: #007AA8;
+    font-size: 50px;
 }

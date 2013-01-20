@@ -109,4 +109,60 @@ $(document).ready(function () {
 		}
 	});
 
+	// chart line chart
+	var sin = [], cos = [];
+	for (i = 0; i < 14; i += 0.5) {
+		sin.push([i, Math.sin(i)]);
+		cos.push([i, Math.cos(i)]);
+	}
+
+	var placeholder = $('.line-chart');
+	var d1 = {
+		label: 'sin',
+		data: sin,
+		color: '#EB6841'
+	};
+	var d2 = {
+		label: 'cos',
+		data: cos,
+		color: '#00A0B0'
+	};
+	var option = {
+		series: {
+			lines: { show: true},
+			points: { show: true}
+		},
+		grid: {
+			hoverable: true,
+			clickable: true
+		},
+		yaxis: {min: -2, max: 2}
+	};
+	
+
+
+	var plot = $.plot(placeholder, [d1, d2], option);
+
+	placeholder.bind('plothover', function(event, pos, item){
+		if (item) {
+			if (item.dataIndex != previousPoint) {
+				previousPoint = item.dataIndex;
+
+				$('#tooltip').fadeOut(200, function(){
+					$(this).remove();
+				});
+
+				var x = item.datapoint[0].toFixed(2);
+				var y = item.datapoint[1].toFixed(2);
+				console.log(item);
+				showTooltip(item.pageX, item.pageY, item.series.label + " of " + x + " = " + y);
+			}
+		} else {
+			$('#tooltip').fadeOut(200,function(){
+				$(this).remove();
+			});
+			previousPoint = null;
+		}
+	});
+
 });

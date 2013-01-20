@@ -27,13 +27,6 @@
         },function(){
             $('.form-login').slideUp()
         });
-        //plans-pricing
-        $('.plans-wrapper').hover(function(){
-            $('.plans-wrapper').css({'opacity':'0.5'})
-            $(this).css({'opacity':'1'})
-        },function(){
-            $('.plans-wrapper').css({'opacity':'1'})
-        });
 
         // submenu responsive
         $(window).width(function () {
@@ -50,7 +43,16 @@
             }
         });
 
-        //
+        // menu sidebar
+        // var _btn = $('.footer a')
+        // $('#sidebar').hover(function(){
+        //     $(_btn).show()
+        // },function(){
+        //     $(_btn).hide()
+        // });
+
+
+        //hide - show box
         $('.collapse').toggle(function(){
             $(this).children().removeClass('icon-minus').addClass('icon-plus')
             $(this).parents('.box').find('.box-body').slideUp()

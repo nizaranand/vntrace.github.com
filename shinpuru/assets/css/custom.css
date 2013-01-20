@@ -3,24 +3,36 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'ubuntu';
+  font-weight: normal;
+  src:url('../fonts/Ubuntu-L.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
   font-style: normal;
-  src:
-  url('../fonts/OpenSans-Bold.ttf');
+  font-weight:200;
+  src:url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight:bold;
+  src:url('../fonts/OpenSans-Bold.ttf');
 }
 body {
   color:#4a4a4a;
   background:#f5f5f5;
   font-size:13px;
   line-height:1.5em;
-  font-family:'Open Sans',sans-serif;
+  font-family:'ubuntu';
 }
 ul,li {
   list-style-type:none;
 }
 h1,h2,h3,h4,h5,h6 {
   line-height:1em;
-  font-weight:400;
+  font-family:'Open Sans';
+  font-weight:300;
+  /*letter-spacing: -1px;*/
 }
 h1 {
   margin:20px 0px 40px 0px;
@@ -62,98 +74,6 @@ input[type="file"] {
 .row-fluid input[class*="span"] {
   min-height:20px\9;
 }
-/*************** btn ****************/
-.btn {
-  background:none;
-  border:none;
-  background:#ddd;
-  text-shadow:none;
-}
-.btn-large {
-  padding:10px 20px;
-}
-.btn-ufo,
-.btn-red,
-.btn-sun,
-.btn-brown,
-.btn-daylight,
-.btn-ufo:hover,
-.btn-red:hover,
-.btn-sun:hover,
-.btn-brown:hover,
-.btn-daylight:hover,
-.btn-ufo.active,
-.btn-red.active,
-.btn-sun.active,
-.btn-brown.active,
-.btn-daylight.active {
-  color:#fff;
-}
-.btn-ufo {
-  background:#00A0B0;
-}
-.btn-ufo:hover,
-.btn-ufo.active,
-.btn-group.open .btn-ufo.dropdown-toggle {
-  background:#0093a2;
-}
-.btn-red {
-  background:#CC333F;
-}
-.btn-red:hover,
-.btn-red.active,
-.btn-group.open .btn-red.dropdown-toggle {
-  background:#bb2c37;
-}
-.btn-sun {
-  background:#EB6841;
-}
-.btn-sun:hover,
-.btn-sun.active,
-.btn-group.open .btn-sun.dropdown-toggle {
-  background:#da5f3b;
-}
-.btn-brown {
-  background:#6A4A3C;
-}
-.btn-brown:hover,
-.btn-brown:active,
-.btn-group.open .btn-brown.dropdown-toggle {
-  background: #5a3f33;
-}
-.btn-daylight {
-  background: #EDC951;
-}
-.btn-daylight:hover,
-.btn-daylight:active,
-.btn-group.open .btn-daylight.dropdown-toggle {
-  background: #ddbb4b;
-}
-.btn-primary {
-  background:#006DCC;
-}
-.btn-info {
-  background:#49AFCD;
-}
-.btn-danger {
-  background:#BD362F;
-}
-.btn-success {
-  background:#5BB75B;
-}
-.btn-warning {
-  background:#F89406;
-}
-.btn-inverse {
-  background:#363636;
-}
-.dropdown-menu li > a:hover,
-.dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a {
-  background:none;
-  background-color:#49AFCD;
-}
-/*************** end btn ****************/
 .label-brown, .badge-brown {
   background:#6A4A3C;
 }
@@ -323,19 +243,39 @@ body > .container-fluid > .row-fluid {
   font-size:25px;
   padding:20px;
   display:block;
-  text-align: center;
+  /*text-align: center;*/
+  margin-left:10px;
 }
 .logo:hover {
   color:#fff;
 }
 #sidebar {
-  height: 100%;
+  /*height: 100%;
   float: left;
   position: relative;
   overflow-x: hidden;
   border-right: 2px solid #BBB;
   background-color: #333;
+  padding-bottom:50px;*/
+}
+#sidebar {
+  background:#ddd;
+  height:100%;
+  color:#fff;
+  position:fixed;
+  background-color: #333;
   padding-bottom:50px;
+  overflow:auto;
+}
+.sidebar {
+  left:0px;
+  border:0px;
+  border-right: 2px solid #BBB;
+}
+.sidebar-right {
+  right:0px;
+  border-right:none;
+  border-left: 2px solid #BBB;
 }
 #sidebar .nav-list > li {
   /*border-left:5px solid #444;*/
@@ -407,16 +347,36 @@ body > .container-fluid > .row-fluid {
   float:left;
   margin-top:200px;
   position:fixed;
-  bottom:0px;
   background:#333;
+  margin-left:-2px;
+  width:14.893617021276595%;
+  bottom:0px;
 }
 .footer p {
   bottom:0px;
   color:#fff;
   float:left;
-  margin-top:10px;
+  margin:10px;
 }
-
+.sidebar-right .footer{
+   margin-left:0px;
+}
+#sidebar .change-menu {
+  background:#222;
+  padding:8px 15px;
+  height:20px;
+  border-radius:0px 6px 6px 0px;
+  color:#fff;
+  /*right:-26px;
+  background:#bbb;
+  padding:8px 8px;*/
+  top:-40px;
+  left:2px;
+  position:absolute;
+}
+#sidebar .change-menu-right {
+  right:0px;
+}
 /************************************************/
 /********************* end sidebar **********************/
 /************************************************/
@@ -424,7 +384,7 @@ body > .container-fluid > .row-fluid {
 /************************************************/
 /********************* #main **********************/
 /************************************************/
-#main{
+/*#main{
   position: relative;
   height: 100%;
   padding-top:20px;
@@ -434,14 +394,18 @@ body > .container-fluid > .row-fluid {
   *margin-right:-20px;
   *margin-left:20px;
   overflow:auto;
+}*/
+#main,#main-left {
+  padding-top:20px;
+  padding-bottom:20px;
 }
-.container-fluid {
+#main-left {
+  margin-left:1.06382978723%;
+}
+/*.container-fluid {
   padding-left: 0px;
   padding-right:0px;
-  *overflow-x:hidden;
-  *height: 100%;
-  *position: relative;
-}
+}*/
 .box {
   padding:0px 10px 30px 10px;
   overflow:hidden;
@@ -527,12 +491,20 @@ background-color: #fcfcfc;
 .plans-body a:hover{
   background:#fff;
 }
-.plans-body .btn-sun {
-  background:#EB6841;
+.plans-body .btn {
   color:#fff;
   border:none;
   padding:15px 0px;
   margin-top:10px;
+}
+.plans-body .btn-ufo {
+  background:#00A0B0;
+}
+.plans-body .btn-ufo:hover {
+  background:#0093a2;
+}
+.plans-body .btn-sun {
+  background:#EB6841;
 }
 .plans-body .btn-sun:hover {
   background:#da5f3b;
@@ -590,7 +562,8 @@ background-color: #fcfcfc;
   width:390px;
   padding:0px;
 }
-#form-login form input[type="text"] {
+#form-login form input[type="text"],
+#form-login form input[type="password"] {
   width:360px;
   padding-right:20px;
   height:30px;
@@ -618,8 +591,7 @@ background-color: #fcfcfc;
 }
 #form-login form .btn {
   float:right;
-  width:60px;
-  height:25px;
+  width:90px;
   line-height:1.8em;
   border:solid #2d2d2d 3px;
   border-radius:8px;
@@ -665,8 +637,9 @@ background-color: #fcfcfc;
   padding:20px 10px;
   padding:10px 10px\9;
   *padding:10px 0px;
-  background:#fafafa;
+  background:#f5f5f5;
   border-color:#fff;
+  *border:1px solid #eee;
 }
 .form-account input:focus {
   background:#fff;
@@ -885,6 +858,7 @@ border-top: 1px solid #DDD;
   float:left;
   margin-right:10px;
   line-height:26px;
+
 }
 .alert-block i {
   line-height:36px;
@@ -893,6 +867,7 @@ border-top: 1px solid #DDD;
   min-width:50px;
   margin-top:5px;
   float:left;
+  height:80px;
 }
 
 /************************************************/
@@ -939,6 +914,10 @@ border-top: 1px solid #DDD;
   display:block;
   color:#00a0b0;
   font-size:24px;
+}
+.box-stats .right strong a {
+  font-family: 'Open Sans';
+  font-weight:400;
 }
 .box-stats .right span {
   font-style:italic;
@@ -1157,3 +1136,110 @@ http://www.colourlovers.com/palette/1473/Ocean_Five
   margin:0px;
 }
 
+/*************** btn ****************/
+.btn {
+  background:none;
+  border:none;
+  background:#ddd;
+  text-shadow:none;
+}
+.btn-large {
+  padding:10px 20px;
+}
+.btn-ufo,
+.btn-red,
+.btn-sun,
+.btn-brown,
+.btn-daylight,
+.btn-ufo:hover,
+.btn-red:hover,
+.btn-sun:hover,
+.btn-brown:hover,
+.btn-daylight:hover,
+.btn-ufo.active,
+.btn-red.active,
+.btn-sun.active,
+.btn-brown.active,
+.btn-daylight.active {
+  color:#fff;
+}
+.btn-ufo {
+  background:#00A0B0;
+}
+.btn-ufo:hover,
+.btn-ufo.active,
+.btn-group.open .btn-ufo.dropdown-toggle {
+  background:#0093a2;
+}
+.btn-red {
+  background:#CC333F;
+}
+.btn-red:hover,
+.btn-red.active,
+.btn-group.open .btn-red.dropdown-toggle {
+  background:#bb2c37;
+}
+.btn-sun {
+  background:#EB6841;
+}
+.btn-sun:hover,
+.btn-sun.active,
+.btn-group.open .btn-sun.dropdown-toggle {
+  background:#da5f3b;
+}
+.btn-brown {
+  background:#6A4A3C;
+}
+.btn-brown:hover,
+.btn-brown:active,
+.btn-group.open .btn-brown.dropdown-toggle {
+  background: #5a3f33;
+}
+.btn-daylight {
+  background: #EDC951;
+}
+.btn-daylight:hover,
+.btn-daylight:active,
+.btn-group.open .btn-daylight.dropdown-toggle {
+  background: #ddbb4b;
+}
+.btn-primary {
+  background:#006DCC;
+}
+.btn-info {
+  background:#49AFCD;
+}
+.btn-danger {
+  background:#BD362F;
+}
+.btn-success {
+  background:#5BB75B;
+}
+.btn-warning {
+  background:#F89406;
+}
+.btn-inverse {
+  background:#363636;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  background:none;
+  background-color:#49AFCD;
+}
+/*************** end btn ****************/
+
+#tooltip {
+  position: absolute;
+  display:none;
+  border: none;
+  /*padding: 3px 8px;*/
+  border-radius: 3px;
+  font-size: 10px;
+  background-color: #222222;
+  color: #ffffff;
+  z-index: 25;
+}
+.line-chart {
+  
+}
