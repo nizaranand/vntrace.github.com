@@ -14,56 +14,56 @@ $(document).ready(function () {
 	];
 
 	// Lines Graph #############################################
-	$.plot($('#graph-lines'), graphData, {
-		series: {
-			points: {
-				show: true,
-				radius: 5
-			},
-			lines: {
-				show: true
-			},
-			shadowSize: 0
-		},
-		grid: {
-			color: '#646464',
-			borderColor: 'transparent',
-			borderWidth: 20,
-			hoverable: true
-		},
-		xaxis: {
-			tickColor: 'transparent',
-			tickDecimals: 2
-		},
-		yaxis: {
-			tickSize: 1000
-		}
-	});
+	// $.plot($('#graph-lines'), graphData, {
+	// 	series: {
+	// 		points: {
+	// 			show: true,
+	// 			radius: 5
+	// 		},
+	// 		lines: {
+	// 			show: true
+	// 		},
+	// 		shadowSize: 0
+	// 	},
+	// 	grid: {
+	// 		color: '#646464',
+	// 		borderColor: 'transparent',
+	// 		borderWidth: 20,
+	// 		hoverable: true
+	// 	},
+	// 	xaxis: {
+	// 		tickColor: 'transparent',
+	// 		tickDecimals: 2
+	// 	},
+	// 	yaxis: {
+	// 		tickSize: 1000
+	// 	}
+	// });
 
 	// Bars Graph ##############################################
-	$.plot($('#graph-bars'), graphData, {
-		series: {
-			bars: {
-				show: true,
-				barWidth: .9,
-				align: 'center'
-			},
-			shadowSize: 0
-		},
-		grid: {
-			color: '#646464',
-			borderColor: 'transparent',
-			borderWidth: 20,
-			hoverable: true
-		},
-		xaxis: {
-			tickColor: 'transparent',
-			tickDecimals: 2
-		},
-		yaxis: {
-			tickSize: 1000
-		}
-	});
+	// $.plot($('#graph-bars'), graphData, {
+	// 	series: {
+	// 		bars: {
+	// 			show: true,
+	// 			barWidth: .9,
+	// 			align: 'center'
+	// 		},
+	// 		shadowSize: 0
+	// 	},
+	// 	grid: {
+	// 		color: '#646464',
+	// 		borderColor: 'transparent',
+	// 		borderWidth: 20,
+	// 		hoverable: true
+	// 	},
+	// 	xaxis: {
+	// 		tickColor: 'transparent',
+	// 		tickDecimals: 2
+	// 	},
+	// 	yaxis: {
+	// 		tickSize: 1000
+	// 	}
+	// });
 
 	// Graph Toggle ############################################
 	$('#graph-bars').hide();
@@ -94,20 +94,20 @@ $(document).ready(function () {
 
 	var previousPoint = null;
 
-	$('#graph-lines, #graph-bars').bind('plothover', function (event, pos, item) {
-		if (item) {
-			if (previousPoint != item.dataIndex) {
-				previousPoint = item.dataIndex;
-				$('#tooltip').remove();
-				var x = item.datapoint[0],
-					y = item.datapoint[1];
-					showTooltip(item.pageX, item.pageY, y + ' visitors at ' + x + '.00h');
-			}
-		} else {
-			$('#tooltip').remove();
-			previousPoint = null;
-		}
-	});
+	// $('#graph-lines, #graph-bars').bind('plothover', function (event, pos, item) {
+	// 	if (item) {
+	// 		if (previousPoint != item.dataIndex) {
+	// 			previousPoint = item.dataIndex;
+	// 			$('#tooltip').remove();
+	// 			var x = item.datapoint[0],
+	// 				y = item.datapoint[1];
+	// 				showTooltip(item.pageX, item.pageY, y + ' visitors at ' + x + '.00h');
+	// 		}
+	// 	} else {
+	// 		$('#tooltip').remove();
+	// 		previousPoint = null;
+	// 	}
+	// });
 
 	// chart line chart
 	var sin = [], cos = [];
