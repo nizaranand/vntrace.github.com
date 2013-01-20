@@ -50,13 +50,9 @@ $(document).ready(function () {
         shadowSize: 0
       },
       grid: {
-        color: '#646464',
-        borderColor: 'transparent',
-        borderWidth: 20,
         hoverable: true
       },
       xaxis: {
-        tickColor: 'transparent',
         tickDecimals: 2
       },
       yaxis: {
