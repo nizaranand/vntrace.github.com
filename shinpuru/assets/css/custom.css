@@ -871,8 +871,8 @@ border-top: 1px solid #DDD;
   *height:auto;
 }
 .alert-block h4 {
-  float:left;
-  width:80%;
+  *float:left;
+  *width:83%;
 }
 /************************************************/
 /********************* end #main **********************/
