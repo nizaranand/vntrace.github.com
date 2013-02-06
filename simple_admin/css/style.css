@@ -121,16 +121,19 @@ a, a:active, a:link, a:visited {
 .widget .header {
     border-bottom: 4px solid #e7e8e3;
     padding: 0 5px;
+    height: 30px;
+    position: relative;
 }
 
 .widget .header .title {
     display: inline-block;
     margin: 0;
     border-bottom: 4px solid #A2361E;
-    margin-bottom: -1px;
-    padding: 0 5px;
+    padding: 0 10px 5px 10px;
     color: #3c3b37;
-    font-size: 17px;
+    font-size: 14pt;
+    position: absolute;
+    bottom: -4px;
 }
 
 .widget .content {
@@ -146,6 +149,7 @@ a, a:active, a:link, a:visited {
     color: #A2361E;
     padding: 10px 0;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .stats span {
@@ -154,5 +158,10 @@ a, a:active, a:link, a:visited {
 
 .stats span.number {
     font-weight: bold;
-    font-size: 21px;
+    font-size: 21pt;
+    padding: 5px 0;
+}
+
+.stats span.icon {
+    font-size: 15px;
 }
