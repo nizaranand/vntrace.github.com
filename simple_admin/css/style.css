@@ -51,24 +51,64 @@ a, a:active, a:link, a:visited {
 	color: #3D3B38;
 }
 
+.my-navbar {
+
+}
+
 .my-navbar .navbar-inner {
 	border: none;
 	background-color: #FFF;
 	background-image: none;
-	-moz-box-shadow: none;
+	/*-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	box-shadow: none;
+	box-shadow: none;*/
 }
 
 .my-navbar .brand {
+    padding: 5px 10px 5px;
 	background-color: #A2361E;
 	color: white;
 	font-style: italic;
 	-moz-border-radius: 0 0 5px 5px;
 	-webkit-border-radius: 0 0 5px 5px;
 	border-radius: 0 0 5px 5px;
+    margin-left: 0;
+}
+
+.my-navbar .nav {
+    margin: 15px 0;
 }
 
 .my-navbar .nav > li > a {
 	padding: 5px 10px 5px;
+    color: #3D3B38;
+}
+
+.divider {
+    float: left;
+    height: 45px;
+    width: 1px;
+    margin: 5px 15px;
+    background-image: url('../img/divider.png');
+    background-repeat: no-repeat;
+}
+
+.my-navbar .btn-navbar .icon-bar {
+    background-color: #a2361e;
+    width: 20px;
+    height: 3px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.my-navbar .btn, .navbar .btn-group {
+    margin-top: 15px;
+}
+
+.my-navbar .nav > li > a span.notify {
+    display: inline-block;
+    background-color: #00a8e6;
+    padding: 0 3px;
+    color: #FFF;
 }
