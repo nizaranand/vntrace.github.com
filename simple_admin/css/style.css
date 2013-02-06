@@ -51,10 +51,6 @@ a, a:active, a:link, a:visited {
 	color: #3D3B38;
 }
 
-.my-navbar {
-
-}
-
 .my-navbar .navbar-inner {
 	border: none;
 	background-color: #FFF;
@@ -65,14 +61,21 @@ a, a:active, a:link, a:visited {
 }
 
 .my-navbar .brand {
-    padding: 5px 10px 5px;
+    padding: 15px 10px 15px;
 	background-color: #A2361E;
 	color: white;
-	font-style: italic;
 	-moz-border-radius: 0 0 5px 5px;
 	-webkit-border-radius: 0 0 5px 5px;
 	border-radius: 0 0 5px 5px;
-    margin-left: 0;
+    margin-left: 0;    
+}
+
+.my-navbar .brand .logo-text {
+    font-style: italic;
+    text-shadow: 0 2px 3px rgba(20,20,20,0.5);
+    -webkit-background-clip: text;
+        -moz-background-clip: text;
+            background-clip: text;
 }
 
 .my-navbar .nav {
@@ -103,7 +106,7 @@ a, a:active, a:link, a:visited {
 }
 
 .my-navbar .btn, .navbar .btn-group {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .my-navbar .nav > li > a span.notify {
