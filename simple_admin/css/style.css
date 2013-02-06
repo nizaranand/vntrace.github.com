@@ -115,17 +115,18 @@ a, a:active, a:link, a:visited {
 .widget {
     border: 1px solid #e7e8e3;
     padding: 5px 0;
+    margin-bottom: 10px;
 }
 
 .widget .header {
-    border-bottom: 2px solid #e7e8e3;
+    border-bottom: 4px solid #e7e8e3;
     padding: 0 5px;
 }
 
 .widget .header .title {
     display: inline-block;
     margin: 0;
-    border-bottom: 2px solid #A2361E;
+    border-bottom: 4px solid #A2361E;
     margin-bottom: -1px;
     padding: 0 5px;
     color: #3c3b37;
@@ -134,4 +135,24 @@ a, a:active, a:link, a:visited {
 
 .widget .content {
     padding: 5px;
+}
+
+.stats {
+    border: 1px solid #efdec2;
+    background-color: #fcf9f4;
+    text-align: center;
+    width: 220px;
+    margin: 0 auto;
+    color: #A2361E;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.stats span {
+    display: block;
+}
+
+.stats span.number {
+    font-weight: bold;
+    font-size: 21px;
 }
