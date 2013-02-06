@@ -8,6 +8,11 @@
 	.divider {
 		display: none;
 	}
+
+	.navbar-fixed-top .navbar-inner,
+	.navbar-fixed-bottom .navbar-inner {
+	    padding-top: 0;
+	}
 }
  
 /* Landscape phone to portrait tablet */
@@ -15,11 +20,21 @@
 	.divider {
 		display: none;
 	}
+
+	.navbar-fixed-top .navbar-inner,
+	.navbar-fixed-bottom .navbar-inner {
+	    padding-top: 0;
+	}
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.divider {
 		display: none;
+	}
+
+	.navbar-fixed-top .navbar-inner,
+	.navbar-fixed-bottom .navbar-inner {
+	    padding-top: 0;
 	}
 }
