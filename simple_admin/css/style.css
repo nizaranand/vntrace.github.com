@@ -72,10 +72,6 @@ a, a:active, a:link, a:visited {
 
 .my-navbar .brand .logo-text {
     font-style: italic;
-    text-shadow: 0 2px 3px rgba(20,20,20,0.5);
-    -webkit-background-clip: text;
-        -moz-background-clip: text;
-            background-clip: text;
 }
 
 .my-navbar .nav {
@@ -109,9 +105,33 @@ a, a:active, a:link, a:visited {
     margin-top: 10px;
 }
 
-.my-navbar .nav > li > a span.notify {
+.my-navbar .nav > li > a .notify {
     display: inline-block;
     background-color: #00a8e6;
     padding: 0 3px;
     color: #FFF;
+}
+/*Widget*/
+.widget {
+    border: 1px solid #e7e8e3;
+    padding: 5px 0;
+}
+
+.widget .header {
+    border-bottom: 2px solid #e7e8e3;
+    padding: 0 5px;
+}
+
+.widget .header .title {
+    display: inline-block;
+    margin: 0;
+    border-bottom: 2px solid #A2361E;
+    margin-bottom: -1px;
+    padding: 0 5px;
+    color: #3c3b37;
+    font-size: 17px;
+}
+
+.widget .content {
+    padding: 5px;
 }
