@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>*C - L - G - T*</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-device.css">	
+
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a[rel=tooltip]').tooltip();
+		});
+	</script>
+</head>
+<body>
+	<div class="navbar my-navbar navbar-fixed-top">
+      	<div class="navbar-inner">
+	        <div class="container-fluid">
+	          	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+	          	</button>
+	          	<a class="brand" href="./index.html">
+	          		<span class="logo-text">Admin</span>
+	          	</a>
+
+	          	<div class="divider"></div>
+
+	          	<div class="nav-collapse collapse">
+		            <ul class="nav">
+		              	<li class="">
+		                	<a href="./index.html">Home</a>
+		              	</li>
+		              	<li class="">
+		                	<a href="./font-awesome.html">Font awesome</a>
+		              	</li>
+		              	<li class="">
+		                	<a href="./scaffolding.html">Scaffolding</a>
+		              	</li>
+		              	<li class="">
+		                	<a href="./base-css.html">Base CSS</a>
+		              	</li>
+		              	<li class="active">
+		                	<a href="./components.html">Components</a>
+		              	</li>
+		              	<li class="">
+		                	<a href="./javascript.html">JavaScript</a>
+		              	</li>
+		              	<li class="">
+		                	<a href="./customize.html">
+		                		Customize
+		                		<span class="notify">5</span>
+		                	</a>
+		              	</li>
+		            </ul>
+
+		            <ul class="nav pull-right">
+		            	<li class="dropdown">
+	                      	<a href="#" id="profile-dropdown" role="button" class="dropdown-toggle" data-toggle="dropdown">
+	                      		<img src="img/avatar.jpg" />
+	                      		admin 
+	                      		<b class="caret"></b>
+	                      	</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+								<li><a tabindex="-1" href="#">Action</a></li>
+								<li><a tabindex="-1" href="#">Another action</a></li>
+								<li><a tabindex="-1" href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a tabindex="-1" href="#">Separated link</a></li>
+							</ul>
+	                    </li>
+		            </ul>
+	          	</div>
+	        </div>
+      	</div>
+    </div>
+    
+    <div class="container-fluid">
+    	<div class="row-fluid">
+    		<div class="span12">
+    			<h4 class="page-header">
+    				<span>Videos</span>
+    			</h4>
+    			<div class="tabbable tabs-left">
+					<ul class="nav nav-tabs">
+					    <li class="active">
+					    	<a href="#comedy" data-toggle="tab">
+					    		Comedy
+					    		<span class="video-tab-count">12 videos</span>
+					    	</a>
+					    </li>
+					    <li class="">
+					    	<a href="#music" data-toggle="tab">
+					    		Music
+					    		<span class="video-tab-count">12 videos</span>
+					    	</a>
+					    </li>
+					    <li class="">
+					    	<a href="#film_en" data-toggle="tab">
+					    		Film & Entertainment
+					    		<span class="video-tab-count">12 videos</span>
+					    	</a>
+					    </li>
+					</ul>
+					<div class="tab-content">
+					    <div class="tab-pane active" id="comedy">
+					    	<div class="row-fluid">
+					    		<div class="span6">
+					    			Comedy (12 videos)
+					    		</div>
+					    		<div class="span6">
+					    			<form class="form-inline pull-right form-search">
+					    				<div class="input-append">
+										  	<input class="input-large" type="text">
+										  	<button class="btn" type="button"><i class="icon-search"></i></button>
+										</div>
+					    			</form>
+					    		</div>
+					    	</div>
+
+		                	<ul class="the-video-list">
+		                		<li>
+		                			<div class="video-thumb">
+		                				<img src="img/video_thumb/v1.jpg"/>
+		                			</div>
+		                			<div class="video-info"></div>
+		                		</li>
+		                	</ul>
+		                </div>
+		                <div class="tab-pane" id="music">
+		                	Music
+		                </div>
+		                <div class="tab-pane" id="film_en">
+		                	Film & Entertainment
+		                </div>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+
+    <footer class="footer">
+    	<div class="container-fluid">
+    		<div class="row-fluid">
+    			<p style="margin-top: 10px">
+    				Designed by clgt team,
+    				Please visit us at <a href="clgt.vn">clgt.vn</a> or contact us by <a href="mailto:clgt@clgt.vn">clgt@clgt.vn</a>
+    			</p>
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>

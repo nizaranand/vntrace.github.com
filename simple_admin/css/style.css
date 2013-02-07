@@ -67,7 +67,8 @@ a, a:active, a:link, a:visited {
 	-moz-border-radius: 0 0 5px 5px;
 	-webkit-border-radius: 0 0 5px 5px;
 	border-radius: 0 0 5px 5px;
-    margin-left: 0;    
+    margin-left: 0;
+    font-size: 30px;
 }
 
 .my-navbar .brand .logo-text {
@@ -299,6 +300,7 @@ a, a:active, a:link, a:visited {
 .page-header {
     border-bottom: 4px solid #E7E8E3;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .page-header span {
@@ -306,4 +308,63 @@ a, a:active, a:link, a:visited {
     border-bottom: 4px solid #A2361E;
     bottom: -4px;
     position: absolute;
+}
+
+.the-icons {
+    list-style-type: none;
+    margin: 0;
+}
+
+.video-tab-count {
+    font-style: italic;
+    font-size: 11px;
+    color: #A2361E;
+}
+
+.form-search {
+    margin-bottom: 0;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(163, 55, 29, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 72, 0, 0.1), 0 0 1px rgba(163, 55, 29, 0.6);
+     -moz-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.075), 0 0 1px rgba(163, 55, 29, 0.6);
+        box-shadow: 0 0 0 2px rgba(255, 72, 0, 0.1), 0 0 1px rgba(163, 55, 29, 0.6);
+}
+
+.the-video-list {
+    margin: 0;
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+.the-video-list li {
+    list-style: none;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 100%;
+}
+
+.the-video-list .video-thumb {
+    padding: 2px;
 }
