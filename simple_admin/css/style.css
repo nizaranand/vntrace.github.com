@@ -295,3 +295,15 @@ a, a:active, a:link, a:visited {
 .footer a {
     color: #005580;
 }
+
+.page-header {
+    border-bottom: 4px solid #E7E8E3;
+    position: relative;
+}
+
+.page-header span {
+    padding: 5px 10px;
+    border-bottom: 4px solid #A2361E;
+    bottom: -4px;
+    position: absolute;
+}
