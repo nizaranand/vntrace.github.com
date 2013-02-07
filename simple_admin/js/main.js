@@ -31,7 +31,7 @@ $(function () {
                 spline: {
                     marker: {
                         radius: 4,
-                        lineColor: '#666666',
+                        lineColor: '#eeddc0',
                         lineWidth: 1
                     }
                 }

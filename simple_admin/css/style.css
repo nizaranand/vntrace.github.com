@@ -184,3 +184,100 @@ a, a:active, a:link, a:visited {
     display: block;
     margin-left: 100px;
 }
+
+.widget .nav-tabs {
+    border-bottom: 4px solid #e7e8e3;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.widget .nav-tabs > .active > a,
+.widget .nav-tabs > .active > a:hover {
+    cursor: default;
+    border: none;
+    border-bottom: 4px solid #A2361E;
+    margin-bottom: -4px;
+}
+
+.widget .nav-tabs > li > a, 
+.widget .nav-pills > li > a {
+    margin-right: 0;
+    border: 0;
+}
+
+.widget .nav-tabs > li > a:hover {
+    background-color: transparent;
+    border: 0;
+}
+
+.widget .tab-content {
+    padding: 0 10px;
+}
+
+/*Feed*/
+.feed {
+    padding: 5px;
+    border: 1px solid #EFDEC2;
+    margin-bottom: 5px;
+    position: relative;
+    height: 60px;
+}
+
+.feed img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+.feed .feed-content {
+    margin: 0 30px 0 45px;
+    display: block;
+}
+
+.feed .feed-content a {
+    color: #005580;
+}
+
+.feed .feed-content .username {
+    font-style: italic;
+    font-size: 11px;
+}
+
+.feed .feed-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.action {
+    font-size: 11px;
+}
+
+.feed .type {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px 10px;
+    text-align: center;
+    background-color: #EFDEC2;
+    color: #A2361E;
+}
+
+.more {
+    text-align: center;
+}
+
+.more a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 0;
+    border: 1px solid #EFDEC2;
+}
+
+.more a:hover {
+    background-color: #EFDEC2;
+    color: #A2361E;   
+}
