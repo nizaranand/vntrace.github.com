@@ -107,7 +107,7 @@ a, a:active, a:link, a:visited {
 
 .my-navbar .nav > li > a .notify {
     display: inline-block;
-    background-color: #00a8e6;
+    background-color: #3A87AD;
     padding: 0 3px;
     color: #FFF;
 }
@@ -164,6 +164,10 @@ a, a:active, a:link, a:visited {
 
 .stats span.icon {
     font-size: 15px;
+}
+
+.stats span.field {
+    font-size: 13px;
 }
 
 .tc {
