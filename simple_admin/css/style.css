@@ -165,3 +165,18 @@ a, a:active, a:link, a:visited {
 .stats span.icon {
     font-size: 15px;
 }
+
+.tc {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.video_list .video_thumb {
+    display: block;
+    float: left;
+}
+
+.video_list .video_link {
+    display: block;
+    margin-left: 100px;
+}

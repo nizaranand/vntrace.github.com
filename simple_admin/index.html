@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 	<title>*C - L - G - T*</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -17,6 +18,7 @@
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -34,7 +36,7 @@
 		            <span class="icon-bar"></span>
 	          	</button>
 	          	<a class="brand" href="./index.html">
-	          		<span class="logo-text">Admin</span>
+	          		<span class="logo-text">BlaBla</span>
 	          	</a>
 
 	          	<div class="divider"></div>
@@ -74,7 +76,7 @@
     <div class="container-fluid">
     	<div class="row-fluid">
     		<div class="span3">
-	    		<div class="widget">
+    			<div class="widget">
 	    			<div class="header">
 	    				<span class="title">Stats</span>
 	    			</div>
@@ -96,15 +98,74 @@
 	    				</div>
 	    			</div>
 	    		</div>
+
+	    		<div class="widget">
+	    			<div class="header">
+	    				<span class="title">Most viewed</span>
+	    			</div>
+	    			<div class="content video_list">
+	    				<table class="table table-striped">
+	    					<thead>
+	    						<tr>
+	    							<th>Video</th>
+	    							<th class="tc">Views</th>
+	    						</tr>
+	    					</thead>
+	    					<tbody>
+	    						<tr>
+	    							<td>
+	    								<a class="video_thumb" href="#">
+	    									<img style="width: 90px" src="img/video_thumb/v1.jpg">
+	    								</a>
+	    								<a class="video_link">
+	    									PSY (ft. HYUNA) 오빤 딱 내 스타일
+	    								</a>
+	    							</td>
+	    							<td class="tc">4</td>
+	    						</tr>
+	    						<tr>
+	    							<td>
+	    								<a class="video_thumb" href="#">
+	    									<img style="width: 90px" src="img/video_thumb/v2.jpg">
+	    								</a>
+	    								<a class="video_link">
+	    									YouTube   Chiếc điện thoại có khả năng cảm ứng cực mạnh
+	    								</a>
+	    							</td>
+	    							<td class="tc">1</td>
+	    						</tr>
+	    						<tr>
+	    							<td>
+	    								<a class="video_thumb" href="#">
+	    									<img style="width: 90px" src="img/video_thumb/v3.jpg">
+	    								</a>
+	    								<a class="video_link">
+	    									DAMtv - Lầm - OFFICIAL
+	    								</a>
+	    							</td>
+	    							<td class="tc">200</td>
+	    						</tr>
+	    					</tbody>
+	    				</table>
+	    			</div>
+	    		</div>
     		</div>
     		<div class="span9">
     			<div class="widget">
     				<div class="header">
     					<span class="title">Graph</span>
     				</div>
-    				<div class="content"></div>
+    				<div class="content">
+    					<div id="visited-chart" style="margin: 0 auto"></div>
+    				</div>
     			</div>
     		</div>
+    	</div>
+    	<div class="row-fluid">
+    		<div class="span3">
+
+    		</div>
+    		<div class="span9"></div>
     	</div>
     </div>
 </body>
