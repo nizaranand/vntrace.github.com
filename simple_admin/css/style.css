@@ -111,6 +111,12 @@ a, a:active, a:link, a:visited {
     padding: 0 3px;
     color: #FFF;
 }
+
+#profile-dropdown img {
+    height: 20px;
+    width: 20px;
+}
+
 /*Widget*/
 .widget {
     border: 1px solid #e7e8e3;
