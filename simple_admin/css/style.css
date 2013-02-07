@@ -287,3 +287,11 @@ a, a:active, a:link, a:visited {
     background-color: #EFDEC2;
     color: #A2361E;   
 }
+
+.footer {
+    background-color: #E7E8E3;
+}
+
+.footer a {
+    color: #005580;
+}
